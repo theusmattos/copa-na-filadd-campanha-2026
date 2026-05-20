@@ -1,0 +1,2150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>A gente joga junto · Copa na Filadd 2026</title>
+<meta name="description" content="Playbook da campanha Filadd para a Copa do Mundo 2026. Manifesto, Bolão, Time Titular, Lives, Comunidade, Prêmios e Calendário." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  /* CORES OFICIAIS FILADD */
+  --azul-aprovado:#2424FF;
+  --azul-focado:#03036E;
+  --amarelo:#FFBA09;
+  --roxo-med:#8900FF;
+  /* Apoio */
+  --branco:#FFFFFF;
+  --off:#F4F4F8;
+  --ink:#0A0A14;
+  --ink-soft:#3A3A52;
+  --ink-mute:#7A7A92;
+  --line:#E5E5EF;
+  --line-soft:#EFEFF6;
+  --br-green:#009C3B;
+  --maxw:1320px;
+  --pad:clamp(20px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.impact{font-family:'Antonio',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:.95;text-transform:uppercase}
+h1,h2,h3{font-family:'Antonio',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1;margin:0 0 .4em;text-transform:uppercase}
+h4,h5{font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:-.01em;margin:0 0 .4em}
+p{margin:0 0 1em;color:var(--ink-soft)}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:500;display:inline-block;margin-bottom:14px}
+.eyebrow.amr{color:var(--amarelo)}
+.eyebrow.lt{color:var(--branco)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:var(--branco);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;gap:18px;padding:14px var(--pad);max-width:var(--maxw);margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-brand{font-family:'Antonio',sans-serif;font-weight:700;font-size:22px;white-space:nowrap;color:var(--azul-focado);text-transform:uppercase;letter-spacing:0;display:flex;align-items:center;gap:10px}
+.nav-brand .ball{width:12px;height:12px;background:var(--amarelo);border-radius:50%}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 12px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;transition:all .2s;font-weight:500}
+.nav-links a:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+/* HERO */
+.hero{position:relative;background:var(--azul-aprovado);color:var(--branco);overflow:hidden;padding:clamp(60px,10vh,120px) 0 clamp(80px,12vh,140px)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);opacity:.7;pointer-events:none}
+.hero::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.18),transparent 70%);top:-200px;right:-200px;pointer-events:none}
+
+.hero-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--branco);margin-bottom:32px;font-weight:500;backdrop-filter:blur(8px)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--amarelo);box-shadow:0 0 14px var(--amarelo);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+
+.hero h1{font-size:clamp(56px,11vw,160px);font-weight:700;line-height:.9;letter-spacing:-.02em;margin-bottom:24px;color:var(--branco)}
+.hero h1 .y{color:var(--amarelo)}
+.hero h1 .sub-tag{display:block;font-size:clamp(20px,2vw,28px);font-family:'Poppins',sans-serif;font-weight:600;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.85);margin-top:18px;line-height:1.3}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;color:rgba(255,255,255,.7);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;margin-top:48px;font-weight:500}
+.hero-meta .sep{width:14px;height:1px;background:rgba(255,255,255,.3)}
+
+/* MANIFESTO */
+.manifesto{background:var(--azul-focado);color:var(--branco);padding:clamp(80px,14vh,160px) 0;position:relative;overflow:hidden}
+.manifesto::before{content:"";position:absolute;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(36,36,255,.25),transparent 70%);bottom:-400px;left:-300px;pointer-events:none}
+.manifesto-eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--amarelo);margin-bottom:32px;font-weight:500;display:flex;align-items:center;gap:14px}
+.manifesto-eyebrow::before{content:"";width:36px;height:2px;background:var(--amarelo)}
+.manifesto h2{font-size:clamp(36px,5vw,76px);font-weight:700;line-height:1;letter-spacing:-.02em;color:var(--branco);max-width:18ch;margin-bottom:48px}
+.manifesto h2 .y{color:var(--amarelo)}
+.manifesto-body{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;position:relative;z-index:2}
+@media(max-width:900px){.manifesto-body{grid-template-columns:1fr}}
+.manifesto-text{font-family:'Poppins',sans-serif;font-size:clamp(18px,1.8vw,24px);font-weight:400;line-height:1.55;color:rgba(255,255,255,.95)}
+.manifesto-text p{color:inherit;margin-bottom:24px}
+.manifesto-text p:last-child{margin-bottom:0}
+.manifesto-text .hi{color:var(--amarelo);font-weight:600}
+.manifesto-text .strike{font-weight:700;color:var(--branco)}
+
+.manifesto-side{padding:32px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;backdrop-filter:blur(10px)}
+.manifesto-side h4{font-family:'Antonio',sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.02em;color:var(--branco);margin-bottom:18px}
+.manifesto-side .slogans{display:flex;flex-direction:column;gap:8px}
+.manifesto-side .slogan{padding:14px 16px;background:rgba(255,255,255,.05);border-left:3px solid var(--amarelo);border-radius:0 10px 10px 0}
+.manifesto-side .slogan .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);margin-bottom:2px;font-weight:500;display:block}
+.manifesto-side .slogan .vl{font-family:'Antonio',sans-serif;font-size:18px;text-transform:uppercase;letter-spacing:.01em;color:var(--branco);font-weight:600}
+
+/* SECTION COMUM */
+section{padding:clamp(64px,10vw,120px) 0;position:relative}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(36px,5vw,72px);font-weight:700;max-width:18ch;color:var(--azul-focado);letter-spacing:-.01em}
+.section-head h2 .y{color:var(--amarelo)}
+.section-head h2 .b{color:var(--azul-aprovado)}
+.section-head .lede{color:var(--ink-soft);font-size:17px;max-width:50ch;line-height:1.6;font-weight:400}
+
+/* STORYTELLING 4 ATOS */
+.atos{background:var(--off);position:relative}
+.atos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+@media(max-width:1000px){.atos-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.atos-grid{grid-template-columns:1fr}}
+.ato{padding:32px 26px;background:var(--branco);border-radius:18px;border:1px solid var(--line);position:relative;transition:all .2s}
+.ato:hover{transform:translateY(-4px);border-color:var(--azul-aprovado);box-shadow:0 18px 50px rgba(36,36,255,.08)}
+.ato .nm{font-family:'Antonio',sans-serif;font-size:64px;color:var(--azul-aprovado);line-height:.9;margin-bottom:8px;font-weight:700}
+.ato .ttl{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--amarelo);margin-bottom:6px;font-weight:500}
+.ato h3{font-family:'Antonio',sans-serif;font-size:26px;color:var(--azul-focado);margin-bottom:12px}
+.ato p{font-size:14px;color:var(--ink-soft);margin:0 0 12px;line-height:1.55}
+.ato .when{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-mute);padding:5px 10px;background:var(--off);border-radius:6px;display:inline-block;margin-top:8px}
+.ato.hot{background:var(--azul-aprovado);color:var(--branco);border-color:var(--azul-aprovado)}
+.ato.hot .nm{color:var(--amarelo)}
+.ato.hot h3{color:var(--branco)}
+.ato.hot p{color:rgba(255,255,255,.85)}
+.ato.hot .when{background:rgba(255,255,255,.12);color:var(--branco)}
+
+/* TIME TITULAR — ESCALAÇÃO */
+.time{background:var(--branco);position:relative;overflow:hidden}
+.time::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--br-green) 0% 33%,var(--amarelo) 33% 50%,var(--azul-aprovado) 50% 100%)}
+
+.field-wrap{margin-top:48px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+@media(max-width:1100px){.field-wrap{grid-template-columns:1fr}}
+
+.field{background:linear-gradient(180deg,#0d8030,#0a6526);border-radius:20px;padding:32px 24px;position:relative;aspect-ratio:.78/1;display:grid;grid-template-rows:auto auto auto auto;gap:18px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.field::before{content:"";position:absolute;inset:24px;border:2px solid rgba(255,255,255,.22);border-radius:10px;pointer-events:none}
+.field::after{content:"";position:absolute;left:50%;top:50%;width:120px;height:120px;border:2px solid rgba(255,255,255,.22);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+.field-line-mid{position:absolute;left:24px;right:24px;top:50%;height:2px;background:rgba(255,255,255,.22)}
+.field-row{display:flex;justify-content:space-around;align-items:center;position:relative;z-index:2}
+.field-row.gk{justify-content:center}
+.field-row.df{padding:0 8%}
+.field-row.mf{padding:0 12%}
+.field-row.at{padding:0 16%}
+
+.player{display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;transition:transform .15s}
+.player:hover{transform:scale(1.06)}
+.player .jersey{width:48px;height:54px;background:var(--azul-aprovado);border:2px solid var(--branco);border-radius:8px 8px 12px 12px;display:grid;place-items:center;color:var(--amarelo);font-family:'Antonio',sans-serif;font-size:22px;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.25);position:relative}
+.player .jersey::before{content:"";position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:14px;height:6px;background:var(--branco);border-radius:0 0 4px 4px}
+.player .nm{font-family:'DM Mono',monospace;font-size:9px;color:var(--branco);text-transform:uppercase;letter-spacing:.08em;text-align:center;max-width:60px;line-height:1.2;font-weight:500;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+
+.players-list{display:grid;grid-template-columns:1fr;gap:8px}
+.p-card{display:grid;grid-template-columns:48px 1fr auto;gap:16px;padding:16px;background:var(--branco);border:1px solid var(--line);border-radius:14px;align-items:center;transition:all .2s}
+.p-card:hover{border-color:var(--azul-aprovado);transform:translateX(4px);box-shadow:0 8px 24px rgba(36,36,255,.08)}
+.p-card .nr{width:48px;height:48px;background:var(--azul-aprovado);color:var(--amarelo);border-radius:10px;display:grid;place-items:center;font-family:'Antonio',sans-serif;font-size:22px;font-weight:700}
+.p-card .info h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0 0 2px;text-transform:uppercase}
+.p-card .info .pos{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);font-weight:500}
+.p-card .info p{font-size:12.5px;color:var(--ink-soft);margin:4px 0 0;line-height:1.45}
+.p-card .tag{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--amarelo);background:var(--azul-focado);padding:4px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;white-space:nowrap}
+
+.unlock-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:800px){.unlock-row{grid-template-columns:1fr}}
+.unlock{padding:22px;background:var(--off);border-radius:14px;border-left:4px solid var(--amarelo)}
+.unlock .lb{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px}
+.unlock h5{font-family:'Antonio',sans-serif;font-size:24px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase}
+.unlock p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+
+/* BOLÃO */
+.bolao{background:var(--off);position:relative}
+.bolao-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:start;margin-top:36px}
+@media(max-width:1000px){.bolao-grid{grid-template-columns:1fr}}
+
+.scoreboard{background:var(--azul-focado);color:var(--branco);border-radius:22px;padding:28px;box-shadow:0 30px 60px rgba(3,3,110,.2);position:relative;overflow:hidden}
+.scoreboard::before{content:"";position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:radial-gradient(circle,rgba(255,186,9,.15),transparent 70%);pointer-events:none}
+.scoreboard-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;font-weight:500;color:rgba(255,255,255,.7)}
+.scoreboard-head .live{color:var(--amarelo);display:flex;align-items:center;gap:6px}
+.scoreboard-head .live::before{content:"";width:7px;height:7px;background:var(--amarelo);border-radius:50%;animation:pulse 1.4s ease-in-out infinite}
+
+.match-big{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:20px 0;border-top:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)}
+.match-big .side{display:flex;flex-direction:column;align-items:center;gap:8px}
+.match-big .side.r{align-items:center}
+.match-big .flag{width:56px;height:56px;border-radius:50%;background:var(--branco);display:grid;place-items:center;font-size:34px;border:3px solid var(--amarelo)}
+.match-big .name{font-family:'Antonio',sans-serif;font-size:22px;text-transform:uppercase;color:var(--branco);letter-spacing:.02em}
+.match-big .vs{font-family:'Antonio',sans-serif;font-size:42px;color:var(--amarelo);text-transform:uppercase}
+
+.palpite{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding-top:20px}
+.palpite .pal-input{background:rgba(255,255,255,.08);border:2px solid rgba(255,186,9,.5);border-radius:14px;padding:20px;text-align:center;font-family:'Antonio',sans-serif;font-size:54px;font-weight:700;color:var(--amarelo);line-height:1}
+.palpite .x{font-family:'Antonio',sans-serif;font-size:28px;color:rgba(255,255,255,.5)}
+.palpite .pal-input.you{background:var(--amarelo);color:var(--azul-focado);border-color:var(--amarelo)}
+
+.score-foot{margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.score-foot .btn{padding:16px;border-radius:12px;font-family:'Antonio',sans-serif;font-size:16px;text-align:center;cursor:pointer;text-transform:uppercase;letter-spacing:.02em;font-weight:600;border:none}
+.score-foot .btn.y{background:var(--amarelo);color:var(--azul-focado)}
+.score-foot .btn.g{background:transparent;border:2px solid rgba(255,255,255,.25);color:var(--branco)}
+.score-foot .seal{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.score-foot .seal span{font-family:'DM Mono',monospace;font-size:10.5px;padding:6px 10px;background:rgba(255,186,9,.18);color:var(--amarelo);border-radius:8px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+
+.mech-list{display:flex;flex-direction:column;gap:14px}
+.mech-row{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:start;padding:20px;background:var(--branco);border:1px solid var(--line);border-radius:14px;transition:all .2s}
+.mech-row:hover{border-color:var(--azul-aprovado);box-shadow:0 8px 24px rgba(36,36,255,.08)}
+.mech-row .nr{width:54px;height:54px;background:var(--amarelo);color:var(--azul-focado);border-radius:12px;display:grid;place-items:center;font-family:'Antonio',sans-serif;font-size:26px;font-weight:700}
+.mech-row h5{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-focado);margin:0 0 4px;text-transform:uppercase}
+.mech-row p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.55}
+
+.brasil-cal{margin-top:48px}
+.brasil-cal h3{font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);margin-bottom:18px;text-transform:uppercase}
+.match-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:800px){.match-row{grid-template-columns:1fr}}
+.match-row .card-match{background:var(--branco);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;align-items:center;gap:14px;transition:all .2s}
+.match-row .card-match:hover{border-color:var(--amarelo);transform:translateY(-2px)}
+.match-row .card-match .when{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em;background:var(--off);padding:6px 10px;border-radius:8px;text-align:center;line-height:1.4;font-weight:500}
+.match-row .card-match .vs{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);text-transform:uppercase;flex:1}
+.match-row .card-match .vs .y{color:var(--amarelo)}
+
+/* PRÊMIOS */
+.premios{background:var(--branco)}
+.premios-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:900px){.premios-grid{grid-template-columns:1fr}}
+.premio{padding:28px;background:var(--off);border-radius:18px;border:1px solid var(--line);transition:all .2s;position:relative;overflow:hidden}
+.premio:hover{transform:translateY(-4px);border-color:var(--azul-aprovado);box-shadow:0 18px 50px rgba(36,36,255,.1)}
+.premio.hi{background:linear-gradient(180deg,var(--azul-aprovado),var(--azul-focado));color:var(--branco)}
+.premio.hi .lb{color:var(--amarelo)}
+.premio.hi h4{color:var(--branco)}
+.premio.hi p{color:rgba(255,255,255,.85)}
+.premio.hi .how{background:rgba(255,255,255,.1);color:rgba(255,255,255,.9)}
+.premio.amr{background:var(--amarelo);color:var(--azul-focado)}
+.premio.amr .lb{color:var(--azul-focado);opacity:.7}
+.premio.amr h4{color:var(--azul-focado)}
+.premio.amr p{color:rgba(3,3,110,.85)}
+.premio.amr .how{background:rgba(3,3,110,.1);color:var(--azul-focado)}
+
+.premio .ic{font-size:38px;margin-bottom:14px;line-height:1}
+.premio .lb{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px}
+.premio h4{font-family:'Antonio',sans-serif;font-size:26px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase;line-height:1}
+.premio .qty{font-family:'DM Mono',monospace;font-size:12px;color:var(--ink-mute);margin-bottom:12px;font-weight:500}
+.premio p{font-size:13.5px;line-height:1.55;margin:0 0 14px}
+.premio .how{padding:10px 14px;background:var(--branco);border-radius:8px;font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-soft);line-height:1.4;font-weight:500}
+.premio .how strong{display:block;text-transform:uppercase;letter-spacing:.1em;font-size:10px;color:var(--ink-mute);margin-bottom:4px}
+
+/* LIVES */
+.lives{background:var(--azul-focado);color:var(--branco)}
+.lives .section-head h2{color:var(--branco)}
+.lives .section-head h2 .y{color:var(--amarelo)}
+.lives .section-head .lede{color:rgba(255,255,255,.75)}
+
+.lives-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+@media(max-width:900px){.lives-grid{grid-template-columns:1fr}}
+.live-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;backdrop-filter:blur(10px)}
+.live-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));position:relative;display:grid;place-items:center;overflow:hidden}
+.live-thumb::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 70%,rgba(255,186,9,.18),transparent 60%);pointer-events:none}
+.live-thumb .tag{position:absolute;top:14px;left:14px;background:var(--amarelo);color:var(--azul-focado);padding:6px 12px;border-radius:8px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
+.live-thumb .play{width:80px;height:80px;background:var(--amarelo);border-radius:50%;display:grid;place-items:center;color:var(--azul-focado);font-size:32px;box-shadow:0 0 40px rgba(255,186,9,.5);z-index:2;font-weight:700}
+.live-thumb .who{position:absolute;bottom:14px;left:14px;right:14px;color:var(--branco);font-family:'Antonio',sans-serif;font-size:18px;text-transform:uppercase;letter-spacing:.01em;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+
+.live-body{padding:24px}
+.live-body .slogan{font-family:'Antonio',sans-serif;font-size:28px;color:var(--amarelo);margin:0 0 4px;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+.live-body .canal{font-family:'DM Mono',monospace;font-size:10.5px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px;font-weight:500}
+.live-body p{color:rgba(255,255,255,.85);font-size:14px;margin:0 0 14px}
+.live-body .meta{display:flex;flex-wrap:wrap;gap:6px}
+.live-body .meta span{font-family:'DM Mono',monospace;font-size:10px;padding:4px 9px;background:rgba(255,186,9,.15);color:var(--amarelo);border-radius:6px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+
+.live-info{margin-top:36px;padding:24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px}
+.live-info h4{font-family:'Antonio',sans-serif;font-size:22px;color:var(--branco);margin-bottom:14px;text-transform:uppercase}
+.live-info ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:700px){.live-info ul{grid-template-columns:1fr}}
+.live-info ul li{padding:10px 14px;background:rgba(255,255,255,.04);border-left:3px solid var(--amarelo);border-radius:0 8px 8px 0;color:rgba(255,255,255,.9);font-size:13.5px;line-height:1.5}
+.live-info ul li strong{color:var(--amarelo);font-weight:600}
+
+/* COMUNIDADE WHATSAPP */
+.wa{background:var(--branco);position:relative;overflow:hidden}
+.wa-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start;margin-top:36px}
+@media(max-width:1000px){.wa-grid{grid-template-columns:1fr}}
+
+.wa-phone{background:#000;border:8px solid #1a1a1a;border-radius:32px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.2);max-width:320px;margin:0 auto;width:100%}
+.wa-bar{background:#075e54;padding:14px;display:flex;align-items:center;gap:10px}
+.wa-bar .av{width:34px;height:34px;background:var(--azul-aprovado);border-radius:50%;display:grid;place-items:center;color:var(--amarelo);font-family:'Antonio',sans-serif;font-weight:700;font-size:16px}
+.wa-bar .info{flex:1}
+.wa-bar .info .name{font-weight:600;font-size:13.5px;color:#fff}
+.wa-bar .info .stat{font-size:10px;color:rgba(255,255,255,.7)}
+.wa-msgs{padding:14px;display:flex;flex-direction:column;gap:7px;background:#0b141a;background-image:radial-gradient(rgba(255,255,255,.02) 1px,transparent 1px);background-size:18px 18px;min-height:380px}
+.wa-msg{max-width:82%;padding:8px 12px;border-radius:8px;font-size:12.5px;line-height:1.45;color:#e9edef}
+.wa-msg.them{background:#202c33;align-self:flex-start;border-top-left-radius:0}
+.wa-msg.you{background:#005c4b;align-self:flex-end;border-top-right-radius:0}
+.wa-msg b{color:var(--amarelo)}
+.wa-msg .time{display:block;font-size:9.5px;color:rgba(255,255,255,.5);margin-top:4px;text-align:right}
+
+.wa-body h3{font-family:'Antonio',sans-serif;font-size:32px;color:var(--azul-focado);text-transform:uppercase;margin:0 0 4px}
+.wa-body .slg{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-aprovado);text-transform:uppercase;margin-bottom:14px}
+.wa-body > p{color:var(--ink-soft);margin-bottom:24px;font-size:15px}
+.wa-grid-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.wa-grid-mini{grid-template-columns:1fr}}
+.wa-mini{padding:18px;background:var(--off);border-radius:12px;border-top:3px solid var(--amarelo)}
+.wa-mini h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0 0 4px;text-transform:uppercase}
+.wa-mini p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.45}
+
+/* TWITTER X */
+.twitter{background:var(--off);position:relative}
+.tw-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px;align-items:start}
+@media(max-width:900px){.tw-grid{grid-template-columns:1fr}}
+
+.tw-card{background:var(--branco);border:1px solid var(--line);border-radius:14px;padding:18px}
+.tw-card .head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tw-card .av{width:42px;height:42px;background:var(--azul-aprovado);border-radius:50%;display:grid;place-items:center;color:var(--amarelo);font-family:'Antonio',sans-serif;font-weight:700;font-size:18px}
+.tw-card .who{display:flex;flex-direction:column}
+.tw-card .who .nm{font-weight:600;color:var(--ink);font-size:14px}
+.tw-card .who .hd{color:var(--ink-mute);font-size:12.5px}
+.tw-card .when{color:var(--ink-mute);font-size:12px;margin-left:auto}
+.tw-card .body{font-size:14.5px;color:var(--ink);line-height:1.55;margin-bottom:12px}
+.tw-card .body b{color:var(--azul-aprovado)}
+.tw-card .actions{display:flex;gap:24px;color:var(--ink-mute);font-size:12.5px}
+.tw-card .actions span{display:flex;align-items:center;gap:5px}
+
+.tw-tactics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:900px){.tw-tactics{grid-template-columns:1fr}}
+.tw-tactic{padding:24px;background:var(--branco);border-radius:14px;border-left:4px solid var(--azul-aprovado)}
+.tw-tactic .lb{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:10px}
+.tw-tactic h5{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);margin:0 0 8px;text-transform:uppercase}
+.tw-tactic p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.55}
+
+/* ARGENTINA MINI */
+.arg{background:var(--branco);position:relative}
+.arg-banner{padding:36px;background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));color:var(--branco);border-radius:20px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;margin-top:32px}
+@media(max-width:800px){.arg-banner{grid-template-columns:1fr}}
+.arg-banner .big{font-family:'Antonio',sans-serif;font-size:96px;color:var(--amarelo);line-height:.85;text-transform:uppercase}
+.arg-banner .copy{color:rgba(255,255,255,.9)}
+.arg-banner .copy h3{font-family:'Antonio',sans-serif;font-size:32px;color:var(--branco);margin-bottom:8px;text-transform:uppercase}
+.arg-banner .copy p{color:rgba(255,255,255,.85);margin:0 0 14px;font-size:15px}
+.arg-banner .copy .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.arg-banner .copy .acts span{padding:6px 12px;background:rgba(255,186,9,.18);color:var(--amarelo);border-radius:8px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+
+/* PLANO A B */
+.plans{background:var(--off)}
+.plans-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px}
+@media(max-width:900px){.plans-grid{grid-template-columns:1fr}}
+.plan{padding:36px;background:var(--branco);border-radius:20px;border:1px solid var(--line);position:relative;overflow:hidden;transition:all .2s}
+.plan:hover{transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.plan.a{border-top:6px solid var(--br-green)}
+.plan.b{border-top:6px solid var(--amarelo)}
+.plan .tag{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);font-weight:500;margin-bottom:8px}
+.plan h3{font-family:'Antonio',sans-serif;font-size:32px;color:var(--azul-focado);margin-bottom:6px;text-transform:uppercase}
+.plan .slogan{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-aprovado);text-transform:uppercase;margin-bottom:18px}
+.plan p{color:var(--ink-soft);font-size:14.5px;margin-bottom:18px}
+.plan ul{list-style:none;padding:0;margin:0}
+.plan ul li{padding:10px 0 10px 28px;position:relative;border-top:1px solid var(--line-soft);font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.plan ul li:first-child{border-top:0}
+.plan ul li::before{content:"→";position:absolute;left:0;color:var(--amarelo);font-weight:700;font-size:14px}
+.plan ul li strong{color:var(--ink)}
+
+/* CAPTAÇÃO LEADS */
+.cap{background:var(--branco)}
+.cap-funnel{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:36px;align-items:start}
+@media(max-width:900px){.cap-funnel{grid-template-columns:1fr}}
+
+.funnel-vis{display:flex;flex-direction:column;gap:8px;align-items:center}
+.fs{width:100%;padding:20px 24px;border-radius:14px;text-align:center;background:var(--off);border:1px solid var(--line);position:relative}
+.fs .lb{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--ink-mute);font-weight:500;margin-bottom:6px}
+.fs h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0 0 4px;text-transform:uppercase}
+.fs .nm{font-family:'Antonio',sans-serif;font-size:32px;color:var(--azul-aprovado);font-weight:700;letter-spacing:-.01em;line-height:1}
+.fs.s1{background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));color:var(--branco)}
+.fs.s1 .lb{color:var(--amarelo)}
+.fs.s1 h5{color:var(--branco)}
+.fs.s1 .nm{color:var(--amarelo)}
+.fs.s5{background:var(--amarelo);width:50%}
+.fs.s5 .nm{color:var(--azul-focado)}
+.fs.s2{width:88%}
+.fs.s3{width:74%}
+.fs.s4{width:62%}
+.fa{color:var(--ink-mute);font-size:18px}
+
+.cap-side h4{font-family:'Antonio',sans-serif;font-size:24px;color:var(--azul-focado);margin-bottom:14px;text-transform:uppercase}
+.cap-side > p{color:var(--ink-soft);margin-bottom:20px;font-size:14.5px}
+.cpl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
+.cpl-box{padding:16px;background:var(--off);border-radius:10px;text-align:center}
+.cpl-box .lb{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.12em;margin-bottom:5px;font-weight:500}
+.cpl-box .vl{font-family:'Antonio',sans-serif;font-size:24px;color:var(--azul-aprovado);font-weight:700;line-height:1}
+.cpl-box.hi{background:var(--azul-aprovado);color:var(--branco)}
+.cpl-box.hi .lb{color:var(--amarelo)}
+.cpl-box.hi .vl{color:var(--amarelo)}
+
+/* CALENDÁRIO */
+.cal{background:var(--azul-focado);color:var(--branco)}
+.cal .section-head h2{color:var(--branco)}
+.cal .section-head h2 .y{color:var(--amarelo)}
+.cal .section-head .lede{color:rgba(255,255,255,.75)}
+.cal-rows{display:flex;flex-direction:column;gap:14px;margin-top:36px}
+.cal-row{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:24px 28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;align-items:start;backdrop-filter:blur(8px);transition:all .2s}
+@media(max-width:800px){.cal-row{grid-template-columns:1fr}}
+.cal-row:hover{background:rgba(255,255,255,.08);transform:translateX(4px)}
+.cal-row.hot{border-color:var(--amarelo);background:rgba(255,186,9,.08)}
+.cal-row .when{display:flex;flex-direction:column}
+.cal-row .when .sem{font-family:'Antonio',sans-serif;font-size:32px;color:var(--amarelo);text-transform:uppercase;line-height:.9}
+.cal-row .when .dt{font-family:'DM Mono',monospace;font-size:11px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.12em;margin-top:6px;font-weight:500}
+.cal-row .info h4{font-family:'Antonio',sans-serif;font-size:22px;color:var(--branco);margin:0 0 6px;text-transform:uppercase}
+.cal-row .info .sub{font-family:'DM Mono',monospace;font-size:11px;color:var(--amarelo);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px;font-weight:600}
+.cal-row .info ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+@media(max-width:700px){.cal-row .info ul{grid-template-columns:1fr}}
+.cal-row .info ul li{padding:6px 0 6px 16px;color:rgba(255,255,255,.85);font-size:13px;line-height:1.45;position:relative}
+.cal-row .info ul li::before{content:"·";position:absolute;left:4px;color:var(--amarelo);font-weight:700;font-size:18px}
+
+/* CTA FINAL */
+.final{background:var(--azul-aprovado);color:var(--branco);text-align:center;padding:clamp(72px,12vh,140px) 0;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%);opacity:.6;pointer-events:none}
+.final .eyebrow{color:var(--amarelo)}
+.final h2{font-family:'Antonio',sans-serif;font-size:clamp(48px,9vw,128px);color:var(--branco);margin-bottom:18px;text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
+.final h2 .y{color:var(--amarelo)}
+.final .closer{font-family:'Poppins',sans-serif;font-size:18px;color:rgba(255,255,255,.85);max-width:50ch;margin:0 auto 32px}
+
+/* FOOTER */
+footer{padding:40px 0;background:var(--azul-focado);text-align:center;color:rgba(255,255,255,.6)}
+footer .small{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em}
+
+/* DIVIDER */
+.div{height:1px;background:var(--line);margin:48px 0}
+
+/* ============ ELENCO + ÁLBUM + LP TIME ============ */
+.elenco{background:var(--branco);position:relative}
+.elenco::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--azul-aprovado),var(--amarelo),var(--azul-aprovado))}
+
+.elenco-intro{background:var(--azul-focado);color:var(--branco);padding:36px;border-radius:20px;margin-top:24px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center}
+@media(max-width:800px){.elenco-intro{grid-template-columns:1fr}}
+.elenco-intro .big{font-family:'Antonio',sans-serif;font-size:88px;color:var(--amarelo);line-height:.85;text-transform:uppercase}
+.elenco-intro .copy h3{font-family:'Antonio',sans-serif;font-size:30px;color:var(--branco);text-transform:uppercase;margin-bottom:8px}
+.elenco-intro .copy p{color:rgba(255,255,255,.85);margin:0;font-size:15px;line-height:1.6}
+.elenco-intro .copy p strong{color:var(--amarelo)}
+
+.elenco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:1000px){.elenco-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.elenco-grid{grid-template-columns:1fr}}
+.elenco-card{padding:28px;background:var(--off);border:1px solid var(--line);border-radius:16px;border-top:4px solid var(--azul-aprovado);transition:all .2s}
+.elenco-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(36,36,255,.08);border-top-color:var(--amarelo)}
+.elenco-card .pos{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px}
+.elenco-card h4{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);margin:0 0 4px;text-transform:uppercase}
+.elenco-card .quem{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px;font-weight:500}
+.elenco-card p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.55}
+
+/* ÁLBUM */
+.album{background:var(--off);position:relative;overflow:hidden}
+.album::before{content:"";position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,186,9,.1),transparent 70%);pointer-events:none}
+
+.album-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;margin-top:36px;align-items:start}
+@media(max-width:1000px){.album-wrap{grid-template-columns:1fr}}
+
+.album-mockup{aspect-ratio:.78/1;background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));border-radius:18px;padding:32px 24px 24px;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.2)}
+.album-mockup::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}
+.album-mockup .album-head{text-align:center;margin-bottom:14px;position:relative;z-index:2}
+.album-mockup .album-head .br{font-family:'DM Mono',monospace;font-size:11px;color:var(--amarelo);letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:4px}
+.album-mockup .album-head h3{font-family:'Antonio',sans-serif;font-size:30px;color:var(--branco);text-transform:uppercase;margin:0;line-height:.9}
+.album-mockup .album-head h3 .y{color:var(--amarelo)}
+.album-mockup .album-head .sub{font-family:'DM Mono',monospace;font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.15em;margin-top:6px;font-weight:500}
+
+.figurinhas-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:12px;position:relative;z-index:2}
+.fig{aspect-ratio:.72/1;background:var(--branco);border-radius:6px;padding:8px 4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;position:relative;overflow:hidden;border:1.5px solid var(--amarelo)}
+.fig.empty{background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.25)}
+.fig.empty::after{content:"?";font-family:'Antonio',sans-serif;font-size:24px;color:rgba(255,255,255,.4);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.fig.rare{background:linear-gradient(135deg,#FFE36A,#FFBA09);border-color:var(--azul-focado)}
+.fig .face{width:100%;height:60%;background:var(--azul-aprovado);border-radius:4px;display:grid;place-items:center;color:var(--amarelo);font-family:'Antonio',sans-serif;font-size:14px;font-weight:700}
+.fig .face.r{background:var(--azul-focado);color:var(--amarelo)}
+.fig .nm-mini{font-family:'DM Mono',monospace;font-size:6.5px;color:var(--azul-focado);text-transform:uppercase;letter-spacing:.05em;text-align:center;font-weight:600;line-height:1.1;margin-top:3px}
+.fig .pos-mini{font-family:'DM Mono',monospace;font-size:5.5px;color:var(--azul-aprovado);text-transform:uppercase;letter-spacing:.05em;text-align:center;font-weight:500;margin-top:1px}
+
+.album-info h3{font-family:'Antonio',sans-serif;font-size:30px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:10px}
+.album-info > p{color:var(--ink-soft);font-size:15px;line-height:1.6;margin-bottom:24px}
+
+.album-versions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px}
+@media(max-width:600px){.album-versions{grid-template-columns:1fr}}
+.album-ver{padding:20px;background:var(--branco);border:1px solid var(--line);border-radius:12px;border-top:4px solid var(--amarelo)}
+.album-ver.dig{border-top-color:var(--azul-aprovado)}
+.album-ver .tg{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:6px}
+.album-ver.dig .tg{color:var(--azul-aprovado)}
+.album-ver h5{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-focado);margin:0 0 8px;text-transform:uppercase}
+.album-ver p{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.5}
+
+.album-bullets{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:600px){.album-bullets{grid-template-columns:1fr}}
+.album-bullets li{padding:12px 14px;background:var(--branco);border-left:3px solid var(--amarelo);border-radius:0 8px 8px 0;font-size:13px;color:var(--ink-soft);line-height:1.5}
+.album-bullets li strong{color:var(--azul-focado)}
+
+/* LP DO TIME */
+.lp-time{background:var(--branco);position:relative}
+.lp-wireframe{background:var(--off);border:2px dashed var(--line);border-radius:20px;padding:32px;margin-top:36px}
+.lp-browser{background:var(--branco);border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.06)}
+.lp-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--off)}
+.lp-bar .dot{width:10px;height:10px;border-radius:50%}
+.lp-bar .dot.r{background:#ff5f57}.lp-bar .dot.y{background:#febc2e}.lp-bar .dot.g{background:#28c840}
+.lp-bar .url{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-mute);margin-left:14px;background:var(--branco);padding:5px 12px;border-radius:999px;border:1px solid var(--line)}
+
+.lp-hero-mini{padding:40px 28px;background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));color:var(--branco);text-align:center}
+.lp-hero-mini .eyebrow-lp{font-family:'DM Mono',monospace;font-size:11px;color:var(--amarelo);letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:14px}
+.lp-hero-mini h3{font-family:'Antonio',sans-serif;font-size:36px;color:var(--branco);text-transform:uppercase;margin:0 0 8px;line-height:.95}
+.lp-hero-mini h3 .y{color:var(--amarelo)}
+.lp-hero-mini p{color:rgba(255,255,255,.85);font-size:14px;margin:8px 0 0}
+
+.lp-filters{padding:18px 28px;background:var(--off);display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.lp-filters .f{padding:7px 14px;background:var(--branco);border:1px solid var(--line);border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);font-weight:500}
+.lp-filters .f.act{background:var(--azul-aprovado);color:var(--branco);border-color:var(--azul-aprovado)}
+
+.lp-cards{padding:24px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:800px){.lp-cards{grid-template-columns:repeat(2,1fr)}}
+.lp-person{background:var(--branco);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;transition:all .2s}
+.lp-person:hover{border-color:var(--azul-aprovado);transform:translateY(-2px)}
+.lp-person .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));margin:0 auto 10px;display:grid;place-items:center;color:var(--amarelo);font-family:'Antonio',sans-serif;font-size:24px;font-weight:700}
+.lp-person .nm-lp{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.lp-person .role-lp{font-family:'DM Mono',monospace;font-size:9px;color:var(--azul-aprovado);text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+
+.lp-purposes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:900px){.lp-purposes{grid-template-columns:1fr}}
+.lp-purpose{padding:24px;background:var(--off);border-radius:14px;border-left:4px solid var(--azul-aprovado)}
+.lp-purpose .lb{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px}
+.lp-purpose h5{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase}
+.lp-purpose p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+
+/* BRIDGE CONNECTION */
+.bridge{margin-top:48px;padding:32px;background:linear-gradient(135deg,var(--amarelo) 0%,rgba(255,186,9,.7) 100%);border-radius:18px;display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;color:var(--azul-focado)}
+@media(max-width:700px){.bridge{grid-template-columns:1fr}}
+.bridge .ic{font-size:56px;line-height:1}
+.bridge h4{font-family:'Antonio',sans-serif;font-size:24px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase}
+.bridge p{color:var(--azul-focado);margin:0;font-size:14.5px;line-height:1.55;font-weight:500}
+.bridge p strong{font-weight:700}
+
+/* ========== DESIGN DA CAMPANHA ========== */
+.design{background:var(--off);position:relative;overflow:hidden}
+.design::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:80%;height:6px;background:linear-gradient(90deg,var(--azul-aprovado),var(--amarelo),var(--azul-aprovado))}
+
+/* MOOD INSPIRAÇÕES */
+.mood-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+@media(max-width:1000px){.mood-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.mood-grid{grid-template-columns:1fr}}
+.mood-card{padding:24px;background:var(--branco);border-radius:14px;border:1px solid var(--line);transition:all .2s}
+.mood-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.mood-card .tag-m{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px}
+.mood-card h5{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-focado);text-transform:uppercase;margin:0 0 8px}
+.mood-card p{font-size:13.5px;color:var(--ink-soft);margin:0 0 12px;line-height:1.5}
+.mood-card .vibe{padding:14px;background:var(--off);border-radius:10px;font-family:'DM Mono',monospace;font-size:11.5px;color:var(--azul-aprovado);text-transform:uppercase;letter-spacing:.06em;font-weight:500;line-height:1.45}
+
+/* SISTEMA DE COR */
+.color-system{margin-top:48px}
+.color-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+@media(max-width:800px){.color-row{grid-template-columns:repeat(2,1fr)}}
+.color-swatch{aspect-ratio:1.4/1;border-radius:14px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
+.color-swatch .hex{font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;font-weight:600}
+.color-swatch .name{font-family:'Antonio',sans-serif;font-size:18px;text-transform:uppercase;line-height:1}
+.color-swatch .use{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;opacity:.75;margin-top:6px}
+.color-swatch.a{background:#2424FF;color:#fff}
+.color-swatch.b{background:#03036E;color:#FFBA09}
+.color-swatch.c{background:#FFBA09;color:#03036E}
+.color-swatch.d{background:#fff;color:#03036E;border:2px solid var(--azul-focado)}
+
+/* TIPOGRAFIA */
+.typo-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+@media(max-width:800px){.typo-row{grid-template-columns:1fr}}
+.typo-card{padding:32px;background:var(--branco);border-radius:14px;border:1px solid var(--line)}
+.typo-card .l-typo{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:600;margin-bottom:14px}
+.typo-card.a .show{font-family:'Antonio',sans-serif;font-size:64px;text-transform:uppercase;color:var(--azul-focado);line-height:.85;letter-spacing:-.01em;margin-bottom:14px}
+.typo-card.a .show .y{color:var(--amarelo)}
+.typo-card.b .show{font-family:'Poppins',sans-serif;font-size:22px;color:var(--ink);line-height:1.4;margin-bottom:14px;font-weight:500}
+.typo-card .meta{font-family:'DM Mono',monospace;font-size:11px;color:var(--ink-mute);text-transform:uppercase;letter-spacing:.1em}
+
+/* ELEMENTOS GRÁFICOS */
+.elem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+@media(max-width:900px){.elem-grid{grid-template-columns:repeat(2,1fr)}}
+.elem{aspect-ratio:1/1;background:var(--branco);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;border:1px solid var(--line);transition:all .2s}
+.elem:hover{border-color:var(--azul-aprovado);transform:translateY(-3px)}
+.elem svg{width:60px;height:60px}
+.elem .name{font-family:'DM Mono',monospace;font-size:10.5px;color:var(--azul-focado);text-transform:uppercase;letter-spacing:.1em;font-weight:600;text-align:center}
+
+/* TEMPLATES POR CANAL */
+.templates{margin-top:48px}
+.template-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+@media(max-width:1000px){.template-row{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.template-row{grid-template-columns:1fr}}
+
+.tmpl{padding:14px;background:var(--branco);border-radius:14px;border:1px solid var(--line);transition:all .2s}
+.tmpl:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.tmpl .tmpl-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.tmpl .tmpl-name{font-family:'Antonio',sans-serif;font-size:16px;color:var(--azul-focado);text-transform:uppercase}
+.tmpl .tmpl-tag{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--azul-aprovado);text-transform:uppercase;letter-spacing:.1em;font-weight:600;padding:3px 8px;background:var(--off);border-radius:6px}
+.tmpl p.tmpl-desc{font-size:12.5px;color:var(--ink-soft);margin:8px 0 0;line-height:1.5}
+
+/* MOCKUP COMUM (post quadrado) */
+.mk{aspect-ratio:1/1;border-radius:10px;padding:20px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.mk-9-16{aspect-ratio:9/16}
+.mk-16-9{aspect-ratio:16/9}
+
+/* MOCKUP POSTS */
+.mk.post-a{background:var(--azul-aprovado);color:var(--branco)}
+.mk.post-a::before{content:"";position:absolute;bottom:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:var(--amarelo);opacity:.2}
+.mk.post-a .eb{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--amarelo);margin-bottom:auto}
+.mk.post-a .ti{font-family:'Antonio',sans-serif;font-size:42px;text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
+.mk.post-a .ti .y{color:var(--amarelo)}
+.mk.post-a .ft{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-top:8px}
+
+.mk.post-b{background:var(--amarelo);color:var(--azul-focado)}
+.mk.post-b .eb{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--azul-aprovado);margin-bottom:auto;font-weight:600}
+.mk.post-b .ti{font-family:'Antonio',sans-serif;font-size:38px;text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
+.mk.post-b .meta-line{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:10px;color:var(--azul-focado)}
+.mk.post-b .meta-line b{color:var(--azul-focado);font-weight:700}
+
+.mk.post-c{background:var(--azul-focado);color:var(--branco)}
+.mk.post-c::after{content:"";position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,#009C3B 0% 33%,#FFBA09 33% 66%,#fff 66% 100%)}
+.mk.post-c .eb{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--amarelo);margin:14px 0 auto;font-weight:600}
+.mk.post-c .player-card{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1}
+.mk.post-c .player-card .nrr{font-family:'Antonio',sans-serif;font-size:80px;color:var(--amarelo);line-height:.85;letter-spacing:-.02em}
+.mk.post-c .player-card .pn{font-family:'Antonio',sans-serif;font-size:22px;color:var(--branco);text-transform:uppercase;margin-top:6px;letter-spacing:.01em}
+.mk.post-c .player-card .pp{font-family:'DM Mono',monospace;font-size:9px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.14em;margin-top:6px}
+
+/* STORIES MOCKUPS */
+.mk.story-a{background:linear-gradient(180deg,#2424FF,#03036E);color:var(--branco)}
+.mk.story-a::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:30px 30px;opacity:.6;pointer-events:none}
+.mk.story-a .top-st{display:flex;gap:4px;margin-bottom:14px}
+.mk.story-a .top-st span{flex:1;height:3px;background:rgba(255,255,255,.2);border-radius:2px}
+.mk.story-a .top-st span.act{background:var(--amarelo)}
+.mk.story-a .ti{font-family:'Antonio',sans-serif;font-size:34px;text-transform:uppercase;line-height:.95;margin:auto 0}
+.mk.story-a .ti .y{color:var(--amarelo)}
+.mk.story-a .ft-st{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amarelo);font-weight:600}
+
+.mk.story-b{background:#ff0050;color:var(--branco);overflow:hidden}
+.mk.story-b::before{content:"";position:absolute;bottom:-80px;right:-60px;width:200px;height:200px;background:#fff;opacity:.08;border-radius:50%}
+.mk.story-b .top-st{display:flex;gap:4px;margin-bottom:14px}
+.mk.story-b .top-st span{flex:1;height:3px;background:rgba(255,255,255,.25);border-radius:2px}
+.mk.story-b .top-st span.act{background:#fff}
+.mk.story-b .badge-st{display:inline-block;padding:5px 10px;background:#fff;color:#ff0050;font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;border-radius:6px;font-weight:700;align-self:flex-start}
+.mk.story-b .ti{font-family:'Antonio',sans-serif;font-size:30px;text-transform:uppercase;line-height:.95;margin:auto 0}
+.mk.story-b .ft-st{font-family:'Poppins',sans-serif;font-size:12px;opacity:.85}
+
+/* SCORE MOCKUP */
+.mk.score-mk{background:var(--azul-focado);color:var(--branco);justify-content:center}
+.mk.score-mk .lbl-sc{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amarelo);font-weight:600;text-align:center;margin-bottom:10px}
+.mk.score-mk .row-sc{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:14px}
+.mk.score-mk .flag-sc{font-size:32px;text-align:center}
+.mk.score-mk .tm{font-family:'Antonio',sans-serif;font-size:14px;color:var(--branco);text-transform:uppercase;text-align:center;margin-top:5px}
+.mk.score-mk .pp-sc{font-family:'Antonio',sans-serif;font-size:54px;color:var(--amarelo);line-height:1}
+.mk.score-mk .x-sc{font-family:'Antonio',sans-serif;font-size:22px;color:rgba(255,255,255,.4);align-self:center}
+.mk.score-mk .ft-sc{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);text-align:center;margin-top:auto}
+
+/* AD MOCKUP */
+.mk.ad-mk{background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));color:var(--branco)}
+.mk.ad-mk .prize-vis{font-size:72px;text-align:center;margin:auto 0 14px}
+.mk.ad-mk .ad-ti{font-family:'Antonio',sans-serif;font-size:26px;text-transform:uppercase;text-align:center;line-height:.95;margin-bottom:6px}
+.mk.ad-mk .ad-ti .y{color:var(--amarelo)}
+.mk.ad-mk .ad-sub{font-family:'Poppins',sans-serif;font-size:12px;text-align:center;opacity:.85;line-height:1.4}
+.mk.ad-mk .ad-cta{margin-top:10px;padding:8px 14px;background:var(--amarelo);color:var(--azul-focado);font-family:'Antonio',sans-serif;font-size:14px;text-transform:uppercase;border-radius:8px;align-self:center;font-weight:600}
+
+/* FIGURINHA TEMPLATE */
+.figurinha-tpl{aspect-ratio:.72/1;background:linear-gradient(135deg,var(--azul-aprovado),var(--azul-focado));border-radius:12px;padding:16px;display:flex;flex-direction:column;border:3px solid var(--amarelo);position:relative;overflow:hidden}
+.figurinha-tpl::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#009C3B,#FFBA09,#FFFFFF)}
+.figurinha-tpl .fg-nr{font-family:'Antonio',sans-serif;font-size:56px;color:var(--amarelo);line-height:.8;letter-spacing:-.02em}
+.figurinha-tpl .fg-foto{flex:1;background:rgba(255,255,255,.08);border-radius:8px;margin:8px 0;display:grid;place-items:center;color:rgba(255,255,255,.3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:500;border:1px dashed rgba(255,255,255,.2)}
+.figurinha-tpl .fg-nome{font-family:'Antonio',sans-serif;font-size:16px;color:var(--branco);text-transform:uppercase;line-height:1}
+.figurinha-tpl .fg-pos{font-family:'DM Mono',monospace;font-size:9px;color:var(--amarelo);text-transform:uppercase;letter-spacing:.1em;margin-top:3px;font-weight:600}
+.figurinha-tpl .fg-frase{font-family:'Poppins',sans-serif;font-style:italic;font-size:10px;color:rgba(255,255,255,.7);margin-top:6px;line-height:1.3}
+
+.figurinha-tpl.rare{background:linear-gradient(135deg,#FFE36A 0%,#FFBA09 100%);border-color:var(--azul-focado)}
+.figurinha-tpl.rare::before{height:6px}
+.figurinha-tpl.rare .fg-nr{color:var(--azul-focado)}
+.figurinha-tpl.rare .fg-foto{background:rgba(3,3,110,.1);color:rgba(3,3,110,.4);border-color:rgba(3,3,110,.2)}
+.figurinha-tpl.rare .fg-nome{color:var(--azul-focado)}
+.figurinha-tpl.rare .fg-pos{color:var(--azul-focado)}
+.figurinha-tpl.rare .fg-frase{color:rgba(3,3,110,.7)}
+
+/* REF MARCAS */
+.refs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+@media(max-width:1000px){.refs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.refs-grid{grid-template-columns:1fr}}
+.ref{background:var(--branco);border-radius:14px;overflow:hidden;border:1px solid var(--line);transition:all .2s}
+.ref:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.ref-img{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;font-family:'Antonio',sans-serif;font-size:32px;color:#fff;text-align:center;line-height:1;padding:20px;position:relative;overflow:hidden}
+.ref-img::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:24px 24px;opacity:.6;pointer-events:none}
+.ref-info{padding:18px}
+.ref-info .br-nome{font-family:'Antonio',sans-serif;font-size:18px;text-transform:uppercase;color:var(--azul-focado);margin-bottom:4px;letter-spacing:.02em}
+.ref-info .br-tag{font-family:'DM Mono',monospace;font-size:10px;color:var(--azul-aprovado);text-transform:uppercase;letter-spacing:.12em;font-weight:600;margin-bottom:10px}
+.ref-info p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+.ref-info .borrow{margin-top:10px;padding:10px;background:var(--off);border-left:3px solid var(--amarelo);border-radius:0 6px 6px 0;font-size:12px;color:var(--azul-focado);line-height:1.45}
+.ref-info .borrow strong{font-family:'DM Mono',monospace;display:block;font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:4px;font-weight:500}
+
+/* BANCO IDEIAS */
+.ideas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+@media(max-width:900px){.ideas-grid{grid-template-columns:1fr}}
+.idea{padding:24px;background:var(--branco);border-radius:14px;border:1px solid var(--line);border-top:4px solid var(--azul-aprovado)}
+.idea .nr-i{font-family:'Antonio',sans-serif;font-size:32px;color:var(--amarelo);line-height:.85;margin-bottom:8px}
+.idea h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);text-transform:uppercase;margin:0 0 6px}
+.idea p{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.55}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="ball"></span> COPA NA FILADD · 2026</div>
+    <div class="nav-links">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#atos">Narrativa</a>
+<a href="#time">Time Titular</a>
+      <a href="#elenco">Elenco</a>
+      <a href="#album">Álbum</a>
+      <a href="#lp-time">LP do Time</a>
+      <a href="#bolao">Bolão</a>
+      <a href="#premios">Prêmios</a>
+      <a href="#lives">Lives</a>
+      <a href="#wa">Comunidadd</a>
+      <a href="#tw">X / Twitter</a>
+      <a href="#arg">Argentina</a>
+      <a href="#influ">Influenciadores</a>
+      <a href="#planos">A · B</a>
+      <a href="#cap">Captação</a>
+      <a href="#cal">Calendário</a>
+      <a href="#design">Design</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="hero-pill"><span class="dot"></span> Playbook v3 · Copa do Mundo FIFA 2026</div>
+    <h1>
+      A gente <br/>
+      joga <span class="y">junto.</span>
+      <span class="sub-tag">Campanha Filadd para a Copa do Mundo de 2026<br/>Bolão LatAm 🇧🇷🇦🇷🇨🇴 · Lives · Comunidade · Álbum · Prêmios · ENEM.</span>
+    </h1>
+    <div class="hero-meta">
+      <span>v3 · 20 maio 2026</span><span class="sep"></span>
+      <span>Filadd Brasil</span><span class="sep"></span>
+      <span>Marketing · Theus Mattos</span><span class="sep"></span>
+      <span>4 semanas · 25/mai → 19/jul</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto" id="manifesto">
+  <div class="wrap">
+    <div class="manifesto-eyebrow">Manifesto da campanha</div>
+    <h2>A vida tem duas <span class="y">copas</span> esse ano.</h2>
+
+    <div class="manifesto-body">
+      <div class="manifesto-text">
+        <p><span class="strike">A do Brasil, em campo.</span> <span class="strike">A sua, na prova.</span></p>
+        <p>Uma a gente joga junto gritando, sofrendo, palpitando.</p>
+        <p>A outra a gente joga junto também: todo dia, no cronograma, na correção da redação, no <span class="hi">plano de estudos feito pra você</span>.</p>
+        <p>Não dá pra escolher entre torcer e estudar.<br/><span class="hi">E você não precisa.</span></p>
+        <p>A Filadd tá com você nas duas.<br/>Você palpita na Copa.<br/><span class="hi">A gente palpita na sua aprovação.</span></p>
+      </div>
+
+      <div class="manifesto-side">
+        <h4>Slogans da campanha</h4>
+        <div class="slogans">
+          <div class="slogan"><span class="lb">Tagline-mãe</span><span class="vl">A gente joga junto.</span></div>
+          <div class="slogan"><span class="lb">Bolão</span><span class="vl">Cravou? Marcou.</span></div>
+          <div class="slogan"><span class="lb">Lives YouTube</span><span class="vl">Treino aberto.</span></div>
+          <div class="slogan"><span class="lb">Lives TikTok</span><span class="vl">Antes do apito.</span></div>
+          <div class="slogan"><span class="lb">Comunidadd WhatsApp</span><span class="vl">O vestiário do Time Filadd.</span></div>
+          <div class="slogan"><span class="lb">Plano B · Bolão LatAm</span><span class="vl">Eles saíram de campo. A gente segue jogando.</span></div>
+          <div class="slogan"><span class="lb">Pós-Copa</span><span class="vl">Acabou a Copa. Começa a sua.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NARRATIVA EM 4 ATOS ============ -->
+<section class="atos" id="atos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Storytelling · 4 atos</span>
+        <h2>A campanha tem um <span class="b">enredo claro</span> do início ao fim.</h2>
+      </div>
+      <p class="lede">Cada ato tem objetivo próprio, mas tudo se conecta na mesma narrativa: <strong>convocação → estreia → mata-mata → final</strong>. O ato final é o ENEM em novembro.</p>
+    </div>
+
+    <div class="atos-grid">
+      <div class="ato">
+        <div class="nm">01</div>
+        <div class="ttl">Aquecimento</div>
+        <h3>A Convocação</h3>
+        <p>A Filadd anuncia que vai entrar em campo na Copa. Apresenta os 11 titulares do seu time (os benefícios). Convoca os estudantes pra fazer parte.</p>
+        <div class="when">25 mai → 10 jun</div>
+      </div>
+      <div class="ato hot">
+        <div class="nm">02</div>
+        <div class="ttl">Estreia</div>
+        <h3>O Apito Inicial</h3>
+        <p>O Bolão abre. Brasil estreia. Estudante palpita, ganha cards do time, entra na Comunidadd. Hype máximo de captação.</p>
+        <div class="when">11 jun → 27 jun</div>
+      </div>
+      <div class="ato hot">
+        <div class="nm">03</div>
+        <div class="ttl">Mata-mata</div>
+        <h3>O Jogo Pesa</h3>
+        <p>Brasil entra no eliminatório. Tensão sobe. Cards raros aparecem. Prêmios grandes (PS5, iPad, bolsas) entram em jogo. Lives no auge.</p>
+        <div class="when">28 jun → 19 jul</div>
+      </div>
+      <div class="ato">
+        <div class="nm">04</div>
+        <div class="ttl">Ato final</div>
+        <h3>A Sua Copa</h3>
+        <p>A Copa acabou. Vencedores anunciados. Mensagem vira: <em>"agora começa a sua"</em>. Régua pós-Copa conecta tudo ao ENEM de novembro.</p>
+        <div class="when">20 jul → ENEM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIME TITULAR + ÁLBUM ============ -->
+<section class="time" id="time">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">O coração da campanha</span>
+        <h2>O <span class="y">Time Titular</span> da Filadd <br/>é o seu álbum de figurinhas.</h2>
+      </div>
+      <p class="lede">Os 11 benefícios reais da Filadd, escalados como time de futebol. Cada card é uma <strong>figurinha do álbum da campanha</strong>. Você ganha figurinha acertando palpite no Bolão. Completou o álbum (11 figurinhas) = entra nos sorteios grandes.</p>
+    </div>
+
+    <!-- ÁLBUM EXPLICATIVO -->
+    <div class="unlock-row" style="margin-top:0;margin-bottom:36px">
+      <div class="unlock"><div class="lb">ÁLBUM</div><h5>11 figurinhas no total</h5><p>Cada figurinha é 1 benefício real da Filadd. A capa do álbum é a escalação do Time Titular.</p></div>
+      <div class="unlock"><div class="lb">COMO COLA</div><h5>Acertou o jogo = cola figurinha</h5><p>Acertou vencedor → figurinha comum. Acertou placar exato → figurinha rara (versão brilhante).</p></div>
+      <div class="unlock"><div class="lb">PRÊMIO DO ÁLBUM</div><h5>Álbum cheio = sorteios</h5><p>Completou as 11 = concorre ao PS5, iPad e às 10 bolsas integrais. 6 figurinhas = kit físico automático.</p></div>
+    </div>
+
+    <div class="field-wrap">
+      <!-- ESCALAÇÃO 4-3-3 -->
+      <div class="field">
+        <div class="field-line-mid"></div>
+
+        <!-- ATAQUE -->
+        <div class="field-row at">
+          <div class="player"><div class="jersey">11</div><div class="nm">Mentoria<br/>Redação</div></div>
+          <div class="player"><div class="jersey">10</div><div class="nm">Plano de<br/>Estudos</div></div>
+          <div class="player"><div class="jersey">9</div><div class="nm">Correção<br/>Redação</div></div>
+        </div>
+
+        <!-- MEIO -->
+        <div class="field-row mf">
+          <div class="player"><div class="jersey">8</div><div class="nm">Orientação<br/>Carreira</div></div>
+          <div class="player"><div class="jersey">7</div><div class="nm">Orientação<br/>1:1</div></div>
+          <div class="player"><div class="jersey">6</div><div class="nm">Cronograma</div></div>
+        </div>
+
+        <!-- DEFESA -->
+        <div class="field-row df">
+          <div class="player"><div class="jersey">5</div><div class="nm">Aulas<br/>Seg-Sex</div></div>
+          <div class="player"><div class="jersey">4</div><div class="nm">Simulados<br/>Ilimitados</div></div>
+          <div class="player"><div class="jersey">3</div><div class="nm">Tira-<br/>Dúvidas</div></div>
+          <div class="player"><div class="jersey">2</div><div class="nm">Banco<br/>+130mil</div></div>
+        </div>
+
+        <!-- GOLEIRO -->
+        <div class="field-row gk">
+          <div class="player"><div class="jersey">1</div><div class="nm">Simulado<br/>Diagnóstico</div></div>
+        </div>
+      </div>
+
+      <!-- LISTA (ordem do capitão pro goleiro, com score real de valorização) -->
+      <div class="players-list">
+        <div class="p-card"><div class="nr">10</div><div class="info"><h5>Plano de Estudos Individualizado</h5><div class="pos">Centroavante · CAPITÃO · score 6.4</div><p>O benefício mais valorizado pelos alunos. Conduz o jogo do começo ao fim.</p></div><span class="tag">CAPITÃO</span></div>
+        <div class="p-card"><div class="nr">11</div><div class="info"><h5>Mentoria de Redação Individual</h5><div class="pos">Ponta · ao vivo · score 5.8</div><p>Mentoria individual e ao vivo. Quem fecha o jogo na nota da redação.</p></div><span class="tag">RARO</span></div>
+        <div class="p-card"><div class="nr">9</div><div class="info"><h5>Correção de Redação Ilimitada</h5><div class="pos">Ponta · ENEM + Vest · score 4.1</div><p>Sem limite de envios. Treino real, feedback real, em toda redação.</p></div><span class="tag">RARO</span></div>
+        <div class="p-card"><div class="nr">8</div><div class="info"><h5>Orientação de Carreira</h5><div class="pos">Meia · estratégia</div><p>Saber pra onde correr é metade do jogo. Suporte pra escolher curso e meta.</p></div><span class="tag">PRATA</span></div>
+        <div class="p-card"><div class="nr">7</div><div class="info"><h5>Orientação de Estudos 1:1</h5><div class="pos">Meia · ao vivo · score 6.0</div><p>Acompanhamento individual e ao vivo com orientador pedagógico.</p></div><span class="tag">PRATA</span></div>
+        <div class="p-card"><div class="nr">6</div><div class="info"><h5>Cronograma Personalizado</h5><div class="pos">Volante · organiza o jogo</div><p>O calendário que cabe na sua rotina. Sem ele, ninguém joga junto.</p></div><span class="tag">PRATA</span></div>
+        <div class="p-card"><div class="nr">5</div><div class="info"><h5>Aulas ao vivo de Seg a Sex</h5><div class="pos">Lateral-esquerdo · score 2.7</div><p>Aula ao vivo todo dia útil. Ritmo de treino de elenco profissional.</p></div><span class="tag">BRONZE</span></div>
+        <div class="p-card"><div class="nr">4</div><div class="info"><h5>Simulados Ilimitados ENEM + Vest</h5><div class="pos">Zagueiro · score 5.4</div><p>Treino pesado. Quanto mais simulado, mais firme a defesa na hora da prova.</p></div><span class="tag">BRONZE</span></div>
+        <div class="p-card"><div class="nr">3</div><div class="info"><h5>Tira-Dúvidas Ilimitado</h5><div class="pos">Zagueiro · score 4.0</div><p>Você nunca joga sozinho. Pergunta quando quiser, professor responde.</p></div><span class="tag">BRONZE</span></div>
+        <div class="p-card"><div class="nr">2</div><div class="info"><h5>Banco com +130 mil questões</h5><div class="pos">Lateral-direito · resistência</div><p>Munição pra qualquer ataque que a prova fizer. ENEM + vestibulares.</p></div><span class="tag">BRONZE</span></div>
+        <div class="p-card"><div class="nr">1</div><div class="info"><h5>Simulado Diagnóstico</h5><div class="pos">Goleiro · ponto de partida</div><p>Onde tudo começa. Mostra de onde você sai e pra onde precisa chegar.</p></div><span class="tag">BRONZE</span></div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Por que escalamos assim</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:60ch;margin-bottom:24px">A posição de cada benefício no campo segue a <strong>valorização real dos alunos da Filadd</strong> (dado de pesquisa interna). Plano de Estudos é o capitão (mais valorizado, score 6.4). Kit Físico não entra como figurinha — ele é o <strong>prêmio físico</strong> que vem automático quando o aluno completa metade do álbum.</p>
+  </div>
+</section>
+
+<!-- ============ ELENCO · O TIME DA VIDA REAL ============ -->
+<section class="elenco" id="elenco">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Branding · quem joga pela Filadd</span>
+        <h2>O <span class="y">Elenco</span> da Filadd. <br/>11 no campo. O resto no <span class="b">vestiário.</span></h2>
+      </div>
+      <p class="lede">O Time Titular são os 11 <strong>benefícios</strong>. O Elenco são as <strong>pessoas reais</strong> que entregam esses benefícios. Professores, mentores, orientadores, atendimento — quem realmente faz a Filadd acontecer. A campanha é a primeira oportunidade pública de mostrar todo mundo.</p>
+    </div>
+
+    <div class="elenco-intro">
+      <div class="big">2<br/>camadas</div>
+      <div class="copy">
+        <h3>Por que ter as duas camadas</h3>
+        <p><strong>Camada 1 (Time Titular):</strong> 11 benefícios escalados como jogadores. <strong>É o produto.</strong></p>
+        <p style="margin-top:10px"><strong class="">Camada 2 (Elenco):</strong> as pessoas reais por trás de cada benefício. <strong>É a marca.</strong> Quando o estudante completa uma figurinha "Mentoria de Redação", ele descobre quem é o professor real que faz aquela mentoria. <strong>O time titular vira gente.</strong></p>
+      </div>
+    </div>
+
+    <div class="elenco-grid">
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · COMISSÃO TÉCNICA</div>
+        <h4>Orientadores Pedagógicos</h4>
+        <div class="quem">Estratégia individual com o aluno</div>
+        <p>São os que sentam na videochamada 1:1 e desenham o plano de estudos. <strong>Cabeça por trás do Plano Individualizado e do Cronograma</strong>. Entregam dois dos benefícios mais valorizados pelos alunos.</p>
+      </div>
+
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · ESTRELAS DO TIME</div>
+        <h4>Professores Principais</h4>
+        <div class="quem">As caras conhecidas da plataforma</div>
+        <p>Quem aparece nas aulas ao vivo, nos vídeos curtos, na frente da câmera. Faces que o aluno já reconhece. <strong>São o "elenco fotogênico" — figurinha mais cobiçada do álbum físico.</strong></p>
+      </div>
+
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · TREINADORES ESPECIALISTAS</div>
+        <h4>Mentores de Redação</h4>
+        <div class="quem">Mentoria individual e ao vivo</div>
+        <p>Especialistas em redação que conduzem as mentorias 1:1. <strong>Entregam o benefício de score 5.8</strong> — terceira coisa mais valorizada pelos alunos. Figurinha rara do álbum, com versão brilhante.</p>
+      </div>
+
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · CIENTISTAS DO JOGO</div>
+        <h4>Professores que treinam a GenIA</h4>
+        <div class="quem">A inteligência por trás da IA</div>
+        <p>Professores especialistas que treinam, validam e curam o conteúdo da GenIA. <strong>A IA não cai do céu — tem gente treinando.</strong> Mostrar isso é diferencial competitivo.</p>
+      </div>
+
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · BANCO ESTRATÉGICO</div>
+        <h4>Professores do Tira-Dúvidas</h4>
+        <div class="quem">Entram quando o aluno precisa</div>
+        <p>Quem responde as perguntas individuais que pipocam toda hora. <strong>Banco que sempre tem alguém pronto pra entrar em campo.</strong> Volume grande, atendimento individualizado.</p>
+      </div>
+
+      <div class="elenco-card">
+        <div class="pos">POSIÇÃO · TIME DE APOIO</div>
+        <h4>Equipe de Atendimento</h4>
+        <div class="quem">A logística que faz tudo rodar</div>
+        <p>Suporte ao aluno, dúvidas administrativas, retenção, sucesso do estudante. <strong>O time que ninguém vê em campo mas sem ele o jogo não acontece.</strong> Merecem aparecer no álbum.</p>
+      </div>
+    </div>
+
+    <div class="bridge">
+      <div class="ic">⚽</div>
+      <div>
+        <h4>Como o Elenco se conecta com o Bolão</h4>
+        <p>Cada figurinha do álbum tem <strong>uma frente (o benefício)</strong> e <strong>um verso (a pessoa real)</strong>. Quando o estudante cola a figurinha "Mentoria de Redação" no álbum, ele descobre QUEM é a professora especialista por trás. <strong>O Bolão deixa de ser só palpite — vira o jeito de conhecer quem joga pela sua aprovação.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÁLBUM FÍSICO COPA FILADD ============ -->
+<section class="album" id="album">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">O produto colecionável</span>
+        <h2>O <span class="b">Álbum da Copa Filadd</span>: <br/>físico, real, da mesma vibe dos clássicos.</h2>
+      </div>
+      <p class="lede">Álbum de figurinhas inspirado nos <strong>álbuns oficiais de Copa do Mundo</strong> (Panini, Brahma, etc.) — mas com o elenco da Filadd. Versão física limitada como prêmio, versão digital pra todo participante do Bolão.</p>
+    </div>
+
+    <div class="album-wrap">
+      <!-- ÁLBUM MOCKUP -->
+      <div class="album-mockup">
+        <div class="album-head">
+          <div class="br">COPA NA FILADD · EDIÇÃO 2026</div>
+          <h3>ÁLBUM <span class="y">OFICIAL</span></h3>
+          <div class="sub">22 figurinhas · 11 titulares + reservas</div>
+        </div>
+
+        <div class="figurinhas-mini">
+          <div class="fig rare"><div class="face r">10</div><div class="nm-mini">PROF<br/>RAFA</div><div class="pos-mini">Plano</div></div>
+          <div class="fig"><div class="face">11</div><div class="nm-mini">PROFA<br/>MICHELE</div><div class="pos-mini">Redação</div></div>
+          <div class="fig"><div class="face">9</div><div class="nm-mini">PROF<br/>ALBERTO</div><div class="pos-mini">Correção</div></div>
+          <div class="fig"><div class="face">8</div><div class="nm-mini">PROF<br/>EDU</div><div class="pos-mini">Carreira</div></div>
+          <div class="fig"><div class="face">7</div><div class="nm-mini">PROF<br/>MATHEUS</div><div class="pos-mini">Orient 1:1</div></div>
+          <div class="fig empty"></div>
+          <div class="fig"><div class="face">5</div><div class="nm-mini">EQUIPE<br/>LIVES</div><div class="pos-mini">Seg-Sex</div></div>
+          <div class="fig empty"></div>
+          <div class="fig"><div class="face">3</div><div class="nm-mini">TIME<br/>TIRA-DÚV</div><div class="pos-mini">Atende</div></div>
+          <div class="fig empty"></div>
+          <div class="fig"><div class="face">2</div><div class="nm-mini">PROFS<br/>GENIA</div><div class="pos-mini">IA</div></div>
+          <div class="fig"><div class="face">1</div><div class="nm-mini">EQUIPE<br/>SIM DIAG</div><div class="pos-mini">Diagnóst</div></div>
+        </div>
+      </div>
+
+      <!-- ÁLBUM INFO -->
+      <div class="album-info">
+        <h3>O que é o álbum</h3>
+        <p>Álbum físico, papel de qualidade, identidade visual oficial da campanha. Inspirado nos álbuns clássicos de Copa do Mundo. <strong>Cada figurinha tem foto + nome + posição + função real na Filadd + "frase do jogador"</strong>. O álbum vira objeto de marca — branded content que vive na estante do aluno.</p>
+
+        <div class="album-versions">
+          <div class="album-ver">
+            <div class="tg">VERSÃO 01</div>
+            <h5>Álbum Físico</h5>
+            <p>Tiragem limitada. Vai por correio para <strong>top do Bolão, embaixadores, influenciadores convidados</strong> e ganhadores dos sorteios grandes (PS5/iPad/bolsas).</p>
+          </div>
+          <div class="album-ver dig">
+            <div class="tg">VERSÃO 02</div>
+            <h5>Álbum Digital</h5>
+            <p>Disponível pra <strong>todo participante do Bolão</strong>. Aparece no perfil da Comunidadd. Figurinhas desbloqueiam conforme o aluno acerta palpites.</p>
+          </div>
+        </div>
+
+        <h3 style="font-size:22px;margin-top:8px">Como o álbum se conecta com o resto da campanha</h3>
+        <ul class="album-bullets">
+          <li><strong>Bolão</strong> — cada acerto cola figurinha digital no álbum.</li>
+          <li><strong>Time Titular</strong> — capa do álbum é a escalação dos 11 benefícios.</li>
+          <li><strong>Elenco</strong> — cada figurinha mostra a pessoa real que entrega o benefício.</li>
+          <li><strong>Comunidadd</strong> — drops surpresa de figurinhas raras só no grupo.</li>
+          <li><strong>Lives</strong> — códigos secretos liberam figurinha durante a transmissão.</li>
+          <li><strong>Sorteios</strong> — álbum completo (digital) = entra nos sorteios grandes.</li>
+          <li><strong>Influenciadores</strong> — recebem álbum físico antecipado pra mostrar nas redes.</li>
+          <li><strong>Pós-Copa</strong> — álbum vira lembrança de marca · prova social da Filadd.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LP DO TIME ============ -->
+<section class="lp-time" id="lp-time">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Hub de branding · permanente</span>
+        <h2>A <span class="y">Landing Page do Time</span>: <br/>onde mora o elenco completo.</h2>
+      </div>
+      <p class="lede">Página dedicada apresentando <strong>cada pessoa do elenco real da Filadd</strong>. Lançada na campanha da Copa, fica no ar depois — vira <strong>hub permanente de branding</strong>. Reforça que a Filadd não é só uma plataforma — tem gente de verdade entregando.</p>
+    </div>
+
+    <div class="lp-wireframe">
+      <div class="lp-browser">
+        <div class="lp-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="url">filadd.com.br/time</span>
+        </div>
+
+        <div class="lp-hero-mini">
+          <div class="eyebrow-lp">Conheça quem joga pela sua aprovação</div>
+          <h3>O time inteiro <br/>da <span class="y">Filadd</span></h3>
+          <p>Professores, mentores, orientadores e atendimento. <br/>Todo mundo que faz a sua aprovação acontecer.</p>
+        </div>
+
+        <div class="lp-filters">
+          <span class="f act">Todos</span>
+          <span class="f">Orientadores</span>
+          <span class="f">Professores</span>
+          <span class="f">Mentores Redação</span>
+          <span class="f">Tira-Dúvidas</span>
+          <span class="f">GenIA</span>
+          <span class="f">Atendimento</span>
+        </div>
+
+        <div class="lp-cards">
+          <div class="lp-person"><div class="av">R</div><div class="nm-lp">Prof. Rafa</div><div class="role-lp">Plano de Estudos</div></div>
+          <div class="lp-person"><div class="av">M</div><div class="nm-lp">Profa. Michele</div><div class="role-lp">Mentora Redação</div></div>
+          <div class="lp-person"><div class="av">A</div><div class="nm-lp">Prof. Alberto</div><div class="role-lp">Correção</div></div>
+          <div class="lp-person"><div class="av">E</div><div class="nm-lp">Prof. Edu</div><div class="role-lp">Carreira</div></div>
+          <div class="lp-person"><div class="av">M</div><div class="nm-lp">Prof. Matheus</div><div class="role-lp">Orientação 1:1</div></div>
+          <div class="lp-person"><div class="av">L</div><div class="nm-lp">Equipe Lives</div><div class="role-lp">Aulas Seg-Sex</div></div>
+          <div class="lp-person"><div class="av">T</div><div class="nm-lp">Time Tira-Dúv</div><div class="role-lp">Atendimento</div></div>
+          <div class="lp-person"><div class="av">G</div><div class="nm-lp">Profs GenIA</div><div class="role-lp">Treino da IA</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lp-purposes">
+      <div class="lp-purpose">
+        <div class="lb">PROPÓSITO 01</div>
+        <h5>Humaniza a marca</h5>
+        <p>Mostra que tem <strong>gente de verdade</strong> por trás de cada benefício. Diferencial enorme contra concorrente que vende como "plataforma de IA".</p>
+      </div>
+      <div class="lp-purpose">
+        <div class="lb">PROPÓSITO 02</div>
+        <h5>Prova social pra captação</h5>
+        <p>Aluno em dúvida visita a página, vê o tamanho do time real, sente segurança. <strong>Reforço de conversão</strong> em todo o funil.</p>
+      </div>
+      <div class="lp-purpose">
+        <div class="lb">PROPÓSITO 03</div>
+        <h5>Hub permanente pós-Copa</h5>
+        <p>A página continua no ar depois da campanha. Vira <strong>ativo perene de branding</strong> da Filadd — usado em ads, no site, em institucional.</p>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Como a LP do Time conversa com a campanha</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">A LP é o destino orgânico do conteúdo de branding da Copa. Cada peça da campanha pode redirecionar pra lá pra reforçar autoridade e segurança.</p>
+
+    <div class="mech-list">
+      <div class="mech-row"><div class="nr">A</div><div><h5>Manifesto chama "conheça o time inteiro"</h5><p>Conexão direta com a página de Time. Link aparece em rodapé de cada conteúdo de aquecimento.</p></div></div>
+      <div class="mech-row"><div class="nr">B</div><div><h5>Cada figurinha digital linka pro perfil completo na LP</h5><p>Clicou na figurinha da Profa. Michele no álbum? Vai pra página dela na LP do Time. Conhece a pessoa, entende o método, ganha confiança na Filadd.</p></div></div>
+      <div class="mech-row"><div class="nr">C</div><div><h5>Ads de captação usam fotos do elenco real</h5><p>Em vez de stock photo, criativos com a galera real da Filadd. <strong>Performance + branding no mesmo criativo.</strong></p></div></div>
+      <div class="mech-row"><div class="nr">D</div><div><h5>Pós-Copa: LP vira página institucional permanente</h5><p>Acabou a campanha, a LP continua. Vira o "Quem somos" elevado da Filadd. Conteúdo evergreen.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOLÃO ============ -->
+<section class="bolao" id="bolao">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Bolão Filadd · Latam</span>
+        <h2>Cravou? <span class="y">Marcou.</span></h2>
+      </div>
+      <p class="lede"><strong>Bolão dos jogos das 3 seleções dos países onde a Filadd opera no continente: Brasil, Argentina e Colômbia.</strong> Comunicação 100% focada no Brasil — mas com palpite também nas hermanas. <em>Não somos só Brasil. Somos América Latina.</em> A aposta acontece <strong>apenas na plataforma</strong>: bolao.filadd.com.</p>
+    </div>
+
+    <div class="bolao-grid">
+      <!-- SCOREBOARD -->
+      <div class="scoreboard">
+        <div class="scoreboard-head">
+          <span>JOGO 1 · GRUPO · COPA 2026</span>
+          <span class="live">PALPITES ABERTOS</span>
+        </div>
+        <div class="match-big">
+          <div class="side"><div class="flag">🇧🇷</div><div class="name">Brasil</div></div>
+          <div class="vs">VS</div>
+          <div class="side r"><div class="flag">🇲🇦</div><div class="name">Marrocos</div></div>
+        </div>
+        <div class="palpite">
+          <div class="pal-input you">2</div>
+          <div class="x">×</div>
+          <div class="pal-input">1</div>
+        </div>
+        <div class="score-foot">
+          <div class="btn y">Cravar palpite</div>
+          <div class="btn g">Ver ranking</div>
+          <div class="seal" style="grid-column:1/-1">
+            <span>+10 PTS · PALPITOU</span><span>+30 PTS · ACERTOU VENCEDOR</span><span>+50 PTS · PLACAR EXATO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MECÂNICA -->
+      <div class="mech-list">
+        <div class="mech-row"><div class="nr">01</div><div><h5>Entra pela LP do Bolão</h5><p>3 campos: nome, e-mail, WhatsApp. Em menos de 30 segundos tá dentro de bolao.filadd.com.</p></div></div>
+        <div class="mech-row"><div class="nr">02</div><div><h5>Palpita os jogos das 3 seleções LatAm</h5><p>Brasil + Argentina + Colômbia. <strong>9 jogos garantidos na fase de grupos</strong> (3 por seleção) + mata-mata conforme avançam. Trava no apito inicial. Palpite é placar exato.</p></div></div>
+        <div class="mech-row"><div class="nr">03</div><div><h5>Ganha pontos e/ou figurinha</h5><p><strong>Pontos servem pro ranking</strong> (semanal e geral). <strong>Figurinhas servem pro álbum</strong> (o Time Titular). São coisas diferentes. Acerto em jogo do Brasil pontua igual a Argentina/Colômbia.</p></div></div>
+        <div class="mech-row"><div class="nr">04</div><div><h5>Sobe no ranking, top 10 ganha camisa</h5><p>Ranking é por pontos acumulados. Top 10 da semana = camisa oficial (CBF se top 10 BR, ou camisa LatAm se top 10 geral). Toda semana.</p></div></div>
+        <div class="mech-row"><div class="nr">05</div><div><h5>Completa o álbum, concorre aos grandes</h5><p>Álbum cheio (11 figurinhas) = entra nos 3 sorteios separados: PS5, iPad e 10 bolsas integrais Filadd.</p></div></div>
+      </div>
+    </div>
+
+    <!-- MECÂNICA DETALHADA · PONTOS vs FIGURINHAS -->
+    <div class="div"></div>
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Como funciona: pontos vs figurinhas</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">São <strong>dois sistemas separados</strong> que rodam em paralelo. Pontos alimentam o ranking semanal (prêmio: camisa CBF). Figurinhas alimentam o álbum (prêmio: kit físico + sorteios grandes). Quanto mais você acerta, mais ganha nos dois.</p>
+
+    <div class="premios-grid" style="grid-template-columns:repeat(2,1fr)">
+      <!-- PONTOS -->
+      <div class="premio">
+        <div class="ic">📊</div>
+        <div class="lb">SISTEMA 01 · PONTOS</div>
+        <h4>Ranking semanal</h4>
+        <p style="margin-bottom:14px">Toda ação no Bolão vira ponto. Os pontos acumulam no ranking. <strong>Não precisa acertar pra pontuar</strong> — só palpitar já dá ponto.</p>
+        <div class="how">
+          <strong>Tabela de pontos</strong>
+          • Palpitou (mesmo errando): <b>+10 pts</b><br/>
+          • Acertou o vencedor: <b>+30 pts</b><br/>
+          • Acertou o placar exato: <b>+50 pts</b><br/>
+          • Indicou amigo que palpitou: <b>+15 pts</b><br/>
+          • Assistiu live "Treino Aberto": <b>+20 pts</b>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px"><strong>Prêmio:</strong> Top 10 do ranking semanal ganha camisa oficial CBF.</p>
+      </div>
+
+      <!-- FIGURINHAS -->
+      <div class="premio">
+        <div class="ic">🃏</div>
+        <div class="lb">SISTEMA 02 · FIGURINHAS</div>
+        <h4>Álbum do Time Titular</h4>
+        <p style="margin-bottom:14px">Cada figurinha do álbum é 1 benefício real da Filadd. <strong>Pra ganhar figurinha tem que ACERTAR</strong>. Palpite errado não cola figurinha (mas pontua).</p>
+        <div class="how">
+          <strong>Como cola figurinha</strong>
+          • Acertou o vencedor: <b>1 figurinha aleatória (bronze)</b><br/>
+          • Acertou o placar exato: <b>1 figurinha rara (prata/ouro)</b><br/>
+          • Top 10 da semana: <b>1 figurinha rara extra</b><br/>
+          • Indicou amigo: <b>figurinha "Capitão" exclusiva</b><br/>
+          • Drop surpresa na Comunidadd: <b>figurinha brilhante</b>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px"><strong>Prêmios:</strong> 6 figurinhas = kit Filadd automático. 11 figurinhas = entra nos sorteios.</p>
+      </div>
+    </div>
+
+    <!-- CALENDÁRIO DE JOGOS LATAM -->
+    <div class="brasil-cal">
+      <h3>9 jogos LatAm · fase de grupos</h3>
+      <div class="match-row">
+        <div class="card-match"><div class="when">SÁB<br/>13 JUN</div><div class="vs">🇧🇷 Brasil <span class="y">×</span> Marrocos</div></div>
+        <div class="card-match"><div class="when">QUA<br/>17 JUN</div><div class="vs">🇧🇷 Brasil <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">DOM<br/>21 JUN</div><div class="vs">🇧🇷 Brasil <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">DOM<br/>14 JUN</div><div class="vs">🇦🇷 Argentina <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">QUI<br/>18 JUN</div><div class="vs">🇦🇷 Argentina <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">SEG<br/>22 JUN</div><div class="vs">🇦🇷 Argentina <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">SEG<br/>15 JUN</div><div class="vs">🇨🇴 Colômbia <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">SEX<br/>19 JUN</div><div class="vs">🇨🇴 Colômbia <span class="y">×</span> a definir</div></div>
+        <div class="card-match"><div class="when">TER<br/>23 JUN</div><div class="vs">🇨🇴 Colômbia <span class="y">×</span> a definir</div></div>
+      </div>
+      <p style="margin-top:18px;font-size:13px;color:var(--ink-mute);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.1em">→ Mata-mata abre conforme cada seleção avança. Comunicação principal foca o Brasil — Argentina e Colômbia são camada extra LatAm. Plano B ("Bolão Latam") ganha protagonismo se o Brasil cair.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRÊMIOS ============ -->
+<section class="premios" id="premios">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Quem joga, ganha</span>
+        <h2>Prêmios <span class="y">que casam</span> com a Copa.</h2>
+      </div>
+      <p class="lede">Não é só kit. <strong>Itens oficiais da Copa</strong> (camisas, bola), tecnologia desejada (PS5, iPad) e o prêmio que muda uma vida: <strong>bolsa integral Filadd</strong>. Três sorteios separados — três chances de viralizar.</p>
+    </div>
+
+    <div class="premios-grid">
+      <div class="premio amr">
+        <div class="ic">🎒</div>
+        <div class="lb">AUTOMÁTICO</div>
+        <h4>Kit Filadd</h4>
+        <div class="qty">~500 kits · meio time (6 cards)</div>
+        <p>Apostila, caderno, brindes oficiais da Filadd. Sem sorteio: completou 6 cards, ganhou.</p>
+        <div class="how"><strong>Como ganha</strong>6 cards do Time Titular</div>
+      </div>
+
+      <div class="premio">
+        <div class="ic">👕</div>
+        <div class="lb">RANKING</div>
+        <h4>Camisa CBF oficial</h4>
+        <div class="qty">~40 camisas · top 10 semanal × 4 sem</div>
+        <p>Camisa da Seleção Brasileira oficial. Toda semana 10 ganhadores entre os top do ranking semanal do Bolão.</p>
+        <div class="how"><strong>Como ganha</strong>Top 10 ranking semanal</div>
+      </div>
+
+      <div class="premio">
+        <div class="ic">⚽</div>
+        <div class="lb">INDICAÇÃO</div>
+        <h4>Bola Adidas Trionda</h4>
+        <div class="qty">~30 bolas · top indicadores</div>
+        <p>Bola oficial da Copa do Mundo 2026. Quem trouxe mais amigos pro Bolão leva pra casa.</p>
+        <div class="how"><strong>Como ganha</strong>Top 30 indicadores</div>
+      </div>
+
+      <div class="premio hi">
+        <div class="ic">🎮</div>
+        <div class="lb">SORTEIO 01</div>
+        <h4>PlayStation 5</h4>
+        <div class="qty">1 PS5 · entre quem tem 11 cards</div>
+        <p>Sorteio difícil, prêmio grande. Só entram os que completaram <strong>todo o Time Titular Filadd</strong>.</p>
+        <div class="how"><strong>Como concorre</strong>11/11 cards completos</div>
+      </div>
+
+      <div class="premio hi">
+        <div class="ic">📱</div>
+        <div class="lb">SORTEIO 02</div>
+        <h4>iPad</h4>
+        <div class="qty">1 iPad · sorteio separado</div>
+        <p>Segundo sorteio independente. Mesmas regras: time completo concorre. Quem ganha o PS5 fica de fora desse pra dar chance pra mais gente.</p>
+        <div class="how"><strong>Como concorre</strong>11/11 cards completos</div>
+      </div>
+
+      <div class="premio hi">
+        <div class="ic">🎓</div>
+        <div class="lb">SORTEIO 03 · O GRANDE</div>
+        <h4>10 bolsas integrais Filadd</h4>
+        <div class="qty">10 bolsas · 100% de desconto</div>
+        <p>O prêmio que vira manchete. <strong>10 bolsas de estudos integrais</strong> sorteadas entre todos que completaram o Time Titular. É o prêmio que muda a vida de quem ganha.</p>
+        <div class="how"><strong>Como concorre</strong>11/11 cards completos</div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Por que essa estrutura funciona</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:60ch;margin-bottom:24px">3 prêmios pequenos pra dar dopamina diária (kit, camisa, bola) + 3 prêmios grandes pra dar manchete (PS5, iPad, 10 bolsas). Cada sorteio separado = 3 momentos de comunicação distintos no final da campanha.</p>
+
+    <div class="unlock-row">
+      <div class="unlock"><div class="lb">PEQUENO</div><h5>Kit · Camisa · Bola</h5><p>Volume alto, prêmio garantido, gera engajamento constante. <strong>Combustível diário.</strong></p></div>
+      <div class="unlock"><div class="lb">GRANDE</div><h5>PS5 · iPad · Bolsa</h5><p>Sorteios pesados, difíceis de ganhar. <strong>Combustível de manchete.</strong> 3 momentos virais.</p></div>
+      <div class="unlock"><div class="lb">REGRA</div><h5>Time completo é o filtro</h5><p>Só quem palpitou em <strong>todos os jogos do Brasil</strong> chega lá. Garante engajamento até o final.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVES ============ -->
+<section class="lives" id="lives">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow lt">Lives da campanha</span>
+        <h2>Live é <span class="y">aulão</span>.<br/>Live é treino aberto.</h2>
+      </div>
+      <p class="lede">Lives da Filadd acontecem nos <strong>dias SEM jogo</strong>. No YouTube, são aulões de <strong>1 hora</strong> sobre o que o estudante precisa saber pra começar a estudar de forma intensiva pro ENEM. No TikTok, em dia de jogo do Brasil, é ao vivo de 15 min com influenciador convidado.</p>
+    </div>
+
+    <div class="lives-grid">
+      <!-- LIVE YOUTUBE -->
+      <div class="live-card">
+        <div class="live-thumb">
+          <div class="tag">YOUTUBE · 1H · DIAS SEM JOGO</div>
+          <div class="play">▶</div>
+          <div class="who">Treino Aberto · Aulão Intensivo ENEM 2026</div>
+        </div>
+        <div class="live-body">
+          <div class="canal">YouTube · Filadd</div>
+          <div class="slogan">Treino aberto.</div>
+          <p>Aulão de <strong>1 hora</strong>, conduzido por professores da Filadd. Pauta única: o que você precisa saber pra começar a estudar de forma <strong>intensiva pro ENEM</strong>. Tema diferente em cada live: redação, humanas, exatas, atualidades, plano de virada.</p>
+          <div class="meta">
+            <span>1 hora</span>
+            <span>Aulão intensivo</span>
+            <span>Professores Filadd</span>
+            <span>Foco ENEM 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIVE TIKTOK -->
+      <div class="live-card">
+        <div class="live-thumb" style="background:linear-gradient(135deg,#ff0050,#000)">
+          <div class="tag" style="background:#fff;color:#000">TIKTOK · DIA DE JOGO</div>
+          <div class="play">▶</div>
+          <div class="who">Antes do Apito · com influenciador convidado</div>
+        </div>
+        <div class="live-body">
+          <div class="canal">TikTok · Filadd</div>
+          <div class="slogan">Antes do apito.</div>
+          <p>~15 min ao vivo, 2h antes do jogo do Brasil. <strong>Sempre com 1 influenciador de futebol convidado</strong>, fazendo a ponte entre o jogo do dia e o ENEM (ex.: "esse jogo me lembra a redação de 2018"). Palpite ao vivo + código que dá figurinha.</p>
+          <div class="meta">
+            <span>15 min</span>
+            <span>Influenciador convidado</span>
+            <span>Palpite ao vivo</span>
+            <span>Código secreto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div" style="background:rgba(255,255,255,.1);margin:48px 0"></div>
+
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--branco);text-transform:uppercase;margin-bottom:18px">Calendário de lives</h3>
+    <div class="cal-rows" style="margin-top:24px">
+      <div class="cal-row"><div class="when"><div class="sem">L1</div><div class="dt">10 JUN · QUA</div></div><div class="info"><h4>Aulão Intensivo · Plano de Virada</h4><div class="sub">YouTube · 19h · 1 hora</div><ul><li>Como começar a estudar intensivo pro ENEM 2026</li><li>Plano de virada em 4 meses até a prova</li><li>Sorteio ao vivo: 5 camisas CBF</li><li>Drop: figurinha rara pra quem assistir até o fim</li></ul></div></div>
+      <div class="cal-row"><div class="when"><div class="sem">L2</div><div class="dt">12 JUN · SEX (sem jogo)</div></div><div class="info"><h4>Aulão Intensivo · Redação ENEM</h4><div class="sub">YouTube · 19h · 1 hora</div><ul><li>O que você precisa saber pra tirar 900+ na redação</li><li>Estrutura, repertório, treino</li><li>Drop: cupom de correção de redação extra</li><li>Quiz ao vivo</li></ul></div></div>
+      <div class="cal-row hot"><div class="when"><div class="sem">L3</div><div class="dt">13 JUN · SÁB · 14h</div></div><div class="info"><h4>Antes do Apito · Brasil × Marrocos</h4><div class="sub">TikTok ao vivo · 15 min · com influenciador convidado</div><ul><li>2h antes do jogo do Brasil</li><li>Influenciador de futebol palpita ao vivo + conecta com ENEM</li><li>Código secreto pra dar figurinha rara</li><li>Quem entra ganha entrada extra no ranking</li></ul></div></div>
+      <div class="cal-row"><div class="when"><div class="sem">L4</div><div class="dt">16 JUN · TER (sem jogo)</div></div><div class="info"><h4>Aulão Intensivo · Humanas e Atualidades</h4><div class="sub">YouTube · 19h · 1 hora</div><ul><li>Os temas de humanas/atualidades mais quentes pra 2026</li><li>Os países da Copa que mais caem no ENEM</li><li>Drop: 3 bolas Adidas Trionda sorteadas</li><li>Quiz ao vivo</li></ul></div></div>
+      <div class="cal-row"><div class="when"><div class="sem">L5</div><div class="dt">19 JUN · SEX (sem jogo)</div></div><div class="info"><h4>Aulão Intensivo · Exatas + Natureza</h4><div class="sub">YouTube · 19h · 1 hora</div><ul><li>O que cai mais em matemática e ciências da natureza</li><li>Como organizar o estudo pesado dessas áreas</li><li>Drop: kit Filadd surpresa</li></ul></div></div>
+      <div class="cal-row hot"><div class="when"><div class="sem">L6+</div><div class="dt">CONFORME O BRASIL</div></div><div class="info"><h4>Antes do Apito · mata-mata</h4><div class="sub">TikTok · 2h antes de cada jogo · com influenciador convidado</div><ul><li>Plano A: live antes de cada jogo do Brasil</li><li>Plano B: 1 live antes da semi · 1 antes da final</li><li>Sempre com 1 creator de futebol diferente</li></ul></div></div>
+      <div class="cal-row"><div class="when"><div class="sem">LF</div><div class="dt">21 JUL · TER (pós-final)</div></div><div class="info"><h4>Aulão Final · Acabou a Copa, começa a sua</h4><div class="sub">YouTube · 19h · 1 hora</div><ul><li>Anúncio dos vencedores do PS5, iPad e 10 bolsas</li><li>Mensagem: "Acabou a Copa. Começa a sua."</li><li>Plano de estudos intensivo até o ENEM 2026</li><li>Lançamento da régua pós-Copa</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMUNIDADE WHATSAPP ============ -->
+<section class="wa" id="wa">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Comunidadd no WhatsApp</span>
+        <h2>O <span class="y">vestiário</span> do<br/>Time Filadd.</h2>
+      </div>
+      <p class="lede">WhatsApp não é canal de comunicação — é parte do produto. <strong>Algo precisa acontecer lá dentro</strong> que não acontece em nenhum outro lugar. Quem entra, fica.</p>
+    </div>
+
+    <div class="wa-grid">
+      <div class="wa-phone">
+        <div class="wa-bar">
+          <div class="av">F</div>
+          <div class="info">
+            <div class="name">Comunidadd · Copa Filadd</div>
+            <div class="stat">8.247 membros · online</div>
+          </div>
+        </div>
+        <div class="wa-msgs">
+          <div class="wa-msg them">⚽ <b>BRASIL × MARROCOS</b> em 2h! Bora torcer 🇧🇷<br/>Quem ainda não palpitou, corre lá ➜ bolao.filadd.com <span class="time">14:00</span></div>
+          <div class="wa-msg them">😂 Esse meme do Marrocos me matou hahaha [GIF] <span class="time">14:05</span></div>
+          <div class="wa-msg you">eu palpitei 2x1 br kkkkk se errar finjo que não conheço ninguém <span class="time">14:07</span></div>
+          <div class="wa-msg them">🤣 cabou amizade. <span class="time">14:08</span></div>
+          <div class="wa-msg them">🎤 LIVE "Antes do Apito" começa em 5 min no TikTok da Filadd<br/>Convidado: @felipe_neto_do_futebol <span class="time">14:55</span></div>
+          <div class="wa-msg them" style="margin-top:18px"><b>📊 PLACAR DO BOLÃO — FIM DO JOGO</b><br/>Brasil 2 × 1 Marrocos 🏆<br/><br/>Acertaram o placar exato:<br/>• @larissa.enem<br/>• @duduvest<br/>• @theus 🔥<br/>+ 17 pessoas<br/><br/>Acertaram o vencedor:<br/>+ 124 pessoas<br/><br/>Pontos do dia somados no ranking ✅ <span class="time">19:30</span></div>
+          <div class="wa-msg you">CARALHO @theus de novo no top kkkk <span class="time">19:32</span></div>
+        </div>
+      </div>
+
+      <div class="wa-body">
+        <h3>O grupo é <br/>pra zoeira.</h3>
+        <div class="slg">Meme. Torcida. Resultado do dia.</div>
+        <p>WhatsApp <strong>não é canal de aposta</strong>. A aposta acontece <em>apenas</em> na plataforma (bolao.filadd.com). A Comunidadd é o vestiário: <strong>zoeira durante o jogo, meme do gol, e o placar de quem acertou no final do dia</strong>. Quem foi bem aparece, quem errou paga prenda em risada.</p>
+
+        <div class="wa-grid-mini">
+          <div class="wa-mini"><h5>😂 Zoeira em tempo real</h5><p>Meme do gol, do erro do juiz, do palpite errado do amigo. Vibe de grupo de amigo assistindo o jogo.</p></div>
+          <div class="wa-mini"><h5>📊 Placar do Bolão · fim do dia</h5><p>Lista oficial de quem acertou no jogo do dia. Pontos somados no ranking. Quem foi bem é parabenizado.</p></div>
+          <div class="wa-mini"><h5>🔔 Lembrete de jogo</h5><p>2h antes do jogo: link pra plataforma. <em>"Ainda não palpitou? Corre lá."</em> Aposta só na plataforma.</p></div>
+          <div class="wa-mini"><h5>🎤 Acesso antecipado às lives</h5><p>Lives no TikTok e YouTube divulgadas aqui 10 min antes da pública.</p></div>
+          <div class="wa-mini"><h5>🎁 Aviso de drop</h5><p>Quando libera figurinha rara ou cupom na plataforma, o aviso sai primeiro no grupo.</p></div>
+          <div class="wa-mini"><h5>🏆 Ganhadores no ar</h5><p>Quem ganhou camisa, bola, kit ou prêmio grande é parabenizado publicamente — vira aspiração.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWITTER X ============ -->
+<section class="twitter" id="tw">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">X / Twitter</span>
+        <h2>Genia como <span class="b">voz da Filadd</span> em tempo real.</h2>
+      </div>
+      <p class="lede">A Genia (IA mascote) é nosso porta-voz no X durante a Copa. Comenta jogos, palpita, brinca com outras marcas. <strong>O objetivo no X não é vender — é ganhar relevância.</strong></p>
+    </div>
+
+    <div class="tw-grid">
+      <!-- TWEET DA GENIA -->
+      <div class="tw-card">
+        <div class="head">
+          <div class="av">G</div>
+          <div class="who"><span class="nm">Genia · Filadd</span><span class="hd">@genia_filadd</span></div>
+          <span class="when">· agora</span>
+        </div>
+        <div class="body">brasil 2x1 marrocos. anota aí. se eu errar, eu mesma corrijo. <br/><br/>já palpitou no <b>#BolãoFiladd</b>? 👀</div>
+        <div class="actions"><span>💬 234</span><span>🔁 1,2K</span><span>❤️ 8,4K</span><span>📊 184K</span></div>
+      </div>
+
+      <!-- TWEET REPLY MARCA -->
+      <div class="tw-card">
+        <div class="head">
+          <div class="av" style="background:#003a87">B</div>
+          <div class="who"><span class="nm">Brahma</span><span class="hd">@cervejabrahma</span></div>
+          <span class="when">· 2h</span>
+        </div>
+        <div class="body" style="margin-bottom:8px">Tá liberado acreditar. 🇧🇷</div>
+        <div style="padding:12px;background:var(--off);border-radius:10px;border-left:3px solid var(--azul-aprovado);margin-top:10px">
+          <div class="head" style="margin-bottom:6px"><div class="av" style="width:32px;height:32px;font-size:14px">G</div><div class="who"><span class="nm" style="font-size:13px">Genia · Filadd</span><span class="hd" style="font-size:11px">@genia_filadd</span></div></div>
+          <div class="body" style="font-size:13.5px;margin-bottom:0">tá liberado acreditar e estudar. <b>#TimeFiladd</b> 📚⚽</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tw-tactics">
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 01</div>
+        <h5>Genia comenta em tempo real</h5>
+        <p>Antes, durante e depois de cada jogo do Brasil. Comentário curto, humano, com viés de "torcedora que também estuda". 5-8 tweets por jogo.</p>
+      </div>
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 02</div>
+        <h5>Resposta a marcas grandes</h5>
+        <p>Brahma, Itaú, Nike, Adidas, Magalu, McDonald's: assim que postarem da Copa, Genia responde com algo educacional + bem-humorado. <strong>Newsjacking ético.</strong></p>
+      </div>
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 03</div>
+        <h5>Threads de palpite</h5>
+        <p>1 dia antes de cada jogo do Brasil, Genia abre thread com palpite + "como esse jogo conecta com matéria do ENEM". Salvável, compartilhável.</p>
+      </div>
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 04</div>
+        <h5>Memes pós-jogo (IA)</h5>
+        <p>15 min depois de cada jogo, IA gera 3 memes do resultado. Posta automático. <strong>Velocidade vence concorrência</strong> no real-time.</p>
+      </div>
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 05</div>
+        <h5>Trending topic do Bolão</h5>
+        <p>Cada jogo do Brasil = hashtag #BolaoFiladd + #BrasilXSeleção. Estudantes da Comunidadd amplificam organicamente.</p>
+      </div>
+      <div class="tw-tactic">
+        <div class="lb">TÁTICA 06</div>
+        <h5>Cross-talk com creators</h5>
+        <p>Creators de futebol (não-Filadd) marcados em tweets que valem RT. Brincadeira honesta, sem patrocínio. Vira citação orgânica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILADD LATAM ============ -->
+<section class="arg" id="arg">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Filadd Latam · ativação Córdoba</span>
+        <h2>Filadd nasceu em <span class="y">Córdoba</span>. <br/>E joga em <span class="y">4 países</span>.</h2>
+      </div>
+      <p class="lede">A Filadd nasceu em <strong>Córdoba, Argentina</strong>. Hoje opera em <strong>Argentina, Chile, Colômbia, Brasil e Índia</strong> — virou uma marca latino-americana com presença global. A campanha aproveita o encontro de líderes em Córdoba (com time argentino + chileno + colombiano + brasileiro) pra reforçar isso: <strong>somos LatAm. Rivalidade dentro de campo, união fora dele.</strong> Vibe Bad Bunny: orgulho latino sem perder o humor.</p>
+    </div>
+
+    <!-- POSICIONAMENTO LATAM -->
+    <div class="arg-banner">
+      <div class="big">🇦🇷<br/>🇨🇱<br/>🇨🇴<br/>🇧🇷</div>
+      <div class="copy">
+        <h3>Por que isso importa pra campanha</h3>
+        <p>Estamos comunicando uma campanha de <strong>Copa do Mundo</strong>. Toda Copa é também sobre <strong>continente</strong>. A Filadd é uma das poucas marcas que pode dizer com legitimidade: <em>"jogamos por 3 seleções da América Latina"</em>. Isso muda o tom da campanha — saímos do nacionalismo simples pra um <strong>orgulho LatAm contemporâneo</strong>, com humor, rivalidade saudável e união cultural.</p>
+        <div class="acts">
+          <span>Nascida em Córdoba 🇦🇷</span>
+          <span>Operação 🇦🇷 🇨🇱 🇨🇴 🇧🇷 🇮🇳</span>
+          <span>3 seleções no Bolão</span>
+          <span>Vibe Bad Bunny</span>
+          <span>Latino orgulhoso</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <!-- CONTEÚDOS DA ATIVAÇÃO CÓRDOBA -->
+    <h3 style="font-family:'Antonio',sans-serif;font-size:30px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">A ativação em Córdoba</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">Theus vai a Córdoba pro encontro de líderes — onde também vão estar os times de <strong>Chile e Colômbia</strong> da Filadd. 4 conteúdos planejados aproveitando os 3 times hispano-falantes no mesmo lugar:</p>
+
+    <div class="premios-grid">
+      <div class="premio">
+        <div class="ic">🎤</div>
+        <div class="lb">CONTEÚDO 01 · FORMATO MESA</div>
+        <h4>"3 hermanos × 1 brasileiro"</h4>
+        <p>Theus + 1 líder argentino + 1 chileno + 1 colombiano em mesa redonda. Perguntas provocativas: <em>"Quem ganha a Copa?", "Quem estuda mais?", "Quem tem melhor vestibular?"</em> Edita pra Reels/TikTok em 90s.</p>
+        <div class="how"><strong>Conexão</strong>Mostra a Filadd LatAm de forma humana e divertida</div>
+      </div>
+
+      <div class="premio">
+        <div class="ic">🏠</div>
+        <div class="lb">CONTEÚDO 02 · INSTITUCIONAL</div>
+        <h4>"Bem-vindos à casa onde nascemos"</h4>
+        <p>Bastidor da sede em Córdoba. Theus sendo recebido pelo time argentino. <strong>Conta a origem da Filadd</strong> e mostra como cresceu pra virar marca de 5 países. Foco emocional + posicionamento.</p>
+        <div class="how"><strong>Conexão</strong>Reforça branding · prova de tamanho da marca</div>
+      </div>
+
+      <div class="premio hi">
+        <div class="ic">⚽</div>
+        <div class="lb">CONTEÚDO 03 · CORE LATAM</div>
+        <h4>"Apostamos a camisa"</h4>
+        <p>Cada líder dá seu palpite oficial da Copa pra própria seleção. <strong>3 países, 3 palpites em vídeo</strong>. Quem errar mais paga prenda pública (vídeo de cumprimento depois). Série de stories + reel final.</p>
+        <div class="how" style="background:rgba(255,255,255,.15);color:rgba(255,255,255,.95)"><strong style="color:var(--amarelo)">Conexão</strong>Liga direto com o Bolão · vira conteúdo de aquecimento das 3 seleções</div>
+      </div>
+
+      <div class="premio">
+        <div class="ic">🎵</div>
+        <div class="lb">CONTEÚDO 04 · MANIFESTO LATAM</div>
+        <h4>"Somos LatAm"</h4>
+        <p>Reel com cara de filme curto: vibe Bad Bunny / festival latino. 4 bandeiras (AR, CL, CO, BR), as 3 línguas (espanhol, português, e brincadeira em inglês/Índia), trilha forte. Termina: <em>"Na Copa, cada um torce pelo seu. Na vida, jogamos juntos."</em></p>
+        <div class="how"><strong>Conexão</strong>Manifesto institucional · vira ad de marca + post-pinned</div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <!-- COMO ISSO CONECTA -->
+    <h3 style="font-family:'Antonio',sans-serif;font-size:24px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Como o Latam conversa com o resto da campanha</h3>
+    <div class="mech-list">
+      <div class="mech-row"><div class="nr">A</div><div><h5>Bolão expandido</h5><p>3 seleções no Bolão (BR + AR + CO) — tradução direta do posicionamento LatAm pro produto.</p></div></div>
+      <div class="mech-row"><div class="nr">B</div><div><h5>Plano B virou "Bolão LatAm"</h5><p>Brasil cair não é fim. Ainda tem Argentina e Colômbia em campo. O continente segue jogando.</p></div></div>
+      <div class="mech-row"><div class="nr">C</div><div><h5>Conteúdo em 3 línguas</h5><p>Algumas peças bilíngues (português + espanhol). Aproveita ativos das outras unidades Filadd.</p></div></div>
+      <div class="mech-row"><div class="nr">D</div><div><h5>Branding sobe um andar</h5><p>De "cursinho online" pra "EdTech LatAm". Vira diferencial competitivo no mercado brasileiro.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INFLUENCIADORES ============ -->
+<section class="premios" id="influ">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Influenciadores</span>
+        <h2>Creators de <span class="b">3 nichos</span> diferentes.</h2>
+      </div>
+      <p class="lede">Influenciadores são <strong>peças orgânicas</strong> do plano. Mistura entre creators de educação (que já falam com nosso público) e creators de futebol/humor (que abrem público novo). <strong>Foco principal: o convite pro TikTok "Antes do Apito" sempre tem 1 influenciador de futebol convidado.</strong></p>
+    </div>
+
+    <div class="premios-grid">
+      <!-- EDUCAÇÃO -->
+      <div class="premio">
+        <div class="ic">📚</div>
+        <div class="lb">NICHO 01 · EDUCAÇÃO</div>
+        <h4>Embaixadores Filadd + criadores de vestibular</h4>
+        <p>Embaixadores atuais (Mafe, Kemily, Acelera) + 2-3 criadores externos de vestibular. Fazem palpites públicos, mostram o Bolão, posicionam a Filadd como o lugar de quem estuda com seriedade.</p>
+        <div class="how">
+          <strong>O que entregam</strong>
+          • 1 reel anunciando o Bolão<br/>
+          • 3 stories/semana mostrando palpite<br/>
+          • Participação em 1 Aulão YouTube
+        </div>
+      </div>
+
+      <!-- FUTEBOL -->
+      <div class="premio hi">
+        <div class="ic">⚽</div>
+        <div class="lb">NICHO 02 · FUTEBOL · CORE</div>
+        <h4>Creators de futebol no TikTok "Antes do Apito"</h4>
+        <p><strong>O nicho mais importante.</strong> Tiktokers e instagrammers que comentam Brasileirão, Copa e seleção. Convidados toda live "Antes do Apito" — palpitam o jogo + fazem ponte cômica com algum tema do ENEM (ex.: "esse zagueiro me lembra a redação que zerei").</p>
+        <div class="how" style="background:rgba(255,255,255,.15);color:rgba(255,255,255,.95)">
+          <strong style="color:var(--amarelo)">O que entregam</strong>
+          • Live "Antes do Apito" no TikTok da Filadd<br/>
+          • 1 reel próprio "como eu palpitei no Bolão"<br/>
+          • Link na bio durante a semana do jogo
+        </div>
+      </div>
+
+      <!-- HUMOR -->
+      <div class="premio">
+        <div class="ic">😂</div>
+        <div class="lb">NICHO 03 · HUMOR + LIFESTYLE</div>
+        <h4>Páginas de meme e creators de comportamento</h4>
+        <p>Páginas de meme grandes (Choquei-style) + creators de "rotina de estudo" / comportamento jovem. Trazem público novo, fora do nicho edu. Postagem orgânica ou patrocinada conforme o creator.</p>
+        <div class="how">
+          <strong>O que entregam</strong>
+          • 1 post patrocinado / reel orgânico<br/>
+          • Cobertura espontânea de momentos virais<br/>
+          • Stories em dia de jogo do Brasil
+        </div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Como o TikTok "Antes do Apito" funciona com influenciador</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">A live de TikTok dia de jogo tem <strong>2 protagonistas</strong>: 1 professor/voz Filadd + 1 influenciador de futebol convidado. Formato simples, 15 minutos.</p>
+
+    <div class="mech-list">
+      <div class="mech-row"><div class="nr">01</div><div><h5>2h antes do jogo · live abre no TikTok da Filadd</h5><p>Influenciador entra ao vivo com o time Filadd. Apresenta seu palpite oficial.</p></div></div>
+      <div class="mech-row"><div class="nr">02</div><div><h5>Palpite + ponte com ENEM</h5><p>Influenciador analisa o jogo do dia + faz uma ponte cômica/curiosa com algum tema/conteúdo do ENEM. Não é aula — é gancho.</p></div></div>
+      <div class="mech-row"><div class="nr">03</div><div><h5>Código secreto liberado</h5><p>Durante a live, o influenciador solta um código. Digitando no Bolão, o estudante ganha figurinha rara.</p></div></div>
+      <div class="mech-row"><div class="nr">04</div><div><h5>Influenciador convoca pra Comunidadd</h5><p>Termina chamando o público pra entrar na Comunidadd da Filadd e palpitar o jogo. Link na bio do TikTok.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLANO A B ============ -->
+<section class="plans" id="planos">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Cenários</span>
+        <h2>O Brasil avança? <br/>O Brasil cai? <span class="y">Os dois cenários estão prontos.</span></h2>
+      </div>
+      <p class="lede">Comunicação simples nos dois casos. <strong>Sem reformatação pesada</strong> — só pivô narrativo. O Bolão e a campanha continuam vivos até o ENEM nos dois cenários.</p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan a">
+        <div class="tag">PLANO A · BRASIL AVANÇA</div>
+        <h3>Crescendo junto com a Seleção</h3>
+        <div class="slogan">"Brasil em campo, você no Bolão."</div>
+        <p>Cada vitória do Brasil é uma nova janela de captação. Bolão continua palpitando cada jogo do Brasil até a final. Card raro liberado a cada vitória.</p>
+        <ul>
+          <li>Bolão continua com os <strong>jogos do Brasil no mata-mata</strong></li>
+          <li>Drop especial a cada vitória (card "Hexa em vista")</li>
+          <li>Live "Antes do Apito" antes de cada jogo do Brasil</li>
+          <li>Final = momento mais alto do ano · sorteios dos prêmios grandes na live de encerramento</li>
+        </ul>
+      </div>
+
+      <div class="plan b">
+        <div class="tag">PLANO B · BRASIL CAI</div>
+        <h3>Bolão LatAm assume</h3>
+        <div class="slogan">"Eles saíram de campo. A gente segue jogando."</div>
+        <p>Em 24h, a campanha vira jogo da Argentina e da Colômbia — que ainda estão vivas. <strong>Bolão LatAm</strong> ganha protagonismo. O Brasil saiu de campo, mas a Filadd não — continuamos jogando pelo continente.</p>
+        <ul>
+          <li>Bolão continua nos jogos de <strong>🇦🇷 Argentina e 🇨🇴 Colômbia</strong> (e na final, todos palpitam)</li>
+          <li>Tom: <em>"a Filadd é LatAm — nosso continente segue em campo"</em></li>
+          <li>Conteúdo de Córdoba (mesa hermana) volta a ser empurrado nas redes</li>
+          <li>Lives "Treino Aberto" mantém ritmo · foco vai voltando pro ENEM</li>
+          <li>Sorteios dos prêmios grandes mantidos · regra: álbum completo até a final</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPTAÇÃO ============ -->
+<section class="cap" id="cap">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Captação de leads</span>
+        <h2>Meta realista: <span class="b">20 mil leads</span>. <br/><span class="y">200–400 novos alunos</span>.</h2>
+      </div>
+      <p class="lede">Conversão lead → aluno de <strong>1-2%</strong> na janela pós-Copa. O Bolão é a porta de entrada. A Comunidadd é o cabo de ativação. O ENEM é o destino.</p>
+    </div>
+
+    <div class="cap-funnel">
+      <div class="funnel-vis">
+        <div class="fs s1"><div class="lb">TOPO · IMPRESSÕES</div><h5>Orgânico + ads</h5><div class="nm">~6M</div></div>
+        <div class="fa">▼</div>
+        <div class="fs s2"><div class="lb">CLIQUES NA LP</div><h5>Visitantes</h5><div class="nm">~80k</div></div>
+        <div class="fa">▼</div>
+        <div class="fs s3"><div class="lb">LEADS BOLÃO</div><h5>Cadastros</h5><div class="nm">20k</div></div>
+        <div class="fa">▼</div>
+        <div class="fs s4"><div class="lb">COMUNIDADD</div><h5>Membros ativos</h5><div class="nm">~12k</div></div>
+        <div class="fa">▼</div>
+        <div class="fs s5"><div class="lb">NOVOS ALUNOS</div><h5>Matrículas</h5><div class="nm">200–400</div></div>
+      </div>
+
+      <div class="cap-side">
+        <h4>CPL meta</h4>
+        <p>Mistura de orgânico + ads + indicação. Meta blended de <strong>R$ 5–8</strong> por lead. Possível porque a Copa derruba CPM e o prêmio (PS5/iPad/bolsas) gera curiosidade alta.</p>
+
+        <div class="cpl-grid">
+          <div class="cpl-box"><div class="lb">CONSERVADOR</div><div class="vl">R$ 8</div></div>
+          <div class="cpl-box hi"><div class="lb">META</div><div class="vl">R$ 6</div></div>
+          <div class="cpl-box"><div class="lb">AGRESSIVO</div><div class="vl">R$ 4</div></div>
+        </div>
+
+        <div class="div"></div>
+
+        <h4>De onde vêm os leads</h4>
+        <p style="margin-bottom:14px">5 fontes principais, em ordem de volume esperado:</p>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li style="padding:10px 14px;background:var(--off);border-radius:10px;margin-bottom:6px;font-size:13.5px"><strong style="color:var(--azul-aprovado)">40%</strong> · Ads Meta + TikTok (criativos com PS5/bolsa)</li>
+          <li style="padding:10px 14px;background:var(--off);border-radius:10px;margin-bottom:6px;font-size:13.5px"><strong style="color:var(--azul-aprovado)">25%</strong> · Orgânico (reels, TikToks, Stories, X)</li>
+          <li style="padding:10px 14px;background:var(--off);border-radius:10px;margin-bottom:6px;font-size:13.5px"><strong style="color:var(--azul-aprovado)">15%</strong> · Indicação (cada lead trazendo amigo)</li>
+          <li style="padding:10px 14px;background:var(--off);border-radius:10px;margin-bottom:6px;font-size:13.5px"><strong style="color:var(--azul-aprovado)">15%</strong> · Creators (4 nichos parceiros)</li>
+          <li style="padding:10px 14px;background:var(--off);border-radius:10px;font-size:13.5px"><strong style="color:var(--azul-aprovado)">5%</strong> · Base atual Filadd (atual aluno indicando)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALENDÁRIO ============ -->
+<section class="cal" id="cal">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow lt">Calendário enxuto</span>
+        <h2>4 semanas <span class="y">ativas</span>. <br/>Tudo planejado.</h2>
+      </div>
+      <p class="lede">Aquecimento começa <strong>25 de maio</strong>. Bolão abre 11 de junho. Final 19 de julho. <strong>Cada semana tem 1 objetivo</strong> claro pro time não se perder.</p>
+    </div>
+
+    <div class="cal-rows">
+      <div class="cal-row">
+        <div class="when"><div class="sem">Sem 1</div><div class="dt">25–31 MAI</div></div>
+        <div class="info">
+          <h4>Aquecimento · A Convocação</h4>
+          <div class="sub">Objetivo: anunciar a campanha + começar captação</div>
+          <ul>
+            <li>Lançamento do conceito "A gente joga junto"</li>
+            <li>Apresentação do Time Titular Filadd nas redes</li>
+            <li>LP do Bolão entra no ar</li>
+            <li>Primeiros 5 creators postando</li>
+            <li>Conteúdo Argentina (Theus na fronteira) – 2 dias</li>
+            <li>Régua Comunidadd avisa: "fica de olho"</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row">
+        <div class="when"><div class="sem">Sem 2</div><div class="dt">01–07 JUN</div></div>
+        <div class="info">
+          <h4>Pré-jogo · Última chance</h4>
+          <div class="sub">Objetivo: encher o Bolão antes do apito inicial</div>
+          <ul>
+            <li>Ads de captação no peak (criativos com prêmios)</li>
+            <li>Countdown diário pro jogo de abertura</li>
+            <li>Comunicado dos prêmios (PS5, iPad, 10 bolsas)</li>
+            <li>Live "Treino Aberto" L1 (10/jun)</li>
+            <li>Push WhatsApp: "última chance antes do apito"</li>
+            <li>Genia abre conta no X e começa a tweetar</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row hot">
+        <div class="when"><div class="sem">Sem 3</div><div class="dt">08–14 JUN</div></div>
+        <div class="info">
+          <h4>Apito inicial · Brasil estreia</h4>
+          <div class="sub">Objetivo: ativar a base e capturar o pico de atenção</div>
+          <ul>
+            <li>Live "Treino Aberto" L2 (12/jun, sem jogo)</li>
+            <li>13/jun · Brasil × Marrocos · TikTok "Antes do Apito"</li>
+            <li>Drops na Comunidadd durante o jogo</li>
+            <li>Genia comenta o jogo em tempo real no X</li>
+            <li>Pós-jogo: ranking semanal divulgado</li>
+            <li>Continua: 17/jun · jogo 2 do Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row hot">
+        <div class="when"><div class="sem">Sem 4</div><div class="dt">15–21 JUN</div></div>
+        <div class="info">
+          <h4>Fase de grupos · turbo</h4>
+          <div class="sub">Objetivo: máxima recorrência · semana de revisão ENEM em paralelo</div>
+          <ul>
+            <li>21/jun · Brasil × jogo 3 fase de grupos</li>
+            <li>2 lives "Treino Aberto" (16 e 19/jun)</li>
+            <li>Ranking semanal: top 10 = camisa CBF</li>
+            <li>Drops crescentes na Comunidadd</li>
+            <li>Conteúdo nos dias sem jogo: ENEM com clima de Copa</li>
+            <li>Decisão: Brasil avança ou ativa Plano B?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row hot">
+        <div class="when"><div class="sem">Sem 5</div><div class="dt">22–28 JUN</div></div>
+        <div class="info">
+          <h4>Oitavas · Plano A ou B ativo</h4>
+          <div class="sub">Objetivo: manter engajamento independente do cenário</div>
+          <ul>
+            <li>Se Brasil avançou: Bolão segue · live antes de cada jogo</li>
+            <li>Se Brasil caiu: Plano B ativa em 24h ("Bolão LatAm" assume — AR + CO + final)</li>
+            <li>Genia no X: tom muda conforme cenário</li>
+            <li>Cards raros liberados na Comunidadd</li>
+            <li>Sorteio de bolas Adidas Trionda começa</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row hot">
+        <div class="when"><div class="sem">Sem 6</div><div class="dt">29 JUN – 12 JUL</div></div>
+        <div class="info">
+          <h4>Mata-mata · intensidade total</h4>
+          <div class="sub">Objetivo: rumo aos prêmios grandes · engajamento máximo</div>
+          <ul>
+            <li>Quartas, semis · 1 live antes de cada jogo grande</li>
+            <li>Drops semanais na Comunidadd</li>
+            <li>Live "Treino Aberto" semanal</li>
+            <li>Pré-anúncio: sorteio do PS5 chegando</li>
+            <li>Última semana de indicação pra concorrer à bola</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row hot">
+        <div class="when"><div class="sem">Sem 7</div><div class="dt">13–19 JUL</div></div>
+        <div class="info">
+          <h4>Final · A Copa termina</h4>
+          <div class="sub">Objetivo: encerramento com manchete · pré-régua de conversão</div>
+          <ul>
+            <li>Live "Antes do Apito" antes da final (19/jul)</li>
+            <li>19/jul · Final · transmissão acompanhada na Comunidadd</li>
+            <li>Anúncio dos vencedores no X em tempo real</li>
+            <li>21/jul · Live de encerramento (PS5/iPad/bolsas)</li>
+            <li>Mensagem: "Acabou a Copa. Começa a sua."</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cal-row">
+        <div class="when"><div class="sem">Sem 8+</div><div class="dt">22 JUL → ENEM</div></div>
+        <div class="info">
+          <h4>Pós-Copa · Conversão</h4>
+          <div class="sub">Objetivo: virar leads em alunos · janela de matrícula</div>
+          <ul>
+            <li>Régua pós-Copa (e-mail + WhatsApp) com desconto exclusivo</li>
+            <li>Comunidadd continua ativa, agora focada em ENEM</li>
+            <li>Anúncio dos novos cursos / planos com cupom da campanha</li>
+            <li>Conteúdo: "agora a Copa é a sua"</li>
+            <li>Meta: 200-400 matrículas até 30/ago</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESIGN DA CAMPANHA ============ -->
+<section class="design" id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Design da campanha</span>
+        <h2>O <span class="y">visual</span> <br/>que faz a campanha gritar.</h2>
+      </div>
+      <p class="lede">Sistema visual da Copa na Filadd 2026: <strong>identidade-mãe da Filadd + estética de Copa + vibe LatAm contemporânea</strong>. Tudo aplicado em peças prontas pra cada canal. Referências reais, mockups das principais peças e banco de ideias visuais.</p>
+    </div>
+
+    <!-- MOOD INSPIRAÇÕES -->
+    <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-top:24px;margin-bottom:8px">A mistura: <span style="color:var(--amarelo)">4 referências</span> que se fundem</h3>
+    <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">Não inventamos uma estética nova. Combinamos quatro inspirações fortes pra entregar algo que parece <strong>uma campanha global de Copa, mas com a alma da Filadd</strong>:</p>
+
+    <div class="mood-grid">
+      <div class="mood-card">
+        <div class="tag-m">REF 01 · BRAND BOOK</div>
+        <h5>Filadd · base institucional</h5>
+        <p>A cor da marca (#2424FF), o amarelo dos botões (#FFBA09) e a Antonio Bold/Poppins. Sem fugir do branding — só amplificando.</p>
+        <div class="vibe">Cor sólida · grid limpo · tom direto · sem ornamento</div>
+      </div>
+      <div class="mood-card">
+        <div class="tag-m">REF 02 · COPA</div>
+        <h5>Álbuns Panini + Brahma</h5>
+        <p>Visual de figurinha clássica, "edição oficial", carimbo, número de camisa. O orgulho de ter uma figurinha rara.</p>
+        <div class="vibe">Figurinha · carimbo · número grande · acabamento brilhante</div>
+      </div>
+      <div class="mood-card">
+        <div class="tag-m">REF 03 · MARCAS COPA 26</div>
+        <h5>Nike + Adidas atual</h5>
+        <p>Estética cinematográfica da Nike ("Alegria que apavora") + raiz do futebol de rua da Adidas ("Backyard Legends").</p>
+        <div class="vibe">Tipografia gigante · pôster de filme · close em humanos</div>
+      </div>
+      <div class="mood-card">
+        <div class="tag-m">REF 04 · LATAM</div>
+        <h5>Bad Bunny · vibe contemporânea</h5>
+        <p>Orgulho latino sem ser nacionalista bobo. Cor, calor, mistura de línguas, sentimento de continente.</p>
+        <div class="vibe">3 bandeiras · trilha latina · espanhol + português · festival</div>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE COR -->
+    <div class="color-system">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Sistema de cor</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:6px">Paleta oficial da Filadd aplicada com <strong>contraste forte</strong>. O amarelo é o "ponto da Copa" — usado pra destacar o que importa. Azul aprovado é a base. Branco é folga.</p>
+
+      <div class="color-row">
+        <div class="color-swatch a"><span class="hex">#2424FF</span><div><div class="name">Azul Aprovado</div><div class="use">Fundo principal · CTAs · cor-mãe</div></div></div>
+        <div class="color-swatch b"><span class="hex">#03036E</span><div><div class="name">Azul Focado</div><div class="use">Profundidade · headers · dark blocks</div></div></div>
+        <div class="color-swatch c"><span class="hex">#FFBA09</span><div><div class="name">Amarelo Filadd</div><div class="use">Destaque · acerto · vitória · Brasil</div></div></div>
+        <div class="color-swatch d"><span class="hex">#FFFFFF</span><div><div class="name">Branco</div><div class="use">Folga · texto sobre azul · pureza</div></div></div>
+      </div>
+    </div>
+
+    <!-- TIPOGRAFIA -->
+    <div class="color-system">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Tipografia</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:6px">Dupla tipográfica da Filadd. Antonio Bold pros gritos. Poppins pros sussurros.</p>
+
+      <div class="typo-row">
+        <div class="typo-card a">
+          <div class="l-typo">PRIMÁRIA · IMPACTO</div>
+          <div class="show">A GENTE<br/>JOGA <span class="y">JUNTO.</span></div>
+          <div class="meta">Antonio Bold · uppercase · letter-spacing -1% · headlines, capas, hero, mockup, manifesto</div>
+        </div>
+        <div class="typo-card b">
+          <div class="l-typo">SECUNDÁRIA · CORRIDO</div>
+          <div class="show">Você palpita na Copa. <br/>A Filadd palpita na sua aprovação.</div>
+          <div class="meta">Poppins · regular/medium · corpo · descrição · LP · e-mail · WhatsApp</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELEMENTOS GRÁFICOS -->
+    <div class="color-system">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Elementos gráficos recorrentes</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:6px">Vocabulário visual que aparece consistentemente em todas as peças. Cria reconhecimento imediato.</p>
+
+      <div class="elem-grid">
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="#2424FF" stroke-width="2.5"/><path d="M30 4 L36 22 L54 22 L40 34 L46 52 L30 42 L14 52 L20 34 L6 22 L24 22 Z" fill="#FFBA09"/></svg>
+          <div class="name">Estrela · vitória</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><rect x="6" y="14" width="48" height="34" rx="3" fill="#2424FF"/><text x="30" y="36" font-family="Antonio,sans-serif" font-size="18" fill="#FFBA09" text-anchor="middle" font-weight="700">10</text><path d="M22 14 L24 8 L36 8 L38 14 Z" fill="#fff"/></svg>
+          <div class="name">Camisa · número</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><rect x="4" y="4" width="52" height="52" rx="4" fill="#03036E"/><line x1="4" y1="30" x2="56" y2="30" stroke="#fff" stroke-width="1.5" opacity=".4"/><circle cx="30" cy="30" r="7" fill="none" stroke="#fff" stroke-width="1.5" opacity=".4"/><rect x="4" y="22" width="6" height="16" fill="none" stroke="#fff" stroke-width="1.5" opacity=".4"/><rect x="50" y="22" width="6" height="16" fill="none" stroke="#fff" stroke-width="1.5" opacity=".4"/></svg>
+          <div class="name">Campo · vista de cima</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><rect x="4" y="12" width="52" height="14" rx="2" fill="#009C3B"/><rect x="4" y="26" width="52" height="14" rx="0" fill="#FFBA09"/><rect x="4" y="40" width="34" height="8" fill="#74acdf"/><rect x="38" y="40" width="18" height="8" fill="#fff" stroke="#03036E" stroke-width=".5"/></svg>
+          <div class="name">Faixa LatAm</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="22" fill="#fff" stroke="#03036E" stroke-width="2"/><path d="M30 8 L34 22 L48 22 L36 32 L40 46 L30 38 L20 46 L24 32 L12 22 L26 22 Z" fill="#03036E"/></svg>
+          <div class="name">Bola · gol</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><rect x="10" y="6" width="40" height="48" rx="3" fill="#FFBA09"/><rect x="14" y="12" width="32" height="6" fill="#03036E"/><rect x="14" y="22" width="32" height="2" fill="#2424FF"/><rect x="14" y="28" width="32" height="2" fill="#2424FF"/><rect x="14" y="34" width="32" height="2" fill="#2424FF"/><rect x="14" y="40" width="20" height="2" fill="#2424FF"/></svg>
+          <div class="name">Carimbo · oficial</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><rect x="4" y="20" width="20" height="20" fill="#2424FF"/><text x="14" y="35" font-family="Antonio" font-size="14" fill="#FFBA09" text-anchor="middle" font-weight="700">2</text><text x="30" y="35" font-family="Antonio" font-size="14" fill="#03036E" text-anchor="middle">×</text><rect x="36" y="20" width="20" height="20" fill="#FFBA09"/><text x="46" y="35" font-family="Antonio" font-size="14" fill="#03036E" text-anchor="middle" font-weight="700">1</text></svg>
+          <div class="name">Placar</div>
+        </div>
+        <div class="elem">
+          <svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="22" fill="#2424FF"/><text x="30" y="38" font-family="Antonio" font-size="22" fill="#FFBA09" text-anchor="middle" font-weight="700">F</text></svg>
+          <div class="name">Escudo Filadd</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEMPLATES POR CANAL -->
+    <div class="templates">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Mockups por peça</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:24px">Aplicação do sistema visual em peças reais da campanha. <strong>Não é briefing pro design — é referência conceitual</strong> pra mostrar como o sistema funciona em cada canal.</p>
+
+      <!-- INSTAGRAM POSTS -->
+      <h4 style="font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;margin-top:24px;margin-bottom:6px">Instagram · feed 1:1</h4>
+      <div class="template-row">
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Post Manifesto</span><span class="tmpl-tag">Awareness</span></div>
+          <div class="mk post-a"><div class="eb">COPA NA FILADD · 2026</div><div class="ti">A gente <br/>joga <span class="y">junto.</span></div><div class="ft">→ Manifesto da campanha</div></div>
+          <p class="tmpl-desc">Variante do hero. Azul sólido, headline gigante em Antonio Bold, amarelo no ponto-chave. Ideal pra lançamento e pinned post.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Post Bolão</span><span class="tmpl-tag">Conversão</span></div>
+          <div class="mk post-b"><div class="eb">BOLÃO FILADD · BR × MARROCOS</div><div class="ti">Cravou? <br/>Marcou.</div><div class="meta-line">→ Palpite em bolao.filadd.com<br/><b>Sáb · 13 jun · 15h</b></div></div>
+          <p class="tmpl-desc">Amarelo como base (gera contraste no feed). Slogan "Cravou? Marcou." em destaque. Dia + horário do próximo jogo do Brasil.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Post Figurinha</span><span class="tmpl-tag">Branding</span></div>
+          <div class="mk post-c"><div class="eb">TIME TITULAR · #10 · CAPITÃO</div><div class="player-card"><div class="nrr">10</div><div class="pn">Plano de Estudos</div><div class="pp">CENTROAVANTE · BENEFÍCIO + VALORIZADO</div></div></div>
+          <p class="tmpl-desc">Apresentação de cada figurinha do Time Titular. Faixa Brasil no topo (Plano A) ou faixa LatAm (Plano B). Série de 11 posts no aquecimento.</p>
+        </div>
+      </div>
+
+      <!-- STORIES + TIKTOK -->
+      <h4 style="font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;margin-top:36px;margin-bottom:6px">Stories · TikTok · 9:16</h4>
+      <div class="template-row">
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Story countdown</span><span class="tmpl-tag">Aquecimento</span></div>
+          <div class="mk mk-9-16 story-a"><div class="top-st"><span class="act"></span><span></span><span></span></div><div class="ti">Faltam <span class="y">2 dias</span> <br/>pro apito.</div><div class="ft-st">→ ENTRA NO BOLÃO</div></div>
+          <p class="tmpl-desc">Countdown diário pré-Copa. Versão 5 dias, 4 dias, 3 dias... Pinned como destaque "Copa 2026".</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Capa TikTok</span><span class="tmpl-tag">Antes do Apito</span></div>
+          <div class="mk mk-9-16 story-b"><div class="top-st"><span class="act"></span><span></span><span></span></div><div class="badge-st">AO VIVO · 14H</div><div class="ti">Antes <br/>do <span style="color:#000;background:#fff;padding:0 6px">apito.</span></div><div class="ft-st">Com @felipe_fut · 2h antes do Brasil entrar em campo</div></div>
+          <p class="tmpl-desc">Vermelho TikTok puxando atenção. Slogan "Antes do apito". Sempre com nome do influenciador convidado.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Story placar</span><span class="tmpl-tag">Pós-jogo</span></div>
+          <div class="mk mk-9-16 score-mk"><div class="lbl-sc">JOGO 1 · FASE DE GRUPOS</div><div class="row-sc"><div><div class="flag-sc">🇧🇷</div><div class="tm">Brasil</div></div><div class="x-sc">×</div><div><div class="flag-sc">🇲🇦</div><div class="tm">Marrocos</div></div></div><div class="row-sc"><div class="pp-sc">2</div><div class="x-sc">×</div><div class="pp-sc" style="text-align:right">1</div></div><div class="ft-sc">→ 184 PALPITES CRAVARAM 2×1</div></div>
+          <p class="tmpl-desc">Placar oficial pós-jogo. Sai no story logo após o apito final + repost dos que cravaram exatos.</p>
+        </div>
+      </div>
+
+      <!-- ADS -->
+      <h4 style="font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;margin-top:36px;margin-bottom:6px">Anúncios pagos · 1:1</h4>
+      <div class="template-row">
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Ad PS5</span><span class="tmpl-tag">Performance</span></div>
+          <div class="mk ad-mk"><div class="prize-vis">🎮</div><div class="ad-ti">Um <span class="y">PS5</span> <br/>tá em jogo.</div><div class="ad-sub">Entra no Bolão da Copa Filadd <br/>e palpita os jogos do Brasil.</div><div class="ad-cta">Entrar grátis</div></div>
+          <p class="tmpl-desc">Foco no prêmio grande. Headline curta, CTA direto. Versão também com iPad e bolsa integral.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Ad Bolsa</span><span class="tmpl-tag">Performance</span></div>
+          <div class="mk ad-mk" style="background:linear-gradient(135deg,#FFBA09,#FF8C00);color:#03036E"><div class="prize-vis">🎓</div><div class="ad-ti" style="color:#03036E">10 bolsas <br/>de <span style="color:#2424FF">100%.</span></div><div class="ad-sub" style="color:#03036E">Acerte o Bolão. Complete o álbum. <br/>Concorra a uma bolsa integral Filadd.</div><div class="ad-cta" style="background:#03036E;color:#FFBA09">Quero participar</div></div>
+          <p class="tmpl-desc">Variante amarela. Foco emocional: bolsa muda vida. Pra públicos com intenção alta de estudar.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Ad LatAm</span><span class="tmpl-tag">Branding</span></div>
+          <div class="mk ad-mk" style="background:#03036E"><div class="prize-vis">🇧🇷🇦🇷🇨🇴</div><div class="ad-ti">3 seleções. <br/><span class="y">1 Filadd.</span></div><div class="ad-sub">Nascemos em Córdoba. <br/>Crescemos no Brasil. <br/>Jogamos pelo continente.</div><div class="ad-cta">Conheça a Filadd</div></div>
+          <p class="tmpl-desc">Ad institucional LatAm. Reforça posicionamento de marca. Vai pro mid-funnel + reforço de brand awareness.</p>
+        </div>
+      </div>
+
+      <!-- FIGURINHAS -->
+      <h4 style="font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;margin-top:36px;margin-bottom:6px">Figurinhas do álbum · template</h4>
+      <p style="color:var(--ink-soft);font-size:13.5px;max-width:60ch;margin-bottom:18px">Cada figurinha = 1 jogador (pessoa real) que entrega 1 benefício. Versão comum e versão rara (brilhante).</p>
+
+      <div class="template-row">
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Figurinha comum</span><span class="tmpl-tag">Bronze · Prata</span></div>
+          <div class="figurinha-tpl"><div class="fg-nr">10</div><div class="fg-foto">FOTO DO<br/>PROFESSOR</div><div class="fg-nome">Prof. Rafa</div><div class="fg-pos">Capitão · Plano de Estudos</div><div class="fg-frase">"Aprovação não é talento. É plano."</div></div>
+          <p class="tmpl-desc">Versão padrão. Azul Aprovado, borda amarela, número grande, foto da pessoa real, "frase do jogador".</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Figurinha rara</span><span class="tmpl-tag">Ouro · Brilhante</span></div>
+          <div class="figurinha-tpl rare"><div class="fg-nr">10</div><div class="fg-foto">FOTO DO<br/>PROFESSOR</div><div class="fg-nome">Prof. Rafa</div><div class="fg-pos">Capitão · Plano de Estudos</div><div class="fg-frase">"Aprovação não é talento. É plano."</div></div>
+          <p class="tmpl-desc">Versão rara/brilhante. Amarelo gradiente, tipografia em azul focado, mesma foto. Sai apenas em drops + acerto de placar exato.</p>
+        </div>
+
+        <div class="tmpl">
+          <div class="tmpl-head"><span class="tmpl-name">Verso da figurinha</span><span class="tmpl-tag">Físico apenas</span></div>
+          <div class="figurinha-tpl" style="background:#fff;border-color:var(--azul-focado);color:var(--azul-focado)"><div class="fg-nr" style="color:var(--azul-aprovado)">#10</div><div class="fg-foto" style="background:var(--off);color:var(--azul-aprovado);border-color:var(--line);align-items:flex-start;justify-content:flex-start;padding:14px;text-align:left;font-size:9px;text-transform:none;letter-spacing:0">BIO CURTA:<br/>Formado em Pedagogia · 12 anos de ENEM · ajudou +3.000 alunos.<br/><br/>FRASE FAVORITA:<br/>"O plano que cabe na sua rotina é o plano que funciona."</div><div class="fg-nome" style="color:var(--azul-focado)">Prof. Rafa</div><div class="fg-pos" style="color:var(--azul-aprovado)">Capitão · Plano de Estudos</div></div>
+          <p class="tmpl-desc">Verso da figurinha física (no álbum impresso): bio curta + frase. Cria conexão real com o aluno.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- REFERÊNCIAS DE MARCAS -->
+    <div class="color-system">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Inspirações reais · 4 marcas que estão na Copa 2026</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:6px">O que cada uma faz bem e o que <strong>vamos pegar emprestado</strong> sem copiar:</p>
+
+      <div class="refs-grid">
+        <div class="ref">
+          <div class="ref-img" style="background:#003a87">"TÁ LIBERADO<br/>ACREDITAR"</div>
+          <div class="ref-info">
+            <div class="br-nome">Brahma</div>
+            <div class="br-tag">Áfrika Creative · 2026</div>
+            <p>Reconhece o cansaço/descrença do brasileiro antes de propor a solução. Tom honesto, sem otimismo forçado.</p>
+            <div class="borrow"><strong>O QUE A GENTE PEGA</strong>O tom: começar reconhecendo onde o estudante está antes de prometer aprovação.</div>
+          </div>
+        </div>
+
+        <div class="ref">
+          <div class="ref-img" style="background:#000">"ALEGRIA QUE<br/>APAVORA"</div>
+          <div class="ref-info">
+            <div class="br-nome">Nike</div>
+            <div class="br-tag">Pôster cinematográfico</div>
+            <p>Cada seleção vira um filme com identidade própria. Tipografia gigante, mood cinematográfico, foco em emoção sobre técnica.</p>
+            <div class="borrow"><strong>O QUE A GENTE PEGA</strong>Tipografia gigante (Antonio) + mood cinematográfico nos posts manifesto + cada peça com identidade própria.</div>
+          </div>
+        </div>
+
+        <div class="ref">
+          <div class="ref-img" style="background:linear-gradient(135deg,#000,#666)">"BACKYARD<br/>LEGENDS"</div>
+          <div class="ref-info">
+            <div class="br-nome">Adidas</div>
+            <div class="br-tag">Messi + Chalamet + Bad Bunny</div>
+            <p>O futebol nasce no improviso, no quintal, antes do estádio. Foca a raiz e a autenticidade — e mistura cultura pop com esporte.</p>
+            <div class="borrow"><strong>O QUE A GENTE PEGA</strong>A ideia de mostrar a "raiz": professores reais, gente real, bastidor. + mistura pop (creators de fora do nicho).</div>
+          </div>
+        </div>
+
+        <div class="ref">
+          <div class="ref-img" style="background:linear-gradient(135deg,#ec7000,#a64d00)">"TORCENDO<br/>FEITO VOCÊ"</div>
+          <div class="ref-info">
+            <div class="br-nome">Itaú</div>
+            <div class="br-tag">Africa Creative · Ronaldo</div>
+            <p>Posiciona a marca como torcedor comum, não como patrocinador de cima. Conexão horizontal com o público.</p>
+            <div class="borrow"><strong>O QUE A GENTE PEGA</strong>"A gente joga junto" — não somos plataforma vendendo curso, somos parte do time. Horizontalidade.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANCO DE IDEIAS -->
+    <div class="color-system">
+      <h3 style="font-family:'Antonio',sans-serif;font-size:28px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:8px">Banco de ideias visuais</h3>
+      <p style="color:var(--ink-soft);font-size:15px;max-width:64ch;margin-bottom:6px">12 ideias específicas pra o design explorar. Cada uma é uma peça (ou série) com função clara na campanha:</p>
+
+      <div class="ideas-grid">
+        <div class="idea"><div class="nr-i">01</div><h5>Capa do álbum em campo</h5><p>Ilustração da escalação 4-3-3 visto de cima do campo, com os 11 nomes dos benefícios escritos como jogadores. Vira o pôster oficial.</p></div>
+        <div class="idea"><div class="nr-i">02</div><h5>Carrossel "Conheça o time"</h5><p>11 slides, um por figurinha, com foto da pessoa real + função + frase favorita. Roda no aquecimento.</p></div>
+        <div class="idea"><div class="nr-i">03</div><h5>Estampa "Eu palpitei"</h5><p>Selo gráfico com a frase "Eu palpitei no Bolão Filadd". Estudante baixa, cola no Story. Vira amplificador orgânico.</p></div>
+        <div class="idea"><div class="nr-i">04</div><h5>Reel "Em 30s explico"</h5><p>Tipografia animada no Antonio. Explica o Bolão / o álbum / os prêmios em 30s. 3 reels separados.</p></div>
+        <div class="idea"><div class="nr-i">05</div><h5>Camisa Filadd retrô</h5><p>Mock de "camisa da Filadd" com o número do estudante + posição (o card mais valorizado por ele). Vira print compartilhável.</p></div>
+        <div class="idea"><div class="nr-i">06</div><h5>Adesivos LatAm</h5><p>Set de stickers das 3 bandeiras + frases ("aprovado", "cravou", "vamos hermano"). Distribuir no álbum físico.</p></div>
+        <div class="idea"><div class="nr-i">07</div><h5>Pôster de cada jogo</h5><p>Antes de cada jogo do Brasil/AR/COL: pôster com 2 escudos + data + horário, no mood Nike "filme do jogo". Pra Stories.</p></div>
+        <div class="idea"><div class="nr-i">08</div><h5>Manifesto em vídeo (45s)</h5><p>Voz off do manifesto + cortes rápidos do elenco real da Filadd. Antonio gigante na tela com a frase-chave. Abre a campanha.</p></div>
+        <div class="idea"><div class="nr-i">09</div><h5>Quadro de honra semanal</h5><p>Story-arte fim de semana: top 10 do ranking em formato escalação. Vira ritual semanal — gera FOMO.</p></div>
+        <div class="idea"><div class="nr-i">10</div><h5>"Carteirinha de convocado"</h5><p>Pós-cadastro, estudante recebe carteirinha digital com nome + número + posição preferida (benefício favorito). Salva e compartilha.</p></div>
+        <div class="idea"><div class="nr-i">11</div><h5>Pôster do PS5/iPad/Bolsa</h5><p>3 pôsteres separados no estilo "edição limitada", com o prêmio em destaque. Anunciar cada sorteio com seu próprio pôster.</p></div>
+        <div class="idea"><div class="nr-i">12</div><h5>Estandarte LatAm</h5><p>Faixa com 3 bandeiras + escudo Filadd. Aparece em todo conteúdo do Plano B. Vira selo da fase "Bolão LatAm".</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow">Acabou o playbook · começa a campanha</span>
+    <h2>A gente <br/>joga <span class="y">junto.</span></h2>
+    <p class="closer">Copa do Mundo FIFA 2026 · Filadd Brasil · Campanha v3 · Maio 2026</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <span class="small">Marketing Filadd · Theus Mattos · Confidencial · v3</span>
+  </div>
+</footer>
+
+</body>
+</html>

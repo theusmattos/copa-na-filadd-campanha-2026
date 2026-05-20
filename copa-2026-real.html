@@ -1,0 +1,1659 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Copa 2026 — O que está rolando de verdade no marketing (BR + Global)</title>
+<meta name="description" content="Benchmark prático de marketing real da Copa do Mundo 2026: campanhas, ações virais, bolões, gamificação, creators e tendências — Brasil + global." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#08080b; --bg-2:#0d0d11; --bg-card:#14141a; --bg-elev:#1a1a22;
+  --border:#26262d; --border-soft:#1c1c22;
+  --ink:#f4f4f6; --ink-soft:#b8b8c2; --ink-mute:#6f6f7a;
+  --accent:#d6ff36; --cyan:#00d4ff; --gold:#f5c84b; --green:#00d977; --red:#ff4d4d; --purple:#b66bff; --pink:#ff5fa8;
+  --br-green:#009c3b; --br-yellow:#ffdf00; --br-blue:#002776;
+  --maxw:1320px; --pad:clamp(20px,4vw,56px);
+  --radius:16px; --radius-lg:26px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;letter-spacing:-.02em;margin:0 0 .4em;line-height:1.05}
+p{margin:0 0 1em;color:var(--ink-soft)}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+
+/* HERO */
+.hero{position:relative;padding:clamp(64px,12vh,140px) 0 clamp(80px,14vh,160px);overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 60% at 15% 0%,rgba(214,255,54,.18),transparent 60%),
+    radial-gradient(ellipse 60% 50% at 90% 30%,rgba(0,212,255,.13),transparent 60%),
+    radial-gradient(ellipse 50% 40% at 50% 100%,rgba(255,95,168,.10),transparent 60%),
+    var(--bg);}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 80%);opacity:.6;pointer-events:none}
+.eyebrow-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--border);font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft);margin-bottom:28px}
+.eyebrow-pill .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(40px,8vw,108px);font-weight:700;max-width:15ch;margin-bottom:24px}
+.hero h1 .hi{color:var(--accent)}
+.hero h1 .lite{color:var(--ink-mute);font-weight:400}
+.hero-sub{font-size:clamp(16px,1.4vw,20px);color:var(--ink-soft);max-width:62ch;margin-bottom:40px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;color:var(--ink-mute);font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.hero-meta .sep{width:16px;height:1px;background:var(--border)}
+
+.stats{margin-top:80px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat{padding:26px 22px;border-right:1px solid var(--border)}
+.stat:last-child{border-right:0}
+.stat .num{font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,4.2vw,54px);font-weight:700;letter-spacing:-.03em;line-height:1;margin-bottom:8px}
+.stat .num .u{color:var(--accent)}
+.stat .label{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute)}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--border)}}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(8,8,11,.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;gap:18px;padding:14px var(--pad);max-width:var(--maxw);margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-brand{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;white-space:nowrap;color:var(--ink)}
+.nav-brand .ico{display:inline-block;width:8px;height:8px;background:var(--accent);margin-right:10px;border-radius:50%;box-shadow:0 0 10px var(--accent)}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{padding:7px 12px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;transition:all .2s}
+.nav-links a:hover{background:rgba(255,255,255,.05);color:var(--ink)}
+.nav-links a.br{color:var(--br-yellow)}
+
+/* SECTION */
+section{padding:clamp(60px,10vw,120px) 0;position:relative}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(30px,4.4vw,60px);font-weight:700;max-width:18ch}
+.eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:14px}
+.eyebrow.br{color:var(--br-yellow)}
+.eyebrow.intl{color:var(--cyan)}
+.lede{color:var(--ink-soft);font-size:17px;max-width:54ch}
+
+/* TLDR */
+.tldr-section{background:var(--bg-2)}
+.tldr-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:900px){.tldr-grid{grid-template-columns:1fr}}
+.tldr-card{padding:clamp(28px,4vw,40px);border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-card)}
+.tldr-card.hi{background:linear-gradient(135deg,rgba(214,255,54,.07),rgba(0,212,255,.04));border-color:rgba(214,255,54,.2)}
+.tldr-card h3{font-size:22px;margin-bottom:16px}
+.tldr-card h3 .ico{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin-right:8px;box-shadow:0 0 10px var(--accent);vertical-align:middle}
+ul.pretty{list-style:none;padding:0;margin:8px 0 0}
+ul.pretty li{padding:11px 0 11px 28px;position:relative;border-top:1px solid var(--border-soft);color:var(--ink-soft);font-size:14.5px}
+ul.pretty li:first-child{border-top:0}
+ul.pretty li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+ul.pretty li strong{color:var(--ink)}
+
+/* TRANSMISSION OVERVIEW */
+.tv-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+@media(max-width:800px){.tv-bar{grid-template-columns:1fr}}
+.tv-card{padding:24px;border-radius:18px;border:1px solid var(--border);background:var(--bg-card);position:relative;overflow:hidden}
+.tv-card.caze{border-color:#ff4444;background:linear-gradient(135deg,#1a0a0a,#14141a)}
+.tv-card.globo{border-color:#1e90ff;background:linear-gradient(135deg,#0a1424,#14141a)}
+.tv-card.sbt{border-color:#fac800;background:linear-gradient(135deg,#1a1408,#14141a)}
+.tv-card .tv-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;margin-bottom:6px}
+.tv-card .tv-meta{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:14px}
+.tv-card .tv-jogos{font-family:'Space Grotesk',sans-serif;font-size:38px;font-weight:700;letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+.tv-card .tv-jogos .small{font-size:14px;color:var(--ink-mute);font-weight:400;letter-spacing:0;margin-left:6px}
+.tv-card .tv-sponsors{margin-top:18px;padding-top:14px;border-top:1px solid var(--border-soft);font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+.tv-card .tv-sponsors strong{color:var(--ink);display:block;font-size:11px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:6px}
+
+/* BRAND CARD (deep) */
+.brand{border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;background:var(--bg-card);margin-bottom:60px}
+.brand-hero{display:grid;grid-template-columns:1fr 1fr;min-height:380px}
+.brand-hero-text{padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:center;gap:14px}
+.brand-hero-visual{position:relative;overflow:hidden;background:#000;min-height:280px}
+.brand-hero-visual img{width:100%;height:100%;object-fit:cover}
+@media(max-width:900px){.brand-hero{grid-template-columns:1fr}}
+.brand-tag{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);margin-bottom:4px}
+.brand-tag .dot{width:8px;height:8px;border-radius:50%}
+.brand-hero h2{font-size:clamp(30px,3.5vw,48px);font-weight:800;letter-spacing:-.03em;margin:0}
+.brand-lede{color:var(--ink-soft);font-size:16px;margin:0;max-width:52ch}
+.brand-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);margin-top:18px}
+.brand-quick>div{padding:12px 14px;border-right:1px solid var(--border-soft)}
+.brand-quick>div:last-child{border-right:0}
+.brand-quick .lbl{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:3px}
+.brand-quick .val{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px}
+
+.brand-body{padding:clamp(28px,4vw,48px)}
+.brand-body h3{font-size:22px;margin-bottom:12px}
+.brand-body h4{font-size:12px;color:var(--accent);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin:24px 0 8px}
+.brand-body h4.first{margin-top:0}
+.brand-body p{font-size:15px}
+
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0 24px}
+.gallery img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;background:#1a1a1f}
+.gallery.three{grid-template-columns:repeat(3,1fr)}
+.gallery.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:600px){.gallery,.gallery.three,.gallery.four{grid-template-columns:repeat(2,1fr)}}
+
+blockquote.pull{margin:22px 0;padding:20px 24px;border-left:3px solid var(--accent);background:var(--bg-elev);border-radius:0 12px 12px 0;font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:500;line-height:1.4;color:var(--ink)}
+blockquote.pull cite{display:block;margin-top:10px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);font-style:normal}
+
+.mech{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
+@media(max-width:700px){.mech{grid-template-columns:repeat(2,1fr)}}
+.mech-step{padding:14px;background:var(--bg-elev);border-radius:10px;border:1px solid var(--border-soft)}
+.mech-step .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:var(--accent);line-height:1;margin-bottom:6px}
+.mech-step .t{font-size:13px;color:var(--ink)}
+
+.insight-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+@media(max-width:700px){.insight-grid{grid-template-columns:1fr}}
+.insight{padding:20px;border-radius:12px;background:var(--bg-elev);border:1px solid var(--border-soft)}
+.insight .ic{width:32px;height:32px;border-radius:8px;background:rgba(214,255,54,.1);color:var(--accent);display:grid;place-items:center;font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:13px;margin-bottom:10px}
+.insight h5{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:0 0 5px;color:var(--ink)}
+.insight p{font-size:13.5px;margin:0}
+
+/* BR brand colors */
+.h-ifood{background:linear-gradient(135deg,#ea1d2c,#8a0e1d);color:#fff}
+.h-brahma{background:linear-gradient(135deg,#003a87,#001f4a);color:#fff}
+.h-itau{background:linear-gradient(135deg,#ec7000,#a64d00);color:#fff}
+.h-vivo{background:linear-gradient(135deg,#660099,#3d0066);color:#fff}
+.h-magalu{background:linear-gradient(135deg,#0086ff,#0050a0);color:#fff}
+.h-coca-br{background:linear-gradient(135deg,#f40000,#7a0000);color:#fff}
+.h-nike{background:linear-gradient(135deg,#000,#1a1a1a);color:#fff}
+.h-bud{background:linear-gradient(135deg,#c41e3a,#8a0e1f);color:#fff}
+.h-mcd{background:linear-gradient(135deg,#ffc72c,#da291c);color:#fff}
+.h-cimed{background:linear-gradient(135deg,#0066b3,#003566);color:#fff}
+.h-centauro{background:linear-gradient(135deg,#fcc500,#c69d00);color:#000}
+.h-adidas{background:linear-gradient(135deg,#000,#1a1a1a);color:#fff}
+.h-visa{background:linear-gradient(135deg,#1a1f71,#0d1043);color:#fff}
+.h-lego{background:linear-gradient(135deg,#dd1a1a,#ff8200);color:#fff}
+.h-lays{background:linear-gradient(135deg,#e30613,#ffce00);color:#fff}
+.h-michelob{background:linear-gradient(135deg,#0d1a35,#000);color:#fff}
+.h-hyundai{background:linear-gradient(135deg,#002c5f,#001a3d);color:#fff}
+.h-lenovo{background:linear-gradient(135deg,#e2231a,#8a0e10);color:#fff}
+.h-dove{background:linear-gradient(135deg,#001489,#000865);color:#fff}
+.h-hisense{background:linear-gradient(135deg,#00b140,#005e22);color:#fff}
+.h-coca-int{background:linear-gradient(135deg,#f40000,#7a0000);color:#fff}
+.h-airbnb{background:linear-gradient(135deg,#ff385c,#a8001f);color:#fff}
+
+.brand-quick.dark>div{border-color:rgba(255,255,255,.18)}
+.brand-quick.dark .lbl{color:rgba(255,255,255,.7)}
+.brand-quick.dark{border-color:rgba(255,255,255,.18)}
+
+/* SCAN */
+.scan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:980px){.scan-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.scan-grid{grid-template-columns:1fr}}
+.scan-card{border:1px solid var(--border);border-radius:14px;padding:22px;background:var(--bg-card);transition:transform .2s,border-color .2s}
+.scan-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.scan-card .sc-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:10px}
+.scan-card h4{font-size:17px;margin:0}
+.scan-card .tag{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;padding:4px 8px;border-radius:6px;background:var(--bg-elev);color:var(--ink-mute);border:1px solid var(--border);white-space:nowrap}
+.scan-card .role{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:10px}
+.scan-card .role.br{color:var(--br-yellow)}
+.scan-card p{font-size:13.5px;margin:0 0 10px}
+.scan-card .pts{border-top:1px solid var(--border-soft);padding-top:8px;font-size:12.5px}
+.scan-card .pts div{padding:6px 0;border-top:1px dashed var(--border-soft)}
+.scan-card .pts div:first-child{border-top:0}
+.scan-card .pts strong{color:var(--ink);font-family:'Space Grotesk',sans-serif}
+
+/* TRENDS */
+.trends-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.trend{grid-column:span 4;background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:24px;transition:transform .2s}
+.trend:hover{transform:translateY(-3px)}
+.trend-num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:48px;color:transparent;-webkit-text-stroke:1.5px var(--accent);line-height:1;margin-bottom:14px;letter-spacing:-.05em}
+.trend h3{font-size:18px;margin:0 0 8px}
+.trend p{font-size:13.5px;margin:0 0 10px}
+.trend .chips{display:flex;flex-wrap:wrap;gap:5px}
+.trend .chip{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:999px;background:rgba(214,255,54,.08);color:var(--accent);border:1px solid rgba(214,255,54,.18)}
+.trend.span6{grid-column:span 6}
+.trend.span8{grid-column:span 8}
+.trend.span12{grid-column:span 12}
+@media(max-width:1100px){.trend,.trend.span6,.trend.span8{grid-column:span 6}}
+@media(max-width:700px){.trend,.trend.span6,.trend.span8{grid-column:span 12}}
+
+/* HOOK GRID */
+.hooks-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:900px){.hooks-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hooks-grid{grid-template-columns:1fr}}
+.hook{padding:22px;border-radius:14px;border:1px solid var(--border);background:var(--bg-card)}
+.hook .typ{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-bottom:8px}
+.hook .frase{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600;line-height:1.2;margin-bottom:10px;color:var(--ink)}
+.hook .quem{font-size:12px;color:var(--ink-mute);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.hook .why{font-size:13px;margin-top:8px}
+
+/* FILADD */
+.filadd{background:radial-gradient(ellipse 60% 50% at 80% 0%,rgba(214,255,54,.10),transparent 60%),radial-gradient(ellipse 50% 40% at 10% 100%,rgba(0,212,255,.06),transparent 60%),var(--bg)}
+.filadd-intro{background:linear-gradient(135deg,rgba(214,255,54,.06),rgba(0,212,255,.04));border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(26px,4vw,44px);margin-bottom:28px}
+.filadd-intro h3{font-size:clamp(22px,2.8vw,32px);margin-bottom:10px}
+.filadd-intro p{font-size:15px;max-width:70ch}
+.ops-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:800px){.ops-grid{grid-template-columns:1fr}}
+.op-card{border:1px solid var(--border);background:var(--bg-card);border-radius:14px;padding:24px;display:grid;grid-template-columns:48px 1fr;gap:18px}
+.op-card .op-ic{width:48px;height:48px;border-radius:12px;background:var(--accent);color:#0a0a0c;display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px}
+.op-card h4{font-size:17px;margin:0 0 5px}
+.op-card p{font-size:13.5px;margin:0}
+.op-card .ref{margin-top:8px;font-size:11.5px;color:var(--ink-mute);font-family:'DM Mono',monospace;letter-spacing:.04em}
+.op-card .ref strong{color:var(--accent)}
+
+/* GLOW BOX */
+.glow-box{border:1px solid rgba(214,255,54,.25);background:rgba(214,255,54,.04);border-radius:12px;padding:18px 22px;margin:20px 0}
+.glow-box p{margin:0;color:var(--ink);font-size:14px}
+.glow-box strong{color:var(--accent)}
+
+/* REFS */
+.refs{background:var(--bg-2);border-top:1px solid var(--border)}
+.refs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:800px){.refs-grid{grid-template-columns:1fr}}
+.ref-col h4{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);margin-bottom:12px}
+.ref-col a{display:block;padding:9px 0;border-top:1px solid var(--border-soft);color:var(--ink-soft);font-size:13px;transition:color .15s}
+.ref-col a:first-of-type{border-top:0}
+.ref-col a:hover{color:var(--accent)}
+.ref-col a .arr{color:var(--ink-mute);margin-right:8px}
+
+footer{padding:50px 0 36px;text-align:center;color:var(--ink-mute);font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;border-top:1px solid var(--border)}
+footer strong{color:var(--ink)}
+
+/* CTA banner */
+.cta-banner{margin-top:40px;padding:clamp(36px,5vw,64px);background:radial-gradient(ellipse 60% 80% at 30% 50%,rgba(214,255,54,.15),transparent 70%),#0d0d10;border:1px solid var(--border);border-radius:var(--radius-lg);text-align:center}
+.cta-banner h3{font-size:clamp(24px,3vw,38px);margin-bottom:14px;max-width:24ch;margin-left:auto;margin-right:auto}
+.cta-banner p{max-width:60ch;margin:0 auto;font-size:15px}
+
+/* viral case */
+.viral{background:linear-gradient(135deg,#0d0d10,#0a0a0c);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(28px,4vw,48px);margin-top:30px}
+.viral h3{font-size:24px;margin-bottom:8px}
+.viral .vbadge{display:inline-block;padding:5px 11px;background:linear-gradient(90deg,#ea1d2c,#ffc72c);color:#000;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;margin-bottom:14px;font-weight:700}
+.viral-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:18px 0}
+@media(max-width:800px){.viral-flow{grid-template-columns:repeat(2,1fr)}}
+.flow-step{padding:14px;background:var(--bg-elev);border:1px solid var(--border-soft);border-radius:10px;position:relative}
+.flow-step .fn{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);margin-bottom:6px}
+.flow-step .ft{font-size:13px;line-height:1.3}
+.flow-step .ft strong{color:var(--ink)}
+
+/* BR FLAG bar */
+.br-bar{height:6px;background:linear-gradient(90deg,var(--br-green) 0%,var(--br-green) 33%,var(--br-yellow) 33%,var(--br-yellow) 66%,var(--br-blue) 66%,var(--br-blue) 100%)}
+
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow-pill"><span class="dot"></span>Benchmark Operacional · Maio 2026</div>
+    <h1>O que <span class="hi">tá rolando de verdade</span><br><span class="lite">no marketing da Copa 2026.</span></h1>
+    <p class="hero-sub">Visão prática (não institucional) do que as marcas estão produzindo agora — Brasil + Global. Ações virais, bolões, gamificação, casas físicas, casting cultural, creators, hooks, hashtags, captação de leads e UGC. 21 marcas em deep dive, prints reais, mecânicas decifradas, padrões e brechas para a Filadd encaixar.</p>
+    <div class="hero-meta">
+      <span>🇧🇷 Brasil em foco</span><span class="sep"></span>
+      <span>🌎 Referências globais</span><span class="sep"></span>
+      <span>📊 21 marcas deep dive</span><span class="sep"></span>
+      <span>🎬 Prints + vídeos reais</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">R$2<span class="u">bi</span></div><div class="label">CazéTV em cotas de patrocínio</div></div>
+      <div class="stat"><div class="num">104<span class="u"></span></div><div class="label">jogos transmitidos em 4K · YouTube</div></div>
+      <div class="stat"><div class="num">3/10<span class="u"></span></div><div class="label">brasileiros acreditam no hexa</div></div>
+      <div class="stat"><div class="num">314<span class="u">M</span></div><div class="label">views da Lego em 24h (Messi+CR7)</div></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="ico"></span>WC26 · Marketing Real</div>
+    <div class="nav-links">
+      <a href="#tldr">TL;DR</a>
+      <a href="#midia">Mídia BR</a>
+      <a href="#brasil" class="br">🇧🇷 Brasil</a>
+      <a href="#viral">Viral Case</a>
+      <a href="#global">🌎 Global</a>
+      <a href="#aposta">Apostas</a>
+      <a href="#caza">Casa CazéTV</a>
+      <a href="#hooks">Hooks</a>
+      <a href="#trends">Tendências</a>
+      <a href="#filadd">Filadd</a>
+      <a href="#refs">Refs</a>
+    </div>
+  </div>
+</nav>
+
+<section id="tldr" class="tldr-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ TL;DR Estratégico</div>
+      <h2>A leitura curta de o que está rolando agora</h2></div>
+      <p class="lede">Não é mais sobre quem patrocina a FIFA. É sobre quem está construindo o pré-Copa nas redes, na rua, nos bares, nos apps e no YouTube. As marcas BR criaram uma Copa paralela — e a CazéTV virou o palco.</p>
+    </div>
+    <div class="tldr-grid">
+      <div class="tldr-card hi">
+        <h3><span class="ico"></span>5 movimentos macro de 2026</h3>
+        <ul class="pretty">
+          <li><strong>CazéTV destronou a Globo na Copa.</strong> 104 jogos em 4K no YouTube, R$ 2 bi em cotas, R$ 185 milhões por cota máster. Pela primeira vez desde 1982 a Globo divide a Copa. Anunciantes principais migrando: Ambev, Bet365, Betnacional, Coca-Cola, Decolar, GM, iFood, Itaú, KTO, Mercado Livre e Vivo.</li>
+          <li><strong>Africa Creative virou agência hegemônica.</strong> Assina simultaneamente Brahma, Itaú e Vivo — as três maiores campanhas brasileiras de Copa 2026. E ainda a Azul.</li>
+          <li><strong>Ronaldo Fenômeno está em todos os filmes.</strong> Itaú (como torcedor), Brahma (como símbolo do título), Rexona (embaixador). É o ativo cultural mais disputado da Copa BR.</li>
+          <li><strong>Casting cultural &gt; casting esportivo (em todo lugar).</strong> Chalamet pra Adidas, Sudeikis pra Visa, Billy Bob Thornton + Will Ferrell + Steve Carell pra Lay's, Léo Santana pra Magalu, Jojo Todynho pra Esportes da Sorte.</li>
+          <li><strong>Colecionismo voltou em força.</strong> Canarinho iFood, Panini × McDonalds (15M pacotes), latas Coca que gritam gol, Lego Editions (Messi/Ronaldo/Mbappé/Vini Jr.), bolas colecionáveis Brahma, mini Trionda Happy Meal.</li>
+        </ul>
+      </div>
+      <div class="tldr-card">
+        <h3><span class="ico" style="background:var(--cyan);box-shadow:0 0 10px var(--cyan)"></span>O que isso significa pra Filadd</h3>
+        <ul class="pretty">
+          <li><strong>"Tá Liberado Acreditar" é template pronto.</strong> Brahma partiu do dado de que 3 em 10 brasileiros acreditam no hexa. É exatamente a mesma curva do vestibulando que duvida da aprovação.</li>
+          <li><strong>Colecionismo + app + selos = motor de retenção.</strong> Modelo iFood (5 selos = pelúcia surpresa por R$ 49,90) é direto adaptável: 5 simulados = item colecionável Filadd.</li>
+          <li><strong>Casa CazéTV mostra o caminho.</strong> Pop-up físico + transmissão + ativações = brand experience por 30 dias. Replicável em escala menor com encontros regionais Filadd em SP e RJ.</li>
+          <li><strong>Bolão + cashback = gamificação resolvida.</strong> Bud × Zé fez bolão dentro do app de delivery. Filadd pode fazer "Bolão do Aprovado" — palpitar nota do Enem, no app, com prêmios em mensalidade.</li>
+          <li><strong>Creator + memória popular é ouro.</strong> Centauro × Podpah Funkbol resgatou a tradição de pintar rua, ativando em 5 cidades. Filadd × creator de cada região pode resgatar ritos locais de estudo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="midia">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Big Picture · Mídia BR</div>
+      <h2>Onde o brasileiro vai assistir, e onde as marcas estão comprando</h2></div>
+      <p class="lede">A nova arquitetura de mídia esportiva brasileira mudou em 2026. Globo perdeu a exclusividade. Casimiro virou a maior rede de TV alternativa do país. SBT entrou também. Isso muda completamente onde as marcas BR colocam dinheiro.</p>
+    </div>
+    <div class="tv-bar">
+      <div class="tv-card caze">
+        <div class="tv-name">CazéTV + YouTube</div>
+        <div class="tv-meta">104 jogos · 4K · YouTube + Disney+ + Prime + Samsung TV+ + Sky+</div>
+        <div class="tv-jogos">104<span class="small">/ 104 jogos</span></div>
+        <div class="tv-meta" style="margin-top:8px">R$ 2 bilhões em cotas · cota máster R$ 185 milhões</div>
+        <div class="tv-sponsors"><strong>11 anunciantes confirmados</strong>Ambev, Bet365, Betnacional, Coca-Cola, Decolar, GM, iFood, Itaú, KTO, Mercado Livre, Vivo</div>
+      </div>
+      <div class="tv-card globo">
+        <div class="tv-name">Globo + Globoplay + sportv</div>
+        <div class="tv-meta">TV aberta + paga + streaming · ecossistema multiplataforma</div>
+        <div class="tv-jogos">54<span class="small">/ 104 jogos</span></div>
+        <div class="tv-meta" style="margin-top:8px">25 patrocinadores confirmados · "Estratégia ecossistema"</div>
+        <div class="tv-sponsors"><strong>Posicionamento</strong>TV aberta premium + Cartola FC + sportv + ge.globo. Aposta no torcedor 30+, com programação editorial.</div>
+      </div>
+      <div class="tv-card sbt">
+        <div class="tv-name">SBT</div>
+        <div class="tv-meta">TV aberta · cobertura jornalística</div>
+        <div class="tv-jogos">32<span class="small">/ 104 jogos</span></div>
+        <div class="tv-meta" style="margin-top:8px">Primeira Copa na grade · audiência popular</div>
+        <div class="tv-sponsors"><strong>Estratégia</strong>Cobertura jornalística + variedades. Volta forte à Copa após décadas de hiato.</div>
+      </div>
+    </div>
+    <div class="glow-box">
+      <p><strong>O QUE ISSO MUDA NA PRÁTICA:</strong> Anunciantes brasileiros agora têm que decidir o split — TV aberta da Globo (audiência 30+) ou YouTube/CazéTV (audiência 18-34 + Gen Z). Vivo, Itaú, iFood, Mercado Livre, Coca compraram <em>os dois</em>. Quem ficou só na Globo perdeu a Gen Z. Quem ficou só na CazéTV perdeu o boomer.</p>
+    </div>
+  </div>
+</section>
+
+<div class="br-bar"></div>
+
+<section id="brasil" style="background:linear-gradient(180deg,#0a0a0d 0%,#0c0c10 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow br">○○○ 🇧🇷 Brasil · Deep Dive</div>
+      <h2>O que as marcas BR estão produzindo agora</h2></div>
+      <p class="lede">10 deep dives das marcas mais ativas no marketing brasileiro de Copa 2026 — com mecânica de cada ação, criativo, casting e referências visuais reais.</p>
+    </div>
+
+    <!-- iFOOD -->
+    <article class="brand" id="ifood">
+      <div class="brand-hero h-ifood">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>PATROCINADORA OFICIAL CBF · ATÉ 2027</div>
+          <h2>iFood</h2>
+          <p class="brand-lede">"iFood. É do Brasil. É tudo pra mim." 5 selos no app = pelúcia Canarinho colecionável por R$ 49,90. Filme inspirado em viral real de torcedores de 2018, estreado na final do BBB 26. Maior investimento de marketing do ano.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">É do Brasil</div></div>
+            <div><div class="lbl">Mecânica</div><div class="val">5 selos = pelúcia</div></div>
+            <div><div class="lbl">Agências</div><div class="val">N.Ideias + You Dare</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual"><img src="https://gkpb.com.br/wp-content/uploads/2026/04/ifood-canarinhos-copa-do-mundo-2026.jpg" alt="iFood Canarinhos Colecionáveis Copa 2026 — 5 versões representando títulos da Seleção" /></div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Posicionamento</h4>
+        <h3>Reivindicação de brasilidade — diferente de Rappi, 99Food e concorrentes</h3>
+        <p>O iFood é patrocinador oficial CBF (masculina + feminina + base) até 2027. Não paga FIFA — fala pela seleção. Posicionamento direto: empresa brasileira de tecnologia em um mercado disputado por gigantes estrangeiros. Filme hero refilma um vídeo viral real de 2018 com torcedores cantando, e a versão 2026 substitui torcedores anônimos por entregadores iFood reais entregando Canarinho pelúcia nas casas. UGC vira matéria-prima do criativo.</p>
+
+        <h4>○ Mecânica do Canarinho</h4>
+        <h3>Selos → pelúcia surpresa → posta no TikTok</h3>
+        <div class="mech">
+          <div class="mech-step"><div class="n">01</div><div class="t">Pede no app entre <strong>18/05 e 26/06</strong></div></div>
+          <div class="mech-step"><div class="n">02</div><div class="t">Acumula <strong>5 selos</strong></div></div>
+          <div class="mech-step"><div class="n">03</div><div class="t">Paga <strong>R$ 49,90</strong> pra resgatar</div></div>
+          <div class="mech-step"><div class="n">04</div><div class="t">Recebe <strong>pelúcia surpresa</strong></div></div>
+        </div>
+        <p>5 versões celebrando os títulos: <strong>1958 · 1962 · 1970 · 1994 · 2002</strong>. Cada um com uniforme da época. Fabricação Esfera Toy. O efeito colateral: trigger de UGC orgânico — abertura de pelúcia virou trend no TikTok ("Canarinho Pistola" como hashtag), Esfera Toy postou teaser que viralizou.</p>
+
+        <blockquote class="pull">"Como 'delivery oficial', a marca tem visibilidade em treinos, coletivas e competições, com o objetivo de conectar a marca aos grandes momentos do futebol."<cite>iFood · sobre o patrocínio à CBF</cite></blockquote>
+
+        <h4>○ Insights</h4>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Patrocine CBF, não FIFA</h5><p>Direito de fala pela seleção sai uma fração do custo FIFA e tem mais capital emocional pro consumidor BR.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Mascote &gt; ídolo</h5><p>Canarinho unifica — não divide como acontece com jogadores específicos. Apela pra criança E pro avô.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Reciclou UGC real do passado</h5><p>Filme parte de viral de 2018. Não inventou nada — capitalizou memória coletiva visual.</p></div>
+          <div class="insight"><div class="ic">04</div><h5>Trigger de unboxing</h5><p>Pelúcia "surpresa" + 5 modelos = ritual de abrir pacotinho. Maximiza posts orgânicos.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- BRAHMA -->
+    <article class="brand" id="brahma">
+      <div class="brand-hero h-brahma">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>PATROCINADORA CBF · AFRICA CREATIVE</div>
+          <h2>Brahma</h2>
+          <p class="brand-lede">"Tá Liberado Acreditar." Filme com Ronaldo Fenômeno + Carlo Ancelotti no centro do Rio. Partiu do dado: <em>só 3 em 10 brasileiros acreditam no hexa</em> (Datafolha + Quaest). É o menor índice em décadas.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Insight base</div><div class="val">Dado de pesquisa</div></div>
+            <div><div class="lbl">Casting</div><div class="val">Ronaldo + Ancelotti</div></div>
+            <div><div class="lbl">Canal</div><div class="val">Bar + Globo prime</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual"><img src="https://updateordie.com/wp-content/uploads/2026/05/copa-do-mundo-brahma-_-ta-liberado-acreditar-2-39-screenshot.webp" alt="Brahma Tá Liberado Acreditar — campanha com Ronaldo Fenômeno e Ancelotti" /></div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Anatomia do insight</h4>
+        <h3>Dado virou conceito de campanha</h3>
+        <p>A Africa Creative pegou um dado público <em>negativo</em> (apenas 3 em 10 brasileiros acreditam no hexa após 24 anos sem título) e transformou em conceito. O filme abre com cenas do centro do Rio se preparando pra Copa, expõe o distanciamento do torcedor e <strong>só depois</strong> propõe que "tá liberado acreditar". Não é otimismo barato — é otimismo conquistado.</p>
+
+        <blockquote class="pull">"A campanha não parte de um lugar de otimismo imediato — reconhece o ceticismo antes de apresentar a mensagem central."<cite>Update or Die · análise crítica</cite></blockquote>
+
+        <h4>○ Estratégia de canal</h4>
+        <h3>Bar é o ativo prioritário</h3>
+        <p>Felipe Cerchiari (Diretor de Marcas Core da Ambev) explicou: os bares são o principal ponto de consumo previsto para a Copa, território disputado por toda a concorrência. A Brahma traduz a campanha em ativação física nos bares — algo que campanha digital sozinha não resolve. <strong>Stella Artois faz o mesmo nos EUA com Beckham — Ambev replicou a estratégia em dois países.</strong></p>
+
+        <h4>○ Insights</h4>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Use dado negativo como gancho</h5><p>"3 em 10 acreditam" é mais memorável que "estamos juntos pelo hexa". Honestidade vende.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Africa Creative tem 3 campanhas BR</h5><p>Brahma + Itaú + Vivo. Mesma agência, narrativa unificada do "torcedor real" em três marcas.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Ronaldo apareceu em 2 filmes</h5><p>Brahma (símbolo do título) + Itaú (torcedor comum). Casting circular reforça narrativa.</p></div>
+          <div class="insight"><div class="ic">04</div><h5>Local físico &gt; só digital</h5><p>Bar é o ativo. Ações ponto-de-venda multiplicam a campanha digital.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ITAU -->
+    <article class="brand" id="itau">
+      <div class="brand-hero h-itau">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>PATROCINADOR CBF · AFRICA CREATIVE</div>
+          <h2>Itaú</h2>
+          <p class="brand-lede">"Torcendo Feito Você." Ronaldo Fenômeno como <em>torcedor comum</em>, não como craque. Recriou sua dancinha viral e interagiu com memes. Cashback em camisas + Pix + carteiras digitais + Itaú Shop integrados à jornada do torcedor.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Torcendo Feito Você</div></div>
+            <div><div class="lbl">Inversão</div><div class="val">Ídolo→Torcedor</div></div>
+            <div><div class="lbl">Canais</div><div class="val">TV+OOH+Meta+TikTok+YT</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual"><img src="https://gkpb.com.br/wp-content/uploads/2026/04/campanha-itau-copa-do-mundo-torcendo-feito-voce.jpg" alt="Itaú Torcendo Feito Você — Ronaldo Fenômeno com óculos verde e amarelo" /></div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Inversão de hierarquia</h4>
+        <h3>Tira o ídolo do pedestal, coloca ao lado do consumidor</h3>
+        <p>Africa Creative escalou Ronaldo Fenômeno mas o posicionou como "torcedor feito você" — recriando a dancinha viral dele, interagindo com memes da cultura digital e contracenando com Beatriz Haddad, Carlos Alcaraz, Rebeca Andrade, Gandula, Luisinho, Canarinho e Adênia Chloe. Vai contra a regra clássica de "use o ídolo no pedestal pra vender autoridade".</p>
+
+        <blockquote class="pull">"Com Torcendo Feito Você, fortalecemos essa relação ao integrar nossos produtos e serviços ao dia a dia dos clientes, apoiando a organização da vida financeira também em momentos de alta relevância emocional."<cite>Juliana Cury · CMO do Itaú Unibanco</cite></blockquote>
+
+        <h4>○ Mecânica de ativos financeiros</h4>
+        <h3>Produto bancário virou parte do torcer</h3>
+        <ul class="pretty">
+          <li><strong>Cashback</strong> na compra das novas camisas da Seleção</li>
+          <li><strong>Itaú Shop</strong> com descontos durante convocações</li>
+          <li><strong>Pix + pagamento por aproximação + carteiras digitais</strong> como facilitadores</li>
+          <li><strong>Itaú com a Visa: Seu Lugar na Final</strong> — sorteio pra clientes alta renda</li>
+          <li><strong>Seleção de Prêmios</strong> — sorteios + R$ 2 milhões em barras de ouro + viagem Ibiza com Ronaldo</li>
+        </ul>
+
+        <h4>○ Insights</h4>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Ídolo como par, não como guru</h5><p>Ronaldo como torcedor comum derruba a barreira "ele é elite, eu sou consumidor". Cria afeto sem distância.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Memes como linguagem oficial</h5><p>Banco entrou na cultura digital. Cliente Gen Z aceita marca que fala TikTokês.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Produto = facilitador da paixão</h5><p>Pix pra rachar conta no bar do jogo, cashback na camisa. Banco se posiciona como "infraestrutura da torcida".</p></div>
+          <div class="insight"><div class="ic">04</div><h5>Tier de prêmio por cliente</h5><p>Alta renda ganha Ibiza com Ronaldo. Cliente médio entra na Seleção de Prêmios. Segmenta sem excluir.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- VIVO -->
+    <article class="brand" id="vivo">
+      <div class="brand-hero h-vivo">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>PATROCINADORA CBF DESDE 2005 · AFRICA</div>
+          <h2>Vivo</h2>
+          <p class="brand-lede">"Sou Brasileiro Roxo." A cor da marca virou metáfora — torcedor que "sangra" pelo Brasil. Trilha: "Sangrando" de Gonzaguinha em versão inédita. Vini Jr + Taís Araújo + Gabriel Medina + Italo Ferreira + Rayssa Leal. 5 filmes 15s. Cota CazéTV.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Sou Brasileiro Roxo</div></div>
+            <div><div class="lbl">Trilha</div><div class="val">Sangrando (Gonzaguinha)</div></div>
+            <div><div class="lbl">Format</div><div class="val">5 filmes 15s</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="display:grid;place-items:center;padding:36px;background:linear-gradient(135deg,#660099,#3d0066)">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="40">SOU</text>
+            <text x="200" y="140" text-anchor="middle" fill="#ffdf00" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="40">BRASILEIRO</text>
+            <text x="200" y="180" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="40">ROXO</text>
+            <circle cx="60" cy="60" r="20" fill="#ffdf00" opacity=".8"/>
+            <circle cx="340" cy="60" r="20" fill="#fff" opacity=".4"/>
+            <text x="200" y="220" text-anchor="middle" fill="rgba(255,255,255,.5)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">VIVO · COPA 2026</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Insight do trocadilho cromático</h4>
+        <h3>Roxo Vivo = sangue brasileiro = torcedor que sangra pela seleção</h3>
+        <p>Roxo é cor difícil de associar a futebol — verde, amarelo, azul dominam. A Africa transformou a cor proprietária da Vivo em metáfora visceral: "Sou Brasileiro Roxo" trabalha o duplo sentido entre cor de marca e sangue/intensidade. <strong>Não há nenhuma outra marca BR com esse tipo de apropriação cromática.</strong></p>
+
+        <h4>○ Casting plural</h4>
+        <h3>Não só atleta — atravessa esportes e cultura</h3>
+        <p>Vini Jr (futebol) + Taís Araújo (TV/cultura) + Gabriel Medina (surf) + Italo Ferreira (surf) + Rayssa Leal (skate). Subtexto: "brasileiro roxo" não é só quem assiste futebol — é quem vive o país. Vivo amplia narrativa para audiências que talvez não assistam Copa, mas se identificam com brasilidade.</p>
+
+        <h4>○ Trilha como ativo emocional</h4>
+        <h3>"Sangrando" do Gonzaguinha em versão inédita</h3>
+        <p>Mesma estratégia da Coca Brasil com Jorge Ben Jor: MPB icônica + remix exclusivo = capital emocional transgeracional. Boomer reconhece a música original, Gen Z descobre via TikTok com a versão nova. Vivo também comprou cota na CazéTV — cobertura cruzada na Globo e no YouTube.</p>
+
+        <h4>○ Format social</h4>
+        <h3>5 filmes 15s &gt; 1 filme de 60s</h3>
+        <p>Otimização TikTok-first. 5 ângulos diferentes da mesma narrativa = 5 oportunidades de criativo + edição de redes sociais. A versão longa serve TV; as 15s vivem no Reels/Shorts/TikTok.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Cor proprietária vira IP</h5><p>Roxo Vivo virou conceito emocional. "Não tenho cor de Copa, mas tenho cor de Brasil".</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Multi-esporte = multi-audiência</h5><p>Surf, skate, tênis, futebol. Cada esporte traz uma audiência diferente, sob a mesma bandeira.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Cota cruzada (Globo + CazéTV)</h5><p>Patrocina nos dois lados — não escolheu. Cobertura máxima.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- MAGALU -->
+    <article class="brand" id="magalu">
+      <div class="brand-hero h-magalu">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>VAREJO · OGILVY · LÉO SANTANA</div>
+          <h2>Magalu</h2>
+          <p class="brand-lede">"Aqui o Brasil se vê gigante." Léo Santana estrela + assina trilha original. 3 filmes 15s pela O2 Films mostrando situações de torcedor com infraestrutura ruim — TV pequena, sofá apertado — transformadas com produtos Magalu. R$ 199 = número da sorte. Sorteio 270 salas completas.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Brasil Gigante</div></div>
+            <div><div class="lbl">Casting</div><div class="val">Léo Santana</div></div>
+            <div><div class="lbl">Mecânica</div><div class="val">R$199 = nº sorte</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#0086ff,#0050a0);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="80" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="700" font-size="22" letter-spacing="3">AQUI O BRASIL</text>
+            <text x="200" y="155" text-anchor="middle" fill="#ffdf00" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="56" letter-spacing="-2">GIGANTE</text>
+            <text x="200" y="200" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="12" letter-spacing="2">SE VÊ · MAGALU 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ O insight do "gigante"</h4>
+        <h3>Resgatar capital simbólico de pentacampeão para vender TV grande</h3>
+        <p>A Ogilvy criou um trocadilho de tamanho: "Brasil gigante" = país pentacampeão. "Aqui se vê gigante" = na Magalu você compra TV grande. <strong>Associação semântica direta entre orgulho nacional e categoria de produto.</strong> Sem isso, seria mais um varejo vendendo TV em ano de Copa.</p>
+
+        <h4>○ Trilha original como ativo</h4>
+        <p>Léo Santana não só protagoniza — assina uma música original criada exclusivamente pra campanha. <strong>Vira playlist, vira live, vira show.</strong> Magalu transformou comercial em produção musical.</p>
+
+        <h4>○ Mecânica promo</h4>
+        <h3>R$ 199 = bilhete da sorte · sorteio diário · 270 salas</h3>
+        <div class="mech">
+          <div class="mech-step"><div class="n">01</div><div class="t">Compra no app <strong>≥R$ 199</strong></div></div>
+          <div class="mech-step"><div class="n">02</div><div class="t">Ganha <strong>nº da sorte</strong></div></div>
+          <div class="mech-step"><div class="n">03</div><div class="t">Sorteios <strong>diários</strong> 26/abr-10/jun</div></div>
+          <div class="mech-step"><div class="n">04</div><div class="t"><strong>270 salas completas</strong> sorteadas</div></div>
+        </div>
+        <p>R$ 199 é o ticket de entrada. Não é dinheiro alto, mas é piso que multiplica AOV. Sorteio diário (não único) mantém engajamento de 45 dias.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Casting popular &gt; A-list</h5><p>Léo Santana vale mais que ator global. Apela ao Norte/Nordeste em massa.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Trilha original = brand asset</h5><p>Música própria vira Spotify, vira show, vira ringtone. ROI infinito.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Ticket de entrada acessível</h5><p>R$ 199 cabe no carrinho de qualquer um. Sorteio diário multiplica engajamento.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- COCA-COLA BRASIL -->
+    <article class="brand" id="coca-br">
+      <div class="brand-hero h-coca-br">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA PARTNER · OGILVY BR · LOCAL FILM</div>
+          <h2>Coca-Cola Brasil</h2>
+          <p class="brand-lede">"Essa Coca-Cola Toda." Brasil entre os 3 únicos mercados LATAM com filme próprio (junto com México + Argentina). Jorge Ben Jor reinterpreta "Ponta de Lança Africano". Painel de dados (5 títulos · 114 jogos · 237 gols). E a estrela do shelf: <strong>latas que gritam "GOL!" ao abrir</strong> — algumas premiam R$ 5 mil instantâneos.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Filme nacional</div><div class="val">Essa Coca-Cola Toda</div></div>
+            <div><div class="lbl">Trilha</div><div class="val">Jorge Ben Jor</div></div>
+            <div><div class="lbl">Hit shelf</div><div class="val">Lata Grita Gol</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#f40000,#7a0000);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="140" y="40" width="120" height="180" rx="14" fill="#fff" opacity=".95"/>
+            <text x="200" y="120" text-anchor="middle" fill="#f40000" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="20">Coca-Cola</text>
+            <text x="200" y="145" text-anchor="middle" fill="#f40000" font-family="Inter,sans-serif" font-weight="800" font-size="34">GOL!</text>
+            <text x="200" y="175" text-anchor="middle" fill="#000" font-family="DM Mono,monospace" font-size="11" letter-spacing="2">R$ 5 MIL</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Filme local</h4>
+        <h3>Brasil é território exclusivo de filme próprio</h3>
+        <p>Globalmente a Coca-Cola lançou trilogia "Bubbling Up → Uncanned Emotions → No Better Feeling". Mas no Brasil, México e Argentina ela criou conteúdo audiovisual <strong>específico</strong>. No Brasil: "Essa Coca-Cola Toda", da Ogilvy, com pergunta provocativa: "O Brasil ainda é essa Coca-Cola toda?". O filme revisita a Seleção via dados — 5 títulos, 114 partidas, 237 gols, "milhões de torcedores".</p>
+
+        <h4>○ Trilha</h4>
+        <p>Jorge Ben Jor reinterpretando <strong>"Ponta de Lança Africano - Umbabarauma Homem Gol"</strong>. Mesmo movimento que a Vivo fez com Gonzaguinha: MPB icônica + versão exclusiva = ativo cultural inquestionável. Conecta gerações em mídia paga e orgânica.</p>
+
+        <h4>○ Lata que Grita Gol</h4>
+        <h3>Tecnologia sonora embutida — ação shelf de prateleira</h3>
+        <p>Latas edição limitada têm chip de áudio que dispara "GOL!" no momento da abertura. Algumas premiam <strong>R$ 5.000 instantâneos</strong> ao consumidor. Códigos no interior da tampa de Coca, Fanta e Sprite habilitam sorteio de ingressos da Copa.</p>
+
+        <blockquote class="pull">"A tecnologia de áudio embutida na lata dispara o som no exato momento da abertura. Algumas dessas unidades premiam o consumidor com R$ 5 mil de forma imediata."<cite>Promoção Lata Grita Gol · Brasil</cite></blockquote>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Inove no produto, não só no anúncio</h5><p>Lata que grita gol é UGC garantido — milhares de vídeos de pessoas abrindo lata e gritando junto.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Brasil ganha tratamento local</h5><p>Coca tratou Brasil como mercado-chave + produção exclusiva. Mostra hierarquia interna.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Música licenciada &gt; jingle novo</h5><p>Jorge Ben Jor entrega capital emocional que jingle inédito não tem.</p></div>
+          <div class="insight"><div class="ic">04</div><h5>R$ 5 mil instantâneo &gt; sorteio grande</h5><p>Recompensa imediata produz mais buzz que sorteio único milionário.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- NIKE -->
+    <article class="brand" id="nike">
+      <div class="brand-hero h-nike">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FORNECEDOR CBF · WIEDEN+KENNEDY SP</div>
+          <h2>Nike × CBF</h2>
+          <p class="brand-lede">"Alegria que Apavora." Camisa amarela 2026 lançada com a metáfora do pássaro preso há 24 anos rompendo a gaiola. Vini Jr + Estêvão + Richarlison + Lucas Paquetá. Instalação física na Marina da Glória (Rio). Conceito: alegria não é só festa — é arma competitiva.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Alegria que Apavora</div></div>
+            <div><div class="lbl">Agência</div><div class="val">Wieden+Kennedy SP</div></div>
+            <div><div class="lbl">Ativação</div><div class="val">Marina da Glória RJ</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual"><img src="https://updateordie.com/wp-content/uploads/2026/03/brazilian_soccer_player_action.webp" alt="Nike Brasil Alegria que Apavora — camisa amarela CBF 2026" /></div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Inversão de tom da marca-país</h4>
+        <h3>"Alegria" deixa de ser folclore e vira ameaça</h3>
+        <p>A Wieden+Kennedy SP atacou o estereótipo: brasileiro alegre = brasileiro pouco competitivo. A campanha posiciona alegria como força implacável — "leve e ameaçadora". Isso é fundamentalmente diferente da Nike de 2014/2018 que vendia carnaval.</p>
+
+        <blockquote class="pull">"A alegria que define o estilo do futebol do Brasil não é apenas celebração, mas também uma força competitiva, intensa e implacável."<cite>Conceito da campanha · Nike × CBF 2026</cite></blockquote>
+
+        <h4>○ Metáfora do pássaro</h4>
+        <h3>24 anos preso = 24 anos sem título</h3>
+        <p>Vídeo de lançamento usa metáfora central: pássaro preso há 24 anos rompe a gaiola. Estrutura visual: grades quebradas, sinais de luta por liberdade. <strong>Mesmo intervalo da Brahma e da Coca: 24 anos sem hexa.</strong> Três marcas-líderes BR ancoradas no mesmo trauma coletivo.</p>
+
+        <h4>○ Camisa azul + Michael Jordan</h4>
+        <p>A camisa 2 (azul) tem o logo da Air Jordan estampado — primeiro uniforme de Copa da história a usar marca pessoal de um atleta de outro esporte. Posicionamento sneakerhead/streetwear vencendo posicionamento institucional.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Reinterprete o estereótipo</h5><p>"Alegria competitiva" subverte clichê de "brasileiro leve". Posicionamento mais forte que celebração.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Ativação física &gt; só filme</h5><p>Marina da Glória virou cenário tangível. Comunidade local participou — não só atleta.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Streetwear na camisa institucional</h5><p>Jordan na 2 = streetwear venceu institucional. Sinal cultural para Gen Z.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- BUD x ZE -->
+    <article class="brand" id="bud-ze">
+      <div class="brand-hero h-bud">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>AB INBEV · OFFICIAL BEER FIFA</div>
+          <h2>Budweiser × Zé Delivery</h2>
+          <p class="brand-lede">A ação integrada mais inteligente da Copa BR: comprou Bud no Zé = entra no <strong>Bolão da Bud</strong>. Palpita, pontua, sobe no ranking. Top 100 ganham frete grátis 3 meses, TV 75", eletro, cerveja. Plus: <strong>Bud Fan Store</strong> hospedada no Mercado Livre — cadastro de nota fiscal = 9.700+ prêmios licenciados FIFA + Zé.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Mecânica</div><div class="val">Comprou = palpita</div></div>
+            <div><div class="lbl">Loja</div><div class="val">Mercado Livre</div></div>
+            <div><div class="lbl">Cupom</div><div class="val">CHEGUEI50</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#c41e3a,#8a0e1f);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="80" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="700" font-size="20" letter-spacing="6">BOLÃO</text>
+            <text x="200" y="135" text-anchor="middle" fill="#f5c84b" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="64" letter-spacing="-2">DA BUD</text>
+            <text x="200" y="180" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="12" letter-spacing="2">× ZÉ DELIVERY · COPA 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Bolão da Bud — mecânica</h4>
+        <h3>O bolão dentro do app de delivery</h3>
+        <div class="mech">
+          <div class="mech-step"><div class="n">01</div><div class="t">Compra <strong>qualquer Bud</strong> no app Zé</div></div>
+          <div class="mech-step"><div class="n">02</div><div class="t">Entra no <strong>Bolão da Bud</strong></div></div>
+          <div class="mech-step"><div class="n">03</div><div class="t">Palpita placares · ganha <strong>prêmios instantâneos</strong></div></div>
+          <div class="mech-step"><div class="n">04</div><div class="t">Acumula no <strong>ranking geral</strong></div></div>
+        </div>
+        <p>Premiação final: <strong>top 100 pontuadores</strong> ganham frete grátis 3 meses no Zé, TV de 75", eletrodomésticos, cerveja grátis. Não é só sorteio — é competição. <strong>Faz o consumo virar engajamento ranqueado.</strong></p>
+
+        <h4>○ Bud Fan Store</h4>
+        <h3>Loja licenciada FIFA hospedada no Mercado Livre — não no e-commerce próprio</h3>
+        <p>Promoção paralela: comprou Bud em qualquer ponto, cadastrou nota fiscal no hotsite, ganhou. <strong>9.700+ prêmios:</strong> PS5, camisetas Global Jersey, jaquetas Creator/Bowtie, bonés Vintage, bolsas tiracolo, copos Alucup, vouchers Zé. Bud Zero <em>aumenta as chances</em>.</p>
+
+        <blockquote class="pull">"A Bud não escolheu entre digital e shelf. Fez bolão no Zé pro digital E nota fiscal pra varejo físico. Cobertura dupla com mecânicas distintas."<cite>Análise · Score Agency (criadora)</cite></blockquote>
+
+        <h4>○ Por que a parceria com Mercado Livre faz sentido</h4>
+        <p>Bud Fan Store está hospedada no Mercado Livre, não no próprio site. <strong>Mercado Livre é também patrocinador CazéTV.</strong> A Bud usou o tráfego pré-existente do maior marketplace BR pra distribuir produto licenciado. <strong>Não construiu canal — alugou o canal que já tinha 100M+ visitas/mês.</strong></p>
+
+        <h4>○ Cupom CHEGUEI50 — aquisição</h4>
+        <p>50% de desconto no primeiro pedido Zé (limitado a R$ 15, em compras a partir de R$ 30). Strategy clássica de aquisição de novos usuários do Zé via Bud — Bud serve de isca pra Zé crescer base, Zé serve de canal pra Bud vender. <strong>Win-win interno da Ambev.</strong></p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Bolão dentro do app de consumo</h5><p>Não é Bolão FIFA + app separado. É Bolão DENTRO do app de cerveja. Sem fricção.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Mercado Livre = canal alugado</h5><p>Bud não construiu loja própria. Usou o canal de quem já tem audiência.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Bud Zero ganha 2x</h5><p>Mais saúde + mais chances de prêmio. Empurra crescimento de SKU específico.</p></div>
+          <div class="insight"><div class="ic">04</div><h5>Cupom de aquisição via Bud</h5><p>Bud é isca pra trazer novos clientes pro Zé. Cross-pollination interna da Ambev.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- McDONALD'S BR -->
+    <article class="brand" id="mcd">
+      <div class="brand-hero h-mcd">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA SPONSOR · COMBO + PANINI</div>
+          <h2>McDonald's Brasil</h2>
+          <p class="brand-lede">"Méqui, Trionda e Você na Final." Combo McOferta + figurinhas Panini (5 por R$5). 15 milhões de pacotes distribuídos em 12 países LATAM. Programa Meu Méqui troca pontos por figurinhas. Mini Trionda Happy Meal (parceria com Adidas) em paralelo.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Combo</div><div class="val">McOferta + 5 figurinhas</div></div>
+            <div><div class="lbl">Volume</div><div class="val">15M pacotes LATAM</div></div>
+            <div><div class="lbl">App</div><div class="val">Meu Méqui pontos</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#ffc72c,#da291c);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="44" letter-spacing="-2">MÉQUI</text>
+            <text x="200" y="135" text-anchor="middle" fill="#da291c" font-family="Inter,sans-serif" font-weight="700" font-size="22" letter-spacing="2">+ TRIONDA</text>
+            <text x="200" y="180" text-anchor="middle" fill="#fff" font-family="DM Mono,monospace" font-size="13" letter-spacing="2">= VOCÊ NA FINAL</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Mecânica do Combo Figurinha</h4>
+        <p>McOferta + Large McFries + 5 figurinhas Panini = <strong>R$ 5 (ou R$ 1 por figurinha)</strong> — 4 oficiais + 1 com borda exclusiva McDonald's + 1 QR code. Disponível no Drive-Thru, no balcão e no app. <strong>Estratégia transversal:</strong> figurinha vira motor de retorno ao restaurante (colecionador precisa voltar pra completar).</p>
+
+        <h4>○ Lealdade integrada</h4>
+        <p>Cliente do <strong>Meu Méqui</strong> (programa de fidelidade) pode trocar pontos por figurinhas. Não é cupom — é pontos do app. Inteligente: usa figurinha como moeda interna do programa. Aumenta engajamento do programa em vez de só distribuir produto.</p>
+
+        <h4>○ Mini Trionda no Happy Meal — collab com Adidas</h4>
+        <p>Em paralelo: a partir de março/2026, todo Happy Meal vem com mini Trionda (a bola oficial Adidas da Copa). É co-branding interpatrocinador: McDonalds e Adidas são ambos FIFA — combinaram. <strong>Pouquíssimas marcas têm permissão de fazer collab cruzado dentro do mesmo patrocínio.</strong></p>
+
+        <h4>○ Promoção final</h4>
+        <p>Levam um ganhador para a final da Copa. Mecânica de cadastro via app. Plus: Panini perdeu exclusividade de algumas seleções valiosas para outras marcas — McDonalds aproveitou o vácuo com a edição "borda exclusiva".</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Figurinha como moeda interna</h5><p>Programa de fidelidade troca pontos por figurinha. Aumenta engajamento do app permanentemente.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Collab interpatrocinador</h5><p>McDo × Adidas (mini Trionda). Quando 2 FIFAs se unem, a soma é exponencial.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Figurinha exclusiva = drive de retorno</h5><p>Cliente volta pra completar a coleção. Multiplica frequência de visita por 30 dias.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CIMED -->
+    <article class="brand" id="cimed">
+      <div class="brand-hero h-cimed">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>PATROCINADORA CBF · OPERAÇÃO MULTI-MARCA</div>
+          <h2>Cimed</h2>
+          <p class="brand-lede">A operação mais ambiciosa do mercado BR: <strong>R$ 200 milhões em 90 dias</strong>. 20+ lançamentos sincronizados entre Carmed, Lavitan e João e Maria. Projeção: <strong>R$ 2 bilhões em receita</strong> entre maio e julho. Ritmo: um produto novo a cada 4,5 dias.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Investimento</div><div class="val">R$ 200M / 90 dias</div></div>
+            <div><div class="lbl">Lançamentos</div><div class="val">20+ produtos</div></div>
+            <div><div class="lbl">ROI esperado</div><div class="val">10x</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#0066b3,#003566);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="80" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="700" font-size="13" letter-spacing="4">EM 90 DIAS</text>
+            <text x="200" y="140" text-anchor="middle" fill="#ffdf00" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="68" letter-spacing="-2">R$200M</text>
+            <text x="200" y="175" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="11" letter-spacing="2">CIMED · 20+ DROPS COPA 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ A estratégia "Copa = janela de drops"</h4>
+        <h3>Não é campanha — é calendário industrial sincronizado</h3>
+        <p>Cimed não vai gastar R$ 200M em filme institucional. Vai gastar em <strong>volume operacional de lançamento</strong> — Carmed (lip balms colecionáveis), Lavitan (suplementos) e João e Maria (produtos infantis). Cada lançamento é uma janela de varejo nova. <strong>Copa não é tema; é trigger temporal.</strong></p>
+
+        <h4>○ Por que isso funciona pra Cimed</h4>
+        <p>Cimed é segunda maior farmacêutica BR, conhecida por ousadia em marketing (Carmed Spider-Man, Carmed × MC Daniel, etc.). Copa entrega uma janela com atenção crítica do consumidor. Em vez de tentar criar storytelling de marca, ela <strong>satura o varejo com novidades</strong>. Lazy approach? Não — é a lógica do retail moderno: "drop semanal".</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Copa como janela, não como tema</h5><p>Cimed não diz "Brasil Hexa" — só usa o aumento de atenção pra empurrar produtos novos.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Multi-marca = multi-categoria</h5><p>Lip balm + vitamina + infantil. Atende todas as decisões de compra em farmácia.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Ritmo de drop &gt; campanha hero</h5><p>1 produto a cada 4,5 dias mantém base sempre engajada. Lógica de e-commerce.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CENTAURO -->
+    <article class="brand" id="centauro">
+      <div class="brand-hero h-centauro">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#000"></span>VAREJO ESPORTIVO · CREATOR PARTNERSHIP</div>
+          <h2>Centauro × Podpah Funkbol</h2>
+          <p class="brand-lede">"Veste a Rua." Resgate da tradição de pintar a rua antes da Copa, ativando em <strong>5 cidades</strong> — uma por título mundial. Manaus (58) · Santo André (62) · Maringá (70) · Campo Grande (94) · Recife (02). Cada cidade com creator local diferente.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Parceiro</div><div class="val">Podpah Funkbol</div></div>
+            <div><div class="lbl">Ativação</div><div class="val">5 cidades · 5 títulos</div></div>
+            <div><div class="lbl">Período</div><div class="val">2-31 maio</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#fcc500,#c69d00);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="80" text-anchor="middle" fill="#000" font-family="Inter,sans-serif" font-weight="800" font-size="34" letter-spacing="-1">VESTE</text>
+            <text x="200" y="125" text-anchor="middle" fill="#000" font-family="Inter,sans-serif" font-weight="800" font-size="34" letter-spacing="-1">A RUA</text>
+            <text x="200" y="170" text-anchor="middle" fill="rgba(0,0,0,.6)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">CENTAURO × PODPAH</text>
+            <text x="200" y="195" text-anchor="middle" fill="rgba(0,0,0,.5)" font-family="DM Mono,monospace" font-size="9" letter-spacing="2">58 · 62 · 70 · 94 · 02</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Insight cultural</h4>
+        <h3>Resgatar uma tradição que estava morrendo</h3>
+        <p>Pintar a rua antes da Copa foi ritual coletivo nas décadas 80/90/00 — quase morreu. Centauro × Podpah Funkbol Clube (extensão do podcast Podpah focada em futebol) tirou a tradição do esquecimento. Cada cidade tem <strong>creator local diferente:</strong> Fael Gomes (Centro-Oeste), Sabrina (Norte), Muuhpro (Sul), Mlk Jhow (Sudeste), Bença Show (Nordeste). <strong>Não é uma campanha; é cinco campanhas regionais.</strong></p>
+
+        <h4>○ Casting regional</h4>
+        <p>Por que isso funciona: creator regional fala a língua da audiência local. Audiência do Norte não responde do mesmo jeito que audiência do Sudeste. Centauro segmentou criativo por região — mantendo o conceito central. <strong>É o exato oposto do "one ad fits all".</strong></p>
+
+        <h4>○ Ritual + UGC</h4>
+        <p>Pintar rua = ato físico que gera dezenas de fotos e vídeos. Comunidade pinta, posta, marca Centauro. Centauro não precisou pagar pra postar; o ritual fez o trabalho de mídia orgânica.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Ressuscite ritual em extinção</h5><p>Tradição esquecida = território aberto. Quem traz de volta, ganha o capital cultural.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Creator regional &gt; nacional</h5><p>5 creators distintos = 5 audiências cobertas com voz autêntica.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Ação física = motor de UGC</h5><p>Pintar rua gera foto. Foto gera post. Post gera alcance orgânico. Custo: tinta.</p></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- VIRAL CASE -->
+<section id="viral" style="background:linear-gradient(180deg,#0c0c10 0%,#0d0d10 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Anatomia de uma ação viral</div>
+      <h2>O Canarinho Pistola: como o iFood transformou pelúcia em meme nacional</h2></div>
+      <p class="lede">A campanha do iFood ilustra perfeitamente o ciclo completo: produto físico → trigger emocional → meme orgânico → captação. Vale dissecar passo a passo.</p>
+    </div>
+    <div class="viral">
+      <div class="vbadge">⚡ ESTUDO DE CASO</div>
+      <h3>De pelúcia colecionável a hashtag transversal nas redes</h3>
+      <p style="font-size:15px">Em abril/2026 o iFood anunciou as pelúcias. Em maio, antes mesmo da mecânica oficial estar disponível, Esfera Toy (fabricante) postou teaser que viralizou. CazéTV pegou o gancho: "O CANARINHO PISTOLA É BOLA PRA KRLH!!!" virou meme transversal — usado por CNN Brasil, marcas de varejo, contas de torcida e creators independentes. <strong>O produto criou o meme antes da campanha começar.</strong></p>
+      <div class="viral-flow">
+        <div class="flow-step"><div class="fn">01 · TEASER</div><div class="ft">Esfera Toy posta no TikTok: <strong>"Vem aí o Canarinho Pistola do iFood"</strong></div></div>
+        <div class="flow-step"><div class="fn">02 · REAÇÃO</div><div class="ft">CazéTV reaproveita imagem nas redes oficiais: <strong>"é bola pra krlh"</strong></div></div>
+        <div class="flow-step"><div class="fn">03 · MEME</div><div class="ft">CNN Brasil, contas de torcida, creators começam a usar <strong>#CanarinhoPistola</strong></div></div>
+        <div class="flow-step"><div class="fn">04 · DEMANDA</div><div class="ft">Filme estreia na final do BBB 26. Demanda <strong>antes</strong> da mecânica abrir</div></div>
+        <div class="flow-step"><div class="fn">05 · COLETA</div><div class="ft">5 selos = pelúcia → unboxing viraliza no TikTok → ciclo se retroalimenta</div></div>
+      </div>
+      <div class="glow-box">
+        <p><strong>A LIÇÃO:</strong> não foi a campanha de TV que criou o viral. Foi o teaser de produto + reação espontânea de creators + linkagem com hashtags que <em>já existiam</em> (Canarinho Pistola é meme da Copa 2022). iFood pegou carona em capital cultural pré-existente em vez de criar do zero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL -->
+<section id="global" style="background:linear-gradient(180deg,#0d0d10 0%,#0a0a0d 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow intl">○○○ 🌎 Global · Referências internacionais</div>
+      <h2>O que o resto do mundo está produzindo</h2></div>
+      <p class="lede">8 deep dives das marcas globais mais relevantes criativamente para Copa 2026 — referências de casting, mecânicas, format e estratégia que valem mapear como benchmark.</p>
+    </div>
+
+    <!-- ADIDAS -->
+    <article class="brand" id="adidas">
+      <div class="brand-hero h-adidas">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#d6ff36"></span>FIFA PARTNER · MATCH BALL · LOLA USA</div>
+          <h2>Adidas</h2>
+          <p class="brand-lede">"Backyard Legends" — 5 minutos com Timothée Chalamet liderando time de quintal contra trio invicto há gerações. Cast: Messi, Bad Bunny, Bellingham, Lamine Yamal, Trinity Rodman + CGI de Zidane, Beckham e Del Piero jovens. A campanha mais comentada da Copa.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Platform</div><div class="val">You Got This</div></div>
+            <div><div class="lbl">Duração</div><div class="val">5min cinema</div></div>
+            <div><div class="lbl">Ball</div><div class="val">TRIONDA + @TikTok</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual"><img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/704213_v2.jpg" alt="Adidas Trionda — Jude Bellingham com a bola oficial Copa 2026" /></div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Casting cultural extremo</h4>
+        <h3>Ator de Hollywood lidera, atletas são figurantes</h3>
+        <p>Chalamet é o protagonista — Messi e Bad Bunny são "ajudantes". CGI rejuvenesce Beckham, Zidane e Del Piero pra cenas de "lenda de quintal vencida por outras lendas mais antigas". Direção: Mark Molloy / SMUGGLER. Agência: LOLA USA. Estética 90s — walkman, headphones com fio, moletons largos, soundtrack nostálgico.</p>
+        <div class="gallery three">
+          <img src="https://www.soccerbible.com/media/181095/backyard-1.jpg" alt="Backyard Legends cena 1" />
+          <img src="https://www.soccerbible.com/media/181097/backyard-3.jpg" alt="Backyard Legends cena 3" />
+          <img src="https://www.soccerbible.com/media/181099/backyard-5.jpg" alt="Backyard Legends cena 5" />
+          <img src="https://www.soccerbible.com/media/181100/backyard-6.jpg" alt="Backyard Legends cena 6" />
+          <img src="https://www.soccerbible.com/media/181101/backyard-7.jpg" alt="Backyard Legends cena 7" />
+          <img src="https://www.soccerbible.com/media/181106/backyard-11.jpg" alt="Backyard Legends cena 11" />
+        </div>
+        <blockquote class="pull">"Eu sonhava jogar com esses caras. Jogava no Pier 40 pensando em faltas do Beckham, finalizações do Del Piero, voleios do Zidane. Sou tradicionalista — não sei <em>soccer</em>, sei <em>football</em>."<cite>Timothée Chalamet · Backyard Legends</cite></blockquote>
+        <h4>○ Produto vira conta de creator</h4>
+        <p>Conta dedicada <strong>@Trionda no TikTok</strong> com POV first-person da bola em ação. Brand-as-creator. A bola vira protagonista de conteúdo.</p>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Inverte casting tradicional</h5><p>Ator → herói. Atleta → ajudante. Mexe com hierarquia clássica do marketing esportivo.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>CGI ressuscita lendas</h5><p>Beckham/Zidane jovens via CGI = pega Gen Z (descobre) + millennial (revisita).</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Nostalgia 90s vence futurismo</h5><p>Walkman, terrace style, soundtrack analógico. Em 2022 era espacial; em 2026 é vintage.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- VISA -->
+    <article class="brand" id="visa">
+      <div class="brand-hero h-visa">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#f5b521"></span>FIFA PARTNER · PAYMENT</div>
+          <h2>Visa</h2>
+          <p class="brand-lede">"Tap In" — duplo sentido: contactless + gol de chapinha. Jason Sudeikis (Ted Lasso) percorre USA/MEX/CAN. Tap In Studio nos estádios. <strong>Tap In to Score:</strong> cada gol de chapinha real no torneio dispara sorteios. <strong>Tap In to Impact:</strong> $600K para 3 ONGs (uma por país-sede).</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Tap In</div></div>
+            <div><div class="lbl">Casting</div><div class="val">Jason Sudeikis</div></div>
+            <div><div class="lbl">ONGs</div><div class="val">$600K · 3 países</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#1a1f71,#0d1043);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="40" width="320" height="180" rx="18" fill="#1a1f71" stroke="#f5b521" stroke-width="2"/>
+            <text x="200" y="125" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="900" font-size="46" letter-spacing="-1">TAP IN</text>
+            <text x="200" y="160" text-anchor="middle" fill="#f5b521" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">VISA · FIFA 26</text>
+            <circle cx="80" cy="80" r="14" fill="none" stroke="#f5b521" stroke-width="2"/>
+            <circle cx="80" cy="80" r="6" fill="#f5b521"/>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ O insight do trocadilho</h4>
+        <h3>Uma palavra carrega produto, categoria e emoção do esporte</h3>
+        <p>"Tap In" em inglês americano é gíria pro gol de chapinha. Tap = também o gesto de pagamento por aproximação. A Visa pegou a palavra que esporte e produto compartilham e construiu uma plataforma inteira em cima dela. <strong>Quando funciona, ninguém percebe que está sendo educado sobre pagamento.</strong></p>
+
+        <h4>○ Tap In to Score — gamificação sincronizada</h4>
+        <p>Cardholders Visa USA + Canadá podem se cadastrar. <strong>Cada gol de chapinha real durante o torneio dispara uma rodada de sorteios.</strong> Prêmios: ingressos, viagens à final, signed memorabilia, merch. Conecta consumo (uso do cartão) a evento (gol) em tempo real. Toda partida vira potencial recompensa.</p>
+
+        <h4>○ Tap In to Impact — impacto local</h4>
+        <p>$600K divididos por 3 ONGs (uma por país-sede): SCORE (USA), Pro Mujer (México), Futurpreneur (Canadá). <strong>Causa local específica por mercado.</strong> Não é "uma ONG global" — é três ONGs com cabeça local.</p>
+
+        <h4>○ Bonvoy + Visa</h4>
+        <p>Campanha conjunta com Marriott Bonvoy: "For Fans, Everywhere" com Haaland + Vinicius Júnior. 600+ experiências via Bonvoy Moments. Bundling inter-marca dentro do mesmo FIFA Partner ecosystem.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Encontre o trocadilho que carrega tudo</h5><p>"Tap In" é produto + categoria + emoção. Procure a palavra dupla que o vestibular compartilha com algo cultural.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Conecte consumo a evento em tempo real</h5><p>Gol = sorteio. Cria comportamento de uso + assistência sincronizado.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Causa local &gt; causa global</h5><p>3 ONGs específicas valem mais que 1 ONG genérica.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- LEGO -->
+    <article class="brand" id="lego">
+      <div class="brand-hero h-lego">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#ffdf00"></span>NON-SPONSOR · AMBUSH BRILHANTE</div>
+          <h2>Lego</h2>
+          <p class="brand-lede">"Everyone Wants a Piece." 60 segundos. Messi, Ronaldo, Mbappé e Vinícius Jr juntos numa mesa pela primeira vez (via CGI) tentando colocar minifigura no topo do troféu Lego — e uma criança chega e termina antes. <strong>314 milhões de views nas contas dos atletas em 24 horas.</strong></p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Views 24h</div><div class="val">314 milhões</div></div>
+            <div><div class="lbl">Produção</div><div class="val">CGI + dublês</div></div>
+            <div><div class="lbl">Sets</div><div class="val">$29.99 - $79.99</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#dd1a1a,#ff8200);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="80" y="60" width="50" height="120" fill="#ffdf00"/>
+            <rect x="140" y="60" width="50" height="120" fill="#fff"/>
+            <rect x="200" y="60" width="50" height="120" fill="#0086ff"/>
+            <rect x="260" y="60" width="50" height="120" fill="#00c853"/>
+            <text x="200" y="220" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="900" font-size="22" letter-spacing="3">LEGO · WC 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ A peça mais inteligente da Copa</h4>
+        <h3>Lego não paga FIFA. Mas fez a campanha mais viral do torneio.</h3>
+        <p>Lego não é patrocinadora oficial. Mas conseguiu reunir Messi, Cristiano Ronaldo, Mbappé e Vinícius Jr (rivais máximos) em um filme só — sem nenhum deles estar fisicamente presente no set. Usaram dublês + CGI avançado para combinar tudo em uma mesa. <strong>Ambush marketing puro, executado com classe.</strong></p>
+
+        <blockquote class="pull">"A campanha alcançou 314 milhões de visualizações nas contas das jogadoras no Instagram em 24 horas após o lançamento."<cite>Ad Age · análise de performance</cite></blockquote>
+
+        <h4>○ Produto de venda real</h4>
+        <p>"Lego Editions" — sets de 490-510 peças, com cores da seleção, número da camisa e personal branding de cada jogador. Football Highlights $29.99 cada; Football Legend (Messi e Ronaldo) $79.99 cada. <strong>Não é só campanha — é catálogo.</strong></p>
+
+        <h4>○ O twist final</h4>
+        <p>Filme termina com uma criança colocando a minifigura no topo do troféu. <strong>Mensagem implícita:</strong> a Copa é sobre o sonho do moleque, não sobre os adultos consagrados. Inverte hierarquia geracional em uma única cena.</p>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Você não precisa pagar FIFA</h5><p>Lego provou que campanha de Copa pode ser global e viral sem dinheiro de patrocínio oficial.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>CGI une rivais impossíveis</h5><p>Messi + CR7 no mesmo frame. Sem CGI nunca acontece. Em 2026 já é possível.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Distribuição via talento</h5><p>Cada jogador postou em sua conta. Distribuição orgânica via seguidores soma 600M+.</p></div>
+          <div class="insight"><div class="ic">04</div><h5>Criança no fim = inversão poética</h5><p>Final inverte hierarquia. Cliente lembra o twist mais que da marca — e por isso lembra da marca.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- LAYS -->
+    <article class="brand" id="lays">
+      <div class="brand-hero h-lays">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA SPONSOR · 2 PLATAFORMAS PARALELAS</div>
+          <h2>Lay's</h2>
+          <p class="brand-lede">Dois filmes em paralelo: <strong>"The Epic Watch Party"</strong> com Messi + Beckham + Henry + Putellas + Steve Carell aparecendo na frente de um supermercado na Flórida — quem está com Lay's no carrinho ganha convite pra watch party. Plus: <strong>"Bandwagon"</strong> com Will Ferrell dirigindo um caminhão amarelo Lay's pelos EUA, convocando "torcedor casual" a "pular no bonde".</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">No Lay's, No Game</div></div>
+            <div><div class="lbl">Hero 1</div><div class="val">Epic Watch Party</div></div>
+            <div><div class="lbl">Hero 2</div><div class="val">Bandwagon (Will Ferrell)</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#ffce00,#e30613);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="900" font-size="38" letter-spacing="-1">NO LAY'S</text>
+            <text x="200" y="150" text-anchor="middle" fill="#000" font-family="Inter,sans-serif" font-weight="900" font-size="38" letter-spacing="-1">NO GAME</text>
+            <text x="200" y="195" text-anchor="middle" fill="rgba(0,0,0,.6)" font-family="DM Mono,monospace" font-size="12" letter-spacing="3">FIFA WORLD CUP 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Casting impossível</h4>
+        <h3>5 lendas + 1 ator + cliente comum no mesmo filme</h3>
+        <p>Messi + Beckham + Thierry Henry + Alexia Putellas + Steve Carell aparecem na frente de um supermercado da Flórida surpreendendo clientes reais. Quem está saindo com Lay's na sacola ganha convite pra watch party exclusivo. <strong>É reality + cinema + comercial.</strong> Produzido por Slap Global, hungryman, Washington Square Films, Omnicom PR e We Are Social.</p>
+
+        <h4>○ Bandwagon — pra audiência que NÃO entende de futebol</h4>
+        <p>Will Ferrell + David Beckham + Marshawn Lynch em um caminhão amarelo Lay's atravessam os EUA convocando torcedor casual. Mensagem direta: pega o saco de salgadinho, escolhe um time aleatório, junta-se à celebração. <strong>Audiência: americano que não acompanha futebol mas vai assistir Copa.</strong></p>
+
+        <blockquote class="pull">"In the 'Jump On, America' spot, Will Ferrell drives a yellow-branded Bandwagon across the country. He then encourages people to grab chips, pick a team, and join the celebration."<cite>Lay's · Bandwagon Campaign</cite></blockquote>
+
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>2 campanhas, 2 audiências</h5><p>Watch Party = fã genuíno. Bandwagon = casual. Mesma marca, dois targets — sem perder ninguém.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Surpresa em supermercado real</h5><p>Cliente real com Lay's na sacola = prova social. Não é cliente pago — é unboxing emocional.</p></div>
+          <div class="insight"><div class="ic">03</div><h5>Inclui quem não entende esporte</h5><p>Will Ferrell convoca a maioria silenciosa. Maioria > minoria de fã hardcore.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- MICHELOB -->
+    <article class="brand" id="michelob">
+      <div class="brand-hero h-michelob">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#f5c84b"></span>FIFA OFFICIAL BEER · AB INBEV</div>
+          <h2>Michelob ULTRA</h2>
+          <p class="brand-lede">"The Superior Match." Lobby de hotel vira campo de futebol. Messi + Lautaro + Paz contra Pulisic + Sergiño Dest + Antonee Robinson. Ochoa no gol. Cameo Ronaldo Nazário. Easter egg: Alex Morgan assistência para EUA. Cliente VIP: Billy Bob Thornton.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Hero</div><div class="val">Superior Match</div></div>
+            <div><div class="lbl">Promo única</div><div class="val">Chief Trophy Officer</div></div>
+            <div><div class="lbl">Trofeu MVP</div><div class="val">Victor Solomon</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#0d1a35,#000);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="90" text-anchor="middle" fill="#f5c84b" font-family="Inter,sans-serif" font-weight="700" font-size="14" letter-spacing="6">MICHELOB</text>
+            <text x="200" y="135" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="48" letter-spacing="4">ULTRA</text>
+            <text x="200" y="175" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">CHIEF TROPHY OFFICER</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Chief Trophy Officer — promo única</h4>
+        <h3>Crie um cargo, não um sorteio</h3>
+        <p>Michelob criou em parceria com o artista Victor Solomon o <strong>Superior Player of the Match Trophy</strong> — troféu por voto popular após cada jogo. Em cima da mecânica, lançou promo: <strong>um fã ganha $90.000 + responsabilidade de carregar o troféu na Final da Copa em 19/jul/2026.</strong></p>
+        <div class="glow-box">
+          <p><strong>POR QUE ISSO É GENIAL:</strong> não é "ganhe ingresso". É "vire CARGO". O fã se sente convocado, não premiado. Material de divulgação direto: "Como ser Chief Trophy Officer". É um job description que vira chamada de inscrição.</p>
+        </div>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Cargo &gt; prêmio</h5><p>"Você será CTO" &gt; "Você ganhou ingresso". Identidade vence material.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>2 audiências num spot</h5><p>Messi/Ochoa = LATAM. Pulisic/Morgan = USA. Lobby vira ponto neutro de encontro.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- COCA GLOBAL -->
+    <article class="brand" id="coca-int">
+      <div class="brand-hero h-coca-int">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA PARTNER · WPP OpenX + Ogilvy</div>
+          <h2>Coca-Cola Global</h2>
+          <p class="brand-lede">Trilogia: <strong>"Bubbling Up" (jan)</strong> → <strong>"Uncanned Emotions" (abr)</strong> → <strong>"No Better Feeling" (jun)</strong>. Trilha: "Jump" do Van Halen reimaginado por J Balvin + Travis Barker + Amber Mark + Steve Vai. Plus Trophy Tour por 50 países + collab Panini.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Arquitetura</div><div class="val">3 filmes / 6 meses</div></div>
+            <div><div class="lbl">Anthem</div><div class="val">"Jump" Van Halen</div></div>
+            <div><div class="lbl">Tour</div><div class="val">50 países</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#f40000,#7a0000);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="700" font-style="italic" font-size="42" letter-spacing="-1">Uncanned</text>
+            <text x="200" y="150" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="700" font-style="italic" font-size="42" letter-spacing="-1">Emotions</text>
+            <text x="200" y="200" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">COCA-COLA · FIFA 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <h4 class="first">○ Arquitetura de calendário emocional</h4>
+        <h3>Não é um filme. É um arco narrativo de 6 meses.</h3>
+        <p>"Bubbling Up" entrega ansiedade pré-Copa. "Uncanned Emotions" usa narração de Peter Drury + Luis Omar Tapia para recriar gol no último minuto e chance perdida. "No Better Feeling" estreia no apito inicial. <strong>Não é estratégia de produto — é estratégia de calendário psicológico do torcedor.</strong></p>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Trilogia &gt; hero único</h5><p>3 filmes = 3 oportunidades de mídia + 3 movimentos de calendário.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>Música como IP, não BG</h5><p>"Jump" virou plataforma de streaming, não só trilha de comercial.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- HYUNDAI -->
+    <article class="brand" id="hyundai">
+      <div class="brand-hero h-hyundai">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#00aad2"></span>FIFA PARTNER · AUTOMOTIVE</div>
+          <h2>Hyundai</h2>
+          <p class="brand-lede">"Next Starts Now." Youth camps em 4 cidades USA com Mia Hamm e Tim Howard. "The Greatest Cheer" — concurso de arte para crianças 5-12 anos das nações participantes. Robótica showcase nos fan festivals. Estratégia de longo prazo via Gen Z + família.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Plataforma</div><div class="val">Next Starts Now</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Gen Z + Família</div></div>
+            <div><div class="lbl">UGC</div><div class="val">Crianças desenhando</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#002c5f,#00aad2);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="28">NEXT STARTS</text>
+            <text x="200" y="155" text-anchor="middle" fill="#00aad2" font-family="Space Grotesk,sans-serif" font-weight="800" font-size="60">NOW</text>
+            <text x="200" y="200" text-anchor="middle" fill="rgba(255,255,255,.6)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">HYUNDAI · FIFA 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <p>Hyundai escolheu construir capital de longo prazo: <strong>youth camps</strong> em Atlanta, Miami, NJ e LA com Mia Hamm + Tim Howard pessoalmente. <strong>"The Greatest Cheer"</strong> — concurso de arte para crianças de 5-12 anos de todas as nações participantes; vencedores ganham viagem para a Copa. UGC orgânico gerado pelos pais. No Brasil, "Hyundai a Caminho da Copa" — premiação de 6 ganhadores com viagem Brasil x Marrocos em NY + 6 HB20 zero-km.</p>
+        <div class="insight-grid">
+          <div class="insight"><div class="ic">01</div><h5>Programa "abaixo do radar" é durável</h5><p>Youth Camps não viralizam, mas constroem 10 anos de lealdade.</p></div>
+          <div class="insight"><div class="ic">02</div><h5>UGC vem dos pais</h5><p>Criança como autor, pai como distribuidor. Inverte o funil tradicional.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- LENOVO -->
+    <article class="brand" id="lenovo">
+      <div class="brand-hero h-lenovo">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA OFFICIAL TECH PARTNER (1ª vez)</div>
+          <h2>Lenovo</h2>
+          <p class="brand-lede">"Maximum David" com David Beckham. AI infrastructure completa: Football AI Pro (assistente generativo pras 48 seleções), AI 3D Player Avatars (replays de impedimento), Intelligent Command Center. Tech-as-narrative.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Campanha</div><div class="val">Maximum David</div></div>
+            <div><div class="lbl">Casting</div><div class="val">David Beckham</div></div>
+            <div><div class="lbl">Produto</div><div class="val">AI Pro + 3D Avatars</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#e2231a,#8a0e10);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="110" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="36">MAXIMUM</text>
+            <text x="200" y="160" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="48">DAVID</text>
+            <text x="200" y="200" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">LENOVO · AI · FIFA 26</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <p>Pela primeira vez a FIFA tem "Official Technology Partner" — e é a Lenovo. Conectou IA ao produto: <strong>Football AI Pro</strong> ajuda treinadores das 48 seleções com inteligência generativa baseada no banco de dados FIFA. <strong>AI 3D Player Avatars</strong> usados em replays de impedimento. Casting David Beckham — figura humana confiável para tornar IA palpável. <strong>É o oposto do "AI vagamente futurista":</strong> é AI com cara humana e função concreta.</p>
+      </div>
+    </article>
+
+    <!-- DOVE -->
+    <article class="brand" id="dove">
+      <div class="brand-hero h-dove">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA SPONSOR · UNILEVER</div>
+          <h2>Dove Men+Care</h2>
+          <p class="brand-lede">"Care for Your Skin Like You Care for the Game." Hábitos de torcedor (camisa não lavada da sorte, tinta na cara, banho de champanhe) viram pretexto pro produto. Linha edição limitada Copa 26. <strong>Ritual House</strong> — ativações físicas em Kansas City, NYC e Miami.</p>
+          <div class="brand-quick dark">
+            <div><div class="lbl">Insight</div><div class="val">Ritual = uso de produto</div></div>
+            <div><div class="lbl">Cidades</div><div class="val">Kansas City, NYC, Miami</div></div>
+            <div><div class="lbl">Estratégia</div><div class="val">50% budget creator</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#001489,#000865);display:grid;place-items:center;padding:36px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <text x="200" y="100" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="700" font-size="30">DOVE</text>
+            <text x="200" y="130" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="400" font-size="18">MEN+CARE</text>
+            <text x="200" y="180" text-anchor="middle" fill="rgba(255,255,255,.7)" font-family="DM Mono,monospace" font-size="11" letter-spacing="3">CARE FOR SKIN · LIKE THE GAME</text>
+          </svg>
+        </div>
+      </div>
+      <div class="brand-body">
+        <p>Unilever moveu <strong>50% do budget para social/creators</strong> (de 30%) — a Dove Men+Care foi o piloto. Insight: ritual de torcedor (camisa suja, suor, tinta no rosto, champanhe) é pretexto pra usar produto de cuidado. Linha edição limitada + Ritual House (pop-up de marca em 3 cidades-sede). Mecânica: produto + ticket giveaway + creator. <strong>É o exemplo de como FMCG pode entrar em esporte sem ser óbvio.</strong></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- APOSTAS -->
+<section id="aposta" style="background:linear-gradient(180deg,#0a0a0d 0%,#0c0c10 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" style="color:var(--pink)">○○○ Casas de Aposta · Brasil</div>
+      <h2>Aposta entrou no jogo (e está gastando muito)</h2></div>
+      <p class="lede">As casas de aposta brasileiras estão entre os maiores anunciantes da Copa 2026. Patrocínio CazéTV, Brasileirão, naming rights de festival. Esportes da Sorte gastou mais agressivo: convocou time de embaixadores nada óbvio. Betano (agora Superbet) tem o festival mais musical.</p>
+    </div>
+    <div class="scan-grid">
+      <div class="scan-card">
+        <div class="sc-head"><h4>Esportes da Sorte</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">Convoque</span></div>
+        <div class="role br">R$ 103M Corinthians + Copa</div>
+        <p>Campanha "Convoque" com casting absolutamente plural: <strong>Marcelinho Carioca + Luís Felipe Freitas + Bruno Formiga + Léo Santana + Jojo Todynho + Cerol + Duda Gutierrez</strong>. Chapéu azul (símbolo da marca) liga os embaixadores. Conteúdo previsto: cobertura paralela da Copa por essa rede.</p>
+        <div class="pts">
+          <div><strong>Casting:</strong> jornalismo + música + criadores + funkeira. Nada óbvio.</div>
+          <div><strong>Mecânica:</strong> chapéu azul = identidade visual transversal.</div>
+          <div><strong>Insight:</strong> embaixador inesperado &gt; jogador previsível.</div>
+        </div>
+      </div>
+      <div class="scan-card">
+        <div class="sc-head"><h4>Betano (Superbet)</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">Festival</span></div>
+        <div class="role br">Apoiadora FIFA América do Sul + Europa</div>
+        <p>Naming Village Rio (vendido pra Superbet em 2026). Festival no Jockey RJ de 3/jun a 19/jul. 30+ dias, 100+ atrações: Anitta, Thiaguinho, Sorriso Maroto, Ludmilla, Matuê, Djonga, Filipe Ret, Luísa Sonza, Marina Sena, João Gomes. 300K+ pessoas em edições anteriores.</p>
+        <div class="pts">
+          <div><strong>Ativo:</strong> 30 dias de festival na cidade-mais-pop do Brasil.</div>
+          <div><strong>Cross-target:</strong> trap + samba + funk + sertanejo.</div>
+        </div>
+      </div>
+      <div class="scan-card">
+        <div class="sc-head"><h4>Bet365 / KTO / Betnacional</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">Cota CazéTV</span></div>
+        <div class="role br">11 anunciantes Copa 2026</div>
+        <p>As três compraram cota na CazéTV — total contribuição estimada acima de R$ 500 milhões só dessas três casas. Não tem hero film grande mas tem presença massiva nos breaks da transmissão YouTube. <strong>É a estratégia de mídia pesada sem narrativa criativa.</strong></p>
+        <div class="pts">
+          <div><strong>Estratégia:</strong> presença &gt; storytelling.</div>
+          <div><strong>Audiência:</strong> 18-34, Gen Z + millennial.</div>
+        </div>
+      </div>
+      <div class="scan-card">
+        <div class="sc-head"><h4>EstrelaBet / H2bet</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">Brasileirão</span></div>
+        <div class="role br">Cota Brasileirão CazéTV</div>
+        <p>Patrocinam os 38 jogos do Brasileirão na CazéTV. Estratégia de funil: alimentam awareness na temporada pra colher conversão na Copa.</p>
+        <div class="pts">
+          <div><strong>Aprendizado:</strong> Brasileirão é warm-up barato pra Copa.</div>
+        </div>
+      </div>
+      <div class="scan-card">
+        <div class="sc-head"><h4>Superbet</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">GeTV</span></div>
+        <div class="role br">GeTV Brasileirão 2026</div>
+        <p>Estratégia oposta de Bet365 — Superbet escolheu Globo. Aposta no torcedor 30+ + tradicional. Naming Village também.</p>
+        <div class="pts">
+          <div><strong>Posicionamento:</strong> a "Bet de tradição" do mercado.</div>
+        </div>
+      </div>
+      <div class="scan-card">
+        <div class="sc-head"><h4>Pixbet / Novibet</h4><span class="tag" style="color:var(--pink);border-color:rgba(255,95,168,.4)">Clubes</span></div>
+        <div class="role br">Sponsor de clubes específicos</div>
+        <p>Pixbet patrocina vários times do Brasileirão. Novibet × Santos lançou primeiras ativações no clássico contra o Corinthians. Estratégia: ativação por clube, não por seleção.</p>
+        <div class="pts">
+          <div><strong>Insight:</strong> identidade local &gt; selo nacional.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASA CAZE -->
+<section id="caza" style="background:linear-gradient(180deg,#0c0c10 0%,#0e0e12 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow" style="color:var(--cyan)">○○○ Casa CazéTV · Brand Experience Laboratory</div>
+      <h2>O primeiro fan fest brasileiro produzido por creator</h2></div>
+      <p class="lede">A Casa CazéTV é mais que ativação — é a redefinição do que um broadcaster brasileiro pode fazer. Parque Villa-Lobos (SP) + Píer Mauá (RJ). 5.000 pessoas/dia. 7 patrocinadores entre marcas globais e locais. Outback como restaurante oficial.</p>
+    </div>
+    <div class="viral">
+      <div class="vbadge" style="background:linear-gradient(90deg,var(--cyan),var(--accent))">🎬 ECOSSISTEMA</div>
+      <h3>O que torna a Casa CazéTV única</h3>
+      <p style="font-size:15px">É o primeiro projeto brasileiro de fan fest físico produzido por um canal de YouTube. Estúdios abertos, áreas de convivência, atrações musicais, brand activations integradas. <strong>Não é Cervejaria patrocinando estádio — é creator construindo estádio próprio com patrocinadores dentro.</strong></p>
+      <div class="viral-flow">
+        <div class="flow-step"><div class="fn">01 · LOCATION</div><div class="ft"><strong>SP:</strong> Parque Villa-Lobos<br><strong>RJ:</strong> Píer Mauá (3.000m²)</div></div>
+        <div class="flow-step"><div class="fn">02 · CAPACITY</div><div class="ft"><strong>5.000 visitantes/dia</strong><br>Ingressos via Sympla</div></div>
+        <div class="flow-step"><div class="fn">03 · ANCHOR</div><div class="ft">Estúdios abertos<br>Programação CazéTV ao vivo</div></div>
+        <div class="flow-step"><div class="fn">04 · BRANDS</div><div class="ft">Adidas · Coca-Cola · Hellmann's · iFood · Mercado Livre · YouTube · Outback</div></div>
+        <div class="flow-step"><div class="fn">05 · DURATION</div><div class="ft">Jun 11 → Jul 19<br>Total: 38 dias</div></div>
+      </div>
+      <div class="glow-box">
+        <p><strong>O QUE ISSO SIGNIFICA PARA MARKETING ESPORTIVO:</strong> creator vendeu o que broadcasters tradicionais nunca venderam — espaço físico ancorado por brand. Cada cota Master vendida por R$ 185 milhões + outras cotas menores. Outback como restaurante oficial leva o menu da Copa para <em>todas</em> suas unidades durante a Copa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOOKS -->
+<section id="hooks">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Hooks &amp; Slogans</div>
+      <h2>As frases que estão funcionando — e por quê</h2></div>
+      <p class="lede">As campanhas mais virais da Copa 2026 têm uma coisa em comum: hooks curtos, com duplo sentido ou cenário cultural reconhecível. Aqui estão os melhores, decifrados.</p>
+    </div>
+    <div class="hooks-grid">
+      <div class="hook">
+        <div class="typ">○ Trocadilho funcional</div>
+        <div class="frase">"Tap In"</div>
+        <div class="quem">Visa · global</div>
+        <div class="why">Funciona porque <strong>uma palavra carrega duas coisas:</strong> gesto do pagamento + gol de chapinha. Educação de produto disfarçada de cultura esportiva.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Reconhecimento + permissão</div>
+        <div class="frase">"Tá Liberado Acreditar"</div>
+        <div class="quem">Brahma · Brasil</div>
+        <div class="why">Funciona porque <strong>reconhece o ceticismo</strong> primeiro (24 anos sem hexa) e <strong>oferece permissão</strong> de voltar a sentir. Não é otimismo barato.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Inversão de ídolo</div>
+        <div class="frase">"Torcendo Feito Você"</div>
+        <div class="quem">Itaú · Brasil</div>
+        <div class="why">Funciona porque <strong>tira Ronaldo do pedestal</strong> e coloca ao lado do consumidor. Anti-aspiracional. Quebra a barreira "ele é elite, eu sou".</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Cor como personalidade</div>
+        <div class="frase">"Sou Brasileiro Roxo"</div>
+        <div class="quem">Vivo · Brasil</div>
+        <div class="why">Funciona porque <strong>transforma cor proprietária em intensidade emocional</strong>. "Sangrar pelo Brasil" + cor da marca = simbiose.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Reapropriação simbólica</div>
+        <div class="frase">"Aqui o Brasil se vê gigante"</div>
+        <div class="quem">Magalu · Brasil</div>
+        <div class="why">Funciona porque <strong>"gigante" é categoria de produto (TV grande) E mito nacional (pentacampeão)</strong>. Vende eletrodoméstico via orgulho.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Reframing de estereótipo</div>
+        <div class="frase">"Alegria que Apavora"</div>
+        <div class="quem">Nike × CBF · Brasil</div>
+        <div class="why">Funciona porque <strong>subverte o clichê</strong> da "alegria leve" e transforma em ameaça competitiva. Vira soft no hard, sem perder identidade.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Convite + ironia</div>
+        <div class="frase">"Jump On, America"</div>
+        <div class="quem">Lay's · global</div>
+        <div class="why">Funciona porque <strong>aceita que torcedor casual existe</strong> sem julgar. Convoca quem não acompanha futebol normalmente.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Identidade nacional</div>
+        <div class="frase">"É do Brasil. É tudo pra mim."</div>
+        <div class="quem">iFood · Brasil</div>
+        <div class="why">Funciona porque <strong>posiciona empresa BR vs estrangeiros</strong> num mercado com 99/Rappi. Não é sobre futebol — é sobre identidade nacional.</div>
+      </div>
+      <div class="hook">
+        <div class="typ">○ Inclusão poética</div>
+        <div class="frase">"Everyone Wants a Piece"</div>
+        <div class="quem">Lego · global</div>
+        <div class="why">Funciona porque <strong>todo mundo quer um pedaço do troféu</strong> = jogador + criança + colecionador + fã. Vende set Lego sem dizer.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRENDS -->
+<section id="trends" style="background:linear-gradient(180deg,#0e0e12 0%,#0a0a0d 100%)">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Padrões transversais</div>
+      <h2>10 movimentos que estão se repetindo (BR + global)</h2></div>
+      <p class="lede">Olhando o conjunto, alguns padrões emergem com força. Aqui está o mapa do que está dominando o marketing da Copa 2026 — e onde ainda há brechas.</p>
+    </div>
+    <div class="trends-grid">
+      <div class="trend span6">
+        <div class="trend-num">01</div>
+        <h3>Celebridade pop venceu o atleta</h3>
+        <p>Chalamet (Adidas), Sudeikis (Visa), Will Ferrell + Steve Carell + Billy Bob Thornton (Lay's, Michelob), Léo Santana (Magalu), Jojo Todynho (Esportes da Sorte). Atletas viraram coadjuvantes do próprio comercial.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Visa</span><span class="chip">Lay's</span><span class="chip">Magalu</span></div>
+      </div>
+      <div class="trend span6">
+        <div class="trend-num">02</div>
+        <h3>Calendário de drops &gt; hero único</h3>
+        <p>Coca-Cola fez trilogia. Cimed fez 20 lançamentos. Adidas fez Trionda + La Preparación + Backyard. Vivo fez 5 filmes de 15s. O hero único morreu — calendário cumulativo vence.</p>
+        <div class="chips"><span class="chip">Coca-Cola</span><span class="chip">Cimed</span><span class="chip">Adidas</span><span class="chip">Vivo</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">03</div>
+        <h3>Colecionismo voltou</h3>
+        <p>iFood Canarinho, Lego Editions, McDo × Panini, latas Coca, Trionda Happy Meal, Bud Fan Store, bolas Brahma. Cada drop é trigger de retorno.</p>
+        <div class="chips"><span class="chip">iFood</span><span class="chip">Lego</span><span class="chip">McDo</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">04</div>
+        <h3>Bolão + gamificação no app</h3>
+        <p>Bud × Zé Bolão dentro do app de delivery. Visa Tap In to Score em tempo real. Itaú Seleção de Prêmios. Magalu sorteio diário. Cada compra vira jogo.</p>
+        <div class="chips"><span class="chip">Bud × Zé</span><span class="chip">Visa</span><span class="chip">Itaú</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">05</div>
+        <h3>MPB icônica + remix</h3>
+        <p>Gonzaguinha "Sangrando" (Vivo). Jorge Ben Jor "Umbabarauma" (Coca). Léo Santana original (Magalu). Trilha &gt; jingle.</p>
+        <div class="chips"><span class="chip">Vivo</span><span class="chip">Coca-Cola</span></div>
+      </div>
+      <div class="trend span6">
+        <div class="trend-num">06</div>
+        <h3>Ronaldo está em todos os lugares</h3>
+        <p>Itaú (torcedor comum), Brahma (símbolo do título), Rexona (embaixador desodorante). Em 3 dos maiores anunciantes BR ao mesmo tempo. Ativo emocional mais disputado do Brasil em 2026.</p>
+        <div class="chips"><span class="chip">Itaú</span><span class="chip">Brahma</span><span class="chip">Rexona</span></div>
+      </div>
+      <div class="trend span6">
+        <div class="trend-num">07</div>
+        <h3>Casa física como brand experience</h3>
+        <p>Casa CazéTV (Brasil). Visa Tap In Studio (global). Dove Ritual House. Village Rio/Superbet. Bud FC. Hyundai Youth Camps. Pop-up físico &gt; só campanha digital.</p>
+        <div class="chips"><span class="chip">CazéTV</span><span class="chip">Visa</span><span class="chip">Dove</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">08</div>
+        <h3>Creator regional &gt; nacional</h3>
+        <p>Centauro × Podpah pegou 5 creators locais em 5 cidades. TikTok x FIFA Creator Correspondents tem 30 creators em 11 países. Plural &gt; centralizado.</p>
+        <div class="chips"><span class="chip">Centauro</span><span class="chip">TikTok</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">09</div>
+        <h3>Casting plural fora do esporte</h3>
+        <p>Vivo trouxe Taís Araújo. Hisense é VAR oficial. Lay's trouxe Will Ferrell. Multi-esporte/multi-categoria amplia audiência.</p>
+        <div class="chips"><span class="chip">Vivo</span><span class="chip">Lay's</span></div>
+      </div>
+      <div class="trend span4">
+        <div class="trend-num">10</div>
+        <h3>Nostalgia 90s + 24 anos</h3>
+        <p>Adidas (CGI Beckham/Zidane). Bud Budstalgia. Nike (pássaro preso há 24 anos). Brahma (24 anos sem hexa). Trauma compartilhado vira gancho.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Bud</span><span class="chip">Nike</span></div>
+      </div>
+      <div class="trend span12">
+        <div class="trend-num">11</div>
+        <h3>O que AINDA está em aberto (brechas em 2026)</h3>
+        <p>Olhando o conjunto, alguns territórios estão estranhamente desocupados — vácuos para quem chegar primeiro:</p>
+        <div class="chips">
+          <span class="chip">📚 Educação/vestibular como categoria (vácuo total)</span>
+          <span class="chip">💬 WhatsApp Group/Discord oficial</span>
+          <span class="chip">🎮 Cross-over com gaming/Esports</span>
+          <span class="chip">📺 Bolão em parceria com creator solo</span>
+          <span class="chip">🤝 Creator-led commerce ao vivo no app</span>
+          <span class="chip">🎙️ Podcast oficial da Copa</span>
+          <span class="chip">🏘️ Fan zone em bairros periféricos</span>
+          <span class="chip">👨‍🎓 Conteúdo educacional disfarçado de futebol</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILADD -->
+<section id="filadd" class="filadd">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Aplicação direta · Filadd</div>
+      <h2>10 movimentos que a Filadd pode tirar disso</h2></div>
+      <p class="lede">Você lida com vestibular, comunidade de aluno e jornada emocional intensa. A Copa 2026 é o maior pano de fundo cultural do ano. Aqui estão 10 movimentos extraídos dos benchmarks acima — aplicáveis a Filadd.</p>
+    </div>
+    <div class="filadd-intro">
+      <h3>O insight central</h3>
+      <p>Copa do Mundo e vestibular têm a <strong>mesma curva emocional</strong>: ansiedade da preparação → ritual diário → o dia da prova/jogo → consequência. <strong>Brahma partiu do dado "3 em 10 brasileiros acreditam no hexa" — vestibulando duvida da aprovação na mesma proporção.</strong> Nenhuma marca de educação está usando esse paralelo em 2026. O território está em aberto.</p>
+    </div>
+    <div class="ops-grid">
+      <div class="op-card">
+        <div class="op-ic">01</div>
+        <div>
+          <h4>"Tá Liberado Acreditar (no Enem)"</h4>
+          <p>Apropriar o conceito da Brahma diretamente — adaptado para o vestibulando que duvida da aprovação. Filme curto com aluno aprovado real recontando "como eu acreditei". Sem otimismo barato — reconhecer dúvida primeiro.</p>
+          <div class="ref">REF · <strong>Brahma</strong> "Tá Liberado Acreditar"</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">02</div>
+        <div>
+          <h4>"Canarinho Filadd" colecionável</h4>
+          <p>5 simulados feitos = pelúcia/poster colecionável Filadd surpresa. Cada um representando uma matéria. Empilhar = motivacional. Aluno posta unboxing.</p>
+          <div class="ref">REF · <strong>iFood</strong> Canarinhos (5 selos = pelúcia)</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">03</div>
+        <div>
+          <h4>"Bolão do Aprovado"</h4>
+          <p>Dentro do app Filadd: aluno palpita nota próprio, dos amigos, da turma. Acerto = pontos. Top 100 ganha mensalidade grátis ou viagem. Inspirado em Bud × Zé — bolão dentro do app de consumo.</p>
+          <div class="ref">REF · <strong>Bud × Zé Delivery</strong> Bolão da Bud</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">04</div>
+        <div>
+          <h4>Trilogia de filme curto sincronizada</h4>
+          <p>Fev = matrícula = "Bubbling Up Filadd". Maio = simulado = "Uncanned Emotions". Nov = Enem = "No Better Feeling". Mesma narrativa, 3 momentos. Modelo Coca-Cola direto.</p>
+          <div class="ref">REF · <strong>Coca-Cola</strong> trilogia Copa</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">05</div>
+        <div>
+          <h4>"Casa Filadd" em SP e RJ</h4>
+          <p>Fan fest do vestibulando durante simulados ou no Enem. Local físico com atividades, monitores, viewing parties, encontros. Modelo Casa CazéTV em escala menor.</p>
+          <div class="ref">REF · <strong>Casa CazéTV</strong> · Parque Villa-Lobos + Píer Mauá</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">06</div>
+        <div>
+          <h4>Creator regional &gt; nacional</h4>
+          <p>5 alunos aprovados (1 por região) viram embaixadores. Cada um conta sua jornada na sua linguagem. Norte fala diferente do Sul. Recrutar via TikTok local.</p>
+          <div class="ref">REF · <strong>Centauro × Podpah</strong> "Veste a Rua"</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">07</div>
+        <div>
+          <h4>Trocadilho-plataforma BR</h4>
+          <p>Encontre a palavra que conecta vestibular + futebol. "Estuda Que Vai", "Tá No Pênalti", "Vai Pra Cima", "Tá Liberado Estudar". Bilíngue (PT-BR + ES) para LATAM. Modelo Visa "Tap In".</p>
+          <div class="ref">REF · <strong>Visa</strong> "Tap In" (duplo sentido)</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">08</div>
+        <div>
+          <h4>Trilha original com Léo Santana ou afins</h4>
+          <p>Música feita pra Filadd com um artista pop popular. Vira ringtone, TikTok template, hino do aprovado. Custo: 1 música; payoff: campanha que se reproduz sozinha.</p>
+          <div class="ref">REF · <strong>Magalu</strong> trilha original Léo Santana</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">09</div>
+        <div>
+          <h4>Hospedar em marketplace, não próprio</h4>
+          <p>Em vez de criar e-commerce próprio, hospedar conteúdo/produto/sorteios em plataforma já massiva. Lição de Bud Fan Store no Mercado Livre — alugar audiência alheia.</p>
+          <div class="ref">REF · <strong>Bud Fan Store</strong> no Mercado Livre</div>
+        </div>
+      </div>
+      <div class="op-card">
+        <div class="op-ic">10</div>
+        <div>
+          <h4>Cargo &gt; sorteio</h4>
+          <p>Não sortear "viagem pra final". Criar CARGO: "Embaixador Filadd 2026" — aluno aprovado oficial. Recebe título, visibilidade, viagem, palco. Inscrição vira lead massivo. Modelo Michelob Chief Trophy Officer.</p>
+          <div class="ref">REF · <strong>Michelob</strong> Chief Trophy Officer ($90K + cargo)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <h3>Não compita pelo "futebol" — capture o <em>sentimento</em></h3>
+      <p>A Copa 26 é o pano de fundo. O ativo é a paixão coletiva. Nenhuma marca de educação está usando esse momento com a intensidade que Coca, Visa, Adidas, Brahma e iFood estão usando com seus produtos. <strong>O ângulo Filadd: "se você sonha alto pelo Brasil na Copa, sonha mais alto por você no Enem."</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- REFS -->
+<section id="refs" class="refs">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="eyebrow">○○○ Referências</div>
+      <h2>Todas as URLs para você explorar mais</h2></div>
+      <p class="lede">Cada análise aqui é sustentada por fontes públicas (press releases, sites especializados, GKPB, Update or Die, Meio &amp; Mensagem, AdAge, etc.). Use como referência viva.</p>
+    </div>
+    <div class="refs-grid">
+      <div class="ref-col">
+        <h4>○ 🇧🇷 iFood · Canarinhos</h4>
+        <a href="https://gkpb.com.br/190039/ifood-canarinhos-copa-2026/" target="_blank"><span class="arr">↗</span>GKPB · iFood Canarinhos Copa 2026</a>
+        <a href="https://www.meioemensagem.com.br/marketing/por-que-o-ifood-quer-ser-a-cara-do-brasil-na-copa-2026" target="_blank"><span class="arr">↗</span>M&amp;M · iFood "É do Brasil"</a>
+        <a href="https://institucional.ifood.com.br/consumidores/canarinhos-ifood/" target="_blank"><span class="arr">↗</span>iFood Institucional · Canarinhos</a>
+        <a href="https://www.tiktok.com/@esferatoy/video/7630503396751019284" target="_blank"><span class="arr">↗</span>TikTok · Esfera Toy "Canarinho Pistola"</a>
+        <a href="https://www.tiktok.com/@cazetv/video/7546427095988063544" target="_blank"><span class="arr">↗</span>TikTok · CazéTV reação</a>
+        <a href="https://www.instagram.com/reel/DXczFpNjxiX/" target="_blank"><span class="arr">↗</span>Instagram · iFood Brasil reel</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Brahma · Itaú · Vivo (Africa Creative)</h4>
+        <a href="https://updateordie.com/2026/05/07/brahma-ta-liberado-acreditar-campanha-para-a-copa-do-mundo-2026/" target="_blank"><span class="arr">↗</span>Update or Die · Brahma "Tá Liberado Acreditar"</a>
+        <a href="https://www.b9.com.br/178456/brahma-copa-ronaldo-ancelotti-liberado-acreditar/" target="_blank"><span class="arr">↗</span>B9 · Brahma Ronaldo + Ancelotti</a>
+        <a href="https://gkpb.com.br/189849/campanha-itau-copa-do-mundo-torcendo-feito-voce/" target="_blank"><span class="arr">↗</span>GKPB · Itaú "Torcendo Feito Você"</a>
+        <a href="https://updateordie.com/2026/04/15/ronaldo-fenomeno-vira-meme-torcedor-no-itau-2026/" target="_blank"><span class="arr">↗</span>Update or Die · Itaú Ronaldo meme</a>
+        <a href="https://www.b9.com.br/177839/vivo-sangrando-gonzaguinha-copa-2026/" target="_blank"><span class="arr">↗</span>B9 · Vivo "Sangrando" Gonzaguinha</a>
+        <a href="https://maquinadoesporte.com.br/copa-mundo-2026/vivo-lanca-campanha-sou-brasileiro-roxo-com-versao-de-sangrando/" target="_blank"><span class="arr">↗</span>Máquina · Vivo "Sou Brasileiro Roxo"</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Bud × Zé · McDo · Cimed · Centauro</h4>
+        <a href="https://www.portaldapropaganda.com.br/noticias/39294/budweiser-lanca-promocao-com-milhares-de-premios-instantaneos-para-a-copa-do-mundo-fifa-2026/" target="_blank"><span class="arr">↗</span>Portal · Bud Fan Store</a>
+        <a href="https://marcaspelomundo.com.br/anunciantes/ze-delivery-e-budweiser-convocam-fas-de-futebol-com-cupom-de-80-off/" target="_blank"><span class="arr">↗</span>Bud × Zé · Cupom + bolão</a>
+        <a href="https://conexaopop.com.br/ze-delivery-budweiser-desconto-bolao-copa-clubes-2025/" target="_blank"><span class="arr">↗</span>Conexão Pop · Bolão da Bud</a>
+        <a href="https://www.bandab.com.br/cultura/gastronomia/mcdonalds-lanca-combo-figurinhas-copa-do-mundo/" target="_blank"><span class="arr">↗</span>McDonald's × Panini figurinhas</a>
+        <a href="https://www.promoview.com.br/cimed-operacao-200-milhoes-copa-2026" target="_blank"><span class="arr">↗</span>Promoview · Cimed R$ 200M</a>
+        <a href="https://www.meioemensagem.com.br/marketing/centauro-e-podpah-lancam-projeto-para-decorar-ruas-para-a-copa-nao-publicar-embargado" target="_blank"><span class="arr">↗</span>M&amp;M · Centauro × Podpah "Veste a Rua"</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Coca BR · Nike · Magalu</h4>
+        <a href="https://www.publicitarioscriativos.com/essa-coca-cola-toda-e-a-campanha-da-marca-copa-do-mundo-2026-que-celebra-emocao-do-futebol-brasileiro/" target="_blank"><span class="arr">↗</span>Coca BR · "Essa Coca-Cola Toda"</a>
+        <a href="https://gkpb.com.br/186530/coca-cola-latas-que-gritam-gol/" target="_blank"><span class="arr">↗</span>GKPB · Latas que Gritam Gol</a>
+        <a href="https://www.coca-cola.com/br/pt/offerings/copa-do-mundo-da-fifa-2026" target="_blank"><span class="arr">↗</span>Coca-Cola Brasil · landing</a>
+        <a href="https://updateordie.com/2026/03/23/apavora-brasil-nike-e-cbf-lancam-nova-camisa-da-selecao-para-a-copa/" target="_blank"><span class="arr">↗</span>Nike × CBF "Alegria que Apavora"</a>
+        <a href="https://clubedecriacao.com.br/ultimas/alegria-que-apavora/" target="_blank"><span class="arr">↗</span>Clube de Criação · Nike</a>
+        <a href="https://propmark.com.br/leo-santana-estrela-campanha-do-magalu-para-a-copa-do-mundo-2026/" target="_blank"><span class="arr">↗</span>Propmark · Magalu × Léo Santana</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Mídia &amp; Transmissão BR</h4>
+        <a href="https://www.infomoney.com.br/esportes/cazetv-garante-direitos-de-transmissao-de-todos-os-jogos-da-copa-do-mundo-de-2026/" target="_blank"><span class="arr">↗</span>CazéTV · 104 jogos 4K</a>
+        <a href="https://www.poder360.com.br/poder-sportsmkt/cazetv-vende-r-2-bi-em-cotas-de-patrocinio-para-copa-de-2026/" target="_blank"><span class="arr">↗</span>CazéTV · R$ 2bi em cotas</a>
+        <a href="https://www.meioemensagem.com.br/midia/cazetv-anuncia-patrocinadores-da-copa-do-mundo-no-youtube" target="_blank"><span class="arr">↗</span>CazéTV · 11 patrocinadores</a>
+        <a href="https://www.poder360.com.br/poder-sportsmkt/casa-cazetv-confirma-6-patrocinadores-durante-copa-do-mundo/" target="_blank"><span class="arr">↗</span>Casa CazéTV · patrocinadores</a>
+        <a href="https://www.promoview.com.br/outback-restaurante-oficial-casa-cazetv-copa-2026" target="_blank"><span class="arr">↗</span>Outback restaurante oficial Casa CazéTV</a>
+        <a href="https://maquinadoesporte.com.br/copa-mundo-2026/globo-estrutura-ecossistema-multiplataforma-para-a-copa-de-2026-e-confirma-25-patrocinadores/" target="_blank"><span class="arr">↗</span>Globo · 25 patrocinadores</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Casas de Aposta</h4>
+        <a href="https://focusgn.com/brasil/empresa-de-apostas-lanca-campanha-publicitaria-visando-a-copa-do-mundo-2026" target="_blank"><span class="arr">↗</span>Esportes da Sorte "Convoque"</a>
+        <a href="https://maquinadoesporte.com.br/copa-mundo-2026/betano-e-nova-apoiadora-da-copa-do-mundo-de-2026-na-europa-e-na-america-do-sul/" target="_blank"><span class="arr">↗</span>Betano · apoiadora oficial</a>
+        <a href="https://www.villagefestival.com.br/" target="_blank"><span class="arr">↗</span>Village Superbet · Jockey Rio</a>
+        <a href="https://www.meioemensagem.com.br/midia/brasileirao-2026-conheca-os-patrocinadores-das-transmissoes" target="_blank"><span class="arr">↗</span>M&amp;M · Patrocinadores Brasileirão</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🌎 Global · Adidas + Visa + Lego</h4>
+        <a href="https://www.adsoftheworld.com/campaigns/backyard-legends" target="_blank"><span class="arr">↗</span>Ads of the World · Backyard Legends</a>
+        <a href="https://news.adidas.com/football/adidas-unveils--trionda----the-official-match-ball-of-the-fifa-world-cup26-/s/27042e3a-12ba-482d-8839-8a96e056b33e" target="_blank"><span class="arr">↗</span>Adidas · Trionda Reveal</a>
+        <a href="https://www.soccerbible.com/news/2026/05/adidas-pull-out-the-big-guns-for-backyard-legends-world-cup-2026-campaign-film/" target="_blank"><span class="arr">↗</span>SoccerBible · Backyard Legends</a>
+        <a href="https://www.adweek.com/creativity/visa-recruits-jason-sudeikis-to-score-big-at-the-2026-world-cup/" target="_blank"><span class="arr">↗</span>Adweek · Visa + Sudeikis</a>
+        <a href="https://news.designrush.com/lego-fifa-world-cup-2026-messi-ronaldo-mbappe-vinicius" target="_blank"><span class="arr">↗</span>LEGO Editions · Messi+CR7+Mbappé+Vini</a>
+        <a href="https://adage.com/creativity/work/aa-lego-everyone-wants-a-piece/" target="_blank"><span class="arr">↗</span>Ad Age · Lego "Everyone Wants a Piece"</a>
+      </div>
+      <div class="ref-col">
+        <h4>○ 🌎 Global · Lay's · Michelob · Coca · Hyundai</h4>
+        <a href="https://news.designrush.com/lays-epic-watch-party-messi-beckham-carell-world-cup-2026" target="_blank"><span class="arr">↗</span>Lay's "Epic Watch Party"</a>
+        <a href="https://news.designrush.com/lays-bandwagon-will-ferrell-world-cup" target="_blank"><span class="arr">↗</span>Lay's "Bandwagon" Will Ferrell</a>
+        <a href="https://www.anheuser-busch.com/newsroom/MichelobULTRAFIFAWorldCup" target="_blank"><span class="arr">↗</span>Michelob "Superior Match"</a>
+        <a href="https://www.adsoftheworld.com/campaigns/uncanned-emotions" target="_blank"><span class="arr">↗</span>Coca-Cola "Uncanned Emotions"</a>
+        <a href="https://www.hyundai.news/eu/articles/press-releases/next-starts-now-campaign-fifa-world-cup-2026.html" target="_blank"><span class="arr">↗</span>Hyundai "Next Starts Now"</a>
+        <a href="https://news.lenovo.com/pressroom/press-releases/launches-global-campaign-with-david-beckham/" target="_blank"><span class="arr">↗</span>Lenovo "Maximum David"</a>
+        <a href="https://news.designrush.com/dove-men-care-fifa-world-cup-skincare-push" target="_blank"><span class="arr">↗</span>Dove Men+Care "Care for Skin"</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Copa do Mundo 2026 · Benchmark de Marketing Real</strong> · Maio 2026 · Brasil + Global · Para Theus Mattos / Filadd · Fontes: GKPB, Update or Die, Meio &amp; Mensagem, B9, Adweek, Ad Age, Promoview, Máquina do Esporte, Adidas News, Coca-Cola Company, Anheuser-Busch, Africa Creative, Wieden+Kennedy SP, Ogilvy</p>
+  </div>
+</footer>
+
+</body>
+</html>

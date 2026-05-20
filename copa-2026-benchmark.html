@@ -1,0 +1,2444 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Copa do Mundo 2026 — Benchmark Estratégico de Marketing</title>
+<meta name="description" content="Benchmark visual e estratégico das marcas patrocinadoras oficiais da FIFA World Cup 2026. Posicionamento, campanhas, narrativa, comunidade e tendências criativas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0a0a0c;
+    --bg-elev: #111114;
+    --bg-card: #16161a;
+    --border: #26262d;
+    --border-soft: #1c1c22;
+    --ink: #f4f4f6;
+    --ink-soft: #b8b8c2;
+    --ink-mute: #6f6f7a;
+    --accent: #d6ff36;
+    --accent-2: #00d4ff;
+    --gold: #f5c84b;
+    --red: #ff4d4d;
+    --green: #00d977;
+    --purple: #b66bff;
+    --orange: #ff8a3d;
+
+    /* brand palettes */
+    --adidas: #000000;
+    --adidas-ink: #ffffff;
+    --adidas-accent: #d6ff36;
+    --coke: #f40000;
+    --coke-ink: #ffffff;
+    --coke-accent: #ffd84d;
+    --visa: #1a1f71;
+    --visa-ink: #ffffff;
+    --visa-accent: #f5b521;
+    --hyundai: #002c5f;
+    --hyundai-ink: #ffffff;
+    --hyundai-accent: #00aad2;
+    --bud: #c41e3a;
+    --bud-ink: #ffffff;
+    --bud-accent: #f5c84b;
+
+    --maxw: 1320px;
+    --pad: clamp(20px, 4vw, 56px);
+    --radius: 18px;
+    --radius-lg: 28px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "ss01","cv11";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+    margin: 0 0 .4em;
+    line-height: 1.05;
+  }
+  p { margin: 0 0 1em; color: var(--ink-soft); }
+  .mono { font-family: 'DM Mono', monospace; letter-spacing: 0; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 var(--pad); }
+
+  /* ============== HERO ============== */
+  .hero {
+    position: relative;
+    padding: clamp(64px, 12vh, 140px) 0 clamp(80px, 14vh, 160px);
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 0%, rgba(214,255,54,0.18), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 30%, rgba(0,212,255,0.13), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50% 100%, rgba(244,0,0,0.10), transparent 60%),
+      var(--bg);
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    opacity: .6;
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid var(--border);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  .hero-eyebrow .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+  .hero h1 {
+    font-size: clamp(40px, 8vw, 108px);
+    font-weight: 700;
+    max-width: 14ch;
+    margin-bottom: 24px;
+  }
+  .hero h1 .lite { color: var(--ink-mute); font-weight: 400; }
+  .hero h1 .hi { color: var(--accent); }
+  .hero-sub {
+    font-size: clamp(16px, 1.4vw, 20px);
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: 40px;
+  }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    align-items: center;
+    color: var(--ink-mute);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+  }
+  .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-meta .sep { width: 16px; height: 1px; background: var(--border); }
+
+  /* big stats */
+  .stats {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .stat {
+    padding: 28px 24px;
+    border-right: 1px solid var(--border);
+  }
+  .stat:last-child { border-right: 0; }
+  .stat .num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(36px, 4.5vw, 60px);
+    font-weight: 700;
+    letter-spacing: -.03em;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat .num .unit { color: var(--accent); }
+  .stat .label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-mute);
+  }
+  @media (max-width: 800px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: 0; }
+    .stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--border); }
+  }
+
+  /* ============== STICKY NAV ============== */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(10,10,12,0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 14px var(--pad);
+    max-width: var(--maxw);
+    margin: 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    color: var(--ink);
+  }
+  .nav-brand .ico {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--accent);
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  .nav-links {
+    display: flex; gap: 6px;
+    margin-left: auto;
+  }
+  .nav-links a {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-soft);
+    white-space: nowrap;
+    transition: background .2s, color .2s;
+  }
+  .nav-links a:hover { background: rgba(255,255,255,0.05); color: var(--ink); }
+
+  /* ============== SECTION BASE ============== */
+  section {
+    padding: clamp(80px, 12vw, 140px) 0;
+    position: relative;
+  }
+  .section-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+  }
+  .section-head h2 {
+    font-size: clamp(32px, 4.6vw, 64px);
+    font-weight: 700;
+    max-width: 18ch;
+  }
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+  .lede {
+    color: var(--ink-soft);
+    font-size: 17px;
+    max-width: 52ch;
+  }
+
+  /* ============== TIER MAP ============== */
+  .tier-section { background: linear-gradient(180deg, var(--bg) 0%, #0e0e12 100%); }
+  .tier {
+    margin-bottom: 60px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+  .tier-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 28px;
+    align-items: center;
+    padding: 28px 32px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(90deg, rgba(214,255,54,0.06), transparent);
+  }
+  .tier-1 .tier-head { background: linear-gradient(90deg, rgba(214,255,54,0.10), transparent); }
+  .tier-2 .tier-head { background: linear-gradient(90deg, rgba(0,212,255,0.07), transparent); }
+  .tier-3 .tier-head { background: linear-gradient(90deg, rgba(245,200,75,0.06), transparent); }
+  .tier-badge {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    letter-spacing: .05em;
+  }
+  .tier-1 .tier-badge { color: var(--accent); border-color: rgba(214,255,54,0.3); }
+  .tier-2 .tier-badge { color: var(--accent-2); border-color: rgba(0,212,255,0.3); }
+  .tier-3 .tier-badge { color: var(--gold); border-color: rgba(245,200,75,0.3); }
+  .tier-title h3 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .tier-title p { margin: 0; font-size: 14px; color: var(--ink-mute); }
+  .tier-investment {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+  }
+  .tier-investment strong {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: -.02em;
+  }
+  .tier-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .tier-grid .brand-chip {
+    padding: 22px 24px;
+    border-right: 1px solid var(--border-soft);
+    border-top: 1px solid var(--border-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: background .2s;
+  }
+  .tier-grid .brand-chip:hover { background: rgba(255,255,255,0.02); }
+  .tier-grid .brand-chip .nm {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--ink);
+  }
+  .tier-grid .brand-chip .role {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-mute);
+  }
+  @media (max-width: 900px) {
+    .tier-grid { grid-template-columns: repeat(2, 1fr); }
+    .tier-head { grid-template-columns: 1fr; text-align: left; gap: 12px; }
+    .tier-investment { text-align: left; }
+  }
+  @media (max-width: 480px) {
+    .tier-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ============== DEEP DIVE BRAND ============== */
+  .brand {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 80px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+  }
+  .brand-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 480px;
+  }
+  .brand-hero-text {
+    padding: clamp(32px, 5vw, 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  .brand-hero-visual {
+    position: relative;
+    overflow: hidden;
+    background: #000;
+  }
+  .brand-hero-visual img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 900px) {
+    .brand-hero { grid-template-columns: 1fr; }
+    .brand-hero-visual { min-height: 280px; }
+  }
+
+  .brand-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--ink-mute);
+    margin-bottom: 8px;
+  }
+  .brand-tag .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .brand-hero h2 {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 800;
+    letter-spacing: -.04em;
+    margin: 0;
+  }
+  .brand-lede {
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin: 0;
+    max-width: 50ch;
+  }
+  .brand-quick {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    margin-top: 24px;
+  }
+  .brand-quick > div {
+    padding: 14px 16px;
+    border-right: 1px solid var(--border-soft);
+  }
+  .brand-quick > div:last-child { border-right: 0; }
+  .brand-quick .lbl {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-mute);
+    margin-bottom: 4px;
+  }
+  .brand-quick .val {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .brand-body {
+    padding: clamp(32px, 5vw, 64px);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 48px;
+  }
+  @media (max-width: 900px) {
+    .brand-body { grid-template-columns: 1fr; gap: 28px; }
+  }
+  .brand-toc {
+    position: sticky;
+    top: 90px;
+    align-self: start;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-mute);
+  }
+  .brand-toc div { padding: 8px 0; border-top: 1px solid var(--border-soft); }
+  .brand-toc div:first-child { border-top: 0; }
+  .brand-block { margin-bottom: 48px; }
+  .brand-block:last-child { margin-bottom: 0; }
+  .brand-block h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .brand-block h4 {
+    font-size: 17px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 12px;
+  }
+
+  /* gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 24px 0 36px;
+  }
+  .gallery.gal-2 { grid-template-columns: repeat(2, 1fr); }
+  .gallery.gal-4 { grid-template-columns: repeat(4, 1fr); }
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #1a1a1f;
+  }
+  .gallery .tall { grid-row: span 2; aspect-ratio: 2/3; }
+  .gallery .wide { grid-column: span 2; aspect-ratio: 16/9; }
+  @media (max-width: 700px) {
+    .gallery, .gallery.gal-2, .gallery.gal-4 { grid-template-columns: repeat(2, 1fr); }
+    .gallery .wide { grid-column: span 2; }
+  }
+
+  .insight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .insight {
+    padding: 22px;
+    border-radius: 14px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border-soft);
+  }
+  .insight .ic {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: rgba(214,255,54,0.1);
+    color: var(--accent);
+    display: grid; place-items: center;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 12px;
+  }
+  .insight h5 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+  .insight p { font-size: 14px; margin: 0; }
+  @media (max-width: 700px) { .insight-grid { grid-template-columns: 1fr; } }
+
+  ul.pretty {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+  }
+  ul.pretty li {
+    padding: 10px 0;
+    padding-left: 28px;
+    position: relative;
+    border-top: 1px solid var(--border-soft);
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  ul.pretty li:first-child { border-top: 0; }
+  ul.pretty li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  blockquote.pull {
+    margin: 28px 0;
+    padding: 24px 28px;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-elev);
+    border-radius: 0 14px 14px 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--ink);
+  }
+  blockquote.pull cite {
+    display: block;
+    margin-top: 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--ink-mute);
+    font-style: normal;
+  }
+
+  /* SCAN CARDS */
+  .scan {
+    background: linear-gradient(180deg, #0e0e12 0%, var(--bg) 100%);
+  }
+  .scan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 980px) { .scan-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .scan-grid { grid-template-columns: 1fr; } }
+  .scan-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px;
+    background: var(--bg-card);
+    transition: transform .2s, border-color .2s;
+  }
+  .scan-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+  .scan-card .scan-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .scan-card .scan-head h4 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .scan-card .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--bg-elev);
+    color: var(--ink-mute);
+    border: 1px solid var(--border);
+  }
+  .scan-card .role {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  .scan-card p { font-size: 14px; color: var(--ink-soft); margin: 0 0 14px; }
+  .scan-card .scan-pts {
+    border-top: 1px solid var(--border-soft);
+    padding-top: 12px;
+  }
+  .scan-card .scan-pt {
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    border-top: 1px dashed var(--border-soft);
+  }
+  .scan-card .scan-pt:first-child { border-top: 0; }
+  .scan-card .scan-pt strong {
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+  }
+
+  /* TRENDS */
+  .trends { background: var(--bg); }
+  .trends-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+  }
+  .trend {
+    grid-column: span 4;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .2s;
+  }
+  .trend:hover { transform: translateY(-4px); }
+  .trend-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--accent);
+    line-height: 1;
+    margin-bottom: 18px;
+    letter-spacing: -.05em;
+  }
+  .trend h3 { font-size: 20px; margin: 0 0 10px; }
+  .trend p { font-size: 14px; color: var(--ink-soft); margin: 0 0 14px; }
+  .trend .chips {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .trend .chip {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(214,255,54,0.08);
+    color: var(--accent);
+    border: 1px solid rgba(214,255,54,0.18);
+  }
+  .trend.span-6 { grid-column: span 6; }
+  .trend.span-8 { grid-column: span 8; }
+  @media (max-width: 1100px) {
+    .trend, .trend.span-6, .trend.span-8 { grid-column: span 6; }
+  }
+  @media (max-width: 700px) {
+    .trend, .trend.span-6, .trend.span-8 { grid-column: span 12; }
+  }
+
+  /* OPPORTUNITIES (Filadd/Kuadro) */
+  .ops {
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 0%, rgba(214,255,54,0.10), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 100%, rgba(0,212,255,0.06), transparent 60%),
+      var(--bg);
+  }
+  .ops-intro {
+    background: linear-gradient(135deg, rgba(214,255,54,0.06), rgba(0,212,255,0.04));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(28px, 4vw, 48px);
+    margin-bottom: 32px;
+  }
+  .ops-intro h3 {
+    font-size: clamp(24px, 3vw, 36px);
+    margin-bottom: 12px;
+  }
+  .ops-intro p { font-size: 16px; max-width: 70ch; }
+  .ops-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 800px) { .ops-grid { grid-template-columns: 1fr; } }
+  .op-card {
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+  }
+  .op-card .op-ic {
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: #0a0a0c;
+    display: grid; place-items: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .op-card h4 { font-size: 19px; margin: 0 0 6px; }
+  .op-card p { font-size: 14px; margin: 0; }
+
+  /* REFERENCES */
+  .refs { background: var(--bg-elev); border-top: 1px solid var(--border); }
+  .refs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 800px) { .refs-grid { grid-template-columns: 1fr; } }
+  .ref-col h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+  }
+  .ref-col a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-soft);
+    color: var(--ink-soft);
+    font-size: 14px;
+    transition: color .15s;
+  }
+  .ref-col a:first-of-type { border-top: 0; }
+  .ref-col a:hover { color: var(--accent); }
+  .ref-col a .arrow { color: var(--ink-mute); margin-right: 8px; }
+  .ref-col a:hover .arrow { color: var(--accent); }
+
+  footer {
+    padding: 60px 0 40px;
+    text-align: center;
+    color: var(--ink-mute);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    border-top: 1px solid var(--border);
+  }
+  footer strong { color: var(--ink); }
+
+  /* color blocks for brand heroes */
+  .h-adidas { background: linear-gradient(135deg, #000 0%, #1a1a1a 100%); color: #fff; }
+  .h-coke { background: linear-gradient(135deg, #f40000 0%, #c40000 100%); color: #fff; }
+  .h-coke .brand-tag, .h-coke .brand-lede, .h-coke .brand-quick .lbl { color: rgba(255,255,255,0.85); }
+  .h-coke .brand-quick { border-color: rgba(255,255,255,0.15); }
+  .h-coke .brand-quick > div { border-color: rgba(255,255,255,0.15); }
+  .h-visa { background: linear-gradient(135deg, #1a1f71 0%, #0d1043 100%); color: #fff; }
+  .h-visa .brand-quick { border-color: rgba(255,255,255,0.15); }
+  .h-visa .brand-quick > div { border-color: rgba(255,255,255,0.15); }
+  .h-hyundai { background: linear-gradient(135deg, #002c5f 0%, #001a3d 100%); color: #fff; }
+  .h-hyundai .brand-quick { border-color: rgba(255,255,255,0.15); }
+  .h-hyundai .brand-quick > div { border-color: rgba(255,255,255,0.15); }
+  .h-bud { background: linear-gradient(135deg, #c41e3a 0%, #8a0e1f 100%); color: #fff; }
+  .h-bud .brand-quick { border-color: rgba(255,255,255,0.15); }
+  .h-bud .brand-quick > div { border-color: rgba(255,255,255,0.15); }
+
+  /* Brand visual placeholder when no image */
+  .brand-visual-block {
+    width: 100%; height: 100%;
+    display: grid; place-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .brand-visual-block::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(0,0,0,0.4) 100%);
+  }
+
+  /* CSS Ball (Trionda) */
+  .trionda-ball {
+    width: clamp(240px, 35vw, 360px);
+    height: clamp(240px, 35vw, 360px);
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 50%),
+      conic-gradient(
+        from 0deg,
+        #c41e3a 0deg 90deg,
+        #00a651 90deg 180deg,
+        #1a3a8e 180deg 270deg,
+        #f5c84b 270deg 360deg
+      );
+    box-shadow:
+      inset -30px -30px 80px rgba(0,0,0,0.4),
+      0 30px 80px rgba(0,0,0,0.5),
+      0 0 120px rgba(245,200,75,0.2);
+    animation: spin 24s linear infinite;
+    position: relative;
+  }
+  .trionda-ball::before {
+    content: "";
+    position: absolute;
+    inset: 30px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.15), transparent 60%);
+  }
+  @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+  /* Coke can */
+  .coke-can-wrap {
+    display: grid;
+    place-items: center;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 30%, rgba(255,216,77,0.3), transparent 70%);
+  }
+
+  /* Section dividers */
+  .div-soft {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 0;
+  }
+
+  /* TLDR */
+  .tldr-section { background: var(--bg-elev); }
+  .tldr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+  @media (max-width: 900px) { .tldr { grid-template-columns: 1fr; } }
+  .tldr-col {
+    padding: clamp(28px, 4vw, 48px);
+  }
+  .tldr-col:first-child {
+    background: linear-gradient(135deg, rgba(214,255,54,0.06), transparent);
+    border-right: 1px solid var(--border);
+  }
+  @media (max-width: 900px) {
+    .tldr-col:first-child { border-right: 0; border-bottom: 1px solid var(--border); }
+  }
+  .tldr-col h3 { font-size: 24px; margin-bottom: 16px; }
+  .tldr-col h3 .ico {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  .tldr-col ul.pretty li { font-size: 14px; }
+
+  /* CTA banner */
+  .cta-banner {
+    margin-top: 56px;
+    padding: clamp(40px, 6vw, 80px);
+    background:
+      radial-gradient(ellipse 60% 80% at 30% 50%, rgba(214,255,54,0.15), transparent 70%),
+      #0d0d10;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+  }
+  .cta-banner h3 {
+    font-size: clamp(28px, 3.5vw, 44px);
+    margin-bottom: 16px;
+    max-width: 22ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-banner p {
+    max-width: 56ch;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  /* utility */
+  .glow-box {
+    border: 1px solid rgba(214,255,54,0.25);
+    background: rgba(214,255,54,0.04);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+  .glow-box p { margin: 0; color: var(--ink); font-size: 15px; }
+  .glow-box strong { color: var(--accent); }
+
+</style>
+</head>
+<body>
+
+<!-- ===================================== HERO ===================================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow"><span class="dot"></span> Benchmark Estratégico · Maio 2026</div>
+    <h1>O marketing da <span class="hi">Copa do Mundo 2026</span><br><span class="lite">decifrado por marca.</span></h1>
+    <p class="hero-sub">Uma análise visual e estratégica de como 35+ marcas estão construindo posicionamento, narrativa, comunidade e linguagem visual em torno do maior evento esportivo da história — entre os 15 patrocinadores oficiais globais da FIFA, os regional supporters da América do Norte e o ecossistema brasileiro paralelo (iFood, Brahma, Vivo, Itaú, Magalu, Cimed, Centauro/Podpah e Zé Delivery). 3 países-sede, 16 cidades, 104 partidas, 6 bilhões de espectadores.</p>
+    <div class="hero-meta">
+      <span>📍 USA · MEX · CAN</span>
+      <span class="sep"></span>
+      <span>📅 11 jun – 19 jul 2026</span>
+      <span class="sep"></span>
+      <span>⚽ 48 seleções · 104 jogos</span>
+      <span class="sep"></span>
+      <span>📊 25+ marcas analisadas</span>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="num">7<span class="unit">+8</span></div>
+        <div class="label">FIFA Partners · World Cup Sponsors</div>
+      </div>
+      <div class="stat">
+        <div class="num">$600<span class="unit">M+</span></div>
+        <div class="label">Investimento Tier-1 por ciclo</div>
+      </div>
+      <div class="stat">
+        <div class="num">6<span class="unit">B</span></div>
+        <div class="label">Espectadores projetados</div>
+      </div>
+      <div class="stat">
+        <div class="num">93<span class="unit">%</span></div>
+        <div class="label">Vão usar segunda tela na Copa</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================================== NAV ===================================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="ico"></span>WC26 Benchmark</div>
+    <div class="nav-links">
+      <a href="#tldr">TL;DR</a>
+      <a href="#tiers">Patrocinadores</a>
+      <a href="#adidas">Adidas</a>
+      <a href="#coke">Coca-Cola</a>
+      <a href="#visa">Visa</a>
+      <a href="#hyundai">Hyundai</a>
+      <a href="#bud">Michelob/Bud</a>
+      <a href="#scan">Scan rápido</a>
+      <a href="#brasil">🇧🇷 Brasil</a>
+      <a href="#trends">Tendências</a>
+      <a href="#ops">Para Filadd</a>
+      <a href="#refs">Referências</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================================== TLDR ===================================== -->
+<section id="tldr" class="tldr-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ TL;DR Estratégico</div>
+        <h2>O que está acontecendo de verdade no marketing da Copa 26</h2>
+      </div>
+      <p class="lede">A leitura curta: as marcas pararam de vender futebol como esporte e estão vendendo Copa como cultura pop. Quem entendeu isso primeiro está liderando a corrida criativa.</p>
+    </div>
+
+    <div class="tldr">
+      <div class="tldr-col">
+        <h3><span class="ico"></span>O que mudou de 2022 para 2026</h3>
+        <ul class="pretty">
+          <li><strong>Celebrities &gt; Atletas como protagonistas</strong> — Adidas escala Chalamet, Visa coloca Sudeikis, Michelob convoca Billy Bob Thornton. Futebol virou cinema.</li>
+          <li><strong>Arquitetura multi-filme</strong> — Coca-Cola estreou trilogia, Budweiser entregou múltiplas plataformas. Ninguém mais aposta em um único hero spot.</li>
+          <li><strong>Tri-país como sub-narrativa</strong> — toda marca está obrigada a contar a história de 3 culturas (USA/MEX/CAN) e o público hispânico virou audiência prioritária.</li>
+          <li><strong>TikTok como mídia oficial</strong> — primeira vez que o app entra como preferred partner da FIFA, com programa de 30 creators correspondentes.</li>
+          <li><strong>IA como linguagem</strong> — Lenovo construiu posicionamento inteiro sobre AI, Adidas usa CGI para "rejuvenescer" Beckham/Zidane.</li>
+          <li><strong>Gen Z força nostalgia 90s</strong> — Adidas Backyard Legends e Budweiser Budstalgia provam que nostalgia ainda é o atalho mais barato para emoção.</li>
+        </ul>
+      </div>
+      <div class="tldr-col">
+        <h3><span class="ico" style="background:var(--accent-2);box-shadow:0 0 10px var(--accent-2);"></span>O que isso significa pra você (Filadd / Kuadro)</h3>
+        <ul class="pretty">
+          <li><strong>Janela de oportunidade no mercado hispânico</strong> — as grandes marcas estão segmentando para latinos nos EUA. No Brasil/LATAM, há espaço para uma marca regional comunicar Copa com identidade local genuína.</li>
+          <li><strong>Creator-first venceu</strong> — 50% do budget da Unilever vai para social/creators. Vestibular e Copa têm a mesma curva emocional: ansiedade → ritual → resultado.</li>
+          <li><strong>Educação ainda não tem marca dominante na Copa</strong> — é território livre para conectar paixão por futebol com projeto de vida (vestibular = a "Copa" do estudante).</li>
+          <li><strong>Comunidade &gt; campanha</strong> — Budweiser (Bud FC), Visa (Tap In Studio), Dove (Ritual House) montaram clubes/casas. Reproduzível em escala menor com WhatsApp/Discord/comunidades de aluno.</li>
+          <li><strong>Gamificação narrativa funciona</strong> — Michelob faz fã virar Chief Trophy Officer. Visa sorteia tickets a cada gol. Há espaço para "Copa do Vestibulando" gamificada.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== TIERS ===================================== -->
+<section id="tiers" class="tier-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Mapa Completo</div>
+        <h2>Quem está pagando para falar sobre Copa em 2026</h2>
+      </div>
+      <p class="lede">A FIFA estrutura patrocínio em três níveis. Tier 1 são parceiros globais permanentes; Tier 2 são exclusivos da Copa 2026; Tier 3 são regionais focados na América do Norte. Cada cidade-sede ainda pode contratar até 10 supporters locais — totalizando mais de 200 marcas oficiais até o pontapé inicial.</p>
+    </div>
+
+    <!-- TIER 1 -->
+    <div class="tier tier-1">
+      <div class="tier-head">
+        <div class="tier-badge">TIER 01</div>
+        <div class="tier-title">
+          <h3>FIFA Partners · Direito Global Permanente</h3>
+          <p>Direitos globais sobre todos os eventos FIFA. 7 marcas. Investimento estimado por ciclo: $400M – $600M+.</p>
+        </div>
+        <div class="tier-investment"><strong>$3B+</strong>total estimado</div>
+      </div>
+      <div class="tier-grid">
+        <div class="brand-chip"><div class="nm">Adidas</div><div class="role">Official Match Ball &amp; Kit Supplier</div></div>
+        <div class="brand-chip"><div class="nm">Coca-Cola</div><div class="role">Official Soft Drink · 12ª Copa</div></div>
+        <div class="brand-chip"><div class="nm">Hyundai-Kia</div><div class="role">Official Automotive Partner</div></div>
+        <div class="brand-chip"><div class="nm">Visa</div><div class="role">Worldwide Payment Technology Partner</div></div>
+        <div class="brand-chip"><div class="nm">Lenovo</div><div class="role">Official Technology Partner (1ª vez)</div></div>
+        <div class="brand-chip"><div class="nm">Aramco</div><div class="role">Major Worldwide Partner · Energia</div></div>
+        <div class="brand-chip"><div class="nm">Qatar Airways</div><div class="role">Official Airline Partner</div></div>
+      </div>
+    </div>
+
+    <!-- TIER 2 -->
+    <div class="tier tier-2">
+      <div class="tier-head">
+        <div class="tier-badge">TIER 02</div>
+        <div class="tier-title">
+          <h3>FIFA World Cup Sponsors · Exclusivos Copa 2026</h3>
+          <p>Direitos globais específicos para a edição 2026. 8 marcas. Investimento por marca: $65M – $95M.</p>
+        </div>
+        <div class="tier-investment"><strong>$600M+</strong>total estimado</div>
+      </div>
+      <div class="tier-grid">
+        <div class="brand-chip"><div class="nm">Anheuser-Busch InBev</div><div class="role">Cerveja · Budweiser / Michelob ULTRA</div></div>
+        <div class="brand-chip"><div class="nm">McDonald's</div><div class="role">Food Service · Fair Play Trophy</div></div>
+        <div class="brand-chip"><div class="nm">Bank of America</div><div class="role">Categoria Bancária Global · 1ª vez</div></div>
+        <div class="brand-chip"><div class="nm">Frito-Lay (PepsiCo)</div><div class="role">Snacks / Salgadinhos</div></div>
+        <div class="brand-chip"><div class="nm">Verizon</div><div class="role">Telecomunicações · 5G</div></div>
+        <div class="brand-chip"><div class="nm">Mengniu Dairy</div><div class="role">Laticínios (Ásia + global)</div></div>
+        <div class="brand-chip"><div class="nm">Unilever</div><div class="role">Personal Care · Dove / Axe / Degree</div></div>
+        <div class="brand-chip"><div class="nm">Hisense</div><div class="role">Eletrônicos · TV VAR Provider</div></div>
+      </div>
+    </div>
+
+    <!-- TIER 3 -->
+    <div class="tier tier-3">
+      <div class="tier-head">
+        <div class="tier-badge">TIER 03</div>
+        <div class="tier-title">
+          <h3>Regional Supporters · América do Norte</h3>
+          <p>Direitos regionais para USA / Canadá / México. Foco em utilidade no momento do consumo, deslocamento e experiência local.</p>
+        </div>
+        <div class="tier-investment"><strong>$15-30M</strong>cada marca</div>
+      </div>
+      <div class="tier-grid">
+        <div class="brand-chip"><div class="nm">Airbnb</div><div class="role">Official Fan Accommodation</div></div>
+        <div class="brand-chip"><div class="nm">DoorDash</div><div class="role">Delivery &amp; Restaurant Reservations</div></div>
+        <div class="brand-chip"><div class="nm">American Airlines</div><div class="role">North American Airline Supplier</div></div>
+        <div class="brand-chip"><div class="nm">The Home Depot</div><div class="role">Home Improvement · DIY Fan Zones</div></div>
+        <div class="brand-chip"><div class="nm">Diageo</div><div class="role">Spirits · Don't Drink &amp; Drive</div></div>
+        <div class="brand-chip"><div class="nm">Valvoline by Aramco</div><div class="role">Automotive Maintenance</div></div>
+        <div class="brand-chip"><div class="nm">Marriott Bonvoy</div><div class="role">Hospedagem Premium</div></div>
+        <div class="brand-chip"><div class="nm">Panini</div><div class="role">Sticker Album Oficial</div></div>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <p><strong>OBSERVAÇÃO ESTRATÉGICA:</strong> Pela primeira vez na história, as cidades-sedes podem firmar até 10 patrocínios locais cada — adicionando uma camada hyper-local ao mix. Isso abre brecha inédita para marcas regionais ativarem narrativas próprias dentro do guarda-chuva da Copa, sem precisar pagar pelos direitos globais.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== ADIDAS ===================================== -->
+<section id="adidas">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Deep Dive · 01/05</div>
+        <h2>Adidas transforma futebol em mitologia pop</h2>
+      </div>
+      <p class="lede">A Adidas chegou primeiro, chegou maior e chegou com o nome mais cool do momento: Timothée Chalamet. A combinação Backyard Legends + Trionda + La Preparación Americana é a campanha mais ambiciosa da Copa 2026 até agora.</p>
+    </div>
+
+    <article class="brand">
+      <div class="brand-hero h-adidas">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA PARTNER · OFFICIAL MATCH BALL</div>
+          <h2>Adidas</h2>
+          <p class="brand-lede">"Backyard Legends" é a maior aposta cultural da Copa 26: futebol de quintal contado como filme de Hollywood, com Chalamet, Messi, Bad Bunny, Bellingham, Yamal, Rodman e CGI ressuscitando Beckham/Zidane/Del Piero.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Plataforma</div><div class="val">You Got This</div></div>
+            <div><div class="lbl">Tom</div><div class="val">Cinematográfico, Nostálgico</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Liberdade + Lenda</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:#000">
+          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/704213_v2.jpg" alt="Adidas Trionda · Jude Bellingham · Official Match Ball FIFA World Cup 26" />
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Posicionamento</div>
+          <div>02. Trionda</div>
+          <div>03. Backyard Legends</div>
+          <div>04. La Preparación Americana</div>
+          <div>05. Insights</div>
+        </aside>
+
+        <div>
+          <div class="brand-block">
+            <h4>01 · POSICIONAMENTO</h4>
+            <h3>Mantém "You Got This" como guarda-chuva e injeta nostalgia 90s como combustível emocional</h3>
+            <p>A Adidas está numa fase de reposicionamento global pós-Originals. Para a Copa 26, mantém o platform "You Got This", mas amplia para "self-belief + playfulness são a verdadeira mentalidade vencedora" — fala do prazer de jogar livre, sem pressão, antes da pressão de competir.</p>
+            <blockquote class="pull">
+              "O backyard é onde a pressão desaparece e as lendas começam. Seja num campinho, estacionamento ou no palco da Copa do Mundo — o jogo pertence a quem joga livre."
+              <cite>Florian Alt · VP Global Brand Communications, Adidas</cite>
+            </blockquote>
+          </div>
+
+          <div class="brand-block">
+            <h4>02 · PRODUTO ÍCONE</h4>
+            <h3>TRIONDA — a bola oficial que virou IP cultural</h3>
+            <p>"Trionda" = TRI (três) + ONDA. Design celebra os três países-sede com vermelho/azul/verde formando um triângulo central, ícones nacionais embossed (estrela, folha de bordo, águia) e detalhes em dourado como referência ao troféu. Tem chip IMU de 500Hz para VAR e foi unveiled em outubro/2025 — uma das primeiras grandes peças do storytelling da Copa.</p>
+            <div class="gallery gal-2">
+              <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/640x480/704250_v2.jpg" alt="Trionda + Troféu Copa do Mundo · México" />
+              <img src="https://www.soccerbible.com/media/175119/balltab-min.jpg" alt="Adidas Trionda · Official Match Ball" />
+            </div>
+            <p>Pra completar o IP: conta dedicada <strong>@Trionda no TikTok</strong> com POV first-person da bola em ação. Ou seja: a Adidas pegou o produto e transformou em creator próprio. Isso é o playbook da era do brand-as-creator.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>03 · CAMPANHA HERO</h4>
+            <h3>Backyard Legends · 5 minutos de cinema</h3>
+            <p>Curta de 5+ minutos dirigido por Mark Molloy (SMUGGLER), assinado pela agência LOLA USA. Chalamet monta uma equipe de quintal pra enfrentar Clive, Ruthie e Isaak — um trio invicto há gerações cuja lenda derrotou até Zidane, Beckham e Del Piero (recriados via CGI em versões mais jovens). Cameos: Dembélé, Raphinha, Pedri, Wirtz, Giménez.</p>
+            <div class="gallery">
+              <img src="https://www.soccerbible.com/media/181095/backyard-1.jpg" alt="Backyard Legends · cena 1" />
+              <img src="https://www.soccerbible.com/media/181096/backyard-2.jpg" alt="Backyard Legends · cena 2" />
+              <img src="https://www.soccerbible.com/media/181097/backyard-3.jpg" alt="Backyard Legends · cena 3" />
+              <img src="https://www.soccerbible.com/media/181098/backyard-4.jpg" alt="Backyard Legends · cena 4" />
+              <img src="https://www.soccerbible.com/media/181099/backyard-5.jpg" alt="Backyard Legends · cena 5" />
+              <img src="https://www.soccerbible.com/media/181100/backyard-6.jpg" alt="Backyard Legends · cena 6" />
+              <img src="https://www.soccerbible.com/media/181101/backyard-7.jpg" alt="Backyard Legends · cena 7" />
+              <img src="https://www.soccerbible.com/media/181102/backyard-8.jpg" alt="Backyard Legends · cena 8" />
+              <img src="https://www.soccerbible.com/media/181106/backyard-11.jpg" alt="Backyard Legends · cena 11" />
+            </div>
+            <blockquote class="pull">
+              "Eu sonhava jogar com esses caras. Jogava no Pier 40 pensando em faltas do Beckham, finalizações do Del Piero e voleios do Zidane — fazendo minhas próprias versões. Eu sou tradicionalista: eu não sei <em>soccer</em>, eu sei <em>football</em>."
+              <cite>Timothée Chalamet · Protagonista, Backyard Legends</cite>
+            </blockquote>
+            <p>Direção de arte: estética 90s — moletons largos, walkman, headphones com fio, cabelo de era, mistura analógico/CGI. Som nostálgico. Sub-texto: "lenda nasce no quintal, não na Copa". É publicidade que parece evento cultural — comentada por agências como Mischief como "mais filme que campanha".</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>04 · CAPÍTULO HISPÂNICO</h4>
+            <h3>La Preparación Americana — o pré-Backyard com lente latina</h3>
+            <p>Lançado em novembro/2025, é o filme cinematográfico que precede Backyard Legends. Tour pelo "cultural mash-up" que define a Copa 26 — escala USA + México + Canadá em estética pan-americana. Mostra que a Adidas entendeu antes de todo mundo: o público hispânico nos EUA é a audiência mais quente do mercado norte-americano para Copa.</p>
+            <div class="gallery gal-2">
+              <img src="https://www.soccerbible.com/media/176051/adi-wc26-tab-min.jpg" alt="Adidas · La Preparación Americana" />
+              <img src="https://www.soccerbible.com/media/181104/backyard-fb.jpg" alt="Backyard Legends · key visual social" />
+            </div>
+          </div>
+
+          <div class="brand-block">
+            <h4>05 · INSIGHTS PRA REPLICAR</h4>
+            <h3>O que extrair</h3>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Celebridade pop &gt; atleta</h5>
+                <p>Chalamet ancora a campanha. Bad Bunny vira ponte com música. Atletas são "convidados" no próprio filme. Inverter a hierarquia tradicional.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Produto vira creator</h5>
+                <p>@Trionda no TikTok é a bola como conta própria com POV first-person. Brand-as-creator é o playbook 2026.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>Nostalgia é atalho emocional</h5>
+                <p>CGI de Beckham/Zidane jovens + estética 90s. Para Gen Z que não viveu, é descoberta; pra millennial, é gatilho.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Múltiplos filmes &gt; um hero</h5>
+                <p>La Preparación Americana (NOV) → Trionda (OUT) → Backyard Legends (MAI). Cadência calendário.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================================== COCA-COLA ===================================== -->
+<section id="coke" style="background:#0d0d10">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Deep Dive · 02/05</div>
+        <h2>Coca-Cola escolheu emoção como território exclusivo</h2>
+      </div>
+      <p class="lede">A Coca está há quase 50 anos na Copa, em sua 12ª edição como Official Soft Drink. Em 2026, a marca trocou a tradicional "comunhão global" por algo mais visceral: a montanha-russa emocional do torcedor — entregue em uma trilogia de filmes ancorada por um remix de "Jump" do Van Halen.</p>
+    </div>
+
+    <article class="brand">
+      <div class="brand-hero h-coke">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>FIFA PARTNER · OFFICIAL SOFT DRINK</div>
+          <h2>Coca-Cola</h2>
+          <p class="brand-lede">"All The Feels" / "Uncanned Emotions" — três filmes em arco narrativo, do bubbling up pré-Copa até o "no better feeling" do apito final, com Trophy Tour por 50 países e collab Panini.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Plataforma</div><div class="val">All The Feels</div></div>
+            <div><div class="lbl">Tom</div><div class="val">Visceral, Coletivo</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Emoção Crua</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#f40000,#7a0000)">
+          <div class="coke-can-wrap">
+            <svg width="60%" viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 30px 40px rgba(0,0,0,0.4))">
+              <defs>
+                <linearGradient id="canG" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#ed1c24"/>
+                  <stop offset=".3" stop-color="#ff4444"/>
+                  <stop offset=".7" stop-color="#ed1c24"/>
+                  <stop offset="1" stop-color="#8a0000"/>
+                </linearGradient>
+              </defs>
+              <rect x="40" y="30" width="120" height="220" rx="14" fill="url(#canG)"/>
+              <rect x="40" y="30" width="120" height="20" rx="14" fill="#c0c0c0"/>
+              <ellipse cx="100" cy="30" rx="60" ry="6" fill="#a8a8a8"/>
+              <text x="100" y="150" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="22" font-style="italic" font-weight="700">Coca-Cola</text>
+              <text x="100" y="180" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="11" letter-spacing="3">FIFA 26</text>
+              <rect x="40" y="240" width="120" height="10" rx="2" fill="#7a0000"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Trilogia</div>
+          <div>02. Anthem</div>
+          <div>03. Trophy Tour</div>
+          <div>04. Panini Collab</div>
+          <div>05. Insights</div>
+        </aside>
+        <div>
+          <div class="brand-block">
+            <h4>01 · ARQUITETURA DE FILMES</h4>
+            <h3>Bubbling Up → Uncanned Emotions → No Better Feeling</h3>
+            <p>Coca não fez um filme. Fez três, encadeados pelo calendário emocional do torcedor:</p>
+            <ul class="pretty">
+              <li><strong>BUBBLING UP</strong> (jan/2026) — preview do anthem com J Balvin, Amber Mark, Steve Vai e Travis Barker. Funciona como teaser do build-up pré-Copa.</li>
+              <li><strong>UNCANNED EMOTIONS</strong> (abr/2026) — filme imersivo com narração de Peter Drury e Luis Omar Tapia recriando a intensidade do gol no último minuto e da chance perdida. Storytelling raw, primeira pessoa, montagem rápida.</li>
+              <li><strong>NO BETTER FEELING</strong> (jun/2026) — vai ao ar no apito inicial da Copa. Fecha o arco da espera para o momento.</li>
+            </ul>
+            <blockquote class="pull">
+              "A visão é capturar a energia da Copa e a montanha-russa de emoções que só esse torneio entrega — e transformar isso em conexões tangíveis."
+              <cite>Coca-Cola Media Center · Abr/2026</cite>
+            </blockquote>
+          </div>
+
+          <div class="brand-block">
+            <h4>02 · MÚSICA</h4>
+            <h3>"Jump" do Van Halen virou anthem oficial</h3>
+            <p>A escolha do hit synth-80s e a reimaginação por J Balvin + Travis Barker + Amber Mark + Steve Vai é símbolo da estratégia: <strong>conectar futebol com cultura pop transgeracional</strong>. Não é jingle — é trilha emocional licenciada com escala de streaming. Plataforma musical complementa filme + ativação física + colecionismo.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>03 · ATIVAÇÃO GLOBAL</h4>
+            <h3>FIFA World Cup Trophy Tour by Coca-Cola</h3>
+            <p>Exibição global do troféu real em 50+ países antes da Copa. Estações interativas, sampling de produto, fan experiences, games. Funciona como ponte física entre o brand assets digital e a presença local — e gera UGC orgânico que multiplica alcance sem custo de mídia. A Coca usa esse asset desde 2006; em 2026, o Tour é digitalizado com app e check-ins gamificados.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>04 · COLLAB</h4>
+            <h3>Coca × Panini — colecionismo físico + digital</h3>
+            <p>Coleção de figurinhas customizada com atletas dos maiores clubes e seleções. Versão física (clássica) e digital (NFT-ish sem mencionar NFT). Coca não inventou colecionismo — inventou um motivo a mais para o ritual diário de abrir uma Coca virar abertura de pacotinho durante a Copa.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>05 · INSIGHTS PRA REPLICAR</h4>
+            <h3>O que extrair</h3>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Calendário de drops emocional</h5>
+                <p>Cada filme amarrado a um momento psicológico do torcedor: ansiedade, êxtase, saudade. Replica o "funil emocional" do consumidor.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Música como IP, não como BG</h5>
+                <p>"Jump" virou ativo central, não só trilha. Licenciamento + remix exclusivo gera presença em playlists de Spotify.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>Tour físico = motor de UGC</h5>
+                <p>Trophy Tour visita 50 países. Cada parada gera centenas de fotos orgânicas. Aprendizado: distribua o asset físico, não só o digital.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Colecionismo é ritual</h5>
+                <p>Panini × Coca não é collab — é hábito. Cria comportamento diário que dura 3 meses (vai além da Copa).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================================== VISA ===================================== -->
+<section id="visa">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Deep Dive · 03/05</div>
+        <h2>Visa fez do trocadilho um campeonato inteiro</h2>
+      </div>
+      <p class="lede">"Tap In" tem duplo sentido: pagamento por aproximação (contactless) + gol de chapinha (futebol). Em vez de explicar o produto, Visa transformou um termo de boleiro em plataforma global. Jason Sudeikis (Ted Lasso) anchora — escolha cirúrgica para o público USMNT.</p>
+    </div>
+
+    <article class="brand">
+      <div class="brand-hero h-visa">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#f5b521"></span>FIFA PARTNER · PAYMENT TECHNOLOGY</div>
+          <h2>Visa</h2>
+          <p class="brand-lede">"Tap In" — Jason Sudeikis viaja USA/MEX/CAN usando Visa contactless. Plus: Tap In Studio (ativação física), $600K para 3 ONGs e promo "Tap In to Score" sorteando ingressos a cada gol de chapinha real do torneio.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Plataforma</div><div class="val">Tap In</div></div>
+            <div><div class="lbl">Tom</div><div class="val">Humor, Cultura Pop</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Frictionless + Joy</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#1a1f71,#0d1043);display:grid;place-items:center;padding:40px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1a1f71"/>
+                <stop offset="1" stop-color="#3b46d3"/>
+              </linearGradient>
+            </defs>
+            <rect x="40" y="40" width="320" height="200" rx="20" fill="url(#cardG)" stroke="#f5b521" stroke-width="2"/>
+            <circle cx="80" cy="80" r="20" fill="none" stroke="#f5b521" stroke-width="2"/>
+            <circle cx="80" cy="80" r="12" fill="none" stroke="#f5b521" stroke-width="2"/>
+            <circle cx="80" cy="80" r="4" fill="#f5b521"/>
+            <text x="60" y="200" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="32" letter-spacing="2">VISA</text>
+            <text x="60" y="220" fill="#f5b521" font-family="DM Mono,monospace" font-size="11" letter-spacing="2">TAP · IN · FIFA 26</text>
+            <rect x="240" y="120" width="100" height="50" rx="6" fill="rgba(245,181,33,0.15)"/>
+            <text x="290" y="150" text-anchor="middle" fill="#f5b521" font-family="Inter,sans-serif" font-weight="700" font-size="14">TAP IN</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Trocadilho</div>
+          <div>02. Filme + Sudeikis</div>
+          <div>03. Tap In Studio</div>
+          <div>04. Impacto + Promo</div>
+          <div>05. Insights</div>
+        </aside>
+        <div>
+          <div class="brand-block">
+            <h4>01 · INSIGHT FUNDAMENTAL</h4>
+            <h3>Um trocadilho que carrega o produto, a categoria e a emoção</h3>
+            <p>"Tap In" em inglês americano é gíria pro gol fácil (chapinha de bico). E "Tap" é o gesto do contactless. A Visa pegou uma palavra que o produto e o esporte compartilham e construiu uma plataforma global sobre ela. <strong>Quando a comunicação funciona, ninguém percebe que está sendo educado sobre pagamento.</strong></p>
+            <blockquote class="pull">
+              "Everything is a Tap In with Visa."
+              <cite>Visa · Tap In Campaign Hero Line</cite>
+            </blockquote>
+          </div>
+
+          <div class="brand-block">
+            <h4>02 · FILME HERO</h4>
+            <h3>Sudeikis como turista do norte da Copa</h3>
+            <p>Filme de alto impacto onde Jason Sudeikis (lendário pela série Ted Lasso) percorre USA, México e Canadá usando o cartão Visa em cada etapa da jornada do torcedor. A escolha do casting é cirúrgica: Sudeikis traz capital cultural do USMNT/Premier League para audiência norte-americana que ainda não é "fluente" em futebol. Distribuição: broadcast, digital, social, creator partnerships, ambientes imersivos.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>03 · ATIVAÇÃO FÍSICA</h4>
+            <h3>Tap In Studio — pop-ups nos estádios e cidades-sedes</h3>
+            <p>Espaços físicos em estádios selecionados e cidades-sedes que misturam futebol, arte (primeira coleção global de arte da Visa) e cultura. Funcionam como ativação de marca + sales floor para premium experiences. <strong>É o modelo "casa de marca"</strong>, replicando o que Bud FC, Dove Ritual House e Hyundai Fan Camps também fazem em 2026.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>04 · IMPACTO + GAMIFICAÇÃO</h4>
+            <h3>Tap In to Impact + Tap In to Score</h3>
+            <ul class="pretty">
+              <li><strong>Tap In to Impact</strong> — $600K divididos entre 3 ONGs (uma por país-sede): SCORE (USA), Pro Mujer (México), Futurpreneur (Canadá). Posiciona Visa como agente de impacto local.</li>
+              <li><strong>Tap In to Score</strong> — promo exclusiva para cardholders USA + Canadá. Cada vez que rolar um gol de chapinha real no torneio, abre uma rodada de sorteios: ingressos, viagens, merch, memorabilia. <strong>Conecta consumo (uso do cartão) a evento esportivo (gol) em tempo real.</strong></li>
+              <li><strong>Bonvoy × Visa</strong> — campanha conjunta com Marriott "For Fans, Everywhere" estrelando Haaland e Vinicius Júnior, com 600+ experiências da plataforma Bonvoy Moments.</li>
+            </ul>
+          </div>
+
+          <div class="brand-block">
+            <h4>05 · INSIGHTS PRA REPLICAR</h4>
+            <h3>O que extrair</h3>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Ache um trocadilho que carregue tudo</h5>
+                <p>Um único termo (Tap In) entrega produto + categoria + emoção esportiva. Encontre a sua palavra dupla.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Casting cultural &gt; casting esportivo</h5>
+                <p>Sudeikis traz Ted Lasso pra dentro da campanha. Trazer ícones culturais com afinidade ao tema.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>Conecte consumo a evento em tempo real</h5>
+                <p>Cada gol de chapinha = sorteio. Cria comportamento de uso + assistência sincronizada.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Impacto local em cada país-sede</h5>
+                <p>Cada doação é específica por mercado. Personalização de causa = legitimidade local.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================================== HYUNDAI ===================================== -->
+<section id="hyundai" style="background:#0d0d10">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Deep Dive · 04/05</div>
+        <h2>Hyundai apostou pesado em Gen Z, robótica e família</h2>
+      </div>
+      <p class="lede">Enquanto Adidas faz Hollywood e Visa faz cultura pop, Hyundai escolheu construir capital de longo prazo: youth camps com lendas (Mia Hamm + Tim Howard), arte feita por crianças, robôs e a tag "Next Starts Now" que rejuvenesce a marca sem perder o herdade da plataforma anterior "Goal of the Century".</p>
+    </div>
+
+    <article class="brand">
+      <div class="brand-hero h-hyundai">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#00aad2"></span>FIFA PARTNER · AUTOMOTIVE</div>
+          <h2>Hyundai-Kia</h2>
+          <p class="brand-lede">"Next Starts Now" — campanha global de juventude com robótica showcase, youth camps em Atlanta/Miami/NJ/LA com Mia Hamm e Tim Howard, mais "The Greatest Cheer" art contest para crianças de 5 a 12 anos.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Plataforma</div><div class="val">Next Starts Now</div></div>
+            <div><div class="lbl">Tom</div><div class="val">Otimista, Familiar</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Próxima geração</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#002c5f,#00aad2);display:grid;place-items:center;padding:40px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="200" cy="120" r="100" fill="rgba(255,255,255,0.05)" stroke="#00aad2" stroke-width="2"/>
+            <circle cx="200" cy="120" r="60" fill="rgba(255,255,255,0.08)" stroke="#fff" stroke-width="1"/>
+            <text x="200" y="115" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="22">NEXT</text>
+            <text x="200" y="140" text-anchor="middle" fill="#00aad2" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="22">STARTS</text>
+            <text x="200" y="165" text-anchor="middle" fill="#fff" font-family="Space Grotesk,sans-serif" font-weight="700" font-size="22">NOW</text>
+            <text x="200" y="200" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="DM Mono,monospace" font-size="10" letter-spacing="4">HYUNDAI · WC26</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Reposicionamento</div>
+          <div>02. Youth Camps</div>
+          <div>03. Art Contest</div>
+          <div>04. Robótica</div>
+          <div>05. Insights</div>
+        </aside>
+        <div>
+          <div class="brand-block">
+            <h4>01 · REPOSICIONAMENTO</h4>
+            <h3>De "Goal of the Century" (sustentabilidade) para "Next Starts Now" (futuro)</h3>
+            <p>Na Copa 2022, Hyundai usou "Goal of the Century" com BTS + Steven Gerrard + foco em sustentabilidade. Em 2026, a marca pivotou pra "Next Starts Now" — mantém o DNA "Progress for Humanity", mas troca o tom planetário pelo geracional. Faz sentido: foco em Gen Z + millennials com filhos em idade escolar é compatível com a curva de novos compradores de SUV familiar.</p>
+            <blockquote class="pull">
+              "Construir confiança, trabalho em equipe e liderança em jogadores jovens de todos os níveis."
+              <cite>Hyundai Motor America · Youth Camps Program</cite>
+            </blockquote>
+          </div>
+
+          <div class="brand-block">
+            <h4>02 · COMUNIDADE BASE</h4>
+            <h3>Youth Camps em 4 cidades dos EUA</h3>
+            <p>Hyundai Motor America iniciou em abril/2026 acampamentos de futebol gratuitos em Atlanta, Miami, Nova Jersey e Los Angeles. Cada acampamento tem sessão matinal e vespertina, foca em fundamentos + confiança + trabalho em equipe, dirigido a crianças de 6 a 12 anos. Lendas como <strong>Mia Hamm e Tim Howard</strong> participam pessoalmente. <strong>É a estratégia mais low-key e mais inteligente da Copa</strong>: construir lealdade desde a infância, em comunidades hispânicas-fortes (Miami, LA).</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>03 · UGC ESTRUTURADO</h4>
+            <h3>"The Greatest Cheer" · Concurso de arte para crianças</h3>
+            <p>Convite a crianças de 5 a 12 anos de todas as nações participantes para criar artes celebrando seleção + paixão pela Copa. Vencedores ganham viagem + ingressos para o torneio + acomodação para criança + responsável. <strong>É UGC orgânico estruturado:</strong> os pais postam, viralizam, marcam Hyundai. A marca não precisa pagar por mídia — os fãs entregam.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>04 · DIFERENCIAL TECH</h4>
+            <h3>Robótica no Fan Festival</h3>
+            <p>Hyundai vai showcase robótica (Boston Dynamics já fez parte da Goal of the Century 2022) nas ativações ao redor dos estádios. Justifica narrativa "futuro chegou" sem grandiloquência. Posiciona Hyundai como marca tech-forward para audiência que está acostumada a comprar Tesla/Rivian.</p>
+            <p>Bônus: ônibus de delegações com design especial por país — visibilidade massiva nas redes sociais sem custo de mídia paga adicional.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>05 · INSIGHTS PRA REPLICAR</h4>
+            <h3>O que extrair</h3>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Programa "abaixo do radar" é o mais durável</h5>
+                <p>Youth Camps não viralizam, mas constroem 10 anos de lealdade. Branding patrocinado tem prazo de validade; comunidade construída não.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Lenda + criança é casting imbatível</h5>
+                <p>Mia Hamm + Tim Howard com crianças de 6-12 = imagem que multi-geracional consome. Avô, mãe, filho.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>UGC vem de pais, não de adolescentes</h5>
+                <p>"Greatest Cheer" usa criança como autor; pai como distribuidor. Inverte o funil tradicional.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Repivotagem de plataforma é OK</h5>
+                <p>"Goal of the Century" → "Next Starts Now" mostra: você pode aposentar uma plataforma sem perder o DNA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================================== MICHELOB ULTRA / BUD ===================================== -->
+<section id="bud">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Deep Dive · 05/05</div>
+        <h2>Anheuser-Busch dividiu a comunicação em 3 marcas — e ganhou em cobertura</h2>
+      </div>
+      <p class="lede">A AB InBev é a maior anunciante mundial de eventos esportivos. Em 2026, ela orquestrou um portfolio com 3 marcas distintas e plataformas próprias: Michelob ULTRA, Budweiser e Stella Artois — cada uma com tom, casting e ativação específicos. Não escolheu uma narrativa: ocupou três audiências.</p>
+    </div>
+
+    <article class="brand">
+      <div class="brand-hero h-bud">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#f5c84b"></span>WC SPONSOR · OFFICIAL BEER</div>
+          <h2>AB InBev — Michelob ULTRA + Budweiser</h2>
+          <p class="brand-lede">"The Superior Match" (Michelob com Messi vs Pulisic + Billy Bob Thornton), "Let It Pour" e "Budstalgia" (Budweiser nostalgia + Haaland), MVP Trophy + Chief Trophy Officer fan promo. Múltiplas marcas, múltiplas audiências.</p>
+          <div class="brand-quick">
+            <div><div class="lbl">Plataformas</div><div class="val">3 marcas, 3 platforms</div></div>
+            <div><div class="lbl">Tom</div><div class="val">Humor, Nostalgia, Premium</div></div>
+            <div><div class="lbl">Foco</div><div class="val">Audiência segmentada</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#c41e3a,#8a0e1f);display:grid;place-items:center;padding:40px">
+          <svg width="100%" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+            <rect x="80" y="40" width="80" height="180" rx="8" fill="#fff" opacity=".95"/>
+            <text x="120" y="125" text-anchor="middle" fill="#c41e3a" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="14">Bud</text>
+            <text x="120" y="145" text-anchor="middle" fill="#c41e3a" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="14">weiser</text>
+            <rect x="240" y="40" width="80" height="180" rx="8" fill="#1c1c22"/>
+            <text x="280" y="125" text-anchor="middle" fill="#f5c84b" font-family="Inter,sans-serif" font-weight="700" font-size="11" letter-spacing="2">MICHELOB</text>
+            <text x="280" y="145" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="700" font-size="13" letter-spacing="3">ULTRA</text>
+            <text x="200" y="220" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="DM Mono,monospace" font-size="10" letter-spacing="2">OFFICIAL BEER · FIFA 26</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Estratégia 3 marcas</div>
+          <div>02. The Superior Match</div>
+          <div>03. Chief Trophy Officer</div>
+          <div>04. Budstalgia</div>
+          <div>05. Insights</div>
+        </aside>
+        <div>
+          <div class="brand-block">
+            <h4>01 · ARQUITETURA DE PORTFÓLIO</h4>
+            <h3>Não escolher é a escolha</h3>
+            <ul class="pretty">
+              <li><strong>Michelob ULTRA</strong> — Official Beer Sponsor. Tom premium, casting de elite, narrativa "Superior Match". Foca em consumidor americano premium e USMNT fan.</li>
+              <li><strong>Budweiser</strong> — Global beer sponsor (40 países). Plataforma "Let It Pour" + "Budstalgia". Tom popular, nostálgico, focado em torcedor global.</li>
+              <li><strong>Stella Artois + NÜTRL</strong> — sub-brands ancoradas no roster sem campanha hero própria; ativadas via eventos físicos.</li>
+            </ul>
+            <p>Ricardo Marques (CMO Michelob ULTRA) tem dito que a estratégia é evoluir do golpe único (Super Bowl) pra <strong>jogada longa de calendário esportivo</strong> — Olimpíada → Copa → próxima janela. Não vence quem grita mais alto; vence quem ocupa mais janelas.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>02 · COMERCIAL HERO MICHELOB</h4>
+            <h3>"The Superior Match" — quando o lobby do hotel vira campo</h3>
+            <p>Lobby de hotel se transforma em campo de futebol durante uma cerveja. Messi + Lautaro + Paz vs Pulisic + Sergiño Dest + Antonee Robinson. Goleiro: Ochoa. Cameo: Ronaldo Nazário. Easter egg: Alex Morgan dando assistência pros EUA. Cliente VIP da cena: Billy Bob Thornton (humor surreal — pede cerveja, ganha jogo).</p>
+            <p>Por que funciona: <strong>casa duas audiências num único spot</strong> — Latam quer Messi/Ochoa, EUA quer Pulisic/Morgan. E o ângulo cinematográfico (lobby virando campo) é absurdo o suficiente pra render dúzias de cortes verticais pra TikTok.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>03 · GAMIFICAÇÃO MASCOTE</h4>
+            <h3>Chief Trophy Officer · $90K para um fã virar carregador oficial do troféu</h3>
+            <p>Michelob criou em parceria com o artista Victor Solomon o <strong>"Superior Player of the Match Trophy"</strong> — um troféu dado por voto popular após cada jogo. Em cima dessa mecânica, lançou promo: um fã ganha $90K + a responsabilidade de carregar o troféu para o campo na Final da Copa em 19 de julho de 2026.</p>
+            <div class="glow-box">
+              <p><strong>POR QUE ISSO É GENIAL:</strong> a marca não criou só um troféu — criou um <em>cargo</em>. Faz o fã virar parte do espetáculo, gera milhares de inscrições orgânicas (cada inscrição = lead) e materializa o "fan-first" que toda marca diz que faz mas raramente entrega.</p>
+            </div>
+          </div>
+
+          <div class="brand-block">
+            <h4>04 · BUDWEISER NOSTALGIA</h4>
+            <h3>Budstalgia · 40 anos de Copa em um pack colecionável</h3>
+            <p>Lata edição limitada com design retro celebrando 40 anos de Bud + Copa. Filme global "The Big Drop", criativo OOH distinto, hub digital era-inspired. <strong>"Let It Pour"</strong> é a plataforma global maior (40 países, com Erling Haaland) e inclui Bud FC fan events + Bud Fan Store.</p>
+            <p>Bud entendeu antes que <strong>nostalgia + colecionismo + cerveja</strong> é a tríade da Copa pro torcedor de carne e osso.</p>
+          </div>
+
+          <div class="brand-block">
+            <h4>05 · INSIGHTS PRA REPLICAR</h4>
+            <h3>O que extrair</h3>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Portfolio de marcas &gt; uma marca grande</h5>
+                <p>Cada marca atende uma audiência. Em educação: uma plataforma pode ter sub-marcas (Filadd Brasil, Kuadro Premium) com tom diferente.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Crie um cargo, não um sorteio</h5>
+                <p>"Chief Trophy Officer" vale mais que "ganhe ingressos". O fã se sente convocado, não premiado.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>Casa dois mercados num spot</h5>
+                <p>USA + Latam em uma cena (lobby). Pense em qual cena consegue carregar dois públicos brasileiros distintos no mesmo frame.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Long-game &gt; flash-bang</h5>
+                <p>Michelob diz: Super Bowl é só o começo da temporada. Vestibular tem o mesmo padrão — quem ativa antes ganha o ano todo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================================== SCAN RÁPIDO ===================================== -->
+<section id="scan" class="scan">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Scan Rápido</div>
+        <h2>O que o resto está fazendo — em 1 cartão por marca</h2>
+      </div>
+      <p class="lede">Outras 15+ marcas oficiais com plataformas relevantes. Cobertura sintética: posicionamento, ação principal, diferencial. Use como referência rápida de campos competitivos.</p>
+    </div>
+
+    <div class="scan-grid">
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Lenovo</h4><span class="tag">Tier 1</span></div>
+        <div class="role">Official Technology Partner · 1ª vez</div>
+        <p>Campanha global "Maximum David" com David Beckham. Lançou pacote completo de AI: Football AI Pro (assistente generativo pras 48 seleções), AI 3D Player Avatars (replays de impedimento), Intelligent Command Center.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Casting:</strong> David Beckham — IP eterno para tech enterprise.</div>
+          <div class="scan-pt"><strong>Diferencial:</strong> AI é o produto E a metáfora — comunicação prática.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> conecte tecnologia a uma celebridade humana confiável.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Aramco</h4><span class="tag">Tier 1</span></div>
+        <div class="role">Major Worldwide Partner · Energia</div>
+        <p>Aramco presenteia o "FIFA Young Player of the Tournament Award" e investe em "Football for Schools" (acesso a esporte para jovens + coaches). Valvoline by Aramco lançou campanha que celebra o fã que viaja milhares de km e os mecânicos que mantêm tudo rodando.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Posicionamento:</strong> menos brand cultural, mais legado/educação.</div>
+          <div class="scan-pt"><strong>Diferencial:</strong> presence sem grito — patrocinar prêmio individual.</div>
+          <div class="scan-pt"><strong>Tensão:</strong> Aramco é alvo de críticas (Fossil Free Football); narrativa social atenua.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Qatar Airways</h4><span class="tag">Tier 1</span></div>
+        <div class="role">Official Airline Partner</div>
+        <p>Renovação pós-Copa Qatar 2022. Foco em hospitality premium, mídia em aeroportos das três sedes e tickets/experience para frequent flyers Privilege Club.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Posicionamento:</strong> luxo + acesso.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> ainda subutiliza o ângulo emocional de "viajar pra Copa".</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>McDonald's</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Food Service · Fair Play Trophy</div>
+        <p>Promoção global com Adidas: Trionda mini ball como brinde no Happy Meal a partir de março/2026. Cardápio internacional do World Cup: burgers inspirados em México, França, Espanha, USA. Parceiro do Chicago Fire P.L.A.Y.S. com soccer starter kits em 280 escolas (a partir de 2027).</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Collab:</strong> McDonald's × Adidas (mini Trionda) é o ouro do co-branding.</div>
+          <div class="scan-pt"><strong>Cardápio:</strong> "burger da seleção" gera ritual + drive pra restaurante.</div>
+          <div class="scan-pt"><strong>Causa:</strong> Soccer Starter Kits posicionam para legado pós-Copa.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Hisense</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Consumer Electronics · VAR Provider</div>
+        <p>Filme de 4 minutos "Innovating a Brighter Life" — três amigos relembram pelada de infância intercalado com vida adulta vendo jogo juntos. RGB MiniLED como protagonista. Hisense é o provedor TV exclusivo da sala VAR do torneio — credibilidade técnica máxima.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Estética:</strong> emocional / cinematográfica / pulada de tempo.</div>
+          <div class="scan-pt"><strong>Diferencial:</strong> sala VAR oficial = prova social técnica única.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Unilever (Dove Men+Care)</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Personal Care · Multi-brand</div>
+        <p>Dove Men+Care: "Care for Your Skin Like You Care for the Game" — hábitos de torcedor (camisa não lavada da sorte, tinta no rosto, banho de champanhe) viram razão pra cuidar da pele. Linha limitada Copa 26. Ativações "Ritual House" em Kansas City, NYC e Miami.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Insight:</strong> ritual de torcedor = pretexto pro produto.</div>
+          <div class="scan-pt"><strong>Ativação:</strong> Ritual House — casa de marca em cidade-sede.</div>
+          <div class="scan-pt"><strong>Investimento:</strong> Unilever colocou 50% do budget em social/creators.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Verizon</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Telecom · 5G Network</div>
+        <p>Oferta de plano de telefonia exclusivo para fãs visitantes durante a Copa. Rollout 5G nos 11 estádios dos EUA — narrativa "sem dead zone na hora do gol". Pacote para fans internacionais reduz fricção de uso de dados no exterior.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Proposta:</strong> utility-first — não há hero film, há solução.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> tem patrocínios que ganham com utilidade, não com narrativa.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Bank of America</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Categoria Bancária Global · 1ª vez</div>
+        <p>Primeiro patrocínio bancário global da FIFA. BoA usa a Copa pra aquisição de cliente nas 11 cidades-sedes dos EUA, com comunicação focada em "community banking" e ofertas locais.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Foco:</strong> customer acquisition em mercado doméstico.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> Copa = vitrine pra produto financeiro nas sedes.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Frito-Lay (PepsiCo)</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Snacks · Stadium + Retail</div>
+        <p>Categoria "snacks" para tour das 11 sedes dos EUA. Snack-and-watch parties como ativação. Embalagens edição Copa em toda portfolio (Lay's, Doritos, Cheetos). Foco: viewing party doméstica.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Foco:</strong> trazer Copa pra sala de casa via prateleira.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> aproveite múltiplas marcas do portfolio.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Mengniu Dairy</h4><span class="tag">Tier 2</span></div>
+        <div class="role">Laticínios · China + Global</div>
+        <p>Continuação de patrocínio iniciado em 2018. Tom familiar/saudável, com Messi como embaixador histórico. Comunicação 100% voltada pro mercado chinês — exemplo de patrocínio FIFA usado pra abrir mercado doméstico de uma marca regional.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Foco:</strong> conquistar credibilidade fora do país-base.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> patrocínio FIFA pode ser sobre legitimidade, não global reach.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Airbnb</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Official Fan Accommodation</div>
+        <p>Programa massivo de incentivo: $750-1000 para novos hosts em qualquer cidade-sede. Expectativa de 380K hóspedes e $3.6B de impacto econômico. Airbnb Experiences exclusivas (treino com Tim Howard). $5M para Host City Impact Program. Demanda nas 16 cidades-sede subiu 80% YoY.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Estratégia:</strong> patrocínio = motor para crescer supply.</div>
+          <div class="scan-pt"><strong>Diferencial:</strong> Experiences gamificam acesso a atletas.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>DoorDash</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Delivery + Reservations</div>
+        <p>Primeira marca a ter dupla designação: Official On-Demand Delivery + Official Restaurant Reservations Platform. Posição: serviço da Copa fora do estádio (assistir em casa ou em restaurante).</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Aprendizado:</strong> "watch party at home" é território livre.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>American Airlines</h4><span class="tag">Tier 3</span></div>
+        <div class="role">North American Airline Supplier</div>
+        <p>2.200 voos diários conectando sedes USA + México + Canadá. Schedules expandidas, pacotes de viagem para fans coordenados.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Foco:</strong> utilidade operacional + ticketing.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>The Home Depot</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Home Improvement · DIY Fan Zones</div>
+        <p>Ativações em múltiplas sedes — Monterrey, Atlanta, Toronto, etc. — com outdoor viewing parties + DIY fan zones adaptadas à cultura local. Materiais e mão de obra para construção temporária dos estádios.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Diferencial:</strong> ativação física + utilidade de obra.</div>
+          <div class="scan-pt"><strong>Insight:</strong> DIY fan zone democratiza Copa pra quem não vai ao estádio.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Diageo</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Spirits · Don't Drink &amp; Drive</div>
+        <p>Spirits oficial nas Américas. Patrocinador de "Don't Drink and Drive" + campanhas de hidratação em fan festivals e estádios. Marcas like Johnnie Walker e Don Julio em destaque por região.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Posicionamento:</strong> responsabilidade social como guardiã da liberdade pra beber.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Marriott Bonvoy</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Hospedagem Premium · Bonvoy Moments</div>
+        <p>Campanha conjunta com Visa "For Fans, Everywhere" com Haaland e Vinicius Júnior. 600+ experiências exclusivas via Bonvoy Moments — tickets, hospitality, ativações curadas.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Aprendizado:</strong> programa de fidelidade vira IP de acesso premium.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Panini</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Sticker Album Oficial</div>
+        <p>Álbum físico + digital em parceria com Coca-Cola. Distribuição global gigante. Ritual do colecionismo continua sendo o ativo emocional mais forte da marca, com gen-z descobrindo via TikTok.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Diferencial:</strong> nostalgia funcionando em multi-geração.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Valvoline by Aramco</h4><span class="tag">Tier 3</span></div>
+        <div class="role">Automotive Maintenance</div>
+        <p>Campanha global da Copa: "celebrar fãs que vão a distância pelo jogo e mãos hábeis que confiam na Valvoline pra manter tudo rodando". Spotlight em devotion + drive de quem viaja milhares de km.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Insight:</strong> Valvoline encontrou um ângulo emocional para um produto técnico — manutenção como dedicação.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== BRASIL ===================================== -->
+<section id="brasil" style="background:linear-gradient(180deg,#0c0c10 0%,#0e0e12 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#00a651 0%,#00a651 33%,#ffdf00 33%,#ffdf00 66%,#002776 66%,#002776 100%)"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow" style="color:#ffdf00">○○○ Recorte Brasil · Copa de Marca Brasileira</div>
+        <h2>O Brasil tem sua própria Copa de marketing — e ela ignora o FIFA</h2>
+      </div>
+      <p class="lede">Enquanto as marcas oficiais FIFA falam com torcedor norte-americano em inglês, no Brasil rolou outro campeonato paralelo: marcas que <strong>não são patrocinadoras oficiais da Copa</strong>, mas patrocinam a CBF, compram cotas da CazéTV ou simplesmente ocupam o ecossistema com estratégias de ambush marketing dentro da lei. Aqui está o que está acontecendo aqui dentro.</p>
+    </div>
+
+    <!-- O contexto da transmissão -->
+    <div class="ops-intro" style="background:linear-gradient(135deg,rgba(0,166,81,0.10),rgba(255,223,0,0.06))">
+      <h3>🎥 O contexto que muda tudo: CazéTV pegou a Copa</h3>
+      <p>Pela primeira vez desde a Copa da Espanha em 1982, a Globo não tem exclusividade. <strong>CazéTV transmite todos os 104 jogos em 4K pelo YouTube</strong> — 49 deles em exclusiva. Globo fica com 54 jogos, SBT com 32. CazéTV + YouTube venderam ~R$ 2 bilhões em cotas; cada cota máster custou R$ 185 milhões. Isso significa que o player de creators tornou-se canal oficial — e marcas que querem falar com Gen Z e millennials no Brasil estão comprando cota da CazéTV, não da Globo.</p>
+    </div>
+
+    <!-- IFOOD HERO -->
+    <article class="brand" style="border-color:#fcc500">
+      <div class="brand-hero" style="background:linear-gradient(135deg,#ea1d2c 0%,#a8121d 100%);color:#fff">
+        <div class="brand-hero-text">
+          <div class="brand-tag"><span class="dot" style="background:#fff"></span>PATROCINADORA CBF · SELEÇÕES BR ATÉ 2027</div>
+          <h2>iFood</h2>
+          <p class="brand-lede">"É do Brasil. É tudo pra mim." Maior investimento de marketing do ano. Pelúcias colecionáveis Canarinho, ativações em três frentes (consumidor, entregador, restaurante) e filme baseado em vídeo viral de torcedores de 2018.</p>
+          <div class="brand-quick" style="border-color:rgba(255,255,255,0.18)">
+            <div style="border-color:rgba(255,255,255,0.18)"><div class="lbl" style="color:rgba(255,255,255,0.7)">Plataforma</div><div class="val">É do Brasil</div></div>
+            <div style="border-color:rgba(255,255,255,0.18)"><div class="lbl" style="color:rgba(255,255,255,0.7)">Tom</div><div class="val">Pertencimento, Coletivo</div></div>
+            <div><div class="lbl" style="color:rgba(255,255,255,0.7)">Foco</div><div class="val">Marca brasileira raiz</div></div>
+          </div>
+        </div>
+        <div class="brand-hero-visual" style="background:linear-gradient(135deg,#ea1d2c,#7a0e1d);display:grid;place-items:center;padding:40px">
+          <svg width="80%" viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg">
+            <!-- canarinho stylized -->
+            <ellipse cx="150" cy="180" rx="70" ry="55" fill="#ffdf00"/>
+            <circle cx="150" cy="120" r="55" fill="#ffdf00"/>
+            <circle cx="135" cy="115" r="6" fill="#000"/>
+            <circle cx="165" cy="115" r="6" fill="#000"/>
+            <polygon points="150,128 142,140 158,140" fill="#ff8c00"/>
+            <path d="M 90 140 Q 75 160 90 180" stroke="#ffdf00" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <path d="M 210 140 Q 225 160 210 180" stroke="#ffdf00" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <rect x="135" y="200" width="30" height="25" fill="#00a651"/>
+            <text x="150" y="260" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-weight="800" font-size="14" letter-spacing="2">CANARINHO IFOOD</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="brand-body">
+        <aside class="brand-toc">
+          <div>01. Posicionamento</div>
+          <div>02. Colecionismo</div>
+          <div>03. 3 audiências</div>
+          <div>04. Insights</div>
+        </aside>
+        <div>
+          <div class="brand-block">
+            <h4>01 · POSICIONAMENTO</h4>
+            <h3>"É do Brasil. É tudo pra mim." — reivindica brasilidade que a marca já tem</h3>
+            <p>O iFood é patrocinador oficial da CBF (Confederação Brasileira de Futebol), com direitos sobre as seleções masculina e feminina até 2027. Não precisa pagar FIFA — fala pelo time. Posicionamento: usa a Copa para reforçar que iFood é a empresa brasileira de tecnologia (em contraste com 99/Rappi/concorrentes argentinos/colombianos). Filme hero refilma um viral real de torcedores em 2018 — UGC vira matéria-prima do criativo.</p>
+            <blockquote class="pull">
+              "É do Brasil. É tudo pra mim."
+              <cite>iFood · Plataforma Copa 2026</cite>
+            </blockquote>
+          </div>
+          <div class="brand-block">
+            <h4>02 · COLECIONISMO</h4>
+            <h3>Canarinhos pelúcia — mascote vira IP de aquisição</h3>
+            <p>Linha exclusiva de pelúcias do Canarinho (mascote da Seleção) como brinde colecionável. Por que funciona: <strong>ativa o mesmo gatilho dos sticker albums Panini, mas com produto físico exclusivo da marca</strong>. Cada pedido pode ter um Canarinho específico, gera UGC orgânico (criança/torcedor postando) e cria motivo de retorno ao app.</p>
+          </div>
+          <div class="brand-block">
+            <h4>03 · TRÊS AUDIÊNCIAS</h4>
+            <h3>Consumidor, entregador, restaurante — a campanha não esquece ninguém</h3>
+            <p>A maioria das marcas comunica só pro consumidor. iFood faz mais: ativações específicas para entregadores (uniformes Seleção, prêmios) e restaurantes parceiros (kits Copa, campanhas conjuntas). É a marca lembrando que ela é um ecossistema — não um app.</p>
+          </div>
+          <div class="brand-block">
+            <h4>04 · INSIGHTS PRA REPLICAR</h4>
+            <div class="insight-grid">
+              <div class="insight">
+                <div class="ic">01</div>
+                <h5>Reuse UGC real do passado</h5>
+                <p>O filme se baseia em vídeo viral de 2018. Não inventou nada — capitalizou memória coletiva.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">02</div>
+                <h5>Mascote &gt; ídolo</h5>
+                <p>Canarinho é "todo mundo". Ídolo único divide. Mascote unifica.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">03</div>
+                <h5>Patrocine CBF, não FIFA</h5>
+                <p>Direito de fala pela seleção brasileira sai 10x mais barato e tem o mesmo capital emocional pro consumidor BR.</p>
+              </div>
+              <div class="insight">
+                <div class="ic">04</div>
+                <h5>Não esqueça B2B</h5>
+                <p>Restaurantes e entregadores também são "audiência da Copa". Ativá-los multiplica o programa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Grid das outras BR -->
+    <div class="section-head" style="margin-top:60px;margin-bottom:32px">
+      <div>
+        <div class="eyebrow" style="color:#ffdf00">○○○ Outras marcas BR · Visão sintética</div>
+        <h2 style="font-size:clamp(28px,3.6vw,44px)">Quem mais ocupa o ecossistema brasileiro</h2>
+      </div>
+      <p class="lede">As marcas mais ativas no marketing brasileiro de Copa 2026 — patrocinadoras CBF, anunciantes CazéTV e ações criativas de ambush marketing dentro da legalidade.</p>
+    </div>
+
+    <div class="scan-grid">
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Brahma</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">CBF · Brasil</span></div>
+        <div class="role">Patrocinadora CBF · Africa Creative</div>
+        <p>"Tá Liberado Acreditar" com Ronaldo Fenômeno + Carlo Ancelotti. Partiu de pesquisa cruel: só 3 em 10 brasileiros acreditam no hexa (menor nível em décadas). Filme emocionalmente intenso. Provocação ao torcedor que perdeu fé após 24 anos.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Insight:</strong> dado negativo (dúvida do torcedor) virou conceito de campanha.</div>
+          <div class="scan-pt"><strong>Casting:</strong> Ronaldo (cinco) + Ancelotti (presente). Passado + presente da seleção.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> Não comemore vitória ainda — convoque a fé.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Itaú</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">CBF · Brasil</span></div>
+        <div class="role">Patrocinadora CBF · Africa Creative</div>
+        <p>"Torcendo Feito Você." Ronaldo Fenômeno é representado como torcedor comum — sentindo todas as emoções que o brasileiro sente. Inversão: tira o ídolo do pedestal, coloca de lado do consumidor.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Insight:</strong> ídolo + lente "ele é igual a você" = humanização que conecta.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> patrocinador financeiro precisa de afeto, não autoridade.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Vivo</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">CBF · CazéTV</span></div>
+        <div class="role">Patrocinadora CBF desde 2005 · Africa Creative</div>
+        <p>"Sou Brasileiro Roxo" — joga com a cor da marca (roxo Vivo) virando metáfora de torcedor que "sangra" pelo Brasil. Trilha: versão inédita de "Sangrando" do Gonzaguinha. Vini Jr + Taís Araújo + Gabriel. 5 filmes de 15s. Comprou cota na CazéTV.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Trilha icônica:</strong> Gonzaguinha + Sangrando = MPB raiz, geração-vínculo.</div>
+          <div class="scan-pt"><strong>Format:</strong> 5 filmes curtos &gt; 1 longo. Otimização TikTok-first.</div>
+          <div class="scan-pt"><strong>Compra de mídia:</strong> dois canais (Brasil + CazéTV) = cobertura cruzada.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Magalu</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Varejo · Ogilvy</span></div>
+        <div class="role">"Aqui o Brasil se vê gigante"</div>
+        <p>Ogilvy posiciona o varejo como espelho do orgulho nacional — resgata o status de pentacampeão para reposicionar a atmosfera da Copa e impulsionar consumo de TVs/eletro. Léo Santana estrela + assina trilha original. <strong>Brasil + gigante + Magalu = associação semântica de tamanho.</strong></p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Trilha original:</strong> Léo Santana entrega música própria pro Magalu — exclusividade.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> reapropriar o "5 vezes campeão" como capital simbólico.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Cimed</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">CBF · Multi-marca</span></div>
+        <div class="role">R$ 200 milhões em 90 dias</div>
+        <p>Patrocinadora CBF (das seleções). Operação completa: R$ 200 milhões em campanhas + 20 lançamentos distribuídos entre Carmed, Lavitan e João e Maria. Projeção de R$ 2 bilhões em receita entre maio e julho. Volume absurdo de drops sincronizados com a Copa.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Modelo:</strong> Copa = trigger para lançamento em série (1 produto a cada 4,5 dias).</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> patrocínio pago em ativações de produto, não em hero film.</div>
+          <div class="scan-pt"><strong>ROI esperado:</strong> 10x sobre o investimento de marketing.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Centauro × Podpah Funkbol</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Varejo · Creator</span></div>
+        <div class="role">"Veste a Rua" · 5 cidades, 5 títulos</div>
+        <p>Parceria com Podpah Funkbol Clube (extensão do podcast) para pintar ruas em 5 cidades brasileiras — uma por título mundial: 1958 (Manaus), 1962 (Santo André), 1970 (Maringá), 1994 (Campo Grande), 2002 (Recife). Influenciadores locais por região: Fael Gomes, Sabrina, Muuhpro, Mlk Jhow, Bença Show. Tradição de rua pintada vira ativação de marca.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Estratégia:</strong> ressuscita ritual popular esquecido (pintura de rua).</div>
+          <div class="scan-pt"><strong>Modelo:</strong> 1 cidade = 1 era + 1 influencer regional. Geografia + cultura.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> ativação física hyper-local + creator + memória nacional.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Zé Delivery</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Ambev · Ecossistema</span></div>
+        <div class="role">Delivery oficial "Todo Mundo no Rio"</div>
+        <p>Não fez campanha "Copa" direta — Ambev concentra direitos em Brahma/Budweiser. Mas ocupou o ecossistema com ativação no show "Todo Mundo no Rio" (Shakira, 2 de maio): Ferrari amarela personalizada no Copacabana Palace, filme musical com Alcione cantando reggaeton de "A Loba" + Joel Divo + Fernanda Bande. Gerou 526M+ de impactos.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Modelo:</strong> ativação no ecossistema próximo (música + verão Rio) sem patrocinar Copa.</div>
+          <div class="scan-pt"><strong>Aprendizado:</strong> não precisa estar dentro do evento pra colher o calor cultural.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Azul</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Aviação · Africa</span></div>
+        <div class="role">"Asas abertas pra receber você"</div>
+        <p>Africa Creative novamente. Cia aérea brasileira preparando-se para receber visitantes internacionais e brasileiros viajando às sedes. Tom acolhedor, voz BR.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Insight:</strong> hospitalidade brasileira como vantagem competitiva em mercado regulado.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>CazéTV + YouTube</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Mídia · R$ 2 bi</span></div>
+        <div class="role">Transmissão exclusiva 104 jogos 4K</div>
+        <p>Primeira vez que Globo perde exclusividade desde 1982. CazéTV + YouTube transmitirão todos os 104 jogos em 4K, com 49 em exclusiva. Vendeu R$ 2 bilhões em cotas; cota máster custa R$ 185 milhões. Disponível em Disney+, Amazon Prime, Samsung TV Plus, Sky+. Patrocinadores principais já incluem Vivo, Itaú, Brahma.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Disrupção:</strong> creator-led broadcasting derrotou broadcaster tradicional em direitos esportivos.</div>
+          <div class="scan-pt"><strong>Janela:</strong> primeira Copa transmitida no YouTube — Gen Z é audiência prioritária.</div>
+          <div class="scan-pt"><strong>Implicação:</strong> sua campanha precisa estar pronta para CazéTV (Cazé estilo) e Globo simultaneamente.</div>
+        </div>
+      </div>
+
+      <div class="scan-card">
+        <div class="scan-head"><h4>Globo</h4><span class="tag" style="color:#ffdf00;border-color:rgba(255,223,0,0.4)">Mídia · 25 patrocinadores</span></div>
+        <div class="role">54 jogos · Ecossistema multiplataforma</div>
+        <p>Globo confirma 25 patrocinadores num ecossistema multiplataforma (TV aberta + Globoplay + sportv + GE). Transmite 54 jogos, com SBT levando 32. Estratégia: foco em TV aberta + premium content. Patrocinadores tradicionais (bancos, varejo, cerveja, telecom) ainda apostam aqui.</p>
+        <div class="scan-pts">
+          <div class="scan-pt"><strong>Reposicionamento:</strong> Globo precisa provar valor pra anunciantes pós-perda da exclusividade.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- AMBUSH MARKETING -->
+    <div class="cta-banner" style="margin-top:64px;background:radial-gradient(ellipse 80% 100% at 50% 50%,rgba(255,223,0,0.10),transparent 70%),#0d0d10">
+      <h3>⚠️ Atenção: o que você pode (e não pode) usar no Brasil</h3>
+      <p style="margin-bottom:16px"><strong>Você NÃO pode usar:</strong> Copa do Mundo · FIFA · World Cup · FWC26 · We Are 26 · Somos 26 · trade dress da camisa oficial.</p>
+      <p><strong>Você PODE usar:</strong> verde e amarelo (cores não são protegidas), expressões genéricas como "torcida", "seleção" (com ressalvas), "futebol", "hexa". A Lei Pelé (Lei 9.615/98) protege símbolos e uniformes da CBF; a FIFA protege seus termos via INPI. Marcas ativam o "clima" sem usar os signos protegidos. Centauro/Podpah, Cimed e Magalu são bons exemplos de ativação fora dos signos protegidos.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================================== TRENDS ===================================== -->
+<section id="trends" class="trends">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Tendências Transversais</div>
+        <h2>13 padrões criativos que estão se repetindo em 2026</h2>
+      </div>
+      <p class="lede">Olhando para as 25+ marcas em conjunto, alguns padrões emergem com muita força. Aqui está o mapa dos movimentos criativos que estão definindo o marketing da Copa 26 — e quais formatos ainda estão subexplorados.</p>
+    </div>
+
+    <div class="trends-grid">
+      <div class="trend span-6">
+        <div class="trend-num">01</div>
+        <h3>Celebridade pop &gt; atleta</h3>
+        <p>Adidas chama Chalamet. Visa chama Sudeikis. Michelob chama Billy Bob Thornton. Coca chama J Balvin + Travis Barker. <strong>O atleta virou figurante.</strong> A escala emocional veio pra ficar — atletas são "endossadores" mas a narrativa é puxada por cultura pop. Especialmente Gen Z não tem mais ídolo único de futebol; tem cardápio cultural.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Visa</span><span class="chip">Michelob</span><span class="chip">Coca-Cola</span></div>
+      </div>
+
+      <div class="trend span-6">
+        <div class="trend-num">02</div>
+        <h3>Arquitetura multi-filme &gt; hero único</h3>
+        <p>Coca-Cola entrega 3 filmes. Adidas tem ao menos 3 (Trionda, La Preparación, Backyard). Visa amarra filme + estúdio + promo. Hyundai segmenta por audiência (criança, jovem, adulto). <strong>Hero film é peça, não estratégia.</strong> Calendário de drops é o novo briefing.</p>
+        <div class="chips"><span class="chip">Coca-Cola</span><span class="chip">Adidas</span><span class="chip">Hyundai</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">03</div>
+        <h3>Tri-país obrigatório</h3>
+        <p>USA, México e Canadá juntas, sempre. La Preparación Americana é o template. Cultural mash-up vira lente — não bandeira política.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Visa</span><span class="chip">Home Depot</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">04</div>
+        <h3>Casa de marca em sede</h3>
+        <p>Bud FC, Visa Tap In Studio, Dove Ritual House, Hyundai Youth Camp. Pop-up físico em cidade-sede como ativador emocional.</p>
+        <div class="chips"><span class="chip">Budweiser</span><span class="chip">Visa</span><span class="chip">Dove</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">05</div>
+        <h3>Hispanic-first storytelling</h3>
+        <p>Latino é a audiência prioritária no mercado USA. Adidas em espanhol, Michelob com cast bilingue, McDonald's com burger mexicano. Quem ignora, perde share.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Michelob</span><span class="chip">McDonald's</span></div>
+      </div>
+
+      <div class="trend span-6">
+        <div class="trend-num">06</div>
+        <h3>TikTok como mídia oficial</h3>
+        <p>Pela primeira vez, FIFA tem contrato preferred com TikTok. Programa de 30 Creator Correspondents em 11 países. Verticalização de conteúdo (POV, BTS, reaction) é padrão — toda marca está pensando 9:16 antes de 16:9. @Trionda no TikTok é a prova: produto virou conta.</p>
+        <div class="chips"><span class="chip">FIFA</span><span class="chip">Adidas (@Trionda)</span><span class="chip">Unilever</span></div>
+      </div>
+
+      <div class="trend span-6">
+        <div class="trend-num">07</div>
+        <h3>Nostalgia 90s como combustível</h3>
+        <p>Adidas Backyard Legends (CGI 90s + walkman). Budweiser Budstalgia (40 anos de Copa + lata retro). Hisense (3 amigos relembrando pelada). Em 2022 ainda era futurismo; em 2026, é olhar pra trás. Gen Z descobre, millennial revisita.</p>
+        <div class="chips"><span class="chip">Adidas</span><span class="chip">Budweiser</span><span class="chip">Hisense</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">08</div>
+        <h3>IA como narrativa</h3>
+        <p>Lenovo construiu posicionamento inteiro em AI. Adidas usa CGI/AI pra rejuvenescer lendas. Trionda tem chip 500Hz. Tech-as-story-device.</p>
+        <div class="chips"><span class="chip">Lenovo</span><span class="chip">Adidas</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">09</div>
+        <h3>Gamificação sincronizada com jogo</h3>
+        <p>Visa: cada gol de chapinha = sorteio. Michelob: voto popular pro MVP. Mecânicas conectam consumo a evento ao vivo.</p>
+        <div class="chips"><span class="chip">Visa</span><span class="chip">Michelob</span></div>
+      </div>
+
+      <div class="trend span-4">
+        <div class="trend-num">10</div>
+        <h3>Cause-driven com $$$ específico</h3>
+        <p>Visa $600K para 3 ONGs. Aramco Football for Schools. McDonald's P.L.A.Y.S. Programs. Airbnb $5M Host City. Doação tem CEP local.</p>
+        <div class="chips"><span class="chip">Visa</span><span class="chip">Aramco</span><span class="chip">Airbnb</span></div>
+      </div>
+
+      <div class="trend span-6">
+        <div class="trend-num">11</div>
+        <h3>Collab cruzada como amplificador</h3>
+        <p>Coca × Panini (figurinhas). McDonald's × Adidas (mini Trionda Happy Meal). Visa × Marriott Bonvoy ("For Fans, Everywhere" com Haaland + Vini Jr). Patrocinadores Copa estão se cruzando pra entregar combos que sozinhos não conseguiriam.</p>
+        <div class="chips"><span class="chip">Coca × Panini</span><span class="chip">McDo × Adidas</span><span class="chip">Visa × Marriott</span></div>
+      </div>
+
+      <div class="trend span-6">
+        <div class="trend-num">12</div>
+        <h3>Limited edition + colecionismo</h3>
+        <p>Bud lata 40 anos. Trionda em retail. Dove Men+Care linha edição. Panini. Camisas Nike e Adidas. Colecionismo é a fórmula mais resiliente — funciona da Gen Alpha ao Boomer. <strong>Cada drop é um motivo pra ritual de loja física.</strong></p>
+        <div class="chips"><span class="chip">Budweiser</span><span class="chip">Dove</span><span class="chip">Panini</span></div>
+      </div>
+
+      <div class="trend span-12">
+        <div class="trend-num">13</div>
+        <h3>O que AINDA está subexplorado (oportunidades em aberto)</h3>
+        <p>Olhando o universo todo de 25+ marcas, alguns territórios estão estranhamente desocupados em 2026 — abrindo brecha para quem chegar primeiro:</p>
+        <div class="chips">
+          <span class="chip">📚 Educação como vertical (ninguém)</span>
+          <span class="chip">🇧🇷 Storytelling Brasil-first (vácuo total)</span>
+          <span class="chip">💬 Discord/comunidade fechada (apenas pop-ups físicos)</span>
+          <span class="chip">🎮 Gaming/eSports crossover (subusado)</span>
+          <span class="chip">🤝 Creator-led commerce ao vivo</span>
+          <span class="chip">📺 Jornalismo/conteúdo editorial (sem marca dominante)</span>
+          <span class="chip">🎙️ Podcast oficial como mídia (zero)</span>
+          <span class="chip">🏘️ Vivência periférica/fan zone em bairros</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== OPS PARA FILADD ===================================== -->
+<section id="ops" class="ops">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Aplicação Direta</div>
+        <h2>Onde a Filadd / Kuadro entra nessa Copa</h2>
+      </div>
+      <p class="lede">Você lida com vestibular pré-Enem, comunidade de aluno, jornada emocional intensa, conteúdo educacional, creators e operação Brasil/LATAM. A Copa 26 é uma janela rara de capital cultural compartilhado entre Brasil + LATAM por 5 semanas. Aqui estão 6 ângulos práticos que tiram do benchmark.</p>
+    </div>
+
+    <div class="ops-intro">
+      <h3>O paralelo que ninguém usou ainda</h3>
+      <p>Copa do Mundo e vestibular têm a <strong>mesma curva emocional</strong>: ansiedade da preparação → ritual diário → o dia da prova/jogo → consequência. Nenhuma marca de educação está usando isso para construir narrativa em 2026. O território está em aberto.</p>
+      <p style="margin-top:14px"><strong>O insight Brasil-first que ninguém pegou:</strong> Brahma partiu do dado de que "só 3 em 10 brasileiros acreditam no hexa". Isso é exatamente a mesma curva do vestibulando: a maioria duvida que vai conseguir. Existe um paralelo direto entre "Tá Liberado Acreditar (no hexa)" e "Tá Liberado Acreditar (na aprovação)". É possível conversar com o vestibulando usando o mesmo gatilho emocional que a Brahma usa com o torcedor.</p>
+    </div>
+
+    <div class="ops-grid">
+      <div class="op-card">
+        <div class="op-ic">01</div>
+        <div>
+          <h4>"Copa do Vestibulando" — uma jornada gamificada paralela</h4>
+          <p>Replicar a estrutura de Michelob "Chief Trophy Officer" pra educação: aluno se candidata a uma posição honorária ("Capitão da Classe", "Camisa 10 do Enem") com benefícios + visibilidade. Inscrição vira lead, lead vira aluno, aluno vira fã.</p>
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-ic">02</div>
+        <div>
+          <h4>Trilogia de filme curto sincronizada à Copa</h4>
+          <p>Modelo Coca-Cola: 3 filmes amarrados ao calendário emocional do estudante. Fevereiro (matrícula = bubbling up), maio (simulado pré-prova = uncanned emotions), novembro (Enem = no better feeling). Mesma narrativa, vocabulário diferente.</p>
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-ic">03</div>
+        <div>
+          <h4>Casa Filadd / Kuadro em cidade-chave</h4>
+          <p>Modelo "Bud FC + Ritual House + Tap In Studio": durante a Copa, montar uma "Casa do Estudante" em São Paulo ou Rio com viewing parties + simulados rápidos + ativações de creators. Marca passa de digital a tangível por 30 dias.</p>
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-ic">04</div>
+        <div>
+          <h4>Creator Correspondents (modelo TikTok)</h4>
+          <p>Recrutar 11 creators (estudantes reais aprovados em vestibular) para cobrir a Copa <em>do ponto de vista de quem estuda</em>: "como o gol do Vini desbloqueia 30 minutos de estudo", reaction de jogo + dica de questão. Conteúdo cruzado vira parte do funil de captação.</p>
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-ic">05</div>
+        <div>
+          <h4>Trocadilho-plataforma (modelo Visa "Tap In")</h4>
+          <p>Encontrar a palavra que conecta vestibular + futebol. Ideias: "<strong>Estuda Que Vai</strong>", "<strong>Joga Junto</strong>", "<strong>Tá no Bolso</strong>", "<strong>Vai Pra Cima</strong>" — qualquer construção bilíngue (PT-BR + ES) que carregue duplo sentido esportivo e acadêmico.</p>
+        </div>
+      </div>
+
+      <div class="op-card">
+        <div class="op-ic">06</div>
+        <div>
+          <h4>Coleção edição limitada — modelo Panini</h4>
+          <p>Lançar álbum de "figurinhas" com aprovados, professores Filadd, momentos da preparação. Brindes resgatáveis com pontos. Replica o ritual de colecionismo + UGC entre alunos. Custo baixo, viralidade alta, reaproveitamento ano após ano.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-banner">
+      <h3>O movimento é simples: não compita pelo "futebol", capture o <em>sentimento</em>.</h3>
+      <p>A Copa 26 é o pano de fundo. O ativo é a paixão coletiva — e nenhuma marca de educação está usando esse momento para falar com o jovem brasileiro/latino com a mesma intensidade que Coca, Visa e Adidas estão falando com os fãs. O ângulo Filadd: "<strong>se você sonha alto pelo Brasil na Copa, sonha mais alto por você no Enem</strong>".</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================== REFERÊNCIAS ===================================== -->
+<section id="refs" class="refs">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">○○○ Fontes &amp; Referências</div>
+        <h2>Todas as URLs para você explorar mais fundo</h2>
+      </div>
+      <p class="lede">Os links abaixo são as fontes diretas que sustentam cada análise deste documento. Use como referência rápida em apresentações internas, briefings e como inspiração visual contínua.</p>
+    </div>
+
+    <div class="refs-grid">
+      <div class="ref-col">
+        <h4>○ Adidas · Trionda &amp; Backyard Legends</h4>
+        <a href="https://news.adidas.com/football/adidas-unveils--trionda----the-official-match-ball-of-the-fifa-world-cup26-/s/27042e3a-12ba-482d-8839-8a96e056b33e" target="_blank"><span class="arrow">↗</span>Adidas News · Trionda Reveal</a>
+        <a href="https://www.adsoftheworld.com/campaigns/backyard-legends" target="_blank"><span class="arrow">↗</span>Ads of the World · Backyard Legends</a>
+        <a href="https://www.soccerbible.com/news/2026/05/adidas-pull-out-the-big-guns-for-backyard-legends-world-cup-2026-campaign-film/" target="_blank"><span class="arrow">↗</span>SoccerBible · Análise Backyard Legends</a>
+        <a href="https://www.soccerbible.com/news/2025/11/adidas-drops-la-preparac%C3%ADon-americana-ad-ahead-of-world-cup-2026/" target="_blank"><span class="arrow">↗</span>SoccerBible · La Preparación Americana</a>
+        <a href="https://www.creativereview.co.uk/adidas-backyard-legends-film-timothee-chalamet-jude-bellingham-bad-bunny/" target="_blank"><span class="arrow">↗</span>Creative Review · Backyard Legends Cast</a>
+        <a href="https://www.dezeen.com/2025/10/03/adidas-trionda-fifa-world-cup-2026-canada-usa-mexico/" target="_blank"><span class="arrow">↗</span>Dezeen · Trionda Design Story</a>
+        <a href="https://www.adidas.com/us/go/campaign/trionda" target="_blank"><span class="arrow">↗</span>Adidas · Trionda Landing Page</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Coca-Cola · Uncanned Emotions</h4>
+        <a href="https://www.adsoftheworld.com/campaigns/uncanned-emotions" target="_blank"><span class="arrow">↗</span>Ads of the World · Uncanned Emotions</a>
+        <a href="https://www.coca-colacompany.com/media-center/coca-cola-puts-fan-emotions-first-in-fifa-world-cup-2026-campaign" target="_blank"><span class="arrow">↗</span>Coca-Cola · Press Release Oficial</a>
+        <a href="https://almcorp.com/blog/coca-cola-uncanned-emotions-fifa-world-cup-2026/" target="_blank"><span class="arrow">↗</span>ALM Corp · Full Breakdown</a>
+        <a href="https://www.coca-cola.com/us/en/offerings/fifa-world-cup-26/original-trophy-tour" target="_blank"><span class="arrow">↗</span>Trophy Tour by Coca-Cola</a>
+        <a href="https://creative.salon/articles/work/coca-cola-uncanned-emotions-wpp-open-x-ogilvy" target="_blank"><span class="arrow">↗</span>Creative Salon · Análise Criativa</a>
+        <a href="https://www.marketingdive.com/news/cokes-world-cup-campaign-taps-into-unifying-power-of-fan-emotions/810580/" target="_blank"><span class="arrow">↗</span>Marketing Dive · Estratégia</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Visa · Tap In</h4>
+        <a href="https://www.adweek.com/creativity/visa-recruits-jason-sudeikis-to-score-big-at-the-2026-world-cup/" target="_blank"><span class="arrow">↗</span>Adweek · Visa + Sudeikis</a>
+        <a href="https://www.businesswire.com/news/home/20260518011231/en/Visa-and-Jason-Sudeikis-Turn-the-Simplest-Goal-in-Football-Into-the-Biggest-Fan-Moments-at-the-FIFA-World-Cup-2026" target="_blank"><span class="arrow">↗</span>Business Wire · Press Release</a>
+        <a href="https://almcorp.com/blog/marriott-bonvoy-visa-fifa-world-cup-2026-haaland-vinicius-tickets-sleepover-suite/" target="_blank"><span class="arrow">↗</span>ALM Corp · Marriott × Visa</a>
+        <a href="https://sportsmintmedia.com/marriott-bonvoy-and-visa-promote-premium-fan-experiences-ahead-of-fifa-world-cup-2026/" target="_blank"><span class="arrow">↗</span>SportsMint · Bonvoy × Visa</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Hyundai · Next Starts Now</h4>
+        <a href="https://www.hyundai.news/eu/articles/press-releases/next-starts-now-campaign-fifa-world-cup-2026.html" target="_blank"><span class="arrow">↗</span>Hyundai · Press Release</a>
+        <a href="https://www.prnewswire.com/news-releases/hyundai-kicks-off-fifa-world-cup-next-starts-now-with-youth-camps-joined-by-legends-mia-hamm-and-tim-howard-302733715.html" target="_blank"><span class="arrow">↗</span>PR Newswire · Youth Camps</a>
+        <a href="https://www.globalbrandsmagazine.com/hyundai-fifa-world-cup-2026-campaign/" target="_blank"><span class="arrow">↗</span>Global Brands Magazine · Estratégia</a>
+        <a href="https://www.hyundaimotorgroup.com/en/news/CONT0000000000195165" target="_blank"><span class="arrow">↗</span>Hyundai Motor Group · Greatest Cheer</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Anheuser-Busch (Michelob ULTRA + Budweiser)</h4>
+        <a href="https://www.anheuser-busch.com/newsroom/MichelobULTRAFIFAWorldCup" target="_blank"><span class="arrow">↗</span>AB · The Superior Match</a>
+        <a href="https://www.anheuser-busch.com/newsroom/FIFA-World-Cup-2026-Roster" target="_blank"><span class="arrow">↗</span>AB · Roster of Brands</a>
+        <a href="https://www.anheuser-busch.com/newsroom/MichelobULTRAFIFADRAW" target="_blank"><span class="arrow">↗</span>Michelob ULTRA · MVP Trophy</a>
+        <a href="https://news.designrush.com/michelob-ultra-fifa-world-cup-2026-messi-pulisic-billy-bob-thornton" target="_blank"><span class="arrow">↗</span>Design Rush · Análise Michelob</a>
+        <a href="https://www.businesswire.com/news/home/20260407304059/en/Budweiser-Honors-40-Years-of-FIFA-World-Cup-Legacy-with-Limited-Edition-Collectible-Pack-and-Nostalgia-Themed-Platform" target="_blank"><span class="arrow">↗</span>Budweiser · Budstalgia 40 Anos</a>
+        <a href="https://www.stocktitan.net/news/BUD/budweiser-partners-with-football-icons-erling-haaland-and-jurgen-maznpw7cgrsm.html" target="_blank"><span class="arrow">↗</span>Budweiser · Let It Pour (Haaland)</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Lenovo · Aramco · Tier 1 outros</h4>
+        <a href="https://news.lenovo.com/pressroom/press-releases/future-of-football-ai-solutions-power-fifa-world-cup-2026/" target="_blank"><span class="arrow">↗</span>Lenovo · AI Solutions</a>
+        <a href="https://news.lenovo.com/pressroom/press-releases/launches-global-campaign-with-david-beckham/" target="_blank"><span class="arrow">↗</span>Lenovo · Maximum David</a>
+        <a href="https://lbbonline.com/news/Lenovo-and-FIFA-Let-AI-Run-the-Beautiful-Game" target="_blank"><span class="arrow">↗</span>LBB · Lenovo &amp; FIFA Análise</a>
+        <a href="https://www.aramco.com/en/what-we-do/energy-innovation/innovation-ecosystem/aramco-fifa-partnership" target="_blank"><span class="arrow">↗</span>Aramco · FIFA Partnership</a>
+        <a href="https://www.prnewswire.co.uk/news-releases/valvoline-by-aramco-celebrates-and-protects-every-fans-road-to-the-game-in-new-fifa-world-cup-2026-campaign-302743305.html" target="_blank"><span class="arrow">↗</span>Valvoline by Aramco · Campanha</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Tier 2 · World Cup Sponsors</h4>
+        <a href="https://www.prnewswire.com/news-releases/hisense-kicks-off-fifa-world-cup-2026-campaign-bringing-fans-closer-through-innovating-a-brighter-life-302767613.html" target="_blank"><span class="arrow">↗</span>Hisense · Innovating a Brighter Life</a>
+        <a href="https://news.designrush.com/dove-men-care-fifa-world-cup-skincare-push" target="_blank"><span class="arrow">↗</span>Dove Men+Care · Care For Your Skin</a>
+        <a href="https://inside.fifa.com/news/fifa-and-mcdonalds-renew-long-standing-partnership-with-collaboration" target="_blank"><span class="arrow">↗</span>FIFA · McDonald's Renewal</a>
+        <a href="https://www.footyheadlines.com/2026/03/mcdonalds-rolls-out-fifa-world-cup-2026.html" target="_blank"><span class="arrow">↗</span>Footy Headlines · Mini Trionda Happy Meal</a>
+        <a href="https://www.startribune.com/phone-deal-for-visiting-fans-at-2026-world-cup-part-of-verizon-sponsor-pact-with-fifa/601150686" target="_blank"><span class="arrow">↗</span>Star Tribune · Verizon Sponsor Deal</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Tier 3 · Regional Supporters</h4>
+        <a href="https://news.airbnb.com/airbnb-and-fifa-announce-major-multi-tournament-partnership/" target="_blank"><span class="arrow">↗</span>Airbnb · Partnership Announcement</a>
+        <a href="https://news.airbnb.com/airbnb-is-offering-750-usd-to-new-fifa-world-cup-2026-hosts/" target="_blank"><span class="arrow">↗</span>Airbnb · $750 Host Incentive</a>
+        <a href="https://sportsmintmedia.com/doordash-steps-into-the-global-arena-as-official-supporter-of-fifa-world-cup-2026-and-womens-world-cup-2027/" target="_blank"><span class="arrow">↗</span>DoorDash · Official Supporter</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Marcas Brasileiras · Copa 2026</h4>
+        <a href="https://www.meioemensagem.com.br/marketing/por-que-o-ifood-quer-ser-a-cara-do-brasil-na-copa-2026" target="_blank"><span class="arrow">↗</span>Meio &amp; Mensagem · iFood "É do Brasil"</a>
+        <a href="https://www.portaldapropaganda.com.br/noticias/38598/ifood-lancara-canarinhos-colecionaveis-e-estreia-campanha-com-filme-que-convoca-a-torcida-brasileira/" target="_blank"><span class="arrow">↗</span>iFood · Canarinhos Colecionáveis</a>
+        <a href="https://www.promoview.com.br/cimed-operacao-200-milhoes-copa-2026" target="_blank"><span class="arrow">↗</span>Cimed · R$ 200M Operação Copa</a>
+        <a href="https://updateordie.com/2026/05/07/brahma-ta-liberado-acreditar-campanha-para-a-copa-do-mundo-2026/" target="_blank"><span class="arrow">↗</span>Brahma · "Tá Liberado Acreditar"</a>
+        <a href="https://www.b9.com.br/178456/brahma-copa-ronaldo-ancelotti-liberado-acreditar/" target="_blank"><span class="arrow">↗</span>B9 · Brahma Ronaldo + Ancelotti</a>
+        <a href="https://gkpb.com.br/189849/campanha-itau-copa-do-mundo-torcendo-feito-voce/" target="_blank"><span class="arrow">↗</span>Itaú · "Torcendo Feito Você"</a>
+        <a href="https://propmark.com.br/leo-santana-estrela-campanha-do-magalu-para-a-copa-do-mundo-2026/" target="_blank"><span class="arrow">↗</span>Magalu · Léo Santana "Aqui o Brasil se vê gigante"</a>
+        <a href="https://www.b9.com.br/177839/vivo-sangrando-gonzaguinha-copa-2026/" target="_blank"><span class="arrow">↗</span>Vivo · "Sou Brasileiro Roxo"</a>
+        <a href="https://maquinadoesporte.com.br/copa-mundo-2026/vivo-lanca-campanha-sou-brasileiro-roxo-com-versao-de-sangrando/" target="_blank"><span class="arrow">↗</span>Vivo · Sangrando Gonzaguinha</a>
+        <a href="https://www.meioemensagem.com.br/marketing/centauro-e-podpah-lancam-projeto-para-decorar-ruas-para-a-copa-nao-publicar-embargado" target="_blank"><span class="arrow">↗</span>Centauro × Podpah · "Veste a Rua"</a>
+        <a href="https://www.papocult.com.br/2026/05/02/ze-delivery-faz-acao-com-entregas-gratuitas-em-frente-ao-copacabana-palace-e-ativa-campanha-para-o-todo-mundo-no-rio/" target="_blank"><span class="arrow">↗</span>Zé Delivery · Todo Mundo no Rio</a>
+        <a href="https://www.meioemensagem.com.br/comunicacao/ze-delivery-e-alcione-ativam-lobas-para-o-todo-mundo-no-rio" target="_blank"><span class="arrow">↗</span>Zé Delivery · Alcione "A Loba" Reggaeton</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ 🇧🇷 Mídia &amp; Transmissão Brasil</h4>
+        <a href="https://www.infomoney.com.br/esportes/cazetv-garante-direitos-de-transmissao-de-todos-os-jogos-da-copa-do-mundo-de-2026/" target="_blank"><span class="arrow">↗</span>CazéTV · Direitos 104 jogos</a>
+        <a href="https://www.poder360.com.br/poder-sportsmkt/cazetv-vende-r-2-bi-em-cotas-de-patrocinio-para-copa-de-2026/" target="_blank"><span class="arrow">↗</span>CazéTV · R$ 2 bi em cotas</a>
+        <a href="https://maquinadoesporte.com.br/copa-mundo-2026/globo-estrutura-ecossistema-multiplataforma-para-a-copa-de-2026-e-confirma-25-patrocinadores/" target="_blank"><span class="arrow">↗</span>Globo · 25 Patrocinadores Confirmados</a>
+        <a href="https://www.migalhas.com.br/depeso/451222/estrategia-de-marca-copa-do-mundo-e-blindagem-contra-ambush-marketing" target="_blank"><span class="arrow">↗</span>Migalhas · Ambush Marketing Lei Pelé</a>
+        <a href="https://www.ritteradvogados.com.br/ambush-marketing-na-copa-do-mundo-conceito-limites-e-boas-praticas/" target="_blank"><span class="arrow">↗</span>Ritter · Ambush Marketing — Limites</a>
+        <a href="https://updateordie.com/2026/05/11/copa-das-marcas-o-update-or-die-cobre-a-copa-do-mundo-sob-a-otica-da-publicidade/" target="_blank"><span class="arrow">↗</span>Update or Die · Copa das Marcas</a>
+        <a href="https://www.institutoqualibest.com/blog/marcas-na-copa-do-mundo-2026/" target="_blank"><span class="arrow">↗</span>Instituto Qualibest · Marcas na Copa 2026</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Tendências, Trackers &amp; Curadoria</h4>
+        <a href="https://brand-innovators.com/brand-innovators-fifa-world-cup-ad-tracker-2026/" target="_blank"><span class="arrow">↗</span>Brand Innovators · Ad Tracker 2026</a>
+        <a href="https://www.adweek.com/brand-marketing/fifa-world-cup-26-ad-tracker-brands-kick-off-summer-of-soccer/" target="_blank"><span class="arrow">↗</span>Adweek · Summer of Soccer Tracker</a>
+        <a href="https://www.thedrum.com/news/world-cup-2026-watch-all-the-latest-ads" target="_blank"><span class="arrow">↗</span>The Drum · Todos os Ads</a>
+        <a href="https://www.llllitl.fr/2026/05/world-cup-2026-best-ads/" target="_blank"><span class="arrow">↗</span>LLLLITL · 16 Melhores Anúncios</a>
+        <a href="https://www.adsoftheworld.com/collections/2026-fifa-world-cup" target="_blank"><span class="arrow">↗</span>Ads of the World · Coleção Copa 26</a>
+        <a href="https://influential.co/news/2026-world-cup" target="_blank"><span class="arrow">↗</span>Influential · Creator Marketing</a>
+        <a href="https://almcorp.com/blog/tiktok-fifa-world-cup-2026-creator-correspondents/" target="_blank"><span class="arrow">↗</span>TikTok · 30 Creator Correspondents</a>
+        <a href="https://www.marketingweek.com/unilever-tiktok-fifa-26/" target="_blank"><span class="arrow">↗</span>Marketing Week · Unilever × TikTok</a>
+      </div>
+
+      <div class="ref-col">
+        <h4>○ Patrocinadores · Listas Oficiais</h4>
+        <a href="https://inside.fifa.com/tournament-organisation/partners" target="_blank"><span class="arrow">↗</span>FIFA · Partners Oficial</a>
+        <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/organisation/areas-in-focus/commercial-partnerships" target="_blank"><span class="arrow">↗</span>FIFA · Commercial Partnerships</a>
+        <a href="https://www.zappi.io/web/blog/complete-list-of-brands-behind-the-2026-fifa-world-cup-official-sponsors/" target="_blank"><span class="arrow">↗</span>Zappi · Tiered Breakdown</a>
+        <a href="https://www.sportspro.com/commercial-guide/fifa-world-cup/league-wide-partners/sponsors/" target="_blank"><span class="arrow">↗</span>SportsPro Commercial Guide</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Copa do Mundo 2026 · Benchmark Estratégico</strong> · Maio 2026 · Preparado para Theus Mattos / Filadd · Fontes públicas (press releases oficiais, Ads of the World, AdAge, SoccerBible, Adweek, FIFA, Brand Innovators, ALM Corp e marcas patrocinadoras)</p>
+  </div>
+</footer>
+
+</body>
+</html>
