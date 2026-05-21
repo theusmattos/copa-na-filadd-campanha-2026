@@ -32,18 +32,19 @@ Depois de subir esse repo no GitHub, dá pra ligar o **GitHub Pages** em 2 cliqu
 2. **Storytelling em 4 atos** — Convocação → Estreia → Mata-mata → A Sua Copa
 3. **Time Titular** — 11 benefícios da Filadd escalados como time de futebol
 4. **Elenco real** — Professores, mentores, orientadores, atendimento (camada de branding)
-5. **Álbum Físico Copa Filadd** — figurinhas, versão física + digital
+5. **Álbum Digital Copa Filadd** — 11 figurinhas do Time Titular + 1 Lendária Genia (placar exato 1×). Sem álbum físico.
 6. **LP do Time** — hub permanente de branding
-7. **Bolão LatAm** — 9 jogos garantidos (Brasil + Argentina + Colômbia)
-8. **Prêmios** — Kit Filadd, Camisa CBF, Bola Adidas Trionda, PS5, iPad, 10 bolsas integrais
-9. **Lives** — Aulões 1h no YouTube + TikTok "Antes do Apito" com influenciador
+7. **Bolão LatAm** — 9 jogos confirmados (Brasil Grupo C, Argentina Grupo J, Colômbia Grupo K)
+8. **Prêmios** — Kit Filadd (8 cards = automático) · Top 5 semanal com prêmio Copa diferente por semana · PS5, iPad, 10 bolsas integrais (álbum 11/11)
+9. **Lives** — Aulões 1h no YouTube (10/06 abertura + 2/sem) + TikTok com contextos históricos como repertório de redação
 10. **Comunidadd WhatsApp** — zoeira, meme, placar do dia (sem aposta)
 11. **X/Twitter** — Genia como voz da marca + interação com Brahma/Itaú/Nike/Adidas
 12. **Argentina/Latam** — Filadd nasceu em Córdoba · operação em AR/CL/CO/BR/IN
 13. **Plano A/B** — *"Eles saíram de campo. A gente segue jogando."*
-14. **Captação** — 20k leads · CPL R$ 6 · 200-400 alunos novos
-15. **Calendário** — 25/mai → ENEM
-16. **Design da campanha** — sistema visual, mockups por peça, 12 ideias
+14. **Captação** — 20k leads · CPL R$ 6 · 200-400 alunos novos · janela de 6 meses · cupom COPAFILADD na reta final
+15. **Projeção de Custos** — R$ 81,5k mapeados + R$ 15-60k a orçar (influencers) = **R$ 96-141k total** · CAC R$ 240-705 em 6 meses · Kit físico e plataforma fora do custo da campanha (in-house/operações)
+16. **Calendário** — 25/mai → ENEM · Lives YouTube 2×/sem · Lives TikTok com história da Copa
+17. **Design da campanha** — sistema visual, mockups por peça, 12 ideias
 
 ## Slogans modulares
 
