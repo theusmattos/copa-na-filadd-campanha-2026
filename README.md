@@ -41,7 +41,7 @@ Depois de subir esse repo no GitHub, dá pra ligar o **GitHub Pages** em 2 cliqu
 11. **X/Twitter** — Genia como voz da marca + interação com Brahma/Itaú/Nike/Adidas
 12. **Argentina/Latam** — Filadd nasceu em Córdoba · operação em AR/CL/CO/BR/IN
 13. **Plano A/B** — *"Eles saíram de campo. A gente segue jogando."*
-14. **Captação** — 20k leads · CPL R$ 6 · 200-400 alunos novos · janela de 6 meses · cupom COPAFILADD na reta final
+14. **Captação** — 20k leads frios · 4 cenários CAC vs teto US$ 150 (R$ 750) · régua de qualificação progressiva · mídia em 3 frentes (60/30/10) · CPL frio vs qualificado · cupom COPAFILADD reta final
 15. **Projeção de Custos** — R$ 81,5k mapeados + R$ 15-60k a orçar (influencers) = **R$ 96-141k total** · CAC R$ 240-705 em 6 meses · Kit físico e plataforma fora do custo da campanha (in-house/operações)
 16. **Calendário** — 25/mai → ENEM · Lives YouTube 2×/sem · Lives TikTok com história da Copa
 17. **Design da campanha** — sistema visual, mockups por peça, 12 ideias
