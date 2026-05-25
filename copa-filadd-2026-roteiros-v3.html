@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Roteiros v3 · Lead capture criativo · Bolão Copa Filadd</title>
+<meta name="description" content="10 roteiros pra captação de lead do Bolão Filadd. Cada peça nasce de UMA ideia criativa central — vidente, bilhete, trailer, mistery box, carta do futuro. Não é brand film; é gancho pra conversão." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --azul-aprovado:#2424FF;
+  --azul-focado:#03036E;
+  --amarelo:#FFBA09;
+  --roxo-med:#8900FF;
+  --branco:#FFFFFF;
+  --off:#F4F4F8;
+  --ink:#0A0A14;
+  --ink-soft:#3A3A52;
+  --ink-mute:#7A7A92;
+  --line:#E5E5EF;
+  --line-soft:#EFEFF6;
+  --br-green:#009C3B;
+  --warn:#E74C3C;
+  --ok:#1AB36F;
+  --maxw:1380px;
+  --pad:clamp(20px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Antonio',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1;margin:0 0 .4em;text-transform:uppercase}
+h4,h5{font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:-.01em;margin:0 0 .4em}
+p{margin:0 0 1em;color:var(--ink-soft)}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:500;display:inline-block;margin-bottom:14px}
+.eyebrow.amr{color:var(--amarelo)}
+
+.nav{position:sticky;top:0;z-index:50;background:var(--branco);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;gap:18px;padding:14px var(--pad);max-width:var(--maxw);margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-brand{font-family:'Antonio',sans-serif;font-weight:700;font-size:22px;white-space:nowrap;color:var(--azul-focado);text-transform:uppercase;letter-spacing:0;display:flex;align-items:center;gap:10px}
+.nav-brand .ball{width:12px;height:12px;background:var(--amarelo);border-radius:50%}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 12px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;transition:all .2s;font-weight:500}
+.nav-links a:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+.hero{position:relative;background:var(--azul-aprovado);color:var(--branco);overflow:hidden;padding:clamp(50px,8vh,100px) 0 clamp(70px,11vh,130px)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);opacity:.7;pointer-events:none}
+.hero::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.18),transparent 70%);top:-200px;right:-200px;pointer-events:none}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--branco);margin-bottom:28px;font-weight:500;backdrop-filter:blur(8px)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--amarelo);box-shadow:0 0 14px var(--amarelo);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+.hero h1{font-size:clamp(44px,8vw,104px);font-weight:700;line-height:.92;letter-spacing:-.02em;margin-bottom:24px;color:var(--branco)}
+.hero h1 .y{color:var(--amarelo)}
+.hero h1 .sub-tag{display:block;font-size:clamp(17px,1.6vw,24px);font-family:'Poppins',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.85);margin-top:18px;line-height:1.4;max-width:64ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;color:rgba(255,255,255,.7);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;margin-top:36px;font-weight:500}
+.hero-meta .sep{width:14px;height:1px;background:rgba(255,255,255,.3)}
+
+/* MEA CULPA */
+.mea{background:var(--azul-focado);color:var(--branco);padding:clamp(50px,8vh,90px) 0;position:relative;overflow:hidden}
+.mea::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(36,36,255,.25),transparent 70%);bottom:-300px;left:-200px;pointer-events:none}
+.mea h2{color:var(--branco);max-width:24ch;font-size:clamp(28px,3.6vw,48px)}
+.mea h2 .y{color:var(--amarelo)}
+.mea .lede{color:rgba(255,255,255,.85);max-width:65ch;font-size:16px;line-height:1.65;margin-bottom:22px}
+.mea-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px;position:relative;z-index:2}
+@media(max-width:780px){.mea-list{grid-template-columns:1fr}}
+.mea-block{padding:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px}
+.mea-block h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--amarelo);margin:0 0 8px;text-transform:uppercase}
+.mea-block p{color:rgba(255,255,255,.82);margin:0;font-size:13.5px;line-height:1.55}
+
+/* PRINCIPLE GRID */
+.principles{background:var(--off);padding:clamp(50px,8vh,90px) 0}
+.principles h2{color:var(--azul-focado);font-size:clamp(28px,3.6vw,48px);max-width:24ch;margin-bottom:18px}
+.principles h2 .y{color:var(--amarelo)}
+.principles .lede{color:var(--ink-soft);max-width:62ch;font-size:15.5px;line-height:1.6;margin-bottom:30px}
+.pr-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:900px){.pr-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pr-grid{grid-template-columns:1fr}}
+.pr{padding:18px;background:var(--branco);border:1px solid var(--line);border-radius:12px}
+.pr .nm{font-family:'Antonio',sans-serif;font-size:34px;color:var(--azul-aprovado);line-height:.85;margin-bottom:6px;font-weight:700}
+.pr h5{font-family:'Antonio',sans-serif;font-size:15px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:6px}
+.pr p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+
+/* ROTEIRO CARD */
+.scene{padding:50px 0;background:var(--branco)}
+.scene-card{background:var(--branco);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:32px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.scene-head{padding:30px;background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));color:var(--branco);position:relative;overflow:hidden}
+.scene-head::after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.16),transparent 70%);top:-200px;right:-150px;pointer-events:none}
+.scene-head-row{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;position:relative;z-index:2;margin-bottom:16px}
+.scene-head .num{font-family:'Antonio',sans-serif;font-size:52px;color:var(--amarelo);line-height:.85;font-weight:700}
+.scene-head .tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.scene-head .tag{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:4px 9px;border-radius:6px;background:rgba(255,255,255,.15);color:var(--branco);font-weight:600;border:1px solid rgba(255,255,255,.25)}
+.scene-head .tag.y{background:var(--amarelo);color:var(--azul-focado);border-color:var(--amarelo)}
+.scene-head .tag.green{background:var(--br-green);color:var(--branco);border-color:var(--br-green)}
+.scene-head .tag.purple{background:var(--roxo-med);color:var(--branco);border-color:var(--roxo-med)}
+.scene-head h3{font-family:'Antonio',sans-serif;font-size:clamp(26px,3vw,36px);color:var(--branco);margin:0;text-transform:uppercase;line-height:1.05;position:relative;z-index:2}
+.scene-head .core-idea{margin-top:14px;padding:14px 16px;background:rgba(255,186,9,.14);border-left:3px solid var(--amarelo);border-radius:0 10px 10px 0;position:relative;z-index:2}
+.scene-head .core-idea .lb{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--amarelo);font-weight:700;margin-bottom:4px;display:block}
+.scene-head .core-idea p{font-size:14px;color:var(--branco);margin:0;line-height:1.5}
+.scene-head .core-idea p b{color:var(--amarelo)}
+
+.scene-body{padding:0}
+.scene-section{padding:24px 30px;border-bottom:1px solid var(--line-soft)}
+.scene-section:last-child{border-bottom:none}
+.scene-section .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.scene-section .lb .num{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-aprovado);line-height:.85;font-weight:700}
+.scene-section .lb::after{content:"";flex:1;height:1px;background:var(--line)}
+.scene-section h4{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);margin:0 0 12px;text-transform:uppercase}
+.scene-section p{font-size:14px;color:var(--ink-soft);margin:0 0 12px;line-height:1.6}
+.scene-section p:last-child{margin-bottom:0}
+.scene-section p b{color:var(--azul-focado)}
+
+.ref-block{background:var(--off);border-radius:12px;padding:18px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;margin-bottom:6px}
+@media(max-width:600px){.ref-block{grid-template-columns:1fr}}
+.ref-block .ref-thumb{width:120px;height:140px;background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--branco);text-align:center;padding:14px;flex-shrink:0}
+@media(max-width:600px){.ref-block .ref-thumb{width:100%;height:70px;flex-direction:row;gap:14px}}
+.ref-block .ref-thumb .platform{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);font-weight:700;margin-bottom:8px}
+.ref-block .ref-thumb .creator{font-family:'Antonio',sans-serif;font-size:15px;color:var(--branco);text-transform:uppercase;line-height:1;margin-bottom:6px}
+.ref-block .ref-thumb .views{font-family:'DM Mono',monospace;font-size:11px;color:var(--amarelo);font-weight:600}
+.ref-info h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase}
+.ref-info .source{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:8px;font-weight:500}
+.ref-info p{font-size:13.5px;color:var(--ink-soft);margin:0 0 10px;line-height:1.55}
+.ref-info .ref-link{display:inline-flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--azul-aprovado);font-weight:700;padding:7px 12px;background:var(--branco);border:1px solid var(--azul-aprovado);border-radius:8px;transition:all .15s}
+.ref-info .ref-link:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+.hook-block{padding:18px;background:var(--amarelo);border-radius:12px;margin-bottom:6px}
+.hook-block .lb{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-focado);font-weight:700;margin-bottom:8px;display:block}
+.hook-block p{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;line-height:1.1;margin:0}
+.hook-block .anatomy{margin-top:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--azul-focado);font-weight:500;text-transform:none;letter-spacing:0;opacity:.85;line-height:1.5}
+
+.timeline{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.timeline-step{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 14px;background:var(--off);border-radius:10px;border-left:3px solid var(--azul-aprovado)}
+.timeline-step .t{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--azul-aprovado);font-weight:700;padding-top:3px}
+.timeline-step .a{font-size:13.5px;color:var(--ink);line-height:1.55}
+.timeline-step .a b{color:var(--azul-focado)}
+.timeline-step .a em{font-style:normal;background:rgba(255,186,9,.25);padding:2px 4px;border-radius:3px;color:var(--ink)}
+
+.direction-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.direction-grid{grid-template-columns:1fr}}
+.direction-block{padding:16px;background:var(--off);border-radius:10px}
+.direction-block h5{font-family:'Antonio',sans-serif;font-size:15px;color:var(--azul-focado);margin:0 0 8px;text-transform:uppercase}
+.direction-block p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.55}
+
+.cta-block{background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));color:var(--branco);padding:20px;border-radius:12px}
+.cta-block .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--amarelo);font-weight:700;margin-bottom:10px;display:block}
+.cta-block .copy{font-size:13.5px;color:var(--branco);line-height:1.55;margin-bottom:10px}
+.cta-block .copy b{color:var(--amarelo)}
+.cta-block .slogan{display:inline-block;font-family:'Antonio',sans-serif;font-size:16px;color:var(--amarelo);text-transform:uppercase;letter-spacing:.02em;padding:6px 12px;background:rgba(255,186,9,.12);border:1px solid rgba(255,186,9,.4);border-radius:6px}
+
+.summary{background:var(--azul-focado);color:var(--branco);padding:clamp(50px,8vh,90px) 0;position:relative;overflow:hidden}
+.summary::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.16),transparent 70%);top:-300px;right:-300px;pointer-events:none}
+.summary h2{color:var(--branco);max-width:24ch}
+.summary h2 .y{color:var(--amarelo)}
+.summary .lede{color:rgba(255,255,255,.85);max-width:60ch;margin-bottom:36px}
+.sum-table{background:var(--branco);border-radius:14px;overflow:hidden;color:var(--ink);position:relative;z-index:2}
+.sum-row{display:grid;grid-template-columns:60px 1fr 1.4fr 0.9fr 0.9fr;border-bottom:1px solid var(--line-soft);font-size:13px}
+@media(max-width:780px){.sum-row{grid-template-columns:1fr;display:block;padding:10px 0;border-bottom:1px solid var(--line)}.sum-cell{display:flex;justify-content:space-between;padding:6px 14px;border-right:none !important}.sum-cell .mb-lbl{display:inline}}
+.sum-row:last-child{border-bottom:none}
+.sum-row.head{background:var(--azul-focado);color:var(--branco)}
+.sum-cell{padding:14px 16px;display:flex;align-items:center;border-right:1px solid var(--line-soft)}
+.sum-cell:last-child{border-right:none}
+.sum-cell .mb-lbl{display:none;font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;color:var(--ink-mute);font-weight:600;margin-right:8px}
+.sum-row.head .sum-cell{font-family:'Antonio',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--amarelo);border-right-color:rgba(255,255,255,.15)}
+.sum-cell.num{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-aprovado);font-weight:700;background:var(--off);justify-content:center}
+.sum-cell .pill{padding:3px 8px;border-radius:5px;font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;display:inline-block}
+.pill.green{background:#C2FFD8;color:#0D7A3D}
+.pill.blue{background:#C2D8FF;color:var(--azul-focado)}
+.pill.yellow{background:#FFE9C2;color:#B36B00}
+.pill.red{background:#FFD0CC;color:#9A2D22}
+
+footer{padding:40px 0;background:var(--azul-focado);color:rgba(255,255,255,.6);text-align:center;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:500;border-top:1px solid rgba(255,255,255,.08)}
+footer .y{color:var(--amarelo)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="./index.html"><span class="ball"></span> Roteiros v3 · Lead capture criativo</a>
+    <div class="nav-links">
+      <a href="#mea">O que mudou</a>
+      <a href="#principles">Princípios</a>
+      <a href="#r01">01 Vidente</a>
+      <a href="#r02">02 Bilhete</a>
+      <a href="#r03">03 Apito</a>
+      <a href="#r04">04 Trailer</a>
+      <a href="#r05">05 Sósia</a>
+      <a href="#r06">06 Mistery</a>
+      <a href="#r07">07 Carta</a>
+      <a href="#r08">08 Manchete</a>
+      <a href="#r09">09 Stitch</a>
+      <a href="#r10">10 Tutorial</a>
+      <a href="#summary">Resumo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="hero-pill"><span class="dot"></span>v3 · 10 ideias criativas pra LEAD CAPTURE · refeito a partir do seu feedback</div>
+    <h1>Ideia <span class="y">primeiro.</span> Tudo depois.<span class="sub-tag">10 peças onde <b>uma ideia criativa central carrega o vídeo inteiro</b> — vidente, bilhete da loteria, trailer Hollywood, mistery box, manchete de jornal, stitch viral. Sem manifesto. Sem vlog. Sem brand film. Cada roteiro com prêmio mostrado, mecânica clara e CTA direto. Captação de lead pro Bolão Filadd com ousadia, não com posicionamento.</span></h1>
+    <div class="hero-meta">
+      <span>9 ideias novas + 1 mantida (O Apito)</span><span class="sep"></span>
+      <span>Tempos 12s–60s</span><span class="sep"></span>
+      <span>Tudo aterrissa em /bolao</span><span class="sep"></span>
+      <span>Refs Cannes 2024/25, Coca, Brahma, Pedro Certezas, virais BR</span>
+    </div>
+  </div>
+</section>
+
+<!-- MEA CULPA -->
+<section class="mea" id="mea">
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow amr">O que mudou da v2 pra v3</span>
+    <h2>Você teve razão. <span class="y">9 dos 10 anteriores</span> eram brand film, não captação.</h2>
+    <p class="lede">Diagnóstico honesto: na v2 eu trouxe peças bonitas e cinematográficas que serviam pra <b>posicionar a marca</b> — manifesto, vlog do vencedor, presença respeitosa, plano B emocional. Tudo isso funciona em outro lugar do funil (top, brand love), mas <b>não captura lead</b>. Só o R03 ("O Apito") tinha uma <b>ideia criativa central</b> que carregava o vídeo do começo ao fim. Refiz mantendo essa lógica em todas as 10 peças.</p>
+    <div class="mea-list">
+      <div class="mea-block">
+        <h5>O que eu joguei fora</h5>
+        <p>Manifesto institucional. Vlog "manhã seguinte". Filme da derrota. Peça de "presença respeitosa" sem CTA. Conteúdo de utilidade sem gancho de produto. Reveal de Top 5 sem mostrar prêmio físico em close.</p>
+      </div>
+      <div class="mea-block">
+        <h5>O que ficou</h5>
+        <p>"O Apito" (R03) — única peça que já nascia de uma ideia criativa central forte (o som do apito vira recurso narrativo). Mantida aqui com CTA refinado mais agressivo de captação.</p>
+      </div>
+      <div class="mea-block">
+        <h5>O que entrou no lugar</h5>
+        <p>9 ideias novas. Cada uma com <b>estética emprestada</b> de um universo reconhecido (vidente, loteria, trailer Hollywood, mistery box, jornal antigo, dueto/stitch, infomercial, livro/zine, carta) + <b>twist surpreendente</b> que entrega o Bolão como o "segredo" + <b>prêmio físico mostrado em close</b> + <b>CTA forte com URL.</b></p>
+      </div>
+      <div class="mea-block">
+        <h5>O que NÃO mudou</h5>
+        <p>Calendário real respeitado (Brasil joga 13/06, 19/06, 24/06). Lives Filadd nunca em dia de jogo. Slogans modulares ("Cravou? Marcou.", "Antes do apito") seguem como CTA. Pensamento cinematográfico nas descrições visuais. Framework de 9 pontos por roteiro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCÍPIOS -->
+<section class="principles" id="principles">
+  <div class="wrap">
+    <span class="eyebrow">Os 4 princípios que cada roteiro abaixo respeita</span>
+    <h2>Como um vídeo de Bolão <span class="y">capta lead de verdade.</span></h2>
+    <p class="lede">Esses 4 princípios vieram de cruzar referências de performance ads + cases premiados em Cannes Sport + estudos do TikTok for Business (2025). Se uma peça falha em qualquer um dos 4, ela vira brand film. Eu não tô mais entregando brand film disfarçado de captação.</p>
+    <div class="pr-grid">
+      <div class="pr"><div class="nm">01</div><h5>Para o scroll</h5><p>Hook visual ou sonoro nos 1-2 primeiros segundos. Quebra de padrão. Algo que faz a pessoa virar a cabeça antes de entender o que está vendo.</p></div>
+      <div class="pr"><div class="nm">02</div><h5>Cria desejo</h5><p>O prêmio físico (PS5, iPad, kit, bolsa) aparece em close. Não é citado — é mostrado. Tactile, brilhante, tangível.</p></div>
+      <div class="pr"><div class="nm">03</div><h5>Reduz fricção</h5><p>Mostra que é grátis, rápido, sem pegadinha. Mecânica em 3 frames: abre app · crava palpite · pronto.</p></div>
+      <div class="pr"><div class="nm">04</div><h5>Capta agora</h5><p>CTA com URL específica (filadd.com/bolao) e ação imediata. Não "saiba mais". É "joga agora".</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 01 — O VIDENTE ============== -->
+<section class="scene" id="r01">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">01</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">22s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">TikTok + Reels</span>
+          </div>
+        </div>
+        <h3>"O Vidente da Copa" · ela prevê o placar exato. Só que ela mentiu.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Aluna se passa por vidente</b> — bola de cristal, mantra místico, cravamento dramático do placar. Quando todo mundo tá achando que é "tarot da Copa", ela quebra a quarta parede e revela: <b>não é mágica, é o app do Bolão Filadd com 30 segundos de palpite</b>. Esculacha o gênero "vidente da Copa" que já é viral no TikTok BR (busca "vidente Copa do Mundo" tem milhares de vídeos).</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TikTok BR</div>
+              <div class="creator">"Vidente da Copa"</div>
+              <div class="views">trend recorrente</div>
+            </div>
+            <div class="ref-info">
+              <h5>Trend "Vidente da Copa do Mundo" · TikTok BR</h5>
+              <div class="source">Trend orgânica recorrente toda Copa · creators místicos prevendo placar com tarot, bola de cristal, mantra · viralizou massivamente em 2022 e segue ativa em 2026 · busca "vidente copa" no TikTok mostra milhares de vídeos</div>
+              <p>O torcedor brasileiro <b>quer acreditar em previsão mística</b> (especialmente quando o Brasil tá inseguro). A trend "vidente da Copa" foi enorme em 2022 e voltou em 2026. A Filadd pode <b>parodiar a trend</b> — entrando como o "vidente racional" que crava sem precisar de tarot, só com palpite + sorte.</p>
+              <a class="ref-link" href="https://www.tiktok.com/discover/vidente-falando-do-brasil-ma-copa-do-mundo" target="_blank" rel="noopener">Ver trend TikTok ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Hook duplo: <b>(a)</b> a pessoa começa achando que é mais um vidente (curiosidade), <b>(b)</b> o reveal subverte e gera gargalhada — o que <b>aumenta save + share</b>. Lead capture: depois de rir, o espectador entende que "ah, eu também posso ser vidente". Custo zero de fricção (basta abrir o app). Estética cinematográfica fácil de copiar (luz vermelha, fumaça, velas).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Aluna 17-18 anos, sotaque qualquer (preferência interior — Norte/NE pra autenticidade não-clichê paulista). Cenário monta-se em 1h: lençol roxo de fundo, vela barata da Drogasil, bola de cristal alugada R$15 no Shopee, fumaça de geladinho seco. Ela dramatiza. No momento da revelação, joga tudo pro lado, fica de moletom da Filadd e mostra o celular.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>"As cartas estão dizendo... Brasil 2... Marrocos 1."</p>
+            <div class="anatomy">Anatomia · Plano fechado no rosto iluminado por luz vermelha de baixo (lanterna do celular no chão). Olhos meio fechados, voz dramatizada misteriosa. Som diegético de "uh" místico. Pattern interrupt: vídeo abre numa estética que TikTok BR reconhece IMEDIATAMENTE como "vidente da Copa" — quem vê pensa que é vidente real, segura.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:04</div><div class="a"><b>ATO I · Vidente.</b> Close no rosto, luz vermelha, fumaça. <em>"As cartas estão dizendo... Brasil 2... Marrocos 1."</em> Olhar fechado, mãos sobre bola de cristal de plástico.</div></div>
+            <div class="timeline-step"><div class="t">00:04–00:09</div><div class="a"><b>ATO II · Místico continua.</b> Tira uma carta, finge ler. <em>"Quem cravar... vai ser abençoado pelos espíritos."</em> Vela balança. Som de sino místico crescendo.</div></div>
+            <div class="timeline-step"><div class="t">00:09–00:14</div><div class="a"><b>ATO III · A QUEBRA.</b> Luz vermelha CORTA pra luz natural do quarto. Ela tira o pano da cabeça, joga a bola de cristal pro lado. Voz normal: <em>"Tô mentindo. Não sou vidente. Sou aluna da Filadd."</em> Mostra a tela do app: bolão preenchido em 15 segundos. <em>"Cravei o placar lá. Demorou nada."</em></div></div>
+            <div class="timeline-step"><div class="t">00:14–00:19</div><div class="a"><b>ATO IV · O prêmio.</b> Levanta da cadeira. Vai até a mesa. <em>"Top 5 da semana? Ganha isso aqui."</em> Pega iPad da caixa em close-up. Câmera fecha no produto, luz natural, brilho de tela.</div></div>
+            <div class="timeline-step"><div class="t">00:19–00:22</div><div class="a"><b>CTA.</b> Tela azul Filadd. Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b> · Voz: "Para de pagar de vidente. Joga o bolão."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta · 2 mundos</h5>
+              <p><b>Atos I-II:</b> vermelho saturado + amarelo de vela + preto profundo. Filtro "místico TikTok" (preset CapCut). <b>Atos III-V:</b> luz natural de janela + branco do quarto + azul/amarelo Filadd. Contraste tonal é o que ensina o reveal sem precisar explicar.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Ato I-II: extreme close-up no rosto (35mm em iPhone, modo cinema). Bola de cristal no canto inferior, desfocada. Atos III-V: plano americano, câmera mais aberta, luz neutra. Único corte de câmera é entre ato II e ato III — o resto é zoom in/out simulado.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Som</h5>
+              <p>Ato I-II: trilha mística (estilo "spiritual TikTok" — buscar "tarot ambient" no banco do CapCut). Sino, fumaça, "uhhh". Ato III: CORTE TOTAL do som (silêncio de 0,3s pra sublinhar a quebra) + voz normal entra. Ato IV-V: música leve de bolão (algo que sugira ganho — sino de cassino discreto).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial (thumbnail)</h5>
+              <p>Rosto iluminado por luz vermelha, olho semi-fechado, bola de cristal embaçada no canto. Texto sobreposto: <b>"O VIDENTE DA COPA MENTIU."</b> Frame 0 já gera curiosidade — quem vê quer saber em que mentiu.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Místico lento → corte seco → ritmo de captação.</b> Atos I-II: cortes de 2-3s (clima respirado). Ato III: o CORTE SECO entre vidente e realidade é o momento mais importante — 1 frame só, sem cross-dissolve. Atos IV-V: cortes de 1,5-2s, ritmo de venda. Som-chave: o silêncio de 0,3s ANTES da quebra. Esse silêncio é o que o algoritmo vai recompensar com retention.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 22 segundos</div>
+          <p><b>Por que 22s.</b> Setup místico precisa de 8-9s pra plantar a expectativa. Quebra em 5s. Reveal do prêmio em 5s. CTA em 3s. Total 22s. 15s mata o setup (sem ele, o reveal não tem peso). 30s estica o místico e cai retenção. 22s é o sweet spot do "tem twist". Roda em TikTok In-Feed, Reels, YouTube Shorts.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Para de pagar de vidente. Joga o bolão.</b>" · Texto on screen: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"O vidente da Copa não passa de bobagem 😂 Cravei o Brasil x Marrocos em 30 segundos sem tarot — joga aí no Bolão Filadd. Top 5 da semana ganha iPad. Link na bio."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 02 — O BILHETE ============== -->
+<section class="scene" id="r02">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">02</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">18s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">Reels + Stories</span>
+          </div>
+        </div>
+        <h3>"O Bilhete" · ela ganhou na loteria. Só que não foi loteria.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Estética de loteria física brasileira</b> — bilhete saindo da impressora térmica, neon "LOTERIA" piscando, mão amassada agarrando, suspiro de quem ganhou. Aos 12s, plano abre: ela não está na lotérica. Está no quarto dela com o iPad ao lado. O "bilhete" é um print do app Filadd — <b>e ela não pagou nada por ele</b>. Insight: "loteria é caro e azar. Bolão é grátis e dá certo."</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">App · Site</div>
+              <div class="creator">Estrela Bet</div>
+              <div class="views">"Bolão Milionário"</div>
+            </div>
+            <div class="ref-info">
+              <h5>Estrela Bet · "Bolão Milionário" sem aposta</h5>
+              <div class="source">Anunciante: Estrela Bet · Mecânica: bolão de placar exato sem necessidade de aposta · prêmio R$2 milhões · aproveita a estética de loteria física que o brasileiro já reconhece (Mega-Sena, Lotofácil)</div>
+              <p>A Estrela Bet provou que a estética <b>"loteria sem custo"</b> converte em volume — bolão grátis + prêmio físico real + estética de bilhete familiar = lead generation barato. A Filadd pode emprestar a estética sem ser casa de aposta. <b>O bilhete brasileiro é um ativo cultural</b>: amassado, térmico, com letras descoladas. Todo mundo já segurou um.</p>
+              <a class="ref-link" href="https://www.lance.com.br/sites-de-apostas/codigo-promocional-estrelabet.html" target="_blank" rel="noopener">Mecânica Estrela Bet ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Estética de loteria <b>já tem memória afetiva</b> no brasileiro — o frame da impressora térmica saindo é familiar antes da imagem terminar de aparecer. Quem assiste pensa "alguém ganhou na Mega" — isso para o scroll. O reveal de que é Bolão Filadd quebra a expectativa positivamente: foi de graça, foi rápido, ela ganhou de verdade. Lead capture é direto: "quer ganhar igual? Link."</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Cenografia barata: cantinho da lotérica reconstruído em estúdio (placa amarela e azul ATIVO/PASSIVO, impressora térmica de R$200 alugada por R$80). Aluna comprou bilhete fake — mas no reveal, dá pra ver que é print do bolão em papel térmico (impressão feita em casa). Reveal: ela tá no quarto, iPad ao lado. Cara de "olha o que eu consegui sem pagar".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Som de impressora térmica] + close no bilhete saindo + texto: "Cravei o placar. Saiu o prêmio."</p>
+            <div class="anatomy">Anatomia · Som primeiro (impressora térmica é tátil, brasileiro reconhece em 0,3s). Imagem 100% close no papel saindo. Sem rosto, sem contexto. Pattern interrupt absoluto: é a estética "ganhei na Mega" que o algoritmo já entende como conteúdo de "ganhou na loteria".</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:03</div><div class="a"><b>ATO I · O bilhete.</b> Close extreme na impressora térmica. Papel sai aos pouquinhos. Som de impressora. Texto on screen branco no preto: <b>"CRAVEI O PLACAR. SAIU O PRÊMIO."</b></div></div>
+            <div class="timeline-step"><div class="t">00:03–00:09</div><div class="a"><b>ATO II · A mão.</b> Mão da aluna pega o bilhete. Câmera fica em close. Bilhete tem texto impresso: <em>"BOLÃO FILADD · BRASIL 2 × 1 MARROCOS · RANKING TOP 3 · PRÊMIO: iPad"</em>. Mão treme um pouco. Som ambiente de neon piscando ao fundo (lotérica).</div></div>
+            <div class="timeline-step"><div class="t">00:09–00:13</div><div class="a"><b>ATO III · A REVELAÇÃO.</b> Câmera abre — a "lotérica" some. Era um cantinho montado. Estamos no quarto dela. iPad em cima da mesa, aberto na tela do bolão. Ela olha pra câmera com bilhete na mão. <em>"Não foi loteria. Foi Bolão Filadd. E foi de graça."</em></div></div>
+            <div class="timeline-step"><div class="t">00:13–00:16</div><div class="a"><b>ATO IV · Prêmio.</b> Ela pega o iPad da mesa. Close no produto. Liga, mostra a tela. Câmera fecha em mãos + iPad + bilhete lado a lado.</div></div>
+            <div class="timeline-step"><div class="t">00:16–00:18</div><div class="a"><b>CTA.</b> Tela azul Filadd: <b>"Cravou? Marcou. filadd.com/bolao"</b> · Voz: "Não precisa pagar pra ganhar."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p><b>Atos I-II:</b> amarelo/azul/vermelho da estética lotérica brasileira (Caixa). Luz fluorescente fria. Atos III-V: luz natural quente de janela + cores Filadd. <b>Mudança de paleta = mudança de mundo.</b></p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Atos I-II: extreme close-ups quase abstratos (papel, mão, neon). Câmera só com macro. Ato III: zoom out físico ou efeito de "pull back" pra abrir o ambiente. Atos IV-V: planos médios limpos, produto em foco.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Som</h5>
+              <p>Impressora térmica + neon piscante + leve som de cidade ambiente. No reveal (ato III), corta tudo, entra só som da casa (vento na cortina, passos descalços). Ato IV-V: bip do iPad ligando + voz suave.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Close no papel térmico saindo da impressora. Letras desfocadas. Texto on screen: <b>"GANHEI. SEM PAGAR."</b> Frame que para o scroll por curiosidade — qual é o bilhete?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Atos I-II lentos, contemplativos.</b> O bilhete sai DEVAGAR — 6 segundos só pra ele aparecer. Isso prende. <b>Ato III é o momento de respiração.</b> Câmera abre devagar, sem corte (1 movimento de gimbal). <b>Atos IV-V voltam pra ritmo padrão</b> (cortes 1,5-2s). Som-chave: silêncio entre ato II e III (0,5s) que sublinha a quebra.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 18 segundos</div>
+          <p><b>Por que 18s.</b> A estética lotérica precisa de tempo pra ser plantada (8-9s). Reveal precisa de 4s. Prêmio + CTA em 5s. Total 18s. 15s atropela o setup. 22s estica e perde retenção. 18s é o ponto onde a "novela" cabe inteira. Compatível TikTok In-Feed, Reels e Stories.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Não precisa pagar pra ganhar.</b>" · Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"Não foi Mega-Sena. Foi Bolão Filadd 🎟️ Crava o placar do próximo jogo do Brasil — Top 5 da semana leva iPad. Sem aposta, sem pegadinha. Link na bio."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 03 — O APITO (MANTIDO + REFINADO) ============== -->
+<section class="scene" id="r03">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">03</div>
+          <div class="tags">
+            <span class="tag y">Aprovado v2</span>
+            <span class="tag">30s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">YouTube + Reels</span>
+          </div>
+        </div>
+        <h3>"O Apito" · o som do início vira o som da preparação (CTA refinado)</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central · refinada</span>
+          <p><b>O som do apito como recurso narrativo</b> — cada vez que toca, a cena muda. Aluno pelo quarto → cozinha → sala → momento do apito real no jogo. A marca "passa a bola" pro torcedor: <em>"daqui é só seu"</em>. <b>Refinado da v2:</b> o último plano fecha no CELULAR ABERTO no bolão preenchido + prêmio físico ao lado, antes da tela azul. Captação ganhou ancoragem visual concreta.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">Globo · Copa do Brasil</div>
+              <div class="creator">Clash Royale × Globo</div>
+              <div class="views">DAVID SP · 2024</div>
+            </div>
+            <div class="ref-info">
+              <h5>Clash Royale · "Substituiu o apito do árbitro"</h5>
+              <div class="source">Anunciante: Supercell (Clash Royale) · Veículo: Rede Globo (final Copa do Brasil) · Agência: DAVID São Paulo · Mecânica: substituiu o som real do apito inicial do árbitro pelo som icônico do Clash Royale + filme 15s no intervalo</div>
+              <p>Na final da Copa do Brasil, a Globo trocou o som do apito do árbitro pelo som do Clash Royale. <b>Sequestrou um ativo cultural inegociável</b> (o apito) e o ressignificou. Mostrou que som tem mais poder de ancoragem em vídeo curto vertical do que imagem.</p>
+              <a class="ref-link" href="https://voxnews.com.br/clash-royale-troca-o-apito-pelo-som-do-jogo-na-final-da-copa-do-brasil/" target="_blank" rel="noopener">Case Vox News ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Som tem mais poder de ancoragem do que imagem em vídeo vertical (60% das pessoas assiste sem som no primeiro view, mas com som no segundo). O apito é <b>memória involuntária coletiva</b> — ninguém precisa explicar o que significa. Quando vc sequestra esse som, vira tatuagem na cabeça do consumidor. O Filadd já tem o slogan "Antes do apito" no playbook v3 — falta só usá-lo cinematograficamente.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd · refinada</div>
+          <p>Mesma estrutura da v2: apito vira gatilho de corte entre 3 ambientes domésticos da véspera (quarto → cozinha → sala) até o apito real do jogo. <b>O que mudou da v2:</b> entre o ato III (sala, apito real) e o CTA azul, agora tem 2 segundos de close no celular do aluno na mesa com o app Filadd aberto, bolão preenchido, e iPad ao lado da televisão. Lead capture concreto: você vê o que está em jogo, não só o ritual.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Apito de árbitro tocando seco] + texto: "Antes desse som tocar, tudo é da Filadd."</p>
+            <div class="anatomy">Anatomia · Som primeiro (apito agudo, 0,8s), tela ainda preta. Texto branco sobe sobre o preto. Aluno aparece no terceiro segundo. Pattern interrupt: a maioria das ads abre com música; essa abre com SILÊNCIO interrompido por um som diegético reconhecível.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato (refinada)</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:02</div><div class="a"><b>ATO 0 · Apito.</b> Tela preta. <em>"FIIIIII"</em> (apito 0,8s). Texto branco: <b>"Antes desse som tocar, tudo é da Filadd."</b></div></div>
+            <div class="timeline-step"><div class="t">00:02–00:08</div><div class="a"><b>ATO I · Quarto.</b> Aluno na cama, celular na mão, tela do bolão aberta, cravou Brasil 2 × 0 Marrocos. <em>Apito de transição (curto)</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:08–00:14</div><div class="a"><b>ATO II · Cozinha.</b> Aluno pega refri, abre. Voz off da live "Antes do apito" tocando do celular em cima da bancada, comentando histórico do Marrocos. <em>Apito</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:14–00:20</div><div class="a"><b>ATO III · Sala.</b> Senta no sofá. TV ligada, aquecimento da Seleção. Coloca a camiseta. Mãe entra com prato. Família se monta. <em>Apito</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:20–00:25</div><div class="a"><b>ATO IV · O apito real + close concreto.</b> Câmera fecha na TV. Árbitro real no MetLife, apita início do jogo (<em>apito real, longo</em>). Família surta. <b>Câmera baixa pra mesa de centro:</b> celular do aluno aberto na tela do bolão (palpite cravado), <b>iPad da Filadd ao lado</b> (prêmio físico mostrado). Texto sobreposto: <b>"Cravou — pode ganhar isso."</b></div></div>
+            <div class="timeline-step"><div class="t">00:25–00:30</div><div class="a"><b>CTA.</b> Tela azul Filadd: <b>"Antes do apito. Cravou? Marcou. filadd.com/bolao"</b></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Hora dourada (16h-18h da véspera) entrando pelas janelas. Tons quentes nos ambientes domésticos. TV ao fundo ilumina os rostos com azul gélido do gramado. Contraste quente/frio entre família e tela.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm em todos os ambientes. Steadicam ou gimbal seguindo aluno. Sem zoom. Filme se sustenta na continuidade espacial. Plano final do iPad + bolão é close (35mm em macro).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Filme caseiro com produção alta. Lembra short de Apple, Wieden+Kennedy intimista, filmes de pré-jogo Heineken UCL. Não é "comercial" — é poesia de ritual com prêmio mostrado.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Preto absoluto + texto branco: <b>"ANTES DESSE SOM TOCAR..."</b> Frame inicial é silêncio visual. Quem para o scroll é o som (apito) que toca no segundo 1.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>O apito É o corte.</b> Toda transição entre ambientes é feita no apito (curto, médio, longo). Sem fade, sem cross-dissolve. Só apito → corte seco. No ato IV, o ritmo PARA: 5 segundos contínuos da família reagindo + close concreto no celular/iPad, sem cortes. <b>O contraste rítmico é o que ensina o espectador a separar "Filadd" de "só torcida"</b>, e o close final é o que CONVERTE.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 30 segundos</div>
+          <p><b>Por que 30s.</b> Cabe os 4 atos sem atropelar (cada um 6s + setup 2s + CTA 5s). 15s não permite os 3 ambientes (sem isso, perde o sentido do "antes"). 60s estica demais — o apito perde força se for repetido 6 vezes. 30s permite respiração entre cada ato e ainda mostra prêmio físico no final.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal · refinado</span>
+            <p class="copy">Texto on screen final: <b>"Antes do apito. Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"Amanhã tem Brasil. Hoje a gente crava o palpite — e te entrega o iPad. Bolão Filadd link na bio 🇧🇷"</em></p>
+            <span class="slogan">Antes do apito.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 04 — O TRAILER ============== -->
+<section class="scene" id="r04">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">04</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">45s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">YouTube + Reels</span>
+          </div>
+        </div>
+        <h3>"Trailer" · um filme épico sobre o vestibulando que cravou a Copa antes</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Estética de trailer de blockbuster Hollywood</b> — voz "In a world where..." (Don LaFontaine), gramado, estádio, slow motion 240fps, trilha orquestral, tipografia AAA. Tudo construído como se fosse trailer de filme épico. O herói? <b>Um vestibulando comum.</b> A façanha? <b>Cravou o placar do Brasil × Marrocos antes de qualquer pesquisa.</b> O reveal: é real, qualquer um pode. Link na bio.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube</div>
+              <div class="creator">Adidas "Backyard Legends"</div>
+              <div class="views">2026 · £50M</div>
+            </div>
+            <div class="ref-info">
+              <h5>Adidas · "Backyard Legends" + estrutura de trailer</h5>
+              <div class="source">Anunciante: Adidas · Format: 5min film + cutdowns · Cast: Chalamet + Messi + Beckham + Yamal + Bellingham · Mecânica: filme estruturado como recrutamento épico de "lendas do quintal" pra batalha final · estética de trailer cinematográfico</div>
+              <p>A Adidas mostrou em 2026 que <b>estrutura de trailer Hollywood</b> funciona pra Copa — voz épica, planos cinematográficos, cast misturando atores e jogadores. O que a Filadd pega: <b>a estrutura formal do trailer</b>. O que muda: o herói não é Chalamet ou Messi. É o vestibulando do interior. O contraste vira a piada que vira o gancho.</p>
+              <a class="ref-link" href="https://www.collater.al/en/adidas-backyard-legends-campaign-world-cup-2026/" target="_blank" rel="noopener">Análise Backyard Legends ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Trailer é uma <b>linguagem que o cérebro reconhece em 1 segundo</b>. Quem para o scroll vira porque pensa que é trailer real de Netflix/Prime. O contraste entre estética AAA e personagem comum (vestibulando comum) gera comédia + identificação. Lead capture: depois da gargalhada do "que viagem", o reveal de "é grátis, link na bio" converte. Quem entende ironia entende o convite.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Imagens de arquivo de gramado, estádio, troféu (banco visual de futebol — Pond5, Artgrid, Storyblocks). Voz épica BR (busca "voz Don LaFontaine BR" — atores de dublagem cobram R$300-500 por sessão). Aluno-protagonista: aprovado real da Filadd com sotaque do interior, vestido com camiseta da Seleção e jeans. Reveal final é cinematográfico mas a ação proposta é simples: clica no link.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Trilha orquestral grave + voz épica] "Esse ano... um herói surge... onde ninguém esperava."</p>
+            <div class="anatomy">Anatomia · Imagens em câmera lenta de estádio enchendo, gol em arquivo cinematográfico. Logo "FILADD PRESENTS" em tipografia AAA dourada. Voz Don LaFontaine BR. Pattern interrupt absoluto: peça de marketing educacional que abre como trailer de Marvel. Quem vê pensa "que filme é esse?"</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:08</div><div class="a"><b>ATO I · Setup épico.</b> Logo "FILADD PRESENTS". Imagens slow-mo: estádio MetLife enchendo, bandeira do Brasil tremulando, gramado verde. Voz: <em>"Esse ano... um herói surge... onde ninguém esperava."</em> Trilha cinematográfica subindo.</div></div>
+            <div class="timeline-step"><div class="t">00:08–00:18</div><div class="a"><b>ATO II · O herói.</b> Cortes secos: 1) aluno comum descendo escada de prédio popular do interior · 2) abrindo livro de redação · 3) celular na mão olhando bolão · 4) janela com cartaz "ENEM 2026". Voz: <em>"Ele não jogou na Copa. Mas cravou a Copa toda."</em></div></div>
+            <div class="timeline-step"><div class="t">00:18–00:28</div><div class="a"><b>ATO III · Construção dramática.</b> Montagem rápida: aluno cravando placar (close no celular), Brasil fazendo gol (arquivo), nome dele subindo no ranking (UI animada), iPad sendo entregue (close do produto chegando). Voz: <em>"De um quarto em Manaus... ele venceu o maior torneio mundial... do palpite."</em></div></div>
+            <div class="timeline-step"><div class="t">00:28–00:38</div><div class="a"><b>ATO IV · A reviravolta.</b> Trilha PARA. Imagem corta pro aluno olhando pra câmera, sorriso simples. Voz normal (sem dramatização): <em>"Ah, sou eu mesmo. E juro que não é filme. É o Bolão da Filadd. Tu também pode."</em></div></div>
+            <div class="timeline-step"><div class="t">00:38–00:45</div><div class="a"><b>CTA cinemato.</b> Tela preta com tipografia AAA dourada surgindo: <b>"BOLÃO FILADD"</b> [pausa] <em>"a partir de hoje"</em> [pausa] <b>"filadd.com/bolao"</b> · Voz dramática volta: <em>"Cravou? Marcou."</em></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Atos I-III: paleta cinemática (azul UCL profundo, dourado de troféu, verde gramado saturado). Filtro "Hollywood blockbuster" (LUTs Cine 709 ou ARRI). Ato IV: cai pra cores naturais do quarto do aluno (cinza, marrom de madeira, luz amarela de abajur). Ato V: preto absoluto + dourado.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Atos I-III: imagens de arquivo em slow motion 240fps. Câmera lenta, anamórfica fictícia (efeito em pós). Texto em ANTONIO BOLD gigante ocupando 30% da tela. Ato IV: 50mm clean, plano americano do aluno. Ato V: tipografia épica progressiva como Star Wars opening.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Os primeiros 38s parecem trailer de A24 ou Universal. Aos 38s vira clipe doméstico. Aos 45s volta pra cinema. Quem assiste, ri, salva e clica. <b>Vibe Apple keynote + Marvel trailer + Sundance reveal.</b></p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Logo "FILADD PRESENTS" em dourado sobre preto, com leve glow. Frame zero parece abertura de filme premium. Quem para o scroll é o som (trilha orquestral grave) que toca instantaneamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Crescente épico → pausa total → punchline → epílogo dourado.</b> Atos I-III: cortes a cada 1-1,5s, trilha orquestral build-up. Ato IV: 1 take inteiro de 10s (contraste extremo de ritmo). Ato V: tipografia entra com timing dramático (1-2s entre palavras), igual abertura de filme. Som-chave: a queda total da trilha na transição do ato III pro IV. É o que faz a piada funcionar.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 45 segundos</div>
+          <p><b>Por que 45s.</b> Trailer precisa de tempo pra construir a expectativa épica (3 atos cinematográficos = 28s). Quebra precisa de respiro (10s). CTA cinematográfico precisa de 7s. 30s mata a construção. 60s perde retenção. 45s é o sweet spot pra trailer-style ads (Adidas Backyard Legends roda em 60s mas o cutdown 45s é o que performa melhor em paid).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen final: <b>"BOLÃO FILADD · a partir de hoje · filadd.com/bolao"</b> · Voz: "Cravou? Marcou."</p>
+            <p class="copy">Legenda do post: <em>"O herói do Brasil em 2026 mora no interior 😂 Bolão Filadd · link na bio · Top 5 da semana ganha iPad. Vai ser você?"</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 05 — O SÓSIA ============== -->
+<section class="scene" id="r05">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">05</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">15s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">TikTok + Reels</span>
+          </div>
+        </div>
+        <h3>"O Sósia" · ele é parecido com o Vini Jr. Só que mora no quarto dele.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Sósia do craque em ambiente reverso.</b> Aluno escolhido por parecer levemente com o Vini Jr (ou Endrick, ou qualquer craque convocado), vestindo camisa da Seleção com 10. Em vez de estádio, quarto de cursinho com pôster do ENEM. Em vez de chuteira profissional, futsal velho. Em vez de gramado, tapete de quarto. <b>Frase única que carrega tudo:</b> "Eu não joguei o jogo. Eu cravei o jogo." Mostra iPad. CTA. 15 segundos brutais.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TikTok BR</div>
+              <div class="creator">"Sósia de craque"</div>
+              <div class="views">trend recorrente</div>
+            </div>
+            <div class="ref-info">
+              <h5>Trend "Sósia de craque" + Nike "Universe of Football"</h5>
+              <div class="source">Trend orgânica TikTok BR (busca "sósia Vini Jr" ou "sósia Neymar") + Nike "Universe of Football" 2026 (42 personalidades, mistura craque + celebridade aleatória) · mecânica: democratiza a imagem do craque</div>
+              <p>A Nike, com a estratégia "Universe of Football", quebrou a fronteira entre craque e fã — colocou Kim Kardashian, Travis Scott e Ronaldinho lado a lado. <b>A imagem do craque parou de ser propriedade exclusiva dele.</b> No TikTok BR, sósias viralizam com a mesma lógica: o vestibulando comum pode SER o craque, no quarto dele. A Filadd entra no mesmo eixo: o protagonista do Bolão é o aluno comum vestido como craque.</p>
+              <a class="ref-link" href="https://www.b9.com.br/178765/nike-copa-2026-time-go-off-script/" target="_blank" rel="noopener">Nike Universe of Football ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Contraste visual é o motor: camisa cara da Seleção em quarto de classe média baixa, com prêmio do bolão (iPad) que normalmente o vestibulando "comum" não compra. <b>O sósia parodia a aspiração</b> — você quer ser craque, mas pode ser premiado vestibulando, e isso é mais real. Lead capture: 15 segundos brutais, sem rodeio, mostra prêmio físico e dá URL.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Cast: aluno parecido com craque convocado (Vini Jr, Endrick, Rodrygo). Casting barato — basta semelhança vaga + atitude. Cenário: quarto comum do aluno, pôster do ENEM na parede, mesa de estudo bagunçada. Adereços: camisa oficial da Seleção (CBF), futsal velho, iPad real em close. Tudo gravado em 1h.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>"Mãe, agora eu sou o Vini Jr."</p>
+            <div class="anatomy">Anatomia · Plano americano do aluno com camisa 10 da Seleção, posando estilo Vini comemorando gol. Fundo: quarto de adolescente comum. Voz infantil-irônica. Texto on screen: <b>"FALSO Vini Jr · REAL ranking do Bolão"</b>. Pattern interrupt: aluno comum cosplaying craque em quarto que claramente não é vestiário.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:03</div><div class="a"><b>ATO I · O sósia.</b> Aluno vestido como Vini Jr, posa em frente ao espelho. Imita comemoração. <em>"Mãe, agora eu sou o Vini Jr."</em></div></div>
+            <div class="timeline-step"><div class="t">00:03–00:08</div><div class="a"><b>ATO II · A correção.</b> Pega futsal velho da gaveta. Tenta drible meia-bomba. Quase cai. Voz: <em>"Tá, eu não jogo igual ele. Mas..."</em> Mostra celular com bolão preenchido. <em>"...cravei o placar igual ele."</em></div></div>
+            <div class="timeline-step"><div class="t">00:08–00:12</div><div class="a"><b>ATO III · O prêmio.</b> Vai até a mesa, pega iPad. Close no produto. Levanta na altura do rosto. <em>"E ganhei isso aqui sem precisar treinar pênalti."</em></div></div>
+            <div class="timeline-step"><div class="t">00:12–00:15</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. filadd.com/bolao"</b> · Voz: "Tu também pode."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Cores reais do quarto (sem grading especial). Único elemento brilhante é a camisa amarela da Seleção (verde nas mangas). Luz natural de janela. Vibe "quarto de quinta-feira à tarde".</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm vertical 9:16. Plano americano fechado pro aluno, deixando ver o pôster do ENEM no fundo (esse contraste é parte da piada). Close no iPad com luz natural. Sem efeitos especiais.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>UGC puro com piada visual. Lembra um TikTok casual de adolescente, mas com timing perfeito. Não é polido — é justamente o "feito no quarto" que vende a autenticidade.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Aluno de camisa 10 da Seleção, braços abertos como Vini comemorando, fundo do quarto comum. Texto: <b>"FALSO Vini Jr · REAL prêmio"</b>. Já comunica a piada antes do play.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Punchline rápido.</b> Cortes a cada 2-3s. Música leve de fundo (busca "trending TikTok funny BR" no CapCut). Sem trilha pesada — som ambiente do quarto + voz do aluno carrega tudo. Som-chave: o "pum" do iPad sendo apoiado na mesa no ato III. Detalhe que fixa a atenção no produto.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 15 segundos</div>
+          <p><b>Por que 15s.</b> Piada de "sósia" cabe em 15s. Mais que isso, força gargalhada que cansa. Lead capture rápido — quem viu, viu. Vai pra Stories Meta, TikTok In-Feed e Reels — tempo nativo de todas as plataformas. Custo de produção: ~R$1.500 (cast + camisa CBF emprestada + edição).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Tu também pode.</b>" · Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"Não nasci Vini Jr 😭 mas cravei o placar do Brasil x Marrocos e ganhei iPad. Tu pode também — Bolão Filadd link na bio."</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 06 — MISTERY BOX ============== -->
+<section class="scene" id="r06">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">06</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">35s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">Reels + YouTube Shorts</span>
+          </div>
+        </div>
+        <h3>"Mistery Box da Aprovação" · ele recebeu uma caixa. Olha o que tinha dentro.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>ASMR de unboxing premium</b> — câmera lenta, papel rasgando, conteúdo aparecendo um a um. Cada item da caixa é uma <b>promessa concreta do bolão</b>: camisa da Seleção, caderno Filadd, livro de exercícios, adesivos da Genia, bilhete de Top 5, <b>e o último item é uma carta de bolsa integral</b>. Quem chega no fim do vídeo entende que essa caixa é o que a Filadd manda pros vencedores. CTA: "quer a sua?"</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TikTok</div>
+              <div class="creator">Unboxing ASMR</div>
+              <div class="views">categoria + 100B views</div>
+            </div>
+            <div class="ref-info">
+              <h5>Categoria ASMR Unboxing · YouTube/TikTok</h5>
+              <div class="source">Categoria com over 100 bilhões de views globais · creators referência BR: @lipemenezes, @canalmuitomais · formato: câmera lenta + close + papel rasgando + reveal progressivo · usada por Apple, Glossier, brand boxes em geral</div>
+              <p>Unboxing é uma das categorias mais consumidas do mundo. O cérebro libera dopamina toda vez que algo é revelado. Brand boxes (Glossier, Adidas Confirmed) usam essa mecânica pra <b>criar desejo concreto pelo produto</b> antes mesmo do CTA. A Filadd ainda não tem mistery box (precisa montar) — esse vídeo é tanto promoção quanto criação de demanda pela própria mecânica.</p>
+              <a class="ref-link" href="https://billo.app/blog/ugc-video-examples/" target="_blank" rel="noopener">UGC unboxing examples ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Unboxing tem ARTM (avg retention time) altíssimo — o cérebro quer ver o próximo item. Cada reveal é uma micro-dopamina. Lead capture: quem vê chega no último item (carta da bolsa integral) já querendo. <b>"Como ganho isso?"</b> é a pergunta automática. CTA responde: jogue o bolão.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Produção precisa montar caixa branca premium tipo Apple (R$25/caixa, 50 unidades = R$1.250). Conteúdo: camisa Filadd custom (não da CBF — fica caro demais), caderno espiral, livro de exercícios próprio Filadd, adesivos da Genia, "bilhete físico" do Top 5 (impresso em papel cartonado), e <b>uma carta-promessa de bolsa integral</b> (com selo). Fotografar 1x e reciclar pra todos os Top 5.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Som de papel rasgando + close em caixa branca] "Olha o que a Filadd manda pra quem cravou."</p>
+            <div class="anatomy">Anatomia · Frame inicial é só uma caixa branca com logo Filadd discreto + texto: <b>"O QUE TEM AQUI?"</b>. Som de papel rasgando inicia logo no segundo 1. Pattern interrupt: estética de Apple unboxing aplicada a marca de cursinho — quem vê pensa "isso é da Filadd?".</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:04</div><div class="a"><b>ATO I · A caixa.</b> Close extreme em caixa branca premium. Logo Filadd discreto. Mãos entram, abrem fita. Som ASMR de papel rasgando. Texto: <b>"O QUE TEM AQUI?"</b></div></div>
+            <div class="timeline-step"><div class="t">00:04–00:10</div><div class="a"><b>ATO II · Itens 1-2.</b> Tira camisa Filadd custom (cor amarelo + azul), abre. Bom acabamento. Coloca de lado. Pega caderno espiral. Aluno aparece (mãos + ombro só, sem rosto ainda). Voz suave: <em>"Camisa. Caderno. Tá começando."</em></div></div>
+            <div class="timeline-step"><div class="t">00:10–00:18</div><div class="a"><b>ATO III · Itens 3-4.</b> Livro de exercícios (mostra capa, folhei). Adesivos da Genia (mostra detalhe). Som de papel. Voz: <em>"Livro. Adesivos. Tudo legal..."</em></div></div>
+            <div class="timeline-step"><div class="t">00:18–00:25</div><div class="a"><b>ATO IV · O bilhete físico.</b> Tira envelope cartonado. Abre. Cartão com texto impresso: <b>"VOCÊ É TOP 5 DA SEMANA · BOLÃO FILADD"</b>. Aluno suspira. Voz: <em>"Mas o legal mesmo..."</em></div></div>
+            <div class="timeline-step"><div class="t">00:25–00:32</div><div class="a"><b>ATO V · A bolsa.</b> Última coisa na caixa: envelope dourado lacrado com selo. Aluno abre devagar. Carta de bolsa integral. Câmera fecha no texto: <b>"BOLSA INTEGRAL FILADD 2026"</b>. Voz: <em>"...é isso aqui. Eu nem acredito."</em></div></div>
+            <div class="timeline-step"><div class="t">00:32–00:35</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. A próxima caixa pode ser sua. filadd.com/bolao"</b></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Mesa branca limpa estilo Apple. Iluminação top-down com softbox grande (só uma luz). Itens com cores Filadd (amarelo + azul) entram em destaque. Carta dourada no final cria contraste regio.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm macro. Top-down do início ao fim — câmera nunca sai do plano cenital (todos os itens aparecem na mesma altura). Foco raso. Sem rosto até a carta dourada (ato V), quando câmera levanta levemente pra mostrar o aluno emocionado.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>ASMR Premium. Lembra unboxing da Apple, abertura de carta de Hogwarts, abertura de mistery box de tarot. Cada item respira. Sensação tátil — quem vê quer tocar.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Caixa branca fechada, vista de cima, logo Filadd centralizado discreto, fita amarela em volta. Texto on screen: <b>"O QUE TEM AQUI?"</b>. Frame zero parece teaser de produto. Quem vê quer abrir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Lento, ritmado, ASMR.</b> Cortes a cada 4-5s. Sem trilha musical até o ato V (só ASMR de papel, fita, cartão, suspiro). No ato V (carta dourada) entra trilha emocional discreta (piano simples). Som-chave: o suspiro do aluno antes de abrir a carta. É o que ensina o espectador "isso aqui é importante".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 35 segundos</div>
+          <p><b>Por que 35s.</b> Mistery box precisa de tempo pros 5 itens respirarem. 15s atropela. 60s perde retenção. 35s permite ritmo ASMR + reveal climático + CTA. Roda em Reels (limite 90s confortável), YouTube Shorts (60s) e TikTok In-Feed.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen: <b>"Cravou? Marcou. A próxima caixa pode ser sua. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"Top 5 da semana recebe ISSO 👀 (e ainda tem bolsa integral) · Bolão Filadd link na bio. Próximo jogo do Brasil é amanhã."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 07 — CARTA DO FUTURO ============== -->
+<section class="scene" id="r07">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">07</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">30s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">Reels + YouTube</span>
+          </div>
+        </div>
+        <h3>"Carta do Futuro" · ele recebeu uma carta dele mesmo. De dezembro.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>O aluno acha uma carta do "eu do futuro"</b> — vestido como ele, no quarto dele, em dezembro de 2026, depois do vestibular. A carta conta como tudo começou em junho. Quando ele cravou o palpite do Brasil × Marrocos no bolão da Filadd, foi o primeiro passo de uma cadeia: bolão → Top 5 → bolsa → vestibular passado. <b>Estética indie cinema</b> (lembra "About Time", "Eternal Sunshine"). Lead capture emocional + concreto.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TV</div>
+              <div class="creator">Brahma "Tá Liberado Acreditar"</div>
+              <div class="views">Africa Creative · 2026</div>
+            </div>
+            <div class="ref-info">
+              <h5>Brahma · "Tá Liberado Acreditar" + estética de carta do futuro</h5>
+              <div class="source">Anunciante: Brahma · Agência: Africa Creative · 28% dos brasileiros acreditam no hexa (Genial/Quaest) · A Brahma usa nostalgia + esperança recobrada. A carta do futuro é a mesma mecânica emocional aplicada ao vestibulando: reconciliar dúvida (junho) com promessa (dezembro).</div>
+              <p>A Brahma mostrou que <b>nostalgia + esperança</b> é a fórmula emocional mais forte da Copa 2026. A carta do futuro pega o mesmo mecanismo, mas aplica ao vestibulando: o eu de dezembro escreve pro eu de junho, dizendo "deu certo". Reduz o medo da decepção (que é o que trava matrícula em cursinho).</p>
+              <a class="ref-link" href="https://exame.com/marketing/ta-liberado-acreditar-brahma-quer-reacender-paixao-do-brasileiro-pela-selecao/" target="_blank" rel="noopener">Brahma Exame ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Aluno vestibulando tem <b>medo concreto de decepção</b> ("vou estudar e me ferrar de novo"). Carta do futuro inverte o medo — em vez de "vai dar errado", o eu futuro diz "deu certo, e tudo começou com X". X é o bolão. Lead capture: a carta materializa a promessa em um ato pequeno (cravar palpite). Quem se emocionou tende a converter porque a ação proposta é diminuta.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Aluno em junho. Encontra carta debaixo do livro. Caligrafia parece dele (mesmo ator escreveu). Carta data "12 de dezembro de 2026". Conteúdo da carta é narração em voz over enquanto câmera mostra: cravando palpite no bolão (junho) → vendo iPad chegar (julho) → conta de bolsa integral (agosto) → cartão "APROVADO" do vestibular (dezembro). Cinema indie melancólico-esperançoso.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Achei isso aqui no meu quarto. Não sei como foi parar aí."</p>
+            <div class="anatomy">Anatomia · Plano fechado em mãos segurando carta amarelada. Olhar curioso. Voz baixa, intrigada. Texto on screen: <b>"DEZ DE 2026"</b>. Pattern interrupt: peça publicitária que abre como cena de drama. Quem vê não entende ainda — segura por curiosidade.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · O achado.</b> Mãos segurando carta amarelada. Voz baixa: <em>"Achei isso aqui no meu quarto. Não sei como foi parar aí."</em> Abre a carta. Data no topo: "12 de dezembro de 2026."</div></div>
+            <div class="timeline-step"><div class="t">00:05–00:15</div><div class="a"><b>ATO II · A leitura.</b> Voz off (eu do futuro, mesmo ator): <em>"Querido eu. Quando você ler isso, é junho. Você ainda tá com medo. Mas em dezembro deu certo. Quer saber como começou?"</em> Imagens: junho — close no celular cravando palpite no bolão Filadd. Julho — iPad chegando. Agosto — papel da bolsa integral.</div></div>
+            <div class="timeline-step"><div class="t">00:15–00:22</div><div class="a"><b>ATO III · A revelação.</b> Voz off: <em>"Foi quando cravei o Brasil × Marrocos. 2 × 1. Top 5 da semana. Foi o primeiro 'sim' do ano. E depois disso, tudo virou."</em> Imagem: dezembro — cartão "APROVADO" sendo segurado, sorriso largo.</div></div>
+            <div class="timeline-step"><div class="t">00:22–00:27</div><div class="a"><b>ATO IV · Volta ao presente.</b> Aluno em junho, com a carta na mão, abre o celular. Tela do bolão Filadd. Texto on screen: <em>"30 segundos pra começar."</em></div></div>
+            <div class="timeline-step"><div class="t">00:27–00:30</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. filadd.com/bolao"</b> · Voz: "Seu eu de dezembro tá esperando."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Tons quentes desbotados — sépia leve, amarelo de luz de janela, marrom de madeira. Vibe filme indie brasileiro. As imagens "do futuro" são levemente mais coloridas (esperança crescendo). A carta em si tem textura de papel envelhecido.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm. Planos íntimos, fechados. Câmera fixa. Sem movimentos. As imagens-flashback do futuro são em close (celular, iPad, papel da bolsa, cartão APROVADO). Tudo respirado, lento.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Cinema indie brasileiro contemporâneo. Lembra Anna Muylaert, Marcelo Caetano, "Praia do Futuro". Emocional mas não piegas. Honesto. Quem assiste sente que isso poderia acontecer com ele.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Mãos segurando carta amarelada de papel envelhecido. Caligrafia parece de jovem. Data no topo: "12 de dezembro de 2026". Frame zero parece cena de filme — quem para o scroll é a textura da imagem e o texto inusitado.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Lento, contemplativo, com pulso emocional.</b> Cortes a cada 4-5s. Trilha de piano simples crescendo do ato II ao IV. Som-chave: o som de papel sendo desdobrado no ato II. No ato IV, quando a câmera volta ao presente, a trilha sobe pra emocional. CTA tem 3s de silêncio antes da voz final.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 30 segundos</div>
+          <p><b>Por que 30s.</b> Carta precisa de tempo pra ser lida (10-12s). Imagens-flashback do futuro precisam de tempo pra emocionar (7-10s). Volta ao presente + CTA precisa de 7s. Total 30s. 15s mata o emocional. 60s vira filme curto e perde a função de captação. 30s é o ponto onde a emoção justifica o clique.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Seu eu de dezembro tá esperando.</b>" · Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"Recebi uma carta do meu eu de dezembro. Disse que tudo começou cravando um placar 🇧🇷📚 Bolão Filadd · 30s pra escrever o seu primeiro 'sim' de 2026. Link na bio."</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 08 — A MANCHETE ============== -->
+<section class="scene" id="r08">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">08</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">20s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">Reels + TikTok</span>
+          </div>
+        </div>
+        <h3>"Manchete" · jornal antigo cobre uma proeza ridícula. Que é real.</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Estética de manchete de jornal antigo + reportagem TV anos 90</b> — narrador grave, imagens de arquivo em preto e branco, jornal sendo virado. Manchete: <em>"VESTIBULANDO DE 17 ANOS CRAVA PLACAR DO BRASIL E GANHA iPad — SEM PAGAR NADA"</em>. A peça é toda em paródia de jornalismo formal. No final, quebra: é real, é Bolão Filadd, e qualquer um pode entrar na manchete da próxima semana.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TikTok</div>
+              <div class="creator">Paródia jornal</div>
+              <div class="views">trend BR estável</div>
+            </div>
+            <div class="ref-info">
+              <h5>Paródia "jornal antigo" / "reportagem 90s" · trend BR</h5>
+              <div class="source">Trend recorrente no TikTok BR e Reels · busca "paródia jornal nacional" mostra dezenas de virais · imitam manchete, voz off narrador grave (Cid Moreira / Bonner), cabeçalho de página · uso intensivo: marcas como Burger King BR, Magalu, Reclame Aqui</div>
+              <p>Paródia de jornal funciona como <b>autoridade emprestada</b> — o cérebro processa jornal como "fato verdadeiro". Quando a marca usa estética de jornal pra anunciar prêmio, fica "real" antes de virar paródia. A quebra final ("é mentira, mas o prêmio é real") gera comentário/share garantido.</p>
+              <a class="ref-link" href="https://www.tiktok.com/discover/v%C3%ADdeos-engra%C3%A7ados" target="_blank" rel="noopener">Trend paródia TikTok ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Estética de jornal antigo + voz Cid Moreira é <b>autoridade emprestada gratuita</b> — não precisa explicar que é confiável, o formato já comunica. Quando a manchete é ridícula ("vestibulando ganha iPad sem pagar"), a curiosidade explode. Lead capture: quem vê a "reportagem" quer saber se é real. O CTA responde: é real, tá aberto, link na bio.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Produção: capa de jornal montada em motion graphic (qualquer designer faz em 2h). Voz off de narrador grave (atores de dublagem BR cobram R$200-400 por sessão). Imagens em preto e branco do aluno-protagonista (mesma sessão de outro roteiro pode aproveitar). Reveal final em cores normais quebra a paródia. Custo baixíssimo (motion + voz + 1h gravação).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Voz Cid Moreira / Bonner grave] "Jornal Nacional. Hoje, 20 de junho de 2026."</p>
+            <div class="anatomy">Anatomia · Capa de jornal sendo virada (motion graphic). Som de papel + datilografia + voz grave clássica. Tipografia estilo Folha de SP. Pattern interrupt: peça de marketing que abre como Jornal Nacional. Cérebro processa como "notícia real" por meio segundo.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:04</div><div class="a"><b>ATO I · Manchete.</b> Capa de jornal sendo virada. Voz grave: <em>"Jornal Nacional. Hoje, 20 de junho de 2026."</em> Manchete aparece centralizada: <b>"VESTIBULANDO DE 17 ANOS CRAVA PLACAR DO BRASIL E GANHA iPad — SEM PAGAR NADA"</b></div></div>
+            <div class="timeline-step"><div class="t">00:04–00:12</div><div class="a"><b>ATO II · Reportagem.</b> Cortes estilo Jornal Nacional anos 90 (PB com leve filtro vintage): aluno entrevistado em frente ao quarto, voz grave narrando: <em>"O estudante, morador de Manaus, conta que cravou o placar exato do Brasil × Marrocos em apenas 30 segundos."</em> Aluno fala curto: <em>"Foi só baixar o app, escolher os números e mandar. Não paguei nada."</em></div></div>
+            <div class="timeline-step"><div class="t">00:12–00:17</div><div class="a"><b>ATO III · O prêmio.</b> Voz narrador volta: <em>"O prêmio: iPad de R$3.500 e bolsa integral no cursinho Filadd. Tudo isso por... cravar o placar."</em> Imagens em PB: iPad chegando, papel da bolsa.</div></div>
+            <div class="timeline-step"><div class="t">00:17–00:19</div><div class="a"><b>ATO IV · A quebra.</b> Imagem CORTA pra cor normal. Aluno olha pra câmera, sorri. Voz normal dele: <em>"Tudo isso é real, viu. Não é Jornal Nacional. É Filadd."</em></div></div>
+            <div class="timeline-step"><div class="t">00:19–00:20</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. filadd.com/bolao"</b></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Atos I-III: preto e branco com leve grão de vídeo (filtro VHS suave). Tipografia tipo Folha de SP / O Globo. Capa de jornal com cor sépia. Ato IV: cor natural (vibrante por contraste). Ato V: cores Filadd.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Atos I-III: motion graphic da capa do jornal + cortes "reportagem 90s" (plano americano, fundo neutro tipo TV). Ato IV: 50mm em cor, plano americano fechado, luz natural. Ato V: tela azul plana com tipografia ANTONIO BOLD.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Início parece Jornal Nacional ou reportagem da Globo News. Vira paródia carinhosa. Quem assiste ri da quebra. Vibe Burger King Brasil + Magalu nas paródias deles.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Capa de jornal preto e branco com manchete: <b>"VESTIBULANDO CRAVA PLACAR E GANHA iPad"</b>. Sublinha tipo letreiro de Jornal Nacional. Frame zero parece notícia real — para o scroll por curiosidade real.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Formal lento → corta seco → CTA imediato.</b> Atos I-III: cortes a cada 3-4s, ritmo de jornal televisivo. Ato IV: corte SECO de PB pra cor, sem cross-dissolve. Som-chave: a vinheta de Jornal Nacional (versão genérica, sem direitos) abrindo + datilografia + voz grave + corte seco que QUEBRA a vinheta no ato IV.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 20 segundos</div>
+          <p><b>Por que 20s.</b> Paródia precisa de tempo pra estabelecer registro (8-10s) + entregar manchete absurda (5s) + quebrar e converter (5s). 15s mata o registro. 30s estica e a piada perde. 20s é o sweet spot pra paródia que converte.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Tudo isso é real. Não é Jornal Nacional. É Filadd.</b>" · Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"📰 MANCHETE DO DIA: vestibulando ganha iPad cravando placar do Brasil. Não é Plantão JN, é Bolão Filadd. Próxima manchete pode ser tua. Link na bio."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 09 — STITCH DO VIDENTE ============== -->
+<section class="scene" id="r09">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">09</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">12s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">TikTok Stitch + Duet</span>
+          </div>
+        </div>
+        <h3>"Stitch do Vidente" · aproveita o viral de vidente real da Copa pra responder com o bolão</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Stitch ou Duet de vídeo viral REAL de "vidente da Copa"</b> — pega um TikTok orgânico de cartomante prevendo placar da Copa, e responde com formato split: à esquerda o vidente, à direita aluno mostrando o bolão Filadd. <b>"Concorda? Eu cravei aqui em 30 segundos."</b> Conteúdo nativo de plataforma, custo praticamente zero, distribuição orgânica garantida (algoritmo TikTok favorece stitch).</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TikTok BR</div>
+              <div class="creator">Vidente Copa real</div>
+              <div class="views">millions de views</div>
+            </div>
+            <div class="ref-info">
+              <h5>Vídeos orgânicos de "vidente da Copa" · TikTok BR · milhões de views</h5>
+              <div class="source">Categoria: cartomantes, tarólogos, médiuns brasileiros que viralizaram em 2022 e voltaram em 2026 prevendo placares da Copa · busca TikTok "vidente Copa do Mundo Brasil" retorna dezenas de creators com 100K-2M views cada</div>
+              <p>Vidente da Copa é trend viral nativa do TikTok BR. <b>Stitch / duet</b> é mecânica nativa da plataforma que o algoritmo recompensa com alcance orgânico massivo. A Filadd entra como "voz racional brincalhona" — sem desrespeitar o vidente (não polemiza), só oferece alternativa.</p>
+              <a class="ref-link" href="https://www.tiktok.com/discover/vidente-falando-do-brasil-ma-copa-do-mundo" target="_blank" rel="noopener">Trend vidente Copa ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Stitch é a mecânica que o algoritmo TikTok mais privilegia — vídeos de stitch têm 3-5x mais alcance orgânico do que vídeos isolados. Aproveita audiência pronta (quem viu o vidente vê a resposta). Custo: 30s de gravação no celular. Lead capture nativo da plataforma, link na bio. <b>Diferente de R01 (Vidente próprio), aqui é resposta a vidente real existente — máximo aproveitamento orgânico.</b></p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Equipe de social monitora 1-2x por semana os vídeos virais de "vidente da Copa" (busca rápida no TikTok). Quando aparece um com 100K+ views, faz stitch IMEDIATAMENTE (em 24h). Aluno responde de forma direta e curta: olha pro vídeo, mostra bolão, vira pra câmera. <b>Velocidade > polimento</b>. Custo: 5 minutos de gravação por vez. Pode ser produzido em série (10 stitches por mês).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Vídeo do vidente original tocando] + aluno fazendo cara de "sério?" + texto: "Concorda?"</p>
+            <div class="anatomy">Anatomia · 100% nativo TikTok. Hook não é controlado — depende do vídeo original. Mas a cara do aluno (sobrancelha levantada, sorriso de canto) + texto "Concorda?" é o pattern interrupt. Quem vê pensa "ah, alguém vai responder isso?"</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:04</div><div class="a"><b>ATO I · O vidente original.</b> Vídeo original do vidente tocando (4-5s da fala dele prevendo placar). Aluno aparece no canto inferior fazendo cara intrigada. Texto: <b>"CONCORDA?"</b></div></div>
+            <div class="timeline-step"><div class="t">00:04–00:09</div><div class="a"><b>ATO II · A resposta.</b> Vídeo original encolhe ou pausa. Aluno vira pra câmera: <em>"Não preciso de cartas pra cravar. Tenho o Bolão Filadd."</em> Mostra celular com app aberto, bolão preenchido em 3 segundos.</div></div>
+            <div class="timeline-step"><div class="t">00:09–00:12</div><div class="a"><b>ATO III · Prêmio + CTA.</b> Aponta pra mesa: iPad aparece em close. <em>"Top 5 ganha isso. Link na bio."</em> Tela azul aparece sobreposta no canto: <b>"filadd.com/bolao"</b></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Sem grading. UGC puro. Cores reais do quarto do aluno. Único elemento gráfico: texto on screen branco com sombra preta (padrão TikTok). Tela azul Filadd só aparece como sobreposição final no canto.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>9:16 vertical. Split de stitch nativo do TikTok (vídeo original em cima, resposta em baixo OU lado a lado, depende do design). Aluno em selfie mode, plano médio. Celular vira pra câmera no ato II — close natural.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Conversa de TikTok. Casual, direta, brincalhona. Sem produção formal. Lembra qualquer creator de bolão/aposta respondendo "vidente" — vibe Pedro Certezas / Casimito quando reagem a vídeos de futebol.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Vídeo original do vidente (frame natural do creator) + cara intrigada do aluno + texto "CONCORDA?". Frame zero é o frame do TikTok original — o algoritmo já reconhece e empurra pra quem viu o vidente.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Nativo do TikTok.</b> Cortes a cada 1,5-2s. Sem trilha extra (usa o som original do vidente + voz do aluno). Som-chave: a pausa de 0,3s quando o vídeo do vidente termina e o aluno entra. É o momento de "atenção".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 12 segundos</div>
+          <p><b>Por que 12s.</b> Stitch precisa caber os 4-5s do vídeo original + 7s de resposta. Mais que isso vira meta-vídeo cansativo. 12s é tempo nativo de stitch que converte. Roda só no TikTok (Reels também aceita "remix" mas tem menos alcance orgânico). Custo de produção: literalmente 10 minutos.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Top 5 ganha isso. Link na bio.</b>" · Texto sobreposto: <b>"filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"@viventeoriginal, sem desrespeito 🙏 mas eu cravei aqui em 30s. Bolão Filadd link na bio · Top 5 ganha iPad."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ROTEIRO 10 — TUTORIAL DE 30 SEGUNDOS ============== -->
+<section class="scene" id="r10">
+  <div class="wrap">
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">10</div>
+          <div class="tags">
+            <span class="tag y">Ideia central</span>
+            <span class="tag">25s</span>
+            <span class="tag purple">Lead capture</span>
+            <span class="tag">TikTok + Reels + Stories</span>
+          </div>
+        </div>
+        <h3>"Tutorial de 30 segundos" · como ganhar um iPad sem sair da cama (literal)</h3>
+        <div class="core-idea">
+          <span class="lb">Ideia central</span>
+          <p><b>Tutorial absurdo</b> estilo "como fazer X em 30 segundos" que domina TikTok BR. Estética numerada, screen recording do celular, voz prática didática. Tutorial real, sem ironia: passo a passo de como entrar no bolão e cravar. <b>O absurdo é que funciona</b>: em 3 passos (baixar app, escolher placar, esperar) a pessoa pode ganhar iPad. Lead capture mais direto possível — é literalmente um tutorial do produto, com prêmio mostrado no fim.</p>
+        </div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TikTok BR</div>
+              <div class="creator">@onelsonmiguel + categoria</div>
+              <div class="views">milhões views</div>
+            </div>
+            <div class="ref-info">
+              <h5>Categoria "tutorial 30s" · TikTok BR</h5>
+              <div class="source">Categoria recorrente: "como fazer X em 30 segundos / 5 passos". Top creators: @onelsonmiguel (marketing tutorials), @luizatosca (tutorial life hacks). Mecânica: screen recording + numeração visual + voz prática. Funciona pra qualquer produto digital — direto e converte.</div>
+              <p>Tutorial é uma das categorias com maior <b>save rate</b> do TikTok — a pessoa salva pra usar depois. Lead capture diferente: não é impulso, é decisão informada. Funciona bem pra meio de funil — quem já viu unboxing/vidente, viu o tutorial, e clica. Fonte: dados do @onelsonmiguel que comenta que tutoriais geram CPL 40% menor que outros formatos.</p>
+              <a class="ref-link" href="https://www.tiktok.com/@onelsonmiguel/video/7487696145737698565" target="_blank" rel="noopener">Tutorial referência ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Tutorial elimina a fricção da dúvida. <b>"Será que é difícil? Quanto tempo dá?"</b> são as perguntas que matam conversão de bolão. O tutorial mostra: 3 passos, 30 segundos, grátis. Tira toda objeção. Lead capture: pessoa clica porque já viu o processo inteiro — não tem surpresa, não tem mistério.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Tela do celular gravada em alta resolução (screen recording iOS / Android). Voice over feminina jovem (vibe Genia da Filadd? — caso já tenha sido feita IA dela falando, usar). Numeração grande no canto. Cada passo dura 5-6s. Final mostra o prêmio em close. Custo: 1 hora de gravação + 30 min de edição. Pode rodar em série (versões com prêmios diferentes a cada semana).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>"Como ganhar um iPad sem sair da cama em 30 segundos."</p>
+            <div class="anatomy">Anatomia · Tela inicial: foto de cama bagunçada + iPad em cima. Texto gigante <b>"COMO GANHAR ISSO EM 30s"</b> + numeração 1/2/3. Voz prática direto ao ponto. Pattern interrupt: promessa absurda + estética tutorial conhecida (que cérebro classifica como "vou aprender algo").</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:04</div><div class="a"><b>ATO I · Promessa.</b> Foto cama + iPad. Texto gigante: <b>"COMO GANHAR ISSO EM 30s"</b>. Voz: <em>"Tutorial pra ganhar um iPad sem sair da cama. Vamo lá."</em></div></div>
+            <div class="timeline-step"><div class="t">00:04–00:10</div><div class="a"><b>ATO II · Passo 1.</b> Numeração "1" gigante no canto. Screen recording: abre App Store, busca "Filadd", clica install. Voz: <em>"Passo 1: baixa o app da Filadd. 30 segundos."</em></div></div>
+            <div class="timeline-step"><div class="t">00:10–00:16</div><div class="a"><b>ATO III · Passo 2.</b> Numeração "2". Tela do app, abre o Bolão, escolhe Brasil 2 × 1 Marrocos. Mão clica nos números. Voz: <em>"Passo 2: crava o placar do próximo jogo do Brasil. 15 segundos."</em></div></div>
+            <div class="timeline-step"><div class="t">00:16–00:21</div><div class="a"><b>ATO IV · Passo 3.</b> Numeração "3". Tela mostra "confirmado". Notificação: <em>"Você está no Top 5 desta semana."</em> Voz: <em>"Passo 3: espera. Se cravar, Top 5 da semana ganha iPad. Sem pegadinha."</em></div></div>
+            <div class="timeline-step"><div class="t">00:21–00:25</div><div class="a"><b>CTA.</b> Cena final: aluno na cama com iPad ganho ao lado. Tela azul sobreposta: <b>"Cravou? Marcou. filadd.com/bolao"</b> · Voz: "Sem pegadinha. Tutorial é real."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Limpa tipo tutorial Apple: branco, cinza claro, azul/amarelo Filadd. Numeração grande tipo Antonio Bold em amarelo no canto superior esquerdo. Screen recording 1:1 do app real. Última cena com luz natural (azul de quarto pela manhã).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>9:16 vertical. Atos II-IV: 100% screen recording (mockup com numeração sobreposta em motion). Ato I e V: 1 foto + 1 plano americano respectivamente. Sem complicação.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Tutorial direto e útil. Vibe Apple Notes, Instagram tutorial, vídeo de "5 passos pra X". Não tem ironia (mesmo a promessa sendo absurda). Confiável.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Frame inicial</h5>
+              <p>Cama bagunçada + iPad em cima + texto <b>"COMO GANHAR ISSO EM 30s"</b> + numeração "1/3" no canto. Frame zero comunica "vou aprender algo prático". Atrai save antes do play.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Direto, claro, prático.</b> Cortes a cada 5-6s (um por passo). Numeração entra em cada passo com pequena animação (zoom in). Trilha de fundo: lo-fi instrumental clean (busca "tutorial background" no banco). Som-chave: tap do dedo no celular em cada clique. Lembra a categoria "satisfying tutorial".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo · 25 segundos</div>
+          <p><b>Por que 25s.</b> Tutorial precisa de tempo pra mostrar 3 passos + intro + CTA com prêmio (5+6+6+6+2). Promete "30 segundos" e cumpre em 25 — sobra pra demonstrar resultado. 15s mata a clareza. 45s perde retenção. 25s é o sweet spot tutorial que converte. Save rate alto (vai pra pasta favoritos).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Sem pegadinha. Tutorial é real.</b>" · Texto: <b>"Cravou? Marcou. filadd.com/bolao"</b></p>
+            <p class="copy">Legenda do post: <em>"📌 Salva esse tutorial. Em 30s tu tá no Bolão da Filadd com chance real de iPad. Próximo Brasil joga essa semana. Link na bio."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="summary" id="summary">
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow amr">Resumo · 10 ideias prontas pra brief de produção</span>
+    <h2>As 10 ideias, <span class="y">em uma tela.</span></h2>
+    <p class="lede">Cada linha é uma ideia criativa central pensada pra captação de lead. Use a coluna "ideia central" pra decidir o que entra primeiro em produção. Refs reais nas colunas finais.</p>
+    <div class="sum-table">
+      <div class="sum-row head">
+        <div class="sum-cell">#</div>
+        <div class="sum-cell">Roteiro · ideia central</div>
+        <div class="sum-cell">Por que capta lead</div>
+        <div class="sum-cell">Tempo</div>
+        <div class="sum-cell">Ref principal</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">01</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Vidente</b> · aluna místico revela que só joga bolão</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Twist humor + prêmio mostrado</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">22s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Trend TikTok "Vidente Copa"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">02</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Bilhete</b> · estética loteria física vira app</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Memória afetiva + sem custo</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">18s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Estrela Bet "Bolão Milionário"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">03</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>O Apito</b> · som como recurso narrativo</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Cinema + ancoragem sonora + iPad no final</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Clash Royale × Globo (DAVID SP)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">04</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Trailer</b> · épico Hollywood do vestibulando</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Cinema épico + reveal de "é real"</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill red">45s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Adidas "Backyard Legends"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">05</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Sósia</b> · aluno como Vini Jr no quarto comum</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Identificação + humor + prêmio rápido</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">15s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Trend "Sósia" + Nike Universe of Football</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">06</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Mistery Box</b> · ASMR unboxing premium</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>ARTM alto + dopamine reveal + bolsa final</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">35s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Categoria ASMR Unboxing global</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">07</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Carta do Futuro</b> · ele de dezembro escreve pro de junho</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Emoção honesta + redução do medo</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Brahma "Tá Liberado Acreditar"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">08</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Manchete</b> · paródia jornal antigo</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Autoridade emprestada + curiosidade</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">20s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Paródia "Jornal Nacional" TikTok BR</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">09</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Stitch Vidente</b> · resposta nativa a viral real</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Alcance orgânico + custo zero + nativo TikTok</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill green">12s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Vídeos virais de vidente Copa</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">10</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span><b>Tutorial</b> · como ganhar iPad em 30s</div>
+        <div class="sum-cell"><span class="mb-lbl">Captura:</span>Elimina fricção + save alto + decisão informada</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">25s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>@onelsonmiguel + categoria tutorial</div>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:36px"><b>Ordem sugerida de produção:</b> 1) <b>R09 Stitch</b> (custo zero, começa rodando essa semana) · 2) <b>R10 Tutorial</b> (1h de produção, conversão alta) · 3) <b>R05 Sósia</b> (custo baixíssimo, humor mass appeal) · 4) <b>R01 Vidente</b> (custo médio, viral natural) · 5) <b>R02 Bilhete</b> · 6) <b>R08 Manchete</b> · 7) <b>R06 Mistery Box</b> (depende da caixa real, mais complexo) · 8) <b>R03 O Apito</b> (alto cinema) · 9) <b>R04 Trailer</b> (mais caro, mas hero piece) · 10) <b>R07 Carta do Futuro</b> (cinematográfico, retenção brand-driven).</p>
+  </div>
+</section>
+
+<footer>
+  Roteiros v3 · Bolão Copa Filadd · Lead capture criativo · <span class="y">Refeito do zero a partir do feedback Theus Mattos · Maio 2026</span>
+</footer>
+
+</body>
+</html>

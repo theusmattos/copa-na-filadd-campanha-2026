@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Banco de Referências · Copa Filadd 2026</title>
+<meta name="description" content="26 referências de criativos de Copa do Mundo (marca, viral e bolão) com plano de adaptação para o Bolão e a campanha A gente joga junto." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --azul-aprovado:#2424FF;
+  --azul-focado:#03036E;
+  --amarelo:#FFBA09;
+  --roxo-med:#8900FF;
+  --branco:#FFFFFF;
+  --off:#F4F4F8;
+  --ink:#0A0A14;
+  --ink-soft:#3A3A52;
+  --ink-mute:#7A7A92;
+  --line:#E5E5EF;
+  --line-soft:#EFEFF6;
+  --br-green:#009C3B;
+  --maxw:1320px;
+  --pad:clamp(20px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Antonio',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1;margin:0 0 .4em;text-transform:uppercase}
+h4,h5{font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:-.01em;margin:0 0 .4em}
+p{margin:0 0 1em;color:var(--ink-soft)}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:500;display:inline-block;margin-bottom:14px}
+.eyebrow.amr{color:var(--amarelo)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:var(--branco);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;gap:18px;padding:14px var(--pad);max-width:var(--maxw);margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-brand{font-family:'Antonio',sans-serif;font-weight:700;font-size:22px;white-space:nowrap;color:var(--azul-focado);text-transform:uppercase;letter-spacing:0;display:flex;align-items:center;gap:10px}
+.nav-brand .ball{width:12px;height:12px;background:var(--amarelo);border-radius:50%}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 12px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;transition:all .2s;font-weight:500}
+.nav-links a:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+/* HERO */
+.hero{position:relative;background:var(--azul-aprovado);color:var(--branco);overflow:hidden;padding:clamp(60px,9vh,110px) 0 clamp(70px,11vh,130px)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);opacity:.7;pointer-events:none}
+.hero::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.18),transparent 70%);top:-200px;right:-200px;pointer-events:none}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--branco);margin-bottom:28px;font-weight:500;backdrop-filter:blur(8px)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--amarelo);box-shadow:0 0 14px var(--amarelo);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+.hero h1{font-size:clamp(48px,9vw,120px);font-weight:700;line-height:.9;letter-spacing:-.02em;margin-bottom:24px;color:var(--branco)}
+.hero h1 .y{color:var(--amarelo)}
+.hero h1 .sub-tag{display:block;font-size:clamp(18px,1.8vw,26px);font-family:'Poppins',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.85);margin-top:18px;line-height:1.35;max-width:62ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;color:rgba(255,255,255,.7);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;margin-top:40px;font-weight:500}
+.hero-meta .sep{width:14px;height:1px;background:rgba(255,255,255,.3)}
+
+/* PLAYBOOK DE ADAPTAÇÃO */
+.playbook{background:var(--azul-focado);color:var(--branco);padding:clamp(60px,10vh,110px) 0;position:relative;overflow:hidden}
+.playbook::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(36,36,255,.25),transparent 70%);bottom:-350px;left:-300px;pointer-events:none}
+.playbook h2{font-size:clamp(32px,4.4vw,60px);color:var(--branco);max-width:20ch;margin-bottom:36px}
+.playbook h2 .y{color:var(--amarelo)}
+.playbook-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative;z-index:2}
+@media(max-width:960px){.playbook-grid{grid-template-columns:1fr}}
+.pb-card{padding:24px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;backdrop-filter:blur(10px)}
+.pb-card .nm{font-family:'Antonio',sans-serif;font-size:48px;color:var(--amarelo);line-height:.9;margin-bottom:8px;font-weight:700}
+.pb-card h5{font-family:'Antonio',sans-serif;font-size:20px;color:var(--branco);text-transform:uppercase;margin-bottom:10px}
+.pb-card p{font-size:13.5px;color:rgba(255,255,255,.78);margin:0;line-height:1.55}
+
+/* SECTION */
+section{padding:clamp(60px,9vw,110px) 0;position:relative}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:36px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(32px,4.4vw,60px);font-weight:700;max-width:22ch;color:var(--azul-focado);letter-spacing:-.01em}
+.section-head h2 .y{color:var(--amarelo)}
+.section-head h2 .b{color:var(--azul-aprovado)}
+.section-head .lede{color:var(--ink-soft);font-size:16px;max-width:50ch;line-height:1.6;font-weight:400}
+.section-head .stat{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);font-weight:500;padding:6px 12px;background:var(--off);border-radius:8px;display:inline-block}
+
+/* CATEGORIA BANDA */
+.cat-band{padding:10px 0;text-align:center;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:var(--branco)}
+.cat-band.b1{background:var(--azul-aprovado)}
+.cat-band.b2{background:var(--amarelo);color:var(--azul-focado)}
+.cat-band.b3{background:var(--azul-focado)}
+.cat-band.b4{background:var(--roxo-med)}
+.cat-band.b5{background:var(--br-green)}
+
+/* CARDS DE REFERÊNCIA */
+.refs{background:var(--off)}
+.refs.alt{background:var(--branco)}
+.refs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}
+@media(max-width:900px){.refs-grid{grid-template-columns:1fr}}
+.ref{background:var(--branco);border:1px solid var(--line);border-radius:18px;padding:26px;transition:all .2s;display:flex;flex-direction:column;gap:0}
+.refs.alt .ref{background:var(--off)}
+.ref:hover{transform:translateY(-3px);border-color:var(--azul-aprovado);box-shadow:0 18px 40px rgba(36,36,255,.08)}
+.ref-head{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:14px}
+.ref-meta{display:flex;flex-wrap:wrap;gap:6px}
+.ref-tag{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;padding:4px 8px;border-radius:6px;font-weight:600;background:var(--off);color:var(--ink-soft)}
+.refs.alt .ref-tag{background:var(--branco);border:1px solid var(--line)}
+.ref-tag.plat{background:var(--azul-aprovado);color:var(--branco)}
+.ref-tag.cat{background:var(--amarelo);color:var(--azul-focado)}
+.ref-tag.year{background:transparent;border:1px solid var(--line);color:var(--ink-mute)}
+.ref-num{font-family:'Antonio',sans-serif;font-size:38px;line-height:.85;color:var(--azul-aprovado);font-weight:700}
+.ref h3{font-family:'Antonio',sans-serif;font-size:26px;color:var(--azul-focado);margin:0 0 4px;text-transform:uppercase;line-height:1.02}
+.ref .brand{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600;margin-bottom:14px}
+.ref .what{font-size:14px;color:var(--ink-soft);margin:0 0 12px;line-height:1.55}
+.ref .why{font-size:13.5px;color:var(--ink);margin:0 0 16px;line-height:1.55;padding:12px 14px;background:var(--off);border-left:3px solid var(--azul-aprovado);border-radius:0 8px 8px 0}
+.refs.alt .ref .why{background:var(--branco)}
+.ref .why b{color:var(--azul-focado)}
+.ref .play{background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));color:var(--branco);padding:18px;border-radius:14px;margin-top:auto;position:relative}
+.ref .play .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--amarelo);font-weight:600;margin-bottom:8px;display:block}
+.ref .play .ttl{font-family:'Antonio',sans-serif;font-size:16px;color:var(--branco);text-transform:uppercase;margin-bottom:8px;line-height:1.15}
+.ref .play p{font-size:13px;color:rgba(255,255,255,.92);margin:0 0 10px;line-height:1.5}
+.ref .play .slogan{display:inline-block;font-family:'Antonio',sans-serif;font-size:14px;color:var(--amarelo);text-transform:uppercase;letter-spacing:.02em;padding:5px 10px;background:rgba(255,186,9,.12);border:1px solid rgba(255,186,9,.3);border-radius:6px;margin-top:4px}
+.ref .link{margin-top:14px;display:inline-flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--azul-aprovado);font-weight:600;padding:8px 12px;background:transparent;border:1px solid var(--azul-aprovado);border-radius:8px;align-self:flex-start;transition:all .15s}
+.ref .link:hover{background:var(--azul-aprovado);color:var(--branco)}
+.ref .link .arr{font-family:'Antonio',sans-serif;font-size:14px}
+
+/* RESUMO / MATRIZ */
+.matrix{background:var(--azul-aprovado);color:var(--branco);position:relative;overflow:hidden}
+.matrix::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.16),transparent 70%);top:-300px;right:-300px;pointer-events:none}
+.matrix h2{color:var(--branco);max-width:24ch}
+.matrix h2 .y{color:var(--amarelo)}
+.matrix .lede{color:rgba(255,255,255,.85)}
+.matrix-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px;position:relative;z-index:2}
+@media(max-width:1000px){.matrix-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.matrix-grid{grid-template-columns:1fr}}
+.mx{padding:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;backdrop-filter:blur(8px)}
+.mx .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);margin-bottom:8px;font-weight:600;display:block}
+.mx h5{font-family:'Antonio',sans-serif;font-size:22px;color:var(--branco);margin-bottom:8px;text-transform:uppercase}
+.mx p{font-size:13px;color:rgba(255,255,255,.82);margin:0;line-height:1.5}
+
+/* NEXT */
+.next{background:var(--azul-focado);color:var(--branco);text-align:center;padding:clamp(60px,9vh,110px) 0}
+.next h2{font-size:clamp(32px,4.4vw,60px);color:var(--branco);max-width:24ch;margin:0 auto 24px}
+.next h2 .y{color:var(--amarelo)}
+.next p{color:rgba(255,255,255,.85);max-width:60ch;margin:0 auto 28px;font-size:16px}
+.next-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}
+.next-btn{padding:14px 22px;border-radius:10px;font-family:'Antonio',sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:.02em;font-weight:600;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
+.next-btn.y{background:var(--amarelo);color:var(--azul-focado)}
+.next-btn.g{background:transparent;border:2px solid rgba(255,255,255,.3);color:var(--branco)}
+
+/* FOOTER */
+footer{padding:40px 0;background:var(--azul-focado);color:rgba(255,255,255,.6);text-align:center;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:500;border-top:1px solid rgba(255,255,255,.08)}
+footer .y{color:var(--amarelo)}
+
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="./index.html"><span class="ball"></span> Copa Filadd · Referências</a>
+    <div class="nav-links">
+      <a href="#playbook">Como ler</a>
+      <a href="#icones">Ícones de marca</a>
+      <a href="#humor">Humor & torcida</a>
+      <a href="#bolao">Bolão & fantasy</a>
+      <a href="#viral">Viral orgânico</a>
+      <a href="#ecossistema">Ecossistema 2026</a>
+      <a href="#matriz">Matriz</a>
+      <a href="./copa-filadd-2026-v3.html">↩ Playbook v3</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="hero-pill"><span class="dot"></span>Banco de Referências · v1 · 26 cases</div>
+    <h1>De onde a <span class="y">gente parte.</span><span class="sub-tag">26 criativos de Copa do Mundo — entre marca, viral e bolão — com plano de adaptação direto pra mecânica do Bolão Filadd e o conceito <b>A gente joga junto</b>.</span></h1>
+    <div class="hero-meta">
+      <span>5 categorias</span><span class="sep"></span>
+      <span>3 plataformas (Instagram · TikTok · YouTube)</span><span class="sep"></span>
+      <span>Brasil + global</span><span class="sep"></span>
+      <span>Curadoria estratégica · 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYBOOK DE ADAPTAÇÃO -->
+<section class="playbook" id="playbook">
+  <div class="wrap">
+    <span class="eyebrow amr">Como ler este documento</span>
+    <h2>Toda referência aqui responde à <span class="y">mesma pergunta:</span> como esse criativo vira gasolina pro Bolão Filadd?</h2>
+    <div class="playbook-grid">
+      <div class="pb-card">
+        <div class="nm">01</div>
+        <h5>O que é</h5>
+        <p>Resumo rápido do criativo — marca, conceito, ano, plataforma original. Pra você entender o ponto de partida em 5 segundos.</p>
+      </div>
+      <div class="pb-card">
+        <div class="nm">02</div>
+        <h5>Por que funciona</h5>
+        <p>O insight psicológico ou cultural que faz o conteúdo viralizar. É isso que a gente quer copiar — não a execução, o mecanismo.</p>
+      </div>
+      <div class="pb-card">
+        <div class="nm">03</div>
+        <h5>Como aplicar no Bolão</h5>
+        <p>O passo concreto: que peça a gente produz, qual slogan modular usa (<b>Cravou? Marcou.</b> / <b>A gente joga junto</b>), qual time entra, e qual o CTA pra escalar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 1 — ÍCONES DE MARCA -->
+<div class="cat-band b1">Bloco 1 · 01 a 05 · Ícones de marca · Cinematografia, emoção e épica de Copa</div>
+<section class="refs" id="icones">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Categoria 1 · Brand films cinematográficos</span>
+        <h2>Os <span class="b">épicos</span> que a gente <span class="y">não imita</span>, mas inspira a estrutura.</h2>
+      </div>
+      <p class="lede">Filmes de 60s a 3min, alto investimento, narrativa de "destino" e elenco de craques. A Filadd não vai produzir nada nesse orçamento, mas a <b>estrutura narrativa</b> (jornada → momento de decisão → consequência mundial) cabe num filme de 60s nosso com aluno + Time Titular + bolão.</p>
+    </div>
+
+    <div class="refs-grid">
+
+      <!-- 1. NIKE WRITE THE FUTURE -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Brand film</span>
+            <span class="ref-tag year">2010</span>
+          </div>
+          <div class="ref-num">01</div>
+        </div>
+        <h3>Write the Future</h3>
+        <div class="brand">Nike Football · dir. Alejandro González Iñárritu</div>
+        <p class="what">3 minutos onde cada jogada de Drogba, Rooney, Ronaldinho e Cristiano escreve um futuro paralelo: estádios renomeados, capa de revista, estátua, ruína. 50 milhões de views, Nike ultrapassa a Adidas como #1 em futebol.</p>
+        <div class="why"><b>Por que funciona:</b> o filme transforma uma <b>jogada de 3 segundos</b> num evento que muda a vida de uma nação. O torcedor vê a si mesmo no jogador: o palpite dele também pode "escrever o futuro".</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Filme manifesto "O palpite que escreve o futuro"</div>
+          <p>Refilmar a estrutura com aluno do cursinho: ele crava 2x1 no Brasil x Argentina, e cada frame seguinte é o efeito borboleta — o grupo no zap explode, vira meme no X, ele ganha o PS5, passa no vestibular, conta pros netos. Final: <b>Cravou? Marcou.</b> Versão 60s YouTube / 15s Reels / 9s Pre-roll.</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://en.wikipedia.org/wiki/Write_the_Future" target="_blank" rel="noopener">Ver case completo <span class="arr">→</span></a>
+      </div>
+
+      <!-- 2. ADIDAS BACKYARD LEGENDS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Brand film</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">02</div>
+        </div>
+        <h3>Backyard Legends</h3>
+        <div class="brand">Adidas · Timothée Chalamet + Messi + Bad Bunny + Yamal + Bellingham</div>
+        <p class="what">Filme de 5 minutos onde Chalamet recruta um time de pelada num bairro contra uma turma invicta. Cast tem Messi e Lamine Yamal jogando lado a lado com versões IA-rejuvenescidas de Beckham, Zidane e Del Piero. Conceito: "lendas nascem no quintal".</p>
+        <div class="why"><b>Por que funciona:</b> tira o craque do estádio e coloca no chão batido — democratiza a Copa. <b>Qualquer um pode ser lenda</b>, basta entrar em campo. É o mesmo eixo emocional do "qualquer um pode passar no vestibular".</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Série "Lendas do bolão"</div>
+          <p>Reels semanais retratando o líder do ranking do bolão como "lenda do quintal" — não é o craque famoso, é o aluno de Manaus que cravou 3 jogos seguidos. Aplica o frame Filadd: cursinho como quintal, bolão como recrutamento, vestibular como Copa. Conecta com o Time Titular (11 benefícios = 11 jogadores).</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://news.designrush.com/adidas-backyard-legends-world-cup-campaign" target="_blank" rel="noopener">Ver case completo <span class="arr">→</span></a>
+      </div>
+
+      <!-- 3. PEPSI MERCENÁRIOS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Brand film</span>
+            <span class="ref-tag year">2002</span>
+          </div>
+          <div class="ref-num">03</div>
+        </div>
+        <h3>Pepsi Mercenários</h3>
+        <div class="brand">Pepsi · Beckham, Ronaldinho, Totti, Roberto Carlos</div>
+        <p class="what">Comercial setado num cenário medieval onde os craques são mercenários defendendo uma vila. Clímax: cobrança de falta do Roberto Carlos detona um tsunami de Pepsi. Virou referência de "elenco mundial em narrativa de fantasia".</p>
+        <div class="why"><b>Por que funciona:</b> sai do realismo e entrega <b>licença total pra absurdo</b>. Permite contar uma história épica sem precisar gravar em estádio real. Ótimo template pra produção controlada.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Curta "Os 11 do Time Titular"</div>
+          <p>Episódio animado/fantasia em que os 11 benefícios da Filadd (já escalados como Time Titular) viram personagens com poderes — o Banco de Questões é um arqueiro, a Genia é o mago, a Comunidadd é o atacante. Eles entram no "Estádio Vestibular" pra enfrentar o "Time do Vestibular". O Bolão é a senha pra entrar no time.</p>
+          <span class="slogan">O vestiário do Time Filadd.</span>
+        </div>
+        <a class="link" href="https://www.footballbusinessjournal.com/post/pepsi-s-legendary-top-10-football-ads-a-legacy-of-iconic-moments" target="_blank" rel="noopener">Ver case completo <span class="arr">→</span></a>
+      </div>
+
+      <!-- 4. COCA-COLA JUMP -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Anthem</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">04</div>
+        </div>
+        <h3>JUMP — Anthem World Cup 26</h3>
+        <div class="brand">Coca-Cola · J Balvin, Travis Barker, Steve Vai, Amber Mark</div>
+        <p class="what">Coca-Cola reimagina o "Jump" do Van Halen como hino oficial da Copa 2026. Música + videoclipe animado com Lamine Yamal aparecendo. Distribuída por todos os canais Coca + Spotify oficial.</p>
+        <div class="why"><b>Por que funciona:</b> hino é o ativo mais reutilizável de uma campanha — vira jingle de live, trilha de Reel, fundo de stories. <b>Você consome a marca sem ver a marca</b>, só ouvindo.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Trilha oficial do Bolão · "Cravou? Marcou."</div>
+          <p>Encomendar uma trilha-jingle de 30s com letra simples sobre "cravar o placar" — vira a abertura de toda live do YouTube, todo Reels do bolão, todo story da Genia. Baixo custo, alta repetição. Pode ser parceria com um beatmaker do TikTok brasileiro (categoria com baixíssimo CAC).</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.coca-colacompany.com/media-center/coca-cola-and-real-thing-records-unite-music-culture-and-football-with-coca-colas-anthem-for-fifa-world-cup-2026-jump-release" target="_blank" rel="noopener">Ver case completo <span class="arr">→</span></a>
+      </div>
+
+      <!-- 5. BRAHMA TÁ LIBERADO ACREDITAR -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Brand film</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">05</div>
+        </div>
+        <h3>Tá Liberado Acreditar</h3>
+        <div class="brand">Brahma · Ronaldo Fenômeno + Carlo Ancelotti</div>
+        <p class="what">Curta-metragem ambientado no centro do Rio, contrasta o pessimismo do brasileiro com a paixão que sobrevive a tudo. Mistura cenas inéditas com imagens históricas da Seleção. Posição estratégica: dar permissão pro brasileiro acreditar de novo.</p>
+        <div class="why"><b>Por que funciona:</b> ataca a <b>resistência emocional</b> antes da promessa. Brasileiro pós-7×1 chega cético — Brahma fala "tá tudo bem, pode acreditar de novo". É o mesmo bloqueio do aluno: "vou tentar mais um vestibular e me decepcionar".</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Manifesto "Tá liberado acreditar — no Hexa e na sua aprovação"</div>
+          <p>Aproveitar o frame cultural que a Brahma está estabelecendo agora. Filme de abertura da campanha Filadd amarrando as duas Copas (a do Brasil + a sua) sob o mesmo gancho: "Tá liberado acreditar". Roteiro 60s com aluno relutante que entra no bolão e na Filadd ao mesmo tempo. Manifesto da campanha (Ato 1 — Convocação) recebe esse insight emocional.</p>
+          <span class="slogan">A vida tem duas Copas esse ano.</span>
+        </div>
+        <a class="link" href="https://www.youtube.com/watch?v=4LFKJCLMIao" target="_blank" rel="noopener">Ver no YouTube <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 2 — HUMOR & TORCIDA -->
+<div class="cat-band b2">Bloco 2 · 06 a 10 · Humor, torcida e fan culture · O lado emocional e do cotidiano</div>
+<section class="refs alt" id="humor">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Categoria 2 · Humor, torcida e cotidiano</span>
+        <h2>Onde o vestibulando <span class="y">se reconhece.</span></h2>
+      </div>
+      <p class="lede">Referências que tratam o torcedor como protagonista, não a marca. Tom mais leve, mais barato de produzir, e por isso o terreno mais fértil pro nosso volume de conteúdo (Reels e TikToks semanais durante a Copa).</p>
+    </div>
+
+    <div class="refs-grid">
+
+      <!-- 6. HEINEKEN CHEERS TO ALL FANS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · Insta</span>
+            <span class="ref-tag cat">Inclusão</span>
+            <span class="ref-tag year">2023</span>
+          </div>
+          <div class="ref-num">06</div>
+        </div>
+        <h3>Cheers to All Fans (Men Included)</h3>
+        <div class="brand">Heineken · UEFA Champions League · Alex Scott</div>
+        <p class="what">Comercial inverte estereótipos: mulheres gritando gol e fazendo barulho num bar enquanto três caras tentam acompanhar do lado. Outra cena: mulher larga o encontro pra ver o jogo no banheiro. Brincadeira séria com a invisibilização da torcedora.</p>
+        <div class="why"><b>Por que funciona:</b> humor inteligente que <b>desafia estereótipo sem ser militante</b>. Conquista o público feminino (metade do vestibular) sem alienar o masculino.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Série "A craque do bolão é mulher"</div>
+          <p>Reels que mostram alunas no Top 5 do ranking semanal — narrativa "ninguém esperava, ela cravou os 8 jogos". Conecta direto com a inclusão da campanha (já temos a Genia como voz da marca, mulher IA). Resolve o gap óbvio de campanha de Copa = público masculino. Pode virar até série de depoimentos com aprovadas que jogam bolão.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://www.youtube.com/watch?v=kokU6AeAbEw" target="_blank" rel="noopener">Ver no YouTube <span class="arr">→</span></a>
+      </div>
+
+      <!-- 7. PEPSI FOOTBALL NATION -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · Insta</span>
+            <span class="ref-tag cat">Fan culture</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">07</div>
+        </div>
+        <h3>Football Nation</h3>
+        <div class="brand">Pepsi · Beckham, Salah, Vinícius Jr, Alexia Putellas, Gordon Ramsay</div>
+        <p class="what">Pepsi cria uma "Nação do Futebol" imaginária onde torcedores votam quais regras manter e quais jogar fora. Foco em <b>rituais, supersticões, discussões clássicas</b> ("é futebol ou soccer?", camisa da sorte). Trata o fandom como o produto, não o jogo.</p>
+        <div class="why"><b>Por que funciona:</b> entra direto na cultura do grupo de zap. <b>Torcedor adora discutir regra</b>, e a marca vira o palco dessa discussão. Insight de ouro: o fã não quer só assistir, quer opinar e ter razão.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Comunidadd "Tribunal do Bolão"</div>
+          <p>No grupo de WhatsApp da Comunidadd Filadd, criar enquetes semanais polêmicas: "vale 2×1 com gol nos acréscimos?", "se for pênalti, conta como gol?", "quem cravou e errou por 1 gol merece ponto?". Reels disso viram a parte de zoeira da campanha. Conecta com X/Twitter — Genia entra na discussão como voz da marca.</p>
+          <span class="slogan">O vestiário do Time Filadd.</span>
+        </div>
+        <a class="link" href="https://www.thedrum.com/news/world-cup-2026-watch-all-the-latest-ads" target="_blank" rel="noopener">Ver no The Drum <span class="arr">→</span></a>
+      </div>
+
+      <!-- 8. COCA COLA ALL THE FEELS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · TV</span>
+            <span class="ref-tag cat">Emoção</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">08</div>
+        </div>
+        <h3>All the Feels</h3>
+        <div class="brand">Coca-Cola · Pulisic, Tom Brady, Zlatan, Mike Eruzione</div>
+        <p class="what">Filme que oscila entre os extremos emocionais do torcedor durante a Copa — Pulisic faz gol contra o Brasil nos acréscimos, segue tela dividida com cenas de pranto e euforia em casas, bares e ônibus. Trilha sobe junto com a montagem.</p>
+        <div class="why"><b>Por que funciona:</b> <b>reação > resultado</b>. O torcedor lembra mais do grito que deu do que do gol em si. Coca constrói memória afetiva atrelando a marca à intensidade do momento.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"O momento Cravou? Marcou."</div>
+          <p>Pedir pros alunos da Comunidadd gravarem reação ao acertar o palpite na hora do gol. Montagem semanal vira Reels de 30s — split screen entre o gol e o aluno surtando em casa. UGC puro, custo zero, autenticidade alta. Encaixa direto na régua de qualificação progressiva (bolão = engajamento, UGC = social proof).</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.givemesport.com/best-world-cup-2026-ads/" target="_blank" rel="noopener">Ver ranking GiveMeSport <span class="arr">→</span></a>
+      </div>
+
+      <!-- 9. ITAU MOSTRA TUA FORÇA -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · TV</span>
+            <span class="ref-tag cat">Hino</span>
+            <span class="ref-tag year">2022</span>
+          </div>
+          <div class="ref-num">09</div>
+        </div>
+        <h3>Mostra tua força, Brasil</h3>
+        <div class="brand">Itaú · Neymar + Ludmilla, João Gomes, Kawe, Timbalada</div>
+        <p class="what">Releitura do hino de 2014. Filme com Neymar interagindo com um jovem fã, mostrando a jornada pra virar craque. Encerramento: "nunca se contente em ser o segundo melhor". Trilha cantada por estrelas da música nordestina, samba e pagode.</p>
+        <div class="why"><b>Por que funciona:</b> <b>jovem fã + mentor</b> é a estrutura mais replicada e que mais converte em educação. Itaú comprou a paternidade simbólica do "passar do segundo pra primeiro lugar" — exatamente o que vestibular vende.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Série "O craque que te ensinou a cravar"</div>
+          <p>Filme de 60s com aprovado da Filadd no papel do Neymar e aluno novo no papel do fã — o aprovado ensina como pensar o palpite ("não chuta, calcula. é tipo redação."). Conecta diretamente o Bolão à mecânica de estudo. Pode virar série permanente com mentores da Filadd. Substitui o "garoto-propaganda craque" por "aprovado real".</p>
+          <span class="slogan">Treino aberto.</span>
+        </div>
+        <a class="link" href="https://timesbrasil.com.br/colunas/fabrica-de-midia/convocacao-de-neymar-para-a-copa-virou-operacao-milionaria-alem-do-futebol/" target="_blank" rel="noopener">Ver matéria Times Brasil <span class="arr">→</span></a>
+      </div>
+
+      <!-- 10. SKOL TRAVE -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Humor</span>
+            <span class="ref-tag year">2006</span>
+          </div>
+          <div class="ref-num">10</div>
+        </div>
+        <h3>Trave (Brasil x Argentina)</h3>
+        <div class="brand">Skol · clássico publicitário</div>
+        <p class="what">Comercial humorístico onde a trave do gol literalmente tem pés e se mexe pra ajudar o Brasil contra a Argentina. Virou meme atemporal, ainda circula em compilações de "melhores propagandas de Copa".</p>
+        <div class="why"><b>Por que funciona:</b> humor visual com <b>licença total pra absurdo</b>. Sem celebridade, sem produção mega, só ideia. Permite rir do clichê Brasil × Argentina sem ofender ninguém — e o jogo Brasil × Argentina é exatamente um dos 9 confirmados do Bolão LatAm.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Série de Reels "Truques do Bolão LatAm"</div>
+          <p>Reels animados curtinhos (15s) com "truques absurdos" pra ajudar no palpite — pé da trave, vento argentino, "feijoada pré-jogo". Bloco semanal de zoeira na Comunidadd. A piada é a Filadd estar do lado do aluno torcendo pra ele cravar, com licença total pra escrachar. Encaixa no DNA do X/Twitter da campanha.</p>
+          <span class="slogan">Antes do apito.</span>
+        </div>
+        <a class="link" href="https://mundodasmarcas.blogspot.com/2006/05/skol-cerveja-que-desce-redondo.html" target="_blank" rel="noopener">Ver histórico da marca <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 3 — BOLÃO / FANTASY / APOSTAS -->
+<div class="cat-band b3">Bloco 3 · 11 a 15 · Bolão, Fantasy e Apostas · A mecânica que a gente está vendendo</div>
+<section class="refs" id="bolao">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Categoria 3 · Bolão e fantasy</span>
+        <h2>O que <span class="b">o mercado</span> já testou — pra gente não <span class="y">reinventar a roda.</span></h2>
+      </div>
+      <p class="lede">Bets e fantasy investem milhões testando que tipo de comunicação faz o usuário fazer o primeiro palpite. A Filadd não vende aposta — vende vestibular — mas a mecânica de "primeiro palpite grátis" é a melhor escola pra desenhar a captação do nosso bolão.</p>
+    </div>
+
+    <div class="refs-grid">
+
+      <!-- 11. BURGER KING STEVENAGE -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">FIFA · Insta · YouTube</span>
+            <span class="ref-tag cat">Ativação</span>
+            <span class="ref-tag year">2019</span>
+          </div>
+          <div class="ref-num">11</div>
+        </div>
+        <h3>Stevenage Challenge</h3>
+        <div class="brand">Burger King · Stevenage FC · Ogilvy · 3 Grand Prix Cannes</div>
+        <p class="what">BK patrocinou (por £50 mil) o pior time inglês da quarta divisão pra estampar a logo na camisa real e na camisa digital do FIFA 20. Lançou o #StevenageChallenge: gamers jogavam com o time, contratavam craques, postavam jogadas e ganhavam combo grátis. Time mais usado do FIFA, +25 mil gols compartilhados.</p>
+        <div class="why"><b>Por que funciona:</b> usa um <b>ativo barato (logo no FIFA) + mecânica de desafio + prêmio simples</b> pra gerar volume orgânico massivo. É o playbook ideal de "alta criatividade, baixo orçamento".</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">#ChallengeBolaoFiladd com prêmio físico semanal</div>
+          <p>Desafio público no Instagram e TikTok: poste seu palpite cravado dos 9 jogos do Bolão LatAm com a hashtag #CravouMarcou, marque @filadd e quem acerta mais ganha a recompensa da semana (PS5, iPad, bolsa). Curva é replicar a estrutura do Stevenage — <b>peça barata, desafio claro, recompensa concreta</b>. Conecta direto com os prêmios já mapeados (Top 5 semanal).</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.ogilvy.com/work/stevenage-challenge" target="_blank" rel="noopener">Ver case na Ogilvy <span class="arr">→</span></a>
+      </div>
+
+      <!-- 12. SUPERBET CONVOQUE OS SEUS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · App</span>
+            <span class="ref-tag cat">Bolão</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">12</div>
+        </div>
+        <h3>Convoque os Seus + Passa a Bola</h3>
+        <div class="brand">Superbet · Cafu, Zinho, Renato Gaúcho, Túlio Maravilha</div>
+        <p class="what">Campanha "Convoque os Seus" começou com o vídeo "A Convocação", estrelado por ex-craques convocando os amigos. Em paralelo, a Superbet lançou o "Passa a Bola" — joguinho grátis dentro do app pra trocar palpite via mensagem com amigos durante os jogos. E o Bolão do Mundial com R$8 mi em prêmios <b>sem depósito</b>.</p>
+        <div class="why"><b>Por que funciona:</b> três camadas perfeitamente encaixadas — <b>elenco saudosista vira porta de entrada</b>, joguinho social vira engajamento, bolão sem depósito vira conversão. É o mapa exato de uma operação madura de bolão.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"Convoque seu time de estudo" + Comunidadd como Passa a Bola</div>
+          <p>Aluno convida 3 amigos pro bolão, todos ganham acesso a 1 aulão extra e desbloqueiam figurinha rara do álbum digital. Mecânica viral perfeita: o aluno traz o lead, a Filadd qualifica. A Comunidadd WhatsApp já é o "Passa a Bola" — só precisamos comunicar com essa estrutura de 3 camadas (convocação → grupo → bolão sem custo).</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://focusgn.com/brasil/passa-a-bola-plataforma-de-apostas-prepara-promocao-para-a-copa-do-mundo" target="_blank" rel="noopener">Ver matéria Focus <span class="arr">→</span></a>
+      </div>
+
+      <!-- 13. ESTRELA BET BOLÃO MILIONÁRIO -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">App · Insta</span>
+            <span class="ref-tag cat">Bolão</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">13</div>
+        </div>
+        <h3>Bolão Milionário</h3>
+        <div class="brand">Estrela Bet · até R$2 milhões em prêmios</div>
+        <p class="what">Promoção sem necessidade de aposta. A cada rodada, 8 jogos são selecionados, participante crava placar exato. Quem acerta 4+ entra na premiação. Distribuiu até R$2 mi em prêmios em uma única rodada.</p>
+        <div class="why"><b>Por que funciona:</b> <b>placar exato</b> é o palpite mais difícil e o que mais gera engajamento — quem crava se sente gênio, quem erra quer voltar pra provar. E o "sem aposta" elimina a fricção mais alta da casa de aposta. Mesmo problema da Filadd com fricção de matrícula.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Espelho exato — mas com "Lendária Genia" como placar exato</div>
+          <p>Já temos no plano: 11 figurinhas do Time Titular + 1 Lendária Genia liberada só com placar exato 1×. Comunicar isso como a Estrela Bet comunica: <b>"crava o placar exato e desbloqueia a figurinha rara"</b>. Cada placar exato vira uma micro-celebração — Reels do aluno mostrando a Lendária Genia no álbum dele. Custo zero, engajamento máximo.</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.lance.com.br/sites-de-apostas/codigo-promocional-estrelabet.html" target="_blank" rel="noopener">Ver mecânica detalhada <span class="arr">→</span></a>
+      </div>
+
+      <!-- 14. SPORTINGBET MAIOR BOLÃO -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">TV · Insta</span>
+            <span class="ref-tag cat">Bolão</span>
+            <span class="ref-tag year">2025-26</span>
+          </div>
+          <div class="ref-num">14</div>
+        </div>
+        <h3>Maior Bolão do Brasil · R$1M/semana</h3>
+        <div class="brand">Sportingbet · com Marco Luque e Yara Fantoni</div>
+        <p class="what">Bolão semanal com promessa de R$1 milhão em prêmios por rodada — 6 acertos = ganhar. Comunicação leve com influencers de humor (Luque, Fantoni). Ativação Paulistão deu camarote + entrada em campo pro vencedor.</p>
+        <div class="why"><b>Por que funciona:</b> <b>prêmio absurdo vira manchete</b>, mas a real conversão vem da continuidade semanal e do influencer cotidiano que humaniza a marca. Modelo replicável em qualquer cadência.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"O Top 5 da semana ganha em campo" — visita à Casa CazéTV ou estúdio</div>
+          <p>Já temos Top 5 semanal com prêmio Copa diferente por semana. Adicionar à mecânica: o líder absoluto da semana ganha uma <b>experiência</b> — entrada no estúdio da Cazé, kit do Cafu, encontro virtual com aprovado da Filadd. Reels do ganhador na experiência vira social proof e mantém o bolão em alta semanal — mesmo padrão de comunicação contínua que a Sportingbet usa.</p>
+          <span class="slogan">Treino aberto.</span>
+        </div>
+        <a class="link" href="https://bnldata.com.br/sportingbet-promove-o-maior-bolao-do-brasil-com-mais-de-1-milhao-de-reais-em-premiacao-por-semana/" target="_blank" rel="noopener">Ver matéria BNL <span class="arr">→</span></a>
+      </div>
+
+      <!-- 15. CARTOLA FC -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">Insta · TikTok</span>
+            <span class="ref-tag cat">Fantasy</span>
+            <span class="ref-tag year">Recorrente</span>
+          </div>
+          <div class="ref-num">15</div>
+        </div>
+        <h3>Cartola FC — "Escala teu time"</h3>
+        <div class="brand">Cartola FC · Grupo Globo · 710k+ seguidores @cartolafc</div>
+        <p class="what">Fantasy mais consolidado do Brasil. Toda rodada, comunicação no Insta + TikTok com a mesma estrutura: dicas de escalação, jogadores da rodada, "mitada da semana". Mecânica de escalação é o conteúdo, não o anúncio.</p>
+        <div class="why"><b>Por que funciona:</b> o usuário do Cartola consome conteúdo do Cartola <b>como parte do jogo</b>. O Insta/TikTok não é mídia, é serviço. Esse é o ponto-chave que diferencia bolão bom de bolão chato — comunicação <b>recorrente, utilitária, ritualizada</b>.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Pílulas semanais "Antes do apito" no Insta + TikTok</div>
+          <p>Toda sexta-feira de jogo, post fixo no Insta + Reels TikTok com: prévia dos jogos da semana do bolão, ranking atual, "palpite da Genia", "mitada do bolão". Vira ritual, igual Cartola. Conecta diretamente ao slogan já definido <b>Antes do apito</b> e à mecânica das Lives TikTok com contexto histórico (vira repertório de redação também).</p>
+          <span class="slogan">Antes do apito.</span>
+        </div>
+        <a class="link" href="https://www.instagram.com/cartolafc/" target="_blank" rel="noopener">Ver @cartolafc <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 4 — VIRAL ORGÂNICO -->
+<div class="cat-band b4">Bloco 4 · 16 a 20 · Viral orgânico · O que escala sem orçamento de mídia</div>
+<section class="refs alt" id="viral">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Categoria 4 · Conteúdo viral orgânico</span>
+        <h2>O que <span class="y">explode sozinho</span> — e a gente precisa imitar a estrutura.</h2>
+      </div>
+      <p class="lede">Reels e TikToks que viralizam quase sem nenhum esforço de mídia, porque acertam um gatilho psicológico universal (surpresa, identificação, frustração coletiva). Nosso volume diário durante a Copa precisa nascer aqui.</p>
+    </div>
+
+    <div class="refs-grid">
+
+      <!-- 16. CLOVIS TORCEDOR DO GRITO -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">TikTok · Insta</span>
+            <span class="ref-tag cat">Meme</span>
+            <span class="ref-tag year">2022</span>
+          </div>
+          <div class="ref-num">16</div>
+        </div>
+        <h3>Clóvis Carvalho Jr. — "O grito"</h3>
+        <div class="brand">UGC · Catar 2022 · viralizou globalmente</div>
+        <p class="what">Torcedor brasileiro gritando como louco no segundo gol do Brasil contra a Sérvia (gol de voleio do Richarlison). Cara fechada, grito visceral. Virou meme global, ele virou celebridade — abordado por torcedores do Paquistão, Bangladesh, Itália, Espanha no Catar.</p>
+        <div class="why"><b>Por que funciona:</b> <b>autenticidade absoluta</b>. Sem produção, sem roteiro, sem marca. É o limite máximo da reação humana ao gol. O resto do mundo se reconheceu — todos a gente conhece um Clóvis.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Concurso "O Clóvis do Bolão"</div>
+          <p>Convocar a Comunidadd a postar vídeos curtos do momento "cravei o palpite" — com a cara mais visceral possível. Melhor reação da semana vira capa do feed Filadd, ganha kit + figurinha. Custo zero, alta replicabilidade, encaixa no DNA "vestiário do Time Filadd". Pode virar série permanente "Clóvis do Bolão" toda quarta.</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.metropoles.com/esportes/futebol/torcedor-que-viralizou-celebrando-gol-do-brasil-levou-bronca-da-esposa" target="_blank" rel="noopener">Ver matéria Metrópoles <span class="arr">→</span></a>
+      </div>
+
+      <!-- 17. RICHARLISON DANCA DO POMBO -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">TikTok</span>
+            <span class="ref-tag cat">Dance trend</span>
+            <span class="ref-tag year">2022</span>
+          </div>
+          <div class="ref-num">17</div>
+        </div>
+        <h3>Dança do Pombo</h3>
+        <div class="brand">Richarlison · Seleção Brasileira · Baile de Favela remix</div>
+        <p class="what">Comemoração do Richarlison imitando o passinho do pombo, ao som de Baile de Favela remixado com trilha TikTok. Em dias, virou trend global — fãs em todos os continentes replicando.</p>
+        <div class="why"><b>Por que funciona:</b> dancinha simples + trilha pegajosa + craque famoso = trend pronta. Replicabilidade física (qualquer um consegue fazer) é o que destrava o viral.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"Dança do Cravou" — comemoração própria do bolão</div>
+          <p>Criar (com ajuda de um creator parceiro tipo dançarino do TikTok BR) uma dancinha curta de 5 segundos pra fazer quando você crava o palpite. Postar no perfil da Filadd e da Genia, pedir pra Comunidadd replicar. Vira identidade visual de movimento — toda vez que alguém vê a dança, lembra do bolão. Encaixa nas Lives TikTok já no plano.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://popgol.com/2025/03/31/futebol-no-tiktok-jogadores-trends-e-coreografias/" target="_blank" rel="noopener">Ver análise PopGol <span class="arr">→</span></a>
+      </div>
+
+      <!-- 18. H2BET DE 4 EM 4 ANOS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · Insta</span>
+            <span class="ref-tag cat">Humor</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">18</div>
+        </div>
+        <h3>De 4 em 4 anos todo brasileiro é rei</h3>
+        <div class="brand">H2bet · campanha Copa 2026</div>
+        <p class="what">Mote da campanha: retrata o brasileiro comum desembarcando num aeroporto pra acompanhar a Copa, recebido como autoridade por torcedores de outros países. Tom de zoeira amorosa com o jeito do brasileiro pra Copa.</p>
+        <div class="why"><b>Por que funciona:</b> joga com um <b>orgulho que cresce só na Copa</b>. Vira gancho de identificação imediata — todo brasileiro sente isso de 4 em 4 anos. Frase memorável que pode virar slogan secundário.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Reels "De 4 em 4 anos todo aluno vira técnico de Seleção"</div>
+          <p>Reels de humor mostrando alunos da Filadd discutindo escalação, criticando Ancelotti, sugerindo Endrick — tudo enquanto deviam estar estudando. Final: "calma, técnico — primeiro crava o palpite no bolão, depois faz a redação". Combina humor + Bolão + chamada pra ação. Tom da Genia perfeitamente.</p>
+          <span class="slogan">Antes do apito.</span>
+        </div>
+        <a class="link" href="https://www.yogonet.com/cs/Brasil/zpr%C3%A1vy-a/2026/05/18/9034-h2bet-lanca-campanha-para-a-copa-do-mundo-com-o-mote-34de-quatro-em-quatro-anos-todo-brasileiro-e-rei-34" target="_blank" rel="noopener">Ver matéria Yogonet <span class="arr">→</span></a>
+      </div>
+
+      <!-- 19. TIKTOK CRAVOU O PLACAR -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">TikTok</span>
+            <span class="ref-tag cat">Trend recorrente</span>
+            <span class="ref-tag year">Recorrente</span>
+          </div>
+          <div class="ref-num">19</div>
+        </div>
+        <h3>Trend "Cravou o placar"</h3>
+        <div class="brand">UGC · futebol brasileiro · milhares de vídeos</div>
+        <p class="what">Trend recorrente no TikTok BR onde alguém grava o palpite antes do jogo (em prints, fala ou rabisco no caderno) e depois mostra o resultado batendo certinho. Funciona em rodadas de Brasileirão, Libertadores, Champions. Sempre vira meme.</p>
+        <div class="why"><b>Por que funciona:</b> formato <b>antes/depois</b> é o motor mais simples de viral. Não exige produção, só timing. E o slogan da campanha (<b>Cravou? Marcou.</b>) é literalmente o nome dessa trend — o terreno já está fértil.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Apropriação direta da trend com hashtag oficial</div>
+          <p>Filadd lança a hashtag #CravouMarcouFiladd e estimula a Comunidadd a postar seus prints do bolão antes do jogo + reação depois. O melhor antes/depois da semana vira repost no perfil oficial. Custo de mídia: zero. Replicabilidade: infinita. Bonus: pegamos uma trend já existente e damos um dono (Filadd). É o movimento mais barato e estratégico desse documento.</p>
+          <span class="slogan">Cravou? Marcou.</span>
+        </div>
+        <a class="link" href="https://www.tiktok.com/discover/cravou-o-placar-de-botafogo-e-palmeiras" target="_blank" rel="noopener">Ver na trend TikTok <span class="arr">→</span></a>
+      </div>
+
+      <!-- 20. PREMIER LEAGUE FILTER -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">TikTok</span>
+            <span class="ref-tag cat">Filter</span>
+            <span class="ref-tag year">2024-25</span>
+          </div>
+          <div class="ref-num">20</div>
+        </div>
+        <h3>Premier League Prediction Filter</h3>
+        <div class="brand">UGC · creators de futebol global</div>
+        <p class="what">Filtros TikTok que sorteiam aleatoriamente quem vai ganhar a Premier League, quem cai pra Championship, quem pega Champions. Creator faz reação ao resultado. Hashtag #premierleaguefilter, milhões de views, até criança de 3 anos virou meme prevendo resultado.</p>
+        <div class="why"><b>Por que funciona:</b> <b>aleatoriedade + reação genuína</b>. Não importa o conhecimento, qualquer um pode jogar. Democratiza o palpite e gera o conteúdo automaticamente — o filtro é o roteiro.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Filtro Instagram/TikTok "Crava teu palpite da Copa"</div>
+          <p>Produzir um filtro de Instagram/TikTok que sorteia placar dos 9 jogos do Bolão LatAm. Aluno usa o filtro, posta a "previsão da Genia", marca a Filadd. Vira a porta de entrada do bolão — uso do filtro converte em link na bio. Investimento baixo de produção, distribuição orgânica massiva. Conecta com Genia como personagem oficial da marca.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://www.tiktok.com/discover/premier-league-filter?lang=en" target="_blank" rel="noopener">Ver trend no TikTok <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOCO 5 — ECOSSISTEMA 2026 -->
+<div class="cat-band b5">Bloco 5 · 21 a 26 · Ecossistema Copa 2026 · Quem já está no jogo e como pegar carona</div>
+<section class="refs" id="ecossistema">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Categoria 5 · Ecossistema 2026</span>
+        <h2>As marcas que <span class="b">já estão na Copa</span> — e como a gente <span class="y">pega carona.</span></h2>
+      </div>
+      <p class="lede">A Filadd não é patrocinadora FIFA. Mas o ecossistema Copa 2026 está sendo construído pelas marcas listadas abaixo — e elas precisam de conteúdo. Cada uma é uma porta pra Filadd entrar via parceria, repost ou imitação inteligente de mecânica.</p>
+    </div>
+
+    <div class="refs-grid">
+
+      <!-- 21. CAZÉ TV CASA -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube</span>
+            <span class="ref-tag cat">Transmissão</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">21</div>
+        </div>
+        <h3>CazéTV — 104 jogos 4K grátis</h3>
+        <div class="brand">CazéTV + YouTube · R$2 bi em patrocínio · Casa CazéTV</div>
+        <p class="what">CazéTV é o único canal que transmite todos os 104 jogos da Copa de graça no YouTube em 4K. Patrocinadores: Ambev, Bet365, Coca, GM, iFood, Itaú, Mercado Livre, Vivo. Casa CazéTV (SP + RJ) recebe 5 mil pessoas/dia com ativações de Adidas, Coca, Hellmann's, iFood, ML, YouTube.</p>
+        <div class="why"><b>Por que funciona:</b> Cazé virou a <b>casa da audiência jovem brasileira</b> no esporte. Está formatando o que é "consumir Copa" pra essa geração — é nele que o vestibulando vai assistir.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Buy-in ou ativação tática na Casa CazéTV</div>
+          <p>Duas frentes: (a) avaliar cota de mídia menor na transmissão CazéTV pelo menos nos jogos do Brasil (custo alto, mas tráfego qualificado); (b) ativação tática Casa CazéTV — patrocinar um cantinho "Crava o palpite" com totem físico de bolão, distribuir kit/cupom COPAFILADD. Captura volume na alta da Copa sem precisar comprar cota cheia. Conversar com prazo (Casa CazéTV abre antes do Mundial).</p>
+          <span class="slogan">Treino aberto.</span>
+        </div>
+        <a class="link" href="https://adnews.com.br/post/casa-caze-tv-confirma-seis-marcas-patrocinadoras-para-ativacoes-durante-a-copa-do-mundo-de-2026" target="_blank" rel="noopener">Ver Casa CazéTV <span class="arr">→</span></a>
+      </div>
+
+      <!-- 22. HYUNDAI GOAL OF THE CENTURY -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · OOH</span>
+            <span class="ref-tag cat">Ativação</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">22</div>
+        </div>
+        <h3>Goal of the Century + Legacies of Champions</h3>
+        <div class="brand">Hyundai · FIFA Museum · Rockefeller Center NY</div>
+        <p class="what">Hyundai usa a Copa pra plataforma de marca "Goal of the Century" — sustentabilidade + futebol + inclusão. Junto, ativação imersiva no Rockefeller Center com FIFA Museum durante a Copa, expondo troféus históricos.</p>
+        <div class="why"><b>Por que funciona:</b> uma marca que não tem nada a ver com futebol cria <b>plataforma de propósito</b> e ancora num lugar físico icônico. Não vende carro — vende causa. É como educação se conecta com Copa: através do propósito.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"A Copa do estudo" como plataforma de propósito Filadd</div>
+          <p>Adotar narrativa parecida no manifesto da campanha — <b>"A vida tem duas Copas esse ano"</b> já caminha pra cá. Reforçar a comunicação de propósito (educação acessível, segunda chance, vestibular como sonho de Copa) sempre que tiver Bolão na peça. Hyundai mostra que ativação propósito + Copa rende mídia espontânea — vale fazer barulho com pauta de "10 bolsas integrais" como manchete em portais de educação.</p>
+          <span class="slogan">Acabou a Copa. Começa a sua.</span>
+        </div>
+        <a class="link" href="https://www.hyundai.com/worldwide/en/brand-journal/lifestyle/goal-of-the-century" target="_blank" rel="noopener">Ver Goal of the Century <span class="arr">→</span></a>
+      </div>
+
+      <!-- 23. LAY'S NO LAYS NO GAME -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · Insta</span>
+            <span class="ref-tag cat">Pegadinha</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">23</div>
+        </div>
+        <h3>No Lay's, No Game</h3>
+        <div class="brand">Lay's · Messi, Beckham, Henry, Putellas, Steve Carell</div>
+        <p class="what">Pegadinha em supermercados — quem está carregando um pacote de Lay's é abordado e convidado pra uma watch party exclusiva com craques. Mistura câmera escondida, celebridade e UGC. Formato altamente compartilhável.</p>
+        <div class="why"><b>Por que funciona:</b> <b>câmera escondida + recompensa surpresa</b> é fórmula clássica que continua ganhando, porque entrega autenticidade. A reação genuína é o conteúdo.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">"Quem joga no bolão Filadd ganha"</div>
+          <p>Câmera escondida em vestibulinhos, cursinhos parceiros ou eventos de educação: aluno cadastrado no Bolão Filadd recebe surpresa na hora — ligação ao vivo com aprovado da Filadd, kit, ou vaga numa live VIP. Reels disso com a reação autêntica. Formato barato de produzir, alto compartilhamento. Conecta o Bolão a uma "vantagem secreta" — quem joga ganha mais que prêmio.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://www.thedrum.com/news/world-cup-2026-watch-all-the-latest-ads" target="_blank" rel="noopener">Ver case no The Drum <span class="arr">→</span></a>
+      </div>
+
+      <!-- 24. LEGO EVERYONE WANTS A PIECE -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · OOH</span>
+            <span class="ref-tag cat">Colecionável</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">24</div>
+        </div>
+        <h3>Everyone Wants a Piece</h3>
+        <div class="brand">LEGO · Messi, Ronaldo, Mbappé, Vinícius Jr (minifigures)</div>
+        <p class="what">LEGO transforma os craques da Copa em minifigures colecionáveis. Cada um vira "peça" — campanha joga com o duplo sentido (peça de LEGO + ser parte do time). Lançamento em loja e online com edição limitada.</p>
+        <div class="why"><b>Por que funciona:</b> <b>colecionabilidade força repetição</b>. Você precisa do conjunto completo. Mesmo princípio do álbum de figurinhas Panini. E como já temos Álbum Digital Copa Filadd planejado, isso valida a estratégia.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Reforço da estratégia do Álbum Digital Filadd</div>
+          <p>Confirmação direta: o Álbum Digital Filadd (11 figurinhas Time Titular + 1 Lendária Genia) está no <b>caminho certo de mercado</b>. Vale acelerar a comunicação dele já desde a Convocação. Reels "completei a coleção" com a animação da Lendária Genia aparecendo. Replicar lógica de "edição limitada" — algumas figurinhas só na semana de cada jogo. Mecânica de retenção semanal nativa.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://www.youtube.com/shorts/H0gbOS6-EQ4" target="_blank" rel="noopener">Ver no YouTube Shorts <span class="arr">→</span></a>
+      </div>
+
+      <!-- 25. GUINNESS SINGING PINTS -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">YouTube · OOH</span>
+            <span class="ref-tag cat">Remake</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">25</div>
+        </div>
+        <h3>Singing Pints — The World's Cup</h3>
+        <div class="brand">Guinness · remake do clássico de 1990</div>
+        <p class="what">Guinness pega o icônico comercial de copos "cantando" de 1990 e reformula pra 2026 — agora os colarinhos cremosos gritam "GOOOL". Refresca a memória afetiva do antigo torcedor e apresenta o conceito pra geração nova.</p>
+        <div class="why"><b>Por que funciona:</b> <b>nostalgia + atualização</b>. Pega um ativo cultural já validado e injeta linguagem de hoje. Custo criativo baixo (já existe a ideia), payoff emocional alto.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Remake dos jingles clássicos Filadd com pegada de Copa</div>
+          <p>A Filadd já tem ativos institucionais (vinhetas, logos animadas, slogans de matrícula). Releitura criativa desses ativos com pegada de Copa — vinheta de abertura de live, logo formando bola de futebol no fim de cada vídeo, jingle de matrícula remixado com torcida ao fundo. Resgata reconhecimento de marca, agrega gas de Copa. Baixíssimo custo de produção, alta consistência visual.</p>
+          <span class="slogan">A gente joga junto.</span>
+        </div>
+        <a class="link" href="https://lbbonline.com/news/Guinness-World-Cup-Fifa-Football-Soccer" target="_blank" rel="noopener">Ver case LBB <span class="arr">→</span></a>
+      </div>
+
+      <!-- 26. MCDONALD'S SELEÇÕES DO MÉQUI -->
+      <div class="ref">
+        <div class="ref-head">
+          <div class="ref-meta">
+            <span class="ref-tag plat">Insta · Reels</span>
+            <span class="ref-tag cat">Produto temático</span>
+            <span class="ref-tag year">2026</span>
+          </div>
+          <div class="ref-num">26</div>
+        </div>
+        <h3>Seleções do Méqui</h3>
+        <div class="brand">McDonald's Brasil · Cafu · creators Caio Amado e Victor Augusto</div>
+        <p class="what">McDonald's lança 7 sanduíches inspirados em seleções tradicionais da Copa + combo brasileiro especial. Comercial num estádio onde "chefs representam países" e Cafu entra com o combo Brasil. Promoção em fases com calendário de lançamentos durante o torneio.</p>
+        <div class="why"><b>Por que funciona:</b> <b>cadência</b>. Em vez de uma campanha só, o McDonald's cria mini-eventos semanais (sanduíche novo, combo novo) que mantêm a marca em loop nas redes durante toda a Copa.</div>
+        <div class="play">
+          <span class="lb">→ Como aplicar no Bolão Filadd</span>
+          <div class="ttl">Calendário de "drops" semanais do Bolão</div>
+          <p>Espelhar a cadência do McDonald's no nosso Bolão: cada semana tem um "drop" — figurinha nova do álbum, jogo destaque, novo prêmio top 5, aulão tema histórico. Comunicar com hype tipo lançamento de produto ("essa semana é a semana de Argentina × Marrocos"). Calendário publicado em Reels semanal. Conecta direto com o Calendário (item 16 do playbook v3) e estende vida útil da campanha.</p>
+          <span class="slogan">Antes do apito.</span>
+        </div>
+        <a class="link" href="https://www.bandab.com.br/cultura/gastronomia/selecoes-do-mequi-como-sao-sanduiches-copa-2026-mcdonalds/" target="_blank" rel="noopener">Ver matéria BandaB <span class="arr">→</span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MATRIZ DE PRIORIZAÇÃO -->
+<section class="matrix" id="matriz">
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow amr">Síntese estratégica</span>
+    <h2>Se a gente só puder começar por <span class="y">4 frentes,</span> são essas.</h2>
+    <p class="lede" style="max-width:60ch">Curadoria final por priorização — alto impacto × baixo custo × alta replicabilidade. Tudo o resto orbita em volta desses 4 movimentos.</p>
+
+    <div class="matrix-grid">
+      <div class="mx">
+        <span class="lb">Prioridade 1 · Imediata</span>
+        <h5>#CravouMarcou</h5>
+        <p>Apropriação da trend já existente do TikTok. Custo de mídia: zero. Resultado: virar dono do termo. <b>Comece amanhã.</b> Ref #19.</p>
+      </div>
+      <div class="mx">
+        <span class="lb">Prioridade 2 · Próxima semana</span>
+        <h5>Calendário "Antes do apito"</h5>
+        <p>Cadência fixa Cartola/McDonald's-style — Reels semanal de prévia do bolão. Ritualiza a comunicação. Refs #15, #26.</p>
+      </div>
+      <div class="mx">
+        <span class="lb">Prioridade 3 · Pré-Copa</span>
+        <h5>Filme manifesto + jingle</h5>
+        <p>Filme 60s estilo Nike/Brahma — aluno que crava o palpite e passa no vestibular. Trilha original tipo Coca/JUMP. Refs #01, #04, #05.</p>
+      </div>
+      <div class="mx">
+        <span class="lb">Prioridade 4 · Durante Copa</span>
+        <h5>UGC + experiência</h5>
+        <p>"Clóvis do Bolão" + Top 5 com experiência (visita Casa CazéTV) + filtro Instagram da Genia. UGC de massa + premiação aspiracional. Refs #14, #16, #20, #21.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEXT -->
+<section class="next">
+  <div class="wrap">
+    <span class="eyebrow amr">Próximos passos</span>
+    <h2>Onde a gente <span class="y">aprofunda</span> a partir daqui.</h2>
+    <p>Esse banco é um v1 — focado em referências visuais e mecânicas. Os próximos sprints podem desdobrar em: (a) script-board do filme manifesto baseado nas refs #01 e #05, (b) plano de mídia detalhado pra cada categoria, (c) parceria com creator pra dancinha "Cravou", (d) negociação tática com Casa CazéTV, (e) brief de produção do filtro Instagram da Genia.</p>
+    <div class="next-row">
+      <a class="next-btn y" href="./copa-filadd-2026-v3.html">↩ Voltar ao Playbook v3</a>
+      <a class="next-btn g" href="#playbook">Reler os critérios</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Banco de Referências · Copa Filadd 2026 · v1 · <span class="y">Curadoria estratégica Theus Mattos</span> · Maio 2026
+</footer>
+
+</body>
+</html>

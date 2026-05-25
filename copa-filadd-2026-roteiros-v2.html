@@ -1,0 +1,1648 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Roteiros v2 · Bolão Copa Filadd · Sincronizado com o calendário real</title>
+<meta name="description" content="10 roteiros cinematográficos para o Bolão Copa Filadd 2026, organizados pela jornada real da Seleção (pré-Copa, véspera, dia do jogo, manhã seguinte). Cada um com referência rastreável, hook, estrutura, direção visual e CTA." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --azul-aprovado:#2424FF;
+  --azul-focado:#03036E;
+  --amarelo:#FFBA09;
+  --roxo-med:#8900FF;
+  --branco:#FFFFFF;
+  --off:#F4F4F8;
+  --ink:#0A0A14;
+  --ink-soft:#3A3A52;
+  --ink-mute:#7A7A92;
+  --line:#E5E5EF;
+  --line-soft:#EFEFF6;
+  --br-green:#009C3B;
+  --warn:#E74C3C;
+  --ok:#1AB36F;
+  --maxw:1380px;
+  --pad:clamp(20px,4vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Antonio',sans-serif;font-weight:700;letter-spacing:-.01em;line-height:1;margin:0 0 .4em;text-transform:uppercase}
+h4,h5{font-family:'Poppins',sans-serif;font-weight:700;letter-spacing:-.01em;margin:0 0 .4em}
+p{margin:0 0 1em;color:var(--ink-soft)}
+.mono{font-family:'DM Mono',monospace}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-family:'DM Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:500;display:inline-block;margin-bottom:14px}
+.eyebrow.amr{color:var(--amarelo)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:var(--branco);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;gap:18px;padding:14px var(--pad);max-width:var(--maxw);margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-brand{font-family:'Antonio',sans-serif;font-weight:700;font-size:22px;white-space:nowrap;color:var(--azul-focado);text-transform:uppercase;letter-spacing:0;display:flex;align-items:center;gap:10px}
+.nav-brand .ball{width:12px;height:12px;background:var(--amarelo);border-radius:50%}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 12px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;transition:all .2s;font-weight:500}
+.nav-links a:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+/* HERO */
+.hero{position:relative;background:var(--azul-aprovado);color:var(--branco);overflow:hidden;padding:clamp(50px,8vh,100px) 0 clamp(70px,11vh,130px)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:60px 60px;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 85%);opacity:.7;pointer-events:none}
+.hero::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.18),transparent 70%);top:-200px;right:-200px;pointer-events:none}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--branco);margin-bottom:28px;font-weight:500;backdrop-filter:blur(8px)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--amarelo);box-shadow:0 0 14px var(--amarelo);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.85)}}
+.hero h1{font-size:clamp(44px,8vw,104px);font-weight:700;line-height:.92;letter-spacing:-.02em;margin-bottom:24px;color:var(--branco)}
+.hero h1 .y{color:var(--amarelo)}
+.hero h1 .sub-tag{display:block;font-size:clamp(17px,1.6vw,24px);font-family:'Poppins',sans-serif;font-weight:500;text-transform:none;letter-spacing:0;color:rgba(255,255,255,.85);margin-top:18px;line-height:1.4;max-width:64ch}
+.hero-meta{display:flex;flex-wrap:wrap;gap:18px;align-items:center;color:rgba(255,255,255,.7);font-family:'DM Mono',monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;margin-top:36px;font-weight:500}
+.hero-meta .sep{width:14px;height:1px;background:rgba(255,255,255,.3)}
+
+/* MANIFESTO / FILOSOFIA */
+.philo{background:var(--azul-focado);color:var(--branco);padding:clamp(60px,10vh,110px) 0;position:relative;overflow:hidden}
+.philo::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(36,36,255,.25),transparent 70%);bottom:-350px;left:-300px;pointer-events:none}
+.philo h2{font-size:clamp(32px,4.4vw,60px);color:var(--branco);max-width:20ch;margin-bottom:24px}
+.philo h2 .y{color:var(--amarelo)}
+.philo .lede{color:rgba(255,255,255,.85);max-width:60ch;font-size:17px;margin-bottom:36px}
+.philo .quote{border-left:4px solid var(--amarelo);padding:18px 24px;background:rgba(255,255,255,.06);border-radius:0 12px 12px 0;font-family:'Antonio',sans-serif;font-size:clamp(20px,2.2vw,28px);color:var(--branco);text-transform:uppercase;line-height:1.15;margin-bottom:18px;max-width:48ch}
+.philo .quote-src{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);font-weight:500}
+
+/* CALENDÁRIO */
+.calendar{background:var(--off);padding:clamp(60px,9vh,100px) 0}
+.calendar h2{font-size:clamp(28px,3.8vw,52px);color:var(--azul-focado);max-width:22ch;margin-bottom:18px}
+.calendar h2 .y{color:var(--amarelo)}
+.calendar h2 .b{color:var(--azul-aprovado)}
+.calendar .lede{color:var(--ink-soft);max-width:62ch;margin-bottom:36px;font-size:15.5px}
+.cal-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:24px}
+@media(max-width:1000px){.cal-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cal-grid{grid-template-columns:1fr}}
+.cal-card{background:var(--branco);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.cal-card.hero-game{background:var(--azul-focado);color:var(--branco);border-color:var(--azul-focado)}
+.cal-card .when{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--azul-aprovado);font-weight:600}
+.cal-card.hero-game .when{color:var(--amarelo)}
+.cal-card .date{font-family:'Antonio',sans-serif;font-size:38px;color:var(--azul-focado);line-height:.9;margin:4px 0}
+.cal-card.hero-game .date{color:var(--branco)}
+.cal-card h4{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0;text-transform:uppercase;line-height:1.05}
+.cal-card.hero-game h4{color:var(--branco)}
+.cal-card .role{font-size:12px;color:var(--ink-soft);margin:6px 0 0;line-height:1.4}
+.cal-card.hero-game .role{color:rgba(255,255,255,.85)}
+.cal-card .tag{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;padding:3px 7px;border-radius:5px;background:var(--off);color:var(--ink-mute);align-self:flex-start;margin-top:auto;font-weight:600}
+.cal-card.hero-game .tag{background:var(--amarelo);color:var(--azul-focado)}
+
+/* FRAMEWORK */
+.framework{background:var(--branco);padding:clamp(50px,8vh,90px) 0}
+.framework h2{font-size:clamp(28px,3.8vw,52px);color:var(--azul-focado);max-width:24ch;margin-bottom:14px}
+.framework h2 .y{color:var(--amarelo)}
+.framework .lede{color:var(--ink-soft);max-width:60ch;margin-bottom:32px;font-size:15.5px}
+.fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+@media(max-width:900px){.fw-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.fw-grid{grid-template-columns:1fr}}
+.fw{padding:18px;background:var(--off);border-radius:12px;border:1px solid var(--line-soft)}
+.fw .nm{font-family:'Antonio',sans-serif;font-size:34px;color:var(--azul-aprovado);line-height:.85;margin-bottom:6px;font-weight:700}
+.fw h5{font-family:'Antonio',sans-serif;font-size:15px;color:var(--azul-focado);text-transform:uppercase;margin-bottom:6px}
+.fw p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+
+/* ARCS NAV */
+.arcs-nav{padding:24px 0;background:var(--branco);border-bottom:1px solid var(--line);position:sticky;top:55px;z-index:40}
+.arcs-nav-inner{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.arcs-nav-inner::-webkit-scrollbar{display:none}
+.arc-chip{padding:10px 16px;border-radius:999px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;white-space:nowrap;background:var(--off);color:var(--ink-soft);border:1px solid var(--line);transition:all .15s}
+.arc-chip:hover{background:var(--azul-focado);color:var(--branco);border-color:var(--azul-focado)}
+.arc-chip .nm{color:var(--amarelo);margin-right:6px;font-weight:700}
+.arc-chip:hover .nm{color:var(--amarelo)}
+
+/* ARC HEAD */
+.arc-head{padding:50px 0 24px;background:linear-gradient(180deg,var(--off),var(--branco))}
+.arc-head .arc-num{font-family:'Antonio',sans-serif;font-size:130px;line-height:.85;color:var(--azul-aprovado);opacity:.16;font-weight:700;letter-spacing:-.04em;margin-bottom:-30px}
+.arc-head .badge{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:600;margin-bottom:8px;display:inline-block;padding:4px 10px;background:var(--branco);border-radius:999px;border:1px solid var(--line)}
+.arc-head h2{font-size:clamp(30px,4vw,56px);color:var(--azul-focado);max-width:24ch;margin-bottom:14px}
+.arc-head h2 .y{color:var(--amarelo)}
+.arc-head .lede{color:var(--ink-soft);max-width:62ch;font-size:15.5px;line-height:1.6}
+
+/* ROTEIRO PRINCIPAL */
+.scene{padding:24px 0 60px;background:var(--branco)}
+.scene-card{background:var(--branco);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:28px;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.scene-head{padding:28px;background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));color:var(--branco);position:relative;overflow:hidden}
+.scene-head::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.15),transparent 70%);top:-150px;right:-100px;pointer-events:none}
+.scene-head-row{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;position:relative;z-index:2;margin-bottom:14px}
+.scene-head .num{font-family:'Antonio',sans-serif;font-size:48px;color:var(--amarelo);line-height:.85;font-weight:700}
+.scene-head .tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.scene-head .tag{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;padding:4px 9px;border-radius:6px;background:rgba(255,255,255,.15);color:var(--branco);font-weight:600;border:1px solid rgba(255,255,255,.25)}
+.scene-head .tag.y{background:var(--amarelo);color:var(--azul-focado);border-color:var(--amarelo)}
+.scene-head .tag.red{background:var(--warn);color:var(--branco);border-color:var(--warn)}
+.scene-head .tag.green{background:var(--br-green);color:var(--branco);border-color:var(--br-green)}
+.scene-head h3{font-family:'Antonio',sans-serif;font-size:clamp(24px,2.8vw,34px);color:var(--branco);margin:0;text-transform:uppercase;line-height:1.05;position:relative;z-index:2}
+.scene-head .timing{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);margin-top:10px;font-weight:600;position:relative;z-index:2}
+
+.scene-body{padding:0}
+.scene-section{padding:24px 28px;border-bottom:1px solid var(--line-soft)}
+.scene-section:last-child{border-bottom:none}
+.scene-section .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.scene-section .lb .num{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-aprovado);line-height:.85;font-weight:700}
+.scene-section .lb::after{content:"";flex:1;height:1px;background:var(--line)}
+.scene-section h4{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);margin:0 0 12px;text-transform:uppercase}
+.scene-section p{font-size:14px;color:var(--ink-soft);margin:0 0 12px;line-height:1.6}
+.scene-section p:last-child{margin-bottom:0}
+.scene-section p b{color:var(--azul-focado)}
+.scene-section ul{margin:0;padding-left:20px;font-size:14px;color:var(--ink-soft);line-height:1.6}
+.scene-section ul li{margin-bottom:6px}
+.scene-section ul li b{color:var(--azul-focado)}
+
+/* REFERÊNCIA DESTAQUE */
+.ref-block{background:var(--off);border-radius:12px;padding:20px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;margin-bottom:14px}
+@media(max-width:600px){.ref-block{grid-template-columns:1fr}}
+.ref-block .ref-thumb{width:120px;height:160px;background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--branco);text-align:center;padding:14px;flex-shrink:0}
+@media(max-width:600px){.ref-block .ref-thumb{width:100%;height:80px;flex-direction:row;gap:14px}}
+.ref-block .ref-thumb .platform{font-family:'DM Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--amarelo);font-weight:700;margin-bottom:8px}
+.ref-block .ref-thumb .creator{font-family:'Antonio',sans-serif;font-size:16px;color:var(--branco);text-transform:uppercase;line-height:1;margin-bottom:6px}
+.ref-block .ref-thumb .views{font-family:'DM Mono',monospace;font-size:11px;color:var(--amarelo);font-weight:600}
+.ref-info h5{font-family:'Antonio',sans-serif;font-size:18px;color:var(--azul-focado);margin:0 0 6px;text-transform:uppercase}
+.ref-info .source{font-family:'DM Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-mute);margin-bottom:8px;font-weight:500}
+.ref-info p{font-size:13.5px;color:var(--ink-soft);margin:0 0 10px;line-height:1.55}
+.ref-info .ref-link{display:inline-flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--azul-aprovado);font-weight:700;padding:7px 12px;background:var(--branco);border:1px solid var(--azul-aprovado);border-radius:8px;transition:all .15s}
+.ref-info .ref-link:hover{background:var(--azul-aprovado);color:var(--branco)}
+
+/* HOOK */
+.hook-block{padding:18px;background:var(--amarelo);border-radius:12px;margin-bottom:14px}
+.hook-block .lb{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-focado);font-weight:700;margin-bottom:8px;display:block}
+.hook-block p{font-family:'Antonio',sans-serif;font-size:22px;color:var(--azul-focado);text-transform:uppercase;line-height:1.1;margin:0}
+.hook-block .anatomy{margin-top:10px;font-family:'DM Mono',monospace;font-size:11px;color:var(--azul-focado);font-weight:500;text-transform:none;letter-spacing:0;opacity:.85}
+
+/* SCRIPT TIMELINE */
+.timeline{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.timeline-step{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px 14px;background:var(--off);border-radius:10px;border-left:3px solid var(--azul-aprovado)}
+.timeline-step .t{font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--azul-aprovado);font-weight:700;padding-top:3px}
+.timeline-step .a{font-size:13.5px;color:var(--ink);line-height:1.55}
+.timeline-step .a b{color:var(--azul-focado)}
+.timeline-step .a em{font-style:normal;background:rgba(255,186,9,.25);padding:2px 4px;border-radius:3px;color:var(--ink)}
+
+/* DIREÇÃO 2-COL */
+.direction-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.direction-grid{grid-template-columns:1fr}}
+.direction-block{padding:16px;background:var(--off);border-radius:10px}
+.direction-block .lb{font-family:'DM Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--azul-aprovado);font-weight:700;margin-bottom:8px;display:block}
+.direction-block h5{font-family:'Antonio',sans-serif;font-size:16px;color:var(--azul-focado);margin:0 0 8px;text-transform:uppercase}
+.direction-block p{font-size:12.5px;color:var(--ink-soft);margin:0 0 8px;line-height:1.55}
+.direction-block ul{margin:0;padding-left:18px;font-size:12.5px;color:var(--ink-soft);line-height:1.55}
+
+/* CTA BLOCK */
+.cta-block{background:linear-gradient(135deg,var(--azul-focado),var(--azul-aprovado));color:var(--branco);padding:20px;border-radius:12px}
+.cta-block .lb{font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--amarelo);font-weight:700;margin-bottom:10px;display:block}
+.cta-block .copy{font-size:13.5px;color:var(--branco);line-height:1.55;margin-bottom:10px}
+.cta-block .copy b{color:var(--amarelo)}
+.cta-block .slogan{display:inline-block;font-family:'Antonio',sans-serif;font-size:16px;color:var(--amarelo);text-transform:uppercase;letter-spacing:.02em;padding:6px 12px;background:rgba(255,186,9,.12);border:1px solid rgba(255,186,9,.4);border-radius:6px}
+
+/* SUMMARY */
+.summary{background:var(--azul-focado);color:var(--branco);padding:clamp(60px,10vh,100px) 0;position:relative;overflow:hidden}
+.summary::before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(255,186,9,.18),transparent 70%);top:-300px;right:-300px;pointer-events:none}
+.summary h2{color:var(--branco);max-width:24ch}
+.summary h2 .y{color:var(--amarelo)}
+.summary .lede{color:rgba(255,255,255,.85);max-width:60ch;margin-bottom:36px}
+.sum-table{background:var(--branco);border-radius:14px;overflow:hidden;color:var(--ink);position:relative;z-index:2}
+.sum-row{display:grid;grid-template-columns:60px 2fr 1fr 1fr 1.2fr;border-bottom:1px solid var(--line-soft);font-size:13px}
+@media(max-width:780px){.sum-row{grid-template-columns:1fr;display:block;padding:10px 0;border-bottom:1px solid var(--line)}.sum-cell{display:flex;justify-content:space-between;padding:6px 14px;border-right:none !important}.sum-cell .mb-lbl{display:inline}}
+.sum-row:last-child{border-bottom:none}
+.sum-row.head{background:var(--azul-focado);color:var(--branco)}
+.sum-cell{padding:14px 16px;display:flex;align-items:center;border-right:1px solid var(--line-soft)}
+.sum-cell:last-child{border-right:none}
+.sum-cell .mb-lbl{display:none;font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;color:var(--ink-mute);font-weight:600;margin-right:8px}
+.sum-row.head .sum-cell{font-family:'Antonio',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--amarelo);border-right-color:rgba(255,255,255,.15)}
+.sum-cell.num{font-family:'Antonio',sans-serif;font-size:20px;color:var(--azul-aprovado);font-weight:700;background:var(--off);justify-content:center}
+.sum-cell .pill{padding:3px 8px;border-radius:5px;font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;display:inline-block}
+.pill.green{background:#C2FFD8;color:#0D7A3D}
+.pill.blue{background:#C2D8FF;color:var(--azul-focado)}
+.pill.yellow{background:#FFE9C2;color:#B36B00}
+.pill.red{background:#FFD0CC;color:#9A2D22}
+
+footer{padding:40px 0;background:var(--azul-focado);color:rgba(255,255,255,.6);text-align:center;font-family:'DM Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:500;border-top:1px solid rgba(255,255,255,.08)}
+footer .y{color:var(--amarelo)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="./index.html"><span class="ball"></span> Roteiros v2 · Sincronizado</a>
+    <div class="nav-links">
+      <a href="#filosofia">Filosofia</a>
+      <a href="#calendario">Calendário</a>
+      <a href="#framework">Framework</a>
+      <a href="#arc1">Pré-Copa</a>
+      <a href="#arc2">Antes do apito</a>
+      <a href="#arc3">Dia do jogo</a>
+      <a href="#arc4">Manhã seguinte</a>
+      <a href="#arc5">FOMO</a>
+      <a href="#summary">Resumo</a>
+      <a href="./copa-filadd-2026-roteiros-performance.html">↩ Roteiros v1</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="hero-pill"><span class="dot"></span>v2 · 10 roteiros profundos · sincronizado com o calendário real</div>
+    <h1>A <span class="y">jornada</span>, não o gancho.<span class="sub-tag">10 roteiros cinematográficos organizados pela jornada real da Seleção em junho de 2026 — pré-Copa, véspera, dia do jogo, manhã seguinte, FOMO. Cada um com referência rastreável, hook, estrutura ato a ato, direção visual, ritmo de edição e CTA específico. Lives em dia sem jogo. <b>Dia de jogo é dia de torcer.</b></span></h1>
+    <div class="hero-meta">
+      <span>Tempos variados · 15s a 60s</span><span class="sep"></span>
+      <span>Refs reais (Brahma · Visa · Coca · Adidas · Cannes Lions)</span><span class="sep"></span>
+      <span>5 arcos · 10 roteiros</span><span class="sep"></span>
+      <span>Pensado como cinema, não como template</span>
+    </div>
+  </div>
+</section>
+
+<!-- FILOSOFIA -->
+<section class="philo" id="filosofia">
+  <div class="wrap">
+    <span class="eyebrow amr">Filosofia da entrega</span>
+    <h2>Antes do framework, <span class="y">a tese.</span></h2>
+    <p class="lede">A v1 errou em três coisas: (1) colocou aulão Filadd no horário do jogo (quebra a campanha), (2) usou referências genéricas em vez de vídeos rastreáveis, (3) padronizou tudo em 15-22s, perdendo escala cinematográfica. Essa v2 reorganiza a partir de uma tese mais simples — emprestada da própria agência Highlight, que você usou como benchmark:</p>
+    <div class="quote">"Surfar a Copa não é dizer Copa. Marca boa não imita o evento, traduz o sentimento dele para a própria linguagem."</div>
+    <p class="quote-src">— @highlight.ag · Instagram · referência enviada por Theus</p>
+    <p class="lede" style="margin-top:32px">É exatamente isso. A Filadd não precisa fingir que é uma marca de futebol. Precisa traduzir <b>o sentimento da Copa</b> (ansiedade pré-jogo, alívio do gol, vazio pós-eliminação, ritual da véspera) pra <b>linguagem do vestibulando</b>. Quando isso acontece, o Bolão deixa de ser "feature legal" e vira <b>o vetor emocional</b> entre as duas coisas que ele já estaria fazendo de qualquer jeito: torcer pelo Brasil e estudar pro vestibular.</p>
+  </div>
+</section>
+
+<!-- CALENDÁRIO -->
+<section class="calendar" id="calendario">
+  <div class="wrap">
+    <span class="eyebrow">Calendário real Brasil · Grupo C</span>
+    <h2>Toda peça precisa <span class="y">caber em um destes dias</span>. Sem isso, vira ficção.</h2>
+    <p class="lede">O Brasil joga 3 vezes na fase de grupos (depois do mata-mata, datas dependem do resultado). Os roteiros abaixo estão amarrados a estes dias. <b>"Antes do apito" sai sempre na véspera</b>. <b>Lives da Filadd nunca caem em dia de jogo do Brasil</b>.</p>
+    <div class="cal-grid">
+      <div class="cal-card">
+        <span class="when">SEX 12 · véspera</span>
+        <div class="date">12<span style="font-size:18px">/06</span></div>
+        <h4>Antes do apito #1</h4>
+        <p class="role">Aquecimento emocional pré-Marrocos. Conteúdo pré-jogo + lembrete de palpite no Bolão.</p>
+        <span class="tag">Filadd publica</span>
+      </div>
+      <div class="cal-card hero-game">
+        <span class="when">SÁB 13 · 19h BR</span>
+        <div class="date">13<span style="font-size:18px">/06</span></div>
+        <h4>Brasil × Marrocos</h4>
+        <p class="role">MetLife Stadium · Nova Jersey. <b>Estreia.</b> Sem live Filadd. Só conteúdo de torcida.</p>
+        <span class="tag">A gente só torce</span>
+      </div>
+      <div class="cal-card">
+        <span class="when">DOM 14 · manhã seguinte</span>
+        <div class="date">14<span style="font-size:18px">/06</span></div>
+        <h4>Manhã seguinte #1</h4>
+        <p class="role">Conteúdo de ressaca / vitória + bolão atualizado + ranking + chamada pra próximo jogo.</p>
+        <span class="tag">Filadd retoma</span>
+      </div>
+      <div class="cal-card">
+        <span class="when">QUI 18 · véspera</span>
+        <div class="date">18<span style="font-size:18px">/06</span></div>
+        <h4>Antes do apito #2</h4>
+        <p class="role">Pré-Haiti. Repertório histórico (Toussaint Louverture) vira post de redação + lembrete Bolão.</p>
+        <span class="tag">Filadd publica</span>
+      </div>
+      <div class="cal-card hero-game">
+        <span class="when">SEX 19 · 21h30 BR</span>
+        <div class="date">19<span style="font-size:18px">/06</span></div>
+        <h4>Brasil × Haiti</h4>
+        <p class="role">Lincoln Financial · Filadélfia. <b>Sem live</b>. Conteúdo de torcida ao vivo no zap da Comunidadd.</p>
+        <span class="tag">A gente só torce</span>
+      </div>
+      <div class="cal-card">
+        <span class="when">SÁB 20 · manhã seguinte</span>
+        <div class="date">20<span style="font-size:18px">/06</span></div>
+        <h4>Manhã seguinte #2</h4>
+        <p class="role">Conteúdo pós-jogo + bolão atualizado + chamada pra Escócia. Live Filadd liberada (Brasil joga só na 4ª).</p>
+        <span class="tag">Filadd retoma</span>
+      </div>
+      <div class="cal-card">
+        <span class="when">TER 23 · véspera</span>
+        <div class="date">23<span style="font-size:18px">/06</span></div>
+        <h4>Antes do apito #3</h4>
+        <p class="role">Pré-Escócia. Repertório (William Wallace, Iluminismo escocês) vira repertório pra ENEM + bolão.</p>
+        <span class="tag">Filadd publica</span>
+      </div>
+      <div class="cal-card hero-game">
+        <span class="when">QUA 24 · 19h BR</span>
+        <div class="date">24<span style="font-size:18px">/06</span></div>
+        <h4>Brasil × Escócia</h4>
+        <p class="role">Hard Rock · Miami. <b>Decisivo</b>. Fechamento da fase de grupos. Sem live Filadd.</p>
+        <span class="tag">A gente só torce</span>
+      </div>
+      <div class="cal-card">
+        <span class="when">QUI 25 · manhã seguinte</span>
+        <div class="date">25<span style="font-size:18px">/06</span></div>
+        <h4>Manhã seguinte #3</h4>
+        <p class="role">Final da fase de grupos. Bolão fechado. Top 5 da fase ganha. Chamada para mata-mata 29/06.</p>
+        <span class="tag">Filadd retoma</span>
+      </div>
+      <div class="cal-card hero-game">
+        <span class="when">SEG 29 · mata-mata</span>
+        <div class="date">29<span style="font-size:18px">/06</span></div>
+        <h4>Oitavas · Brasil ?</h4>
+        <p class="role">Se 1º do grupo: 14h vs 2º do F (Houston). Se 2º: 22h vs 1º do F (Monterrey). Conteúdo adaptativo.</p>
+        <span class="tag">A gente só torce</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORK -->
+<section class="framework" id="framework">
+  <div class="wrap">
+    <span class="eyebrow">Framework de 9 pontos por roteiro</span>
+    <h2>Toda peça abaixo segue <span class="y">a mesma estrutura</span> de avaliação.</h2>
+    <p class="lede">Esses são os 9 critérios que você pediu. Cada roteiro abaixo responde aos 9, na ordem. Você consegue ler horizontalmente (todos os hooks juntos) ou verticalmente (um roteiro inteiro).</p>
+    <div class="fw-grid">
+      <div class="fw"><div class="nm">01</div><h5>Referência original</h5><p>Vídeo, marca ou case real. Com creator, plataforma, link e número de views ou prêmio (Cannes etc.).</p></div>
+      <div class="fw"><div class="nm">02</div><h5>Por que performa</h5><p>Insight psicológico/cultural que explica o desempenho. O que copiamos é o mecanismo, não o filme.</p></div>
+      <div class="fw"><div class="nm">03</div><h5>Adaptação Filadd</h5><p>Tradução do insight pra realidade do vestibulando + Bolão. Sem forçar conexão.</p></div>
+      <div class="fw"><div class="nm">04</div><h5>Hook</h5><p>Texto exato dos primeiros 2-3 segundos. Sempre verbal + visual + texto on screen.</p></div>
+      <div class="fw"><div class="nm">05</div><h5>Estrutura</h5><p>Ato a ato (com tempo). Não é roteirinho de TikTok genérico — descrevemos cena, enquadramento, ação.</p></div>
+      <div class="fw"><div class="nm">06</div><h5>Estilo visual</h5><p>Paleta, lente, sensação. Cinema-style. Quase um moodboard verbal.</p></div>
+      <div class="fw"><div class="nm">07</div><h5>Ritmo de edição</h5><p>Velocidade de corte, transições, uso de som (ex: apito como gatilho).</p></div>
+      <div class="fw"><div class="nm">08</div><h5>Tempo ideal</h5><p>15s · 30s · 45s · 60s — com justificativa. Não tudo no mesmo tempo.</p></div>
+      <div class="fw"><div class="nm">09</div><h5>CTA</h5><p>Ação esperada do espectador + slogan modular ("Cravou? Marcou." / "Antes do apito" / etc.).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCS NAV -->
+<div class="arcs-nav">
+  <div class="wrap">
+    <div class="arcs-nav-inner">
+      <a class="arc-chip" href="#arc1"><span class="nm">ARC 1</span>Pré-Copa</a>
+      <a class="arc-chip" href="#arc2"><span class="nm">ARC 2</span>Antes do apito</a>
+      <a class="arc-chip" href="#arc3"><span class="nm">ARC 3</span>Dia do jogo</a>
+      <a class="arc-chip" href="#arc4"><span class="nm">ARC 4</span>Manhã seguinte</a>
+      <a class="arc-chip" href="#arc5"><span class="nm">ARC 5</span>FOMO permanente</a>
+    </div>
+  </div>
+</div>
+
+<!-- ARC 1 — PRÉ-COPA -->
+<section class="arc-head" id="arc1">
+  <div class="wrap">
+    <div class="arc-num">ARC 1</div>
+    <span class="badge">Arco 1 · até 11/06 · pré-Copa</span>
+    <h2>Pré-Copa — <span class="y">abrir a campanha</span>, plantar o conceito.</h2>
+    <p class="lede">Antes do primeiro jogo, dois filmes manifesto. Um pra explicar a tese da campanha (a Brahma já mostrou que esse território — "tá liberado acreditar" — funciona, e a Filadd entra ao lado disso, não competindo). Outro pra plantar o Bolão como mecânica que conecta as duas Copas (a do Brasil e a do vestibulando).</p>
+  </div>
+</section>
+<section class="scene">
+  <div class="wrap">
+
+    <!-- ROTEIRO 01 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">01</div>
+          <div class="tags">
+            <span class="tag y">Manifesto</span>
+            <span class="tag">45s</span>
+            <span class="tag green">Pré-Copa</span>
+            <span class="tag">YouTube + Meta + TikTok</span>
+          </div>
+        </div>
+        <h3>"A vida tem duas Copas esse ano"</h3>
+        <div class="timing">Rodar a partir de 25/05 · primeira peça da campanha · roda em todos os canais</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TV</div>
+              <div class="creator">Brahma "Tá Liberado Acreditar"</div>
+              <div class="views">2026 · Africa Creative</div>
+            </div>
+            <div class="ref-info">
+              <h5>Brahma · Tá Liberado Acreditar · 2026</h5>
+              <div class="source">Anunciante: Brahma (Ambev) · Agência: Africa Creative · Direção: ambientação Rio centro · Cast: Ronaldo Fenômeno + Carlo Ancelotti</div>
+              <p>Curta-metragem ambientado no centro do Rio que mistura cenas inéditas com imagens históricas da Seleção. Recria jogadas históricas com cidadãos comuns no meio da cidade (Romário, Carlos Alberto, Ronaldinho). Insight central: <b>só 28% dos brasileiros (pesquisa Genial/Quaest) acreditam no hexa</b> — então a marca dá <b>permissão pra acreditar de novo</b>. É o filme de Copa mais comentado do ano.</p>
+              <a class="ref-link" href="https://www.b9.com.br/178456/brahma-copa-ronaldo-ancelotti-liberado-acreditar/" target="_blank" rel="noopener">Análise B9 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Brahma <b>reconhece a crise de fé antes de propor a solução</b>. Quando a marca começa dizendo o que você sente (em vez do que você deveria sentir), a mensagem seguinte carrega mais peso. É o mesmo bloqueio do vestibulando: "vou estudar mais um ano e me decepcionar de novo, igual ao 7×1". A Filadd herda esse permission slot.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Em vez de "tá liberado acreditar no hexa", traduzir pra <b>"tá liberado acreditar na sua aprovação E no hexa"</b>. O filme constrói duas linhas paralelas — torcida brasileira pessimista + aluno cético — e mostra que ambas têm permissão pra acreditar de novo, JUNTAS. Bolão entra como o objeto concreto que materializa isso.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Em 2014, eu prometi que nunca mais ia acreditar."</p>
+            <div class="anatomy">Anatomia · Texto on screen sobreposto a cena de quarto vazio, escuro · sem trilha · sem música · voz suspirada de aluno de 17 anos · pattern interrupt pela calma absoluta numa categoria que costuma gritar.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · Confissão.</b> Quarto escuro de adolescente, luz natural fria. Aluna sentada na cama olhando pra parede com pôster antigo de Neymar. Voice over: <em>"Em 2014, eu prometi que nunca mais ia acreditar."</em> Plano fixo, médio, 1 take.</div></div>
+            <div class="timeline-step"><div class="t">00:05–00:15</div><div class="a"><b>ATO II · Eco coletivo.</b> Corta pra 4 outros vestibulandos em quartos diferentes, dizendo a mesma frase com tons diferentes (estuda no Norte, no Sul, no interior, na capital). Mesmo enquadramento, mesma luz fria. <em>"Em 2018, prometi de novo."</em> · <em>"Em 2022, era pra esse ser o ano."</em></div></div>
+            <div class="timeline-step"><div class="t">00:15–00:28</div><div class="a"><b>ATO III · Quebra.</b> Plano aéreo do Rio amanhecendo. Som de cidade acordando. Voz nova entra (mais firme, narrador adulto): <em>"Mas tem um ano que muda tudo."</em> Cortes rápidos: trave do MetLife sendo iluminada · gramado de Filadélfia · estádio em Miami se enchendo · caderno de vestibulando aberto na mesa. Trilha começa, instrumental, crescendo.</div></div>
+            <div class="timeline-step"><div class="t">00:28–00:40</div><div class="a"><b>ATO IV · Permissão.</b> Volta pros 5 vestibulandos. Agora estão de pé, camiseta da Seleção. Cada um diz uma frase encadeada: <em>"Esse ano..."</em> · <em>"...tem duas Copas."</em> · <em>"...a do Brasil..."</em> · <em>"...e a minha."</em> · <em>"E a gente joga as duas, junto."</em> Trilha sobe.</div></div>
+            <div class="timeline-step"><div class="t">00:40–00:45</div><div class="a"><b>CTA.</b> Tela azul Filadd. Texto Antonio Bold gigante: <b>"A VIDA TEM DUAS COPAS ESSE ANO."</b> Em baixo, menor: "Bolão Filadd. Cravou? Marcou. <em>filadd.com/bolao</em>"</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>ATOS I e II em <b>azul frio / cinza</b> (azul focado da Filadd) com pontos de amarelo apagado (lâmpada, abajur, capa de caderno). ATO III explode em <b>amarelo aquecido</b> da hora dourada. ATO IV em azul aprovado Filadd com amarelo brilhante.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>ATOS I e II: 35mm, planos médios fixos, simétricos (à Wes Anderson sóbrio). ATO III: lente larga, planos aéreos com drone, movimento horizontal. ATO IV: 50mm, retratos meio plano, levemente abaixo da linha do olhar (dignidade).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Começa como um filme indie melancólico (categoria que vestibulando consome no YouTube). Vira hino épico. Termina como brand film. Quebra esperada de categoria — não é nem ad publicitário, nem vlog, nem live de cursinho.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Estrutura emprestada do Brahma "Tá Liberado Acreditar" (Africa Creative) · pacing inspirado em "All the Feels" da Coca-Cola FIFA 2026 · sobriedade dos primeiros 15s emprestada do "Bubbling Up" (WPP OpenX), em que o silêncio antes do gol é o que sustenta o filme.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Lento → médio → rápido → respira.</b> Os primeiros 15s têm UM corte (entre vestibulando 1 e os outros 4). Do segundo 15 ao 28, cortes de 1,5s (montagem épica). Do 28 ao 40, cortes de 2-3s acompanhando a fala (cada um diz sua linha). Os últimos 5s ficam estáticos no logo, deixando a frase respirar. Trilha cresce gradual de 00:18 até pico em 00:35.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 45 segundos</div>
+          <p><b>Por que 45s e não 15s ou 60s?</b> Manifesto precisa de respiro pros 3 atos emocionais funcionarem. 15s mata o ATO II (eco coletivo) e o filme vira slogan vazio. 60s perde retenção no YouTube Shorts e nos cortes Reels (algoritmo penaliza). 45s é o sweet spot que cabe em YouTube Pre-roll skippable (5s+40s não-skip), Reels (limite confortável), TikTok In-Feed.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen: <b>"A vida tem duas Copas esse ano."</b> · Voz: "Joga as duas. <b>Bolão Filadd. filadd.com/bolao."</b></p>
+            <p class="copy">Legenda do post: <em>"Esse ano a gente joga as duas. A do Brasil — e a sua. Bolão Filadd link na bio. Marca aqui o vestibulando que precisa ouvir isso 🇧🇷"</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROTEIRO 02 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">02</div>
+          <div class="tags">
+            <span class="tag y">Mecânica</span>
+            <span class="tag">30s</span>
+            <span class="tag green">Pré-Copa</span>
+            <span class="tag">Reels + TikTok</span>
+          </div>
+        </div>
+        <h3>"Calendário paralelo" · A Copa não te tira do estudo. Te dá um ritmo.</h3>
+        <div class="timing">Rodar a partir de 28/05 · explica a mecânica antes do primeiro jogo</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · Instagram</div>
+              <div class="creator">Visa "Tap In"</div>
+              <div class="views">2026 · Jason Sudeikis</div>
+            </div>
+            <div class="ref-info">
+              <h5>Visa · Tap In · FIFA World Cup 2026</h5>
+              <div class="source">Anunciante: Visa · Cast: Jason Sudeikis, Lamine Yamal, Erling Haaland, Christian Pulisic, Jorge Campos, Andrés Cantor · Format: 60s hero + cutdowns</div>
+              <p>Sudeikis descobre o "tap" do cartão Visa depois de ver Yamal marcar um gol "tap in". A vida dele começa a se transformar onde quer que vá: roteiro de TV vira passagem, motorista britânico mal-humorado vira Erling Haaland, rede de hóquei vira gol de futebol. A <b>mecânica simples (um tap) vira metáfora visual</b> que se repete em cada cena.</p>
+              <a class="ref-link" href="https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22441.html" target="_blank" rel="noopener">Press release Visa ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>O Visa transforma uma <b>ação atômica (tap)</b> em <b>narrativa visual repetível</b>. Cada cena reforça a mesma mecânica. O cérebro associa "tap" → "magia acontece" sem precisar explicar. É exatamente o que o Bolão Filadd precisa: associar <b>"cravo o palpite"</b> → <b>"meu dia se reorganiza ao redor da Copa".</b></p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>O filme mostra dois calendários se SOBREPONDO (não competindo). A cada palpite do bolão, o calendário do vestibulando se reorganiza ao redor do calendário da Copa — Lives Filadd aparecem nos dias livres, "Antes do apito" aparece na véspera, dia do jogo fica em branco e marcado como "torcer". O Bolão é o <b>ato atômico</b> que organiza tudo.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Tem gente achando que vai precisar escolher entre a Copa e o vestibular."</p>
+            <div class="anatomy">Anatomia · Voice over levemente sarcástica · texto on screen com calendário do Google Cal aberto · setas vermelhas riscando as datas dos jogos · pattern interrupt: parece print boring, mas a frase é provocativa.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:03</div><div class="a"><b>ATO I · Premissa errada.</b> Tela cheia: Google Cal vertical (mockup 9:16). Jogos do Brasil 13/06, 19/06, 24/06 em vermelho. Setas vermelhas riscando "estudo" do calendário. Voz: <em>"Tem gente achando que vai precisar escolher entre a Copa e o vestibular."</em></div></div>
+            <div class="timeline-step"><div class="t">00:03–00:10</div><div class="a"><b>ATO II · Inversão visual.</b> Dedo entra na tela, gesto de "tap" (eco do Visa). Cada vez que toca, um item se reorganiza: Bolão preenchido em 12/06 (véspera) · aulão Filadd marcado em 16/06 (dia livre) · "Antes do apito" em 18/06 · gol de futebol no 19/06 sem nada da Filadd, só "torcer".</div></div>
+            <div class="timeline-step"><div class="t">00:10–00:22</div><div class="a"><b>ATO III · Os dois calendários cabem.</b> Calendário se separa em dois lado a lado (split vertical). Esquerda: jogos da Seleção. Direita: Lives Filadd + Antes do apito + Bolão. Linhas amarelas conectam as datas — véspera puxa estudo, jogo é só torcida, manhã seguinte vira aulão. <b>Tudo encaixa.</b></div></div>
+            <div class="timeline-step"><div class="t">00:22–00:28</div><div class="a"><b>ATO IV · Reveal.</b> Plano abre: vestibulando real (cabeça e ombros) olhando pra câmera. <em>"Não escolhi. Joguei as duas."</em> Calendário aparece refletido no óculos dele.</div></div>
+            <div class="timeline-step"><div class="t">00:28–00:30</div><div class="a"><b>CTA.</b> Tela azul. <b>"Cravou? Marcou. Bolão Filadd."</b> + URL.</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>UI realista do Google Calendar (branco / cinza / azul Google). Os elementos da Filadd se infiltram aos poucos em amarelo (#FFBA09) e azul aprovado (#2424FF). O ato IV traz cor humana e textura de pele. Cromaticamente: tela → carne.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Atos I-III: tela cheia em mockup digital (sem câmera real). Recurso de motion design (após). Ato IV: 50mm, plano americano fechado, fundo desfocado, luz lateral suave (golden hour de janela).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Começa como tutorial / explainer (categoria didática que vestibulando consome). Vira manifesto humano nos últimos 8s. Quebra de registro é o que segura a atenção.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Mecânica visual do tap emprestada do Visa "Tap In". Motion de UI vertical estilo Apple keynote (clean, sem ruído). Reveal humano final emprestado de Coca "Uncanned Emotions" — o reveal sai do produto, vai pra cara do torcedor.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Tac · tac · tac · respira.</b> Cada "tap" gera um corte / motion: 12 movimentos em 7 segundos no ato II. Ritmo de Instagram explainer-tutorial. No ato IV o ritmo PARA — 1 take de 6 segundos com a pessoa olhando, sem nenhum corte, contrastando com a montagem digital. Som-chave: som de "tap" do iPhone (clique seco) repetindo no ritmo dos cortes do ato II.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 30 segundos</div>
+          <p><b>Por que 30s.</b> Explainer/mecânica precisa de tempo pra mostrar a transformação (não cabe em 15s sem soar atropelado), mas não pede arco emocional (não pede 60s). 30s é o tempo padrão de Meta Ads pra explicar feature de produto — o Bolão É a feature. O Visa "Tap In" hero é 60s, mas o cutdown 30s teve hook rate maior em testes (fonte: Adweek).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen: <b>"Cravou? Marcou."</b> · URL: <em>filadd.com/bolao</em> · Voz off: "Joga as duas. A do Brasil. E a sua."</p>
+            <p class="copy">Legenda do post: <em>"Não precisa escolher 🇧🇷📚 Bolão Filadd reorganiza o seu mês de junho. Link na bio."</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARC 2 — ANTES DO APITO -->
+<section class="arc-head" id="arc2">
+  <div class="wrap">
+    <div class="arc-num">ARC 2</div>
+    <span class="badge">Arco 2 · véspera de cada jogo (12/06, 18/06, 23/06)</span>
+    <h2>Antes do apito — <span class="y">o território da Filadd.</span></h2>
+    <p class="lede">É aqui que a marca tem direito de falar. A véspera é o momento de aquecimento emocional, repertório histórico do adversário (vira redação), lembrete do palpite. Roteiros que <b>literalmente usam o apito como recurso narrativo</b>, inspirados na ativação Clash Royale × Globo que substituiu o apito do árbitro pelo som do jogo na final da Copa do Brasil.</p>
+  </div>
+</section>
+<section class="scene">
+  <div class="wrap">
+
+    <!-- ROTEIRO 03 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">03</div>
+          <div class="tags">
+            <span class="tag y">Brand film</span>
+            <span class="tag">30s</span>
+            <span class="tag">Véspera</span>
+            <span class="tag">YouTube + Reels</span>
+          </div>
+        </div>
+        <h3>"O Apito" · o som do início vira o som da preparação</h3>
+        <div class="timing">Vai ao ar 12/06 · 18/06 · 23/06 (com variação por jogo)</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TV Globo · Copa do Brasil</div>
+              <div class="creator">Clash Royale × Globo</div>
+              <div class="views">DAVID São Paulo · 2024</div>
+            </div>
+            <div class="ref-info">
+              <h5>Clash Royale · "Som do apito"</h5>
+              <div class="source">Anunciante: Supercell (Clash Royale) · Veículo: Rede Globo (Copa do Brasil final) · Agência: DAVID São Paulo · Format: integração ao vivo + 15s filme no intervalo</div>
+              <p>Na final da Copa do Brasil, a Globo substituiu literalmente o som do apito inicial do árbitro pelo som icônico do Clash Royale. Não foi vinheta nem patrocínio com placa — foi <b>tomar o som mais reconhecível do futebol e ressignificar</b> a favor da marca. Insight: o apito não pertence ao árbitro, pertence ao ritual de quem assiste.</p>
+              <a class="ref-link" href="https://voxnews.com.br/clash-royale-troca-o-apito-pelo-som-do-jogo-na-final-da-copa-do-brasil/" target="_blank" rel="noopener">Case Vox News ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Som tem mais poder de ancoragem do que imagem em vídeo curto vertical (porque 60% das pessoas só ouve no segundo viewing). O apito é uma <b>memória involuntária</b> coletiva — ninguém precisa explicar o que significa. Quando você sequestra esse som, vira tatuagem na cabeça do consumidor sem ele perceber. A Filadd já tem o slogan "Antes do apito" no playbook v3 — falta só usá-lo cinematograficamente.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>O apito vira o <b>gatilho de edição do filme</b>. Cada vez que ele toca, a cena vira outra: começa no quarto do aluno preparando o palpite → cozinha da casa pegando lanche → sala assistindo aquecimento → e termina no sofá no momento exato do apito real do jogo. <b>O apito é o que separa "antes" (Filadd) de "agora" (só torcer).</b> É a marca dizendo "até aqui é nosso, daqui é só seu".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Apito de árbitro tocando seco] + texto: "Antes desse som tocar, tudo é da Filadd."</p>
+            <div class="anatomy">Anatomia · Som primeiro (apito agudo, 0,8s), tela ainda preta. Texto branco sobe sobre o preto. Aluno aparece no terceiro segundo. Pattern interrupt: a maioria das ads abre com música; essa abre com SILÊNCIO interrompido por um som diegético reconhecível.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:02</div><div class="a"><b>ATO 0 · Apito.</b> Tela preta. <em>"FIIIIII"</em> (apito 0,8s). Texto branco: <b>"Antes desse som tocar, tudo é da Filadd."</b></div></div>
+            <div class="timeline-step"><div class="t">00:02–00:08</div><div class="a"><b>ATO I · Quarto.</b> Aluno na cama, celular na mão. Tela do bolão aberta. Cravou Brasil 2 × 0 Marrocos. <em>Apito de transição (curto)</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:08–00:14</div><div class="a"><b>ATO II · Cozinha.</b> Mesma luz dourada, agora na cozinha. Pega Coca, abre. Voz off da live "Antes do apito" tocando do celular em cima da bancada, comentando o histórico do Marrocos. <em>Apito</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:14–00:20</div><div class="a"><b>ATO III · Sala.</b> Senta no sofá. TV ligada, aquecimento da Seleção. Coloca a camiseta. Mãe entra com prato de comida. Família se monta. <em>Apito</em>. Corta.</div></div>
+            <div class="timeline-step"><div class="t">00:20–00:27</div><div class="a"><b>ATO IV · O apito real.</b> Câmera fecha na TV. Árbitro real no MetLife, apita início do jogo (<em>apito real, longo, agudo</em>). Família surta. Plano se abre lentamente. Texto sobre cena: <b>"Daqui é só seu."</b></div></div>
+            <div class="timeline-step"><div class="t">00:27–00:30</div><div class="a"><b>CTA.</b> Tela azul Filadd: <b>"Antes do apito. Cravou? Marcou."</b> + filadd.com/bolao</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Hora dourada (16h-18h da véspera) entrando pelas janelas. Tons quentes nos ambientes domésticos. TV ao fundo ilumina os rostos com azul gélido do gramado. Contraste quente/frio entre família e tela.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm em todos os ambientes (perspectiva humana, sem grande angular). Movimentos suaves de Steadicam ou gimbal. Sem zoom. Filme se sustenta na continuidade espacial — a câmera segue o aluno pela casa.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Filme caseiro com produção alta. Lembra short de Apple ("Made by Apple"), Wieden+Kennedy intimista, ou os filmes de pré-jogo da Heineken Champions League. Não é "comercial" — é poesia de ritual.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Clash Royale × Globo (uso do apito como ativo de marca). Ritmo "ritual da véspera" emprestado de filmes de marca japoneses de jogos finais. Família reunida emprestada do "Bubbling Up" da Coca.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>O apito É o corte.</b> Toda transição entre ambientes é feita no apito (curto, médio, longo). Cortes acontecem POR CIMA do som — não há fade, não há cross-dissolve. Só apito → corte seco. Quando chega no ato IV (o apito real, mais longo), o ritmo PARA: 6 segundos contínuos da família reagindo, sem cortes. Contraste rítmico ensina o espectador a separar "Filadd" de "só torcida". Trilha discreta de tensão crescente nos atos I-III, silêncio total no ato IV (apenas o jogo).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 30 segundos</div>
+          <p><b>Por que 30s.</b> Cabe os 4 atos sem atropelar (cada um 6s + setup 2s + CTA 3s). 15s não permite os 3 ambientes (sem isso, perde o sentido do "antes"). 60s estica demais o conceito — o apito perde força se for repetido 6 vezes. 30s é o tempo de respiração entre cada ato. Roda bem em Meta In-Stream, Reels, YouTube In-Feed.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen final: <b>"Antes do apito. Cravou? Marcou."</b> · URL: <em>filadd.com/bolao</em> · Sem voz off no CTA (silêncio respeitando o jogo).</p>
+            <p class="copy">Legenda do post: <em>"Amanhã tem Brasil. Hoje a gente crava o palpite — e te entrega o jogo. Bolão Filadd link na bio. 🇧🇷"</em></p>
+            <span class="slogan">Antes do apito.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROTEIRO 04 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">04</div>
+          <div class="tags">
+            <span class="tag y">Conteúdo de utilidade</span>
+            <span class="tag">60s</span>
+            <span class="tag">Véspera</span>
+            <span class="tag">TikTok longo + Reels</span>
+          </div>
+        </div>
+        <h3>"Repertório do adversário" · o histórico do Marrocos vira sua redação</h3>
+        <div class="timing">12/06 (pré-Marrocos) · 18/06 (pré-Haiti) · 23/06 (pré-Escócia) · três peças, mesma estrutura</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TikTok · YouTube</div>
+              <div class="creator">@dedaaladim</div>
+              <div class="views">2M followers</div>
+            </div>
+            <div class="ref-info">
+              <h5>Débora Aladim · vídeos de comentário do ENEM</h5>
+              <div class="source">Creator: Débora Aladim (@dedaaladim no TikTok · ~2M / Instagram ~1.5M / YouTube ~4M) · Formato: análise didática de tema / repertório de redação, com comunicação leve sem perder densidade</div>
+              <p>Aladim é a maior referência brasileira em <b>traduzir tema denso (História, Sociologia, Filosofia) em conteúdo curto e divertido pra vestibulando</b>. Cada vez que ela analisa um tema da prova, viraliza no X com "Aladim falou". Esse é o padrão de tom que o "Antes do apito" precisa imitar — autoridade leve, sem condescendência.</p>
+              <a class="ref-link" href="https://www.cnnbrasil.com.br/educacao/quem-e-debora-aladim-youtuber-que-voltou-ao-trending-topics-do-x-por-causa-do-enem/" target="_blank" rel="noopener">Perfil CNN Brasil ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Vestibulando consome conteúdo de Aladim como <b>serviço</b>, não como ad. Ela entrega <b>repertório utilizável</b>. Quando você empacota o adversário da Copa como repertório de redação, você dá ao vestibulando uma desculpa pra assistir Copa com a justificativa de estudar. Conexão Copa + estudo deixa de ser slogan, vira <b>utilidade real.</b></p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Três peças, uma por jogo. Em cada uma, um professor da Filadd (NÃO um creator famoso — autoridade interna) entrega em 60s o repertório histórico-cultural do adversário. <b>Marrocos:</b> Revolução do Rif, colonialismo francês, modernização. <b>Haiti:</b> Toussaint Louverture, primeira revolução negra, anti-escravista. <b>Escócia:</b> William Wallace, Iluminismo escocês (David Hume), revolução industrial. O conteúdo é a peça. O Bolão entra só no CTA final.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Amanhã o Brasil joga contra o Marrocos. Você precisa saber 3 coisas — e duas podem cair na sua redação."</p>
+            <div class="anatomy">Anatomia · Talking head direto pra câmera + texto sobreposto contando 3 itens com bullet. Hook combina urgência (amanhã) + utilidade (vai cair na prova). Pattern interrupt pelo registro: ad de Copa que abre falando de ENEM.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato (versão Marrocos · análoga pra Haiti e Escócia)</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · Hook.</b> Plano americano professor (na sala de aula da Filadd ou estúdio simples). Olha pra câmera. <em>"Amanhã o Brasil joga contra o Marrocos. Você precisa saber 3 coisas — e duas podem cair na sua redação."</em> Lousa atrás começa a aparecer com as bandeiras.</div></div>
+            <div class="timeline-step"><div class="t">00:05–00:20</div><div class="a"><b>ATO II · Coisa #1 · Geopolítica.</b> Map de tela cheia com Marrocos destacado. Voz over: "O Marrocos colonizou o Saara Ocidental em 1975 — questão geopolítica ATIVA. Cai como tema de DH em todas as provas que pegam atualidade." Texto on screen: <b>"DIREITOS HUMANOS · TEMA QUENTE 2026"</b>.</div></div>
+            <div class="timeline-step"><div class="t">00:20–00:35</div><div class="a"><b>ATO III · Coisa #2 · História.</b> Imagem da Revolução do Rif (1921). Voz over: "Em 1921, Abd el-Krim liderou uma revolução de berberes contra a Espanha e a França — primeira república popular do Magreb. Citação possível pra redação sobre resistência e identidade nacional."</div></div>
+            <div class="timeline-step"><div class="t">00:35–00:48</div><div class="a"><b>ATO IV · Coisa #3 · Curiosidade.</b> Estádio do Marrocos com torcida. Voz: "Em 2022, foi a primeira seleção AFRICANA da história a chegar na semifinal. Não tem como subestimar essa Seleção amanhã."</div></div>
+            <div class="timeline-step"><div class="t">00:48–00:56</div><div class="a"><b>ATO V · Convite emocional.</b> Volta no professor. Olha pra câmera. <em>"Esse é o nosso adversário. Pra eu te ajudar a torcer mais informado, tô fazendo essa série todo dia antes de jogo do Brasil — é o 'Antes do apito'."</em></div></div>
+            <div class="timeline-step"><div class="t">00:56–01:00</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. Joga o Bolão. filadd.com/bolao"</b> + Voz: "E não esquece de cravar o palpite. A gente joga junto."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Studio limpo, fundo branco ou neutro. Inserts de mapas, imagens de arquivo histórico (filtros sutis pra unificar com a paleta da campanha). Bandeira do Brasil presente, mas discreta — não compete.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>35mm no professor (plano americano). Inserts de mapas em motion (after effects). Bandeiras tremulando em câmera lenta. Nada cinematográfico-glamour — registro de educação séria mas leve. Vibe meio Vox, meio Aladim.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Utilidade > entretenimento. O espectador deve sentir que aprendeu algo concreto. Conteúdo "salvável" — vai pra pasta de favoritos. Vibe newsletter de jornal em vídeo (estilo Drauzio Varella mais didático).</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>@dedaaladim (didática + leveza) · @dosesdahistoria (História ENEM) · vibe de "the daily brief" educacional. Inserts visuais inspirados em vídeos da @yagostephano (Biologia ENEM, infográficos).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Energia constante.</b> Cortes a cada 3-4 segundos (rápido pra aula, lento pra TikTok). 1 corte por bullet no ato I, 2-3 cortes por fact no atos II-IV, 1 take respirado no ato V. Música de fundo discreta (instrumental orquestral cinematográfico baixo) que ajuda sentido épico do "amanhã tem Brasil". Sons-chave: bandeira tremulando (whoosh), página de livro virando (no transition entre facts).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 60 segundos</div>
+          <p><b>Por que 60s.</b> Conteúdo de utilidade pede tempo (3 facts não cabem em 30s sem perder densidade). 60s é o tempo padrão de "Daily News" / "Notícias em 1 minuto" que vestibulando já consome. Rodar TikTok In-Feed (limite 60s) e Reels (90s confortável). YouTube Shorts (60s) capta busca orgânica por "Marrocos Copa do Mundo". Bonus: vídeo de 60s tem WatchTime alto pro algoritmo Filadd ranquear no orgânico depois.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Voz: "<b>Joga o Bolão</b>. A gente joga junto." Texto: <b>"Cravou? Marcou."</b> + filadd.com/bolao</p>
+            <p class="copy">Legenda do post (Marrocos): <em>"📌 Salva esse. Amanhã o Brasil joga, e dois desses temas podem cair na sua redação. Bolão Filadd link na bio — crava aí o palpite e mostra que sabe."</em></p>
+            <span class="slogan">Antes do apito.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROTEIRO 05 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">05</div>
+          <div class="tags">
+            <span class="tag y">Urgência</span>
+            <span class="tag">15s</span>
+            <span class="tag red">Véspera</span>
+            <span class="tag">TikTok + Reels</span>
+          </div>
+        </div>
+        <h3>"Fecha amanhã às 18h59" · 60 segundos antes do apito</h3>
+        <div class="timing">12/06 18h, 18/06 20h30, 23/06 18h · 1 hora antes do apito real do jogo seguinte</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">TV global · ativação</div>
+              <div class="creator">Supercell · Haaland</div>
+              <div class="views">Cannes 2025 Grand Prix</div>
+            </div>
+            <div class="ref-info">
+              <h5>Supercell · "Haaland Payback Time" (Clash of Clans)</h5>
+              <div class="source">Anunciante: Supercell · Agência: DAVID NY · Cast: Erling Haaland · Mídia: outdoors perto de estádios rivais + real-time ads · Cannes Lions 2025 Grand Prix Sports + Gold Entertainment + Bronze Gaming · 150% surge de novos jogadores</div>
+              <p>A Supercell pegou o ódio que rivais tinham pelo Haaland e o transformou em razão pra jogar Clash of Clans. Outdoors apareciam perto de estádios rivais convocando torcedor a "destruir a vila do Haaland no jogo". <b>Real-time ads</b> ativavam no momento do jogo. Mecânica: urgência + rivalidade existente + recompensa simples.</p>
+              <a class="ref-link" href="https://lbbonline.com/news/Haaland-Payback-Time-for-Supercell-Clash-of-Clans-Wins-Grand-Prix" target="_blank" rel="noopener">Case Cannes Lions ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>O Haaland Payback Time ganhou Grand Prix em Cannes porque amarrou <b>real-time ad ao momento do jogo</b>. A urgência não foi inventada — ela já existia na cabeça do torcedor. A peça só ofereceu uma vazão. Pra Bolão Filadd, a mesma lógica: a urgência de "vou perder a chance de cravar esse jogo" já está latente — basta ativar 1h antes do apito, com mídia paga e UGC orgânico.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>15s de countdown urgentíssimo, vai ao ar exatamente 1 hora antes do apito real do jogo seguinte. Mídia: TikTok Spark Ads + Meta Reels + WhatsApp na Comunidadd. Reaproveita o relógio do jogo em tempo real (real-time ad). Quem palpitar nos próximos 60 minutos entra na rodada. <b>Quem não entrar, perde a chance até a próxima.</b></p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>[Som de apito longo crescendo] + "60 minutos pro Brasil jogar. 60 minutos pro Bolão fechar."</p>
+            <div class="anatomy">Anatomia · Apito de árbitro distorcido / pitch-shift descendo (efeito de tensão). Texto on screen em VERMELHO sobre fundo preto. Cronômetro no canto superior direito contando regressivamente. Som de batimento cardíaco entrando no segundo 2.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:02</div><div class="a"><b>ATO I · Apito.</b> Tela preta + cronômetro 01:00:00 piscando vermelho. Apito distorcido. Texto: <b>"60 MINUTOS PRO BRASIL JOGAR."</b></div></div>
+            <div class="timeline-step"><div class="t">00:02–00:08</div><div class="a"><b>ATO II · Quem ainda não palpitou.</b> Plano celular fechado, tela do bolão Filadd aberta. Marrocos × Brasil. Campos vazios. Voz acelerada: <em>"O bolão fecha junto. 60 minutos pra cravar o placar do Brasil × Marrocos."</em> Mão entra na tela e digita 2 × 0.</div></div>
+            <div class="timeline-step"><div class="t">00:08–00:12</div><div class="a"><b>ATO III · Prêmio.</b> Tela mostra prêmio dessa rodada: <em>"TOP 5 GANHA iPad."</em> Cronômetro continua descendo: 00:59:42.</div></div>
+            <div class="timeline-step"><div class="t">00:12–00:15</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. Vai agora. filadd.com/bolao"</b> · Voz: "Agora ou só na próxima."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Vermelho urgência + preto + amarelo Filadd. Lembra estética de countdown de lançamento (Apple), placar de jogo (ESPN), notificação de "última chamada". Sem rostos humanos — só interface e tipografia gigante.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Screen recording do app em tela cheia 9:16. Sem câmera real (é peça de motion design). Cronômetro sempre visível no canto superior direito. Tipografia ANTONIO BOLD gigante, ocupando metade da tela.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Aperto no peito. Não é cinematográfico, é tactical. Vibe de "última oportunidade". Quase asfixiante.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Real-time ads do Supercell Haaland (cronômetro do jogo). Countdown de drops da Nike SNKRS. Notificação de aplicativo de aposta minutos antes do jogo (Bet365, Sportingbet).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Cardíaco.</b> Cortes a cada 1-1,2s. Cronômetro nunca para de descer. Batimento cardíaco crescendo no áudio até virar o som do apito final. Som-chave: <b>cronômetro digital piscando + apito + batimento</b>. Velocidade visual: 12 cortes em 15 segundos. É a única peça da campanha com edição realmente agressiva.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 15 segundos</div>
+          <p><b>Por que 15s.</b> Urgência não precisa de história. Precisa de tempo curto, repetido. 15s permite rodar várias vezes na mesma hora (frequência alta sem fadiga). É a peça mais barata da campanha e a que mais converte (FOMO bottom funnel). Compatível com Stories Meta, TikTok In-Feed e Spark Ads.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto: <b>"Agora ou só na próxima."</b> URL: <em>filadd.com/bolao</em> · Cronômetro visível na tela inteira.</p>
+            <p class="copy">Legenda do post: <em>"⏰ 60 min pro Brasil jogar. Cravou? Marcou. Link na bio AGORA."</em></p>
+            <span class="slogan">Antes do apito.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARC 3 — DIA DO JOGO -->
+<section class="arc-head" id="arc3">
+  <div class="wrap">
+    <div class="arc-num">ARC 3</div>
+    <span class="badge">Arco 3 · sábado 13/06, sexta 19/06, quarta 24/06 · DIA DO JOGO</span>
+    <h2>Dia do jogo — <span class="y">a Filadd cala a boca. A gente só torce.</span></h2>
+    <p class="lede">Nenhuma chamada de matrícula. Nenhuma chamada de aulão. Nenhuma referência a estudo. A marca aparece apenas pra <b>se juntar à torcida</b> — em UGC, em interação no zap, em conteúdo de presença ("estou aqui contigo"). Esse é o arco mais difícil de aceitar internamente, e o mais importante pra credibilidade da campanha.</p>
+  </div>
+</section>
+<section class="scene">
+  <div class="wrap">
+
+    <!-- ROTEIRO 06 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">06</div>
+          <div class="tags">
+            <span class="tag y">Presença</span>
+            <span class="tag">15s</span>
+            <span class="tag red">Dia do jogo</span>
+            <span class="tag">Stories + TikTok</span>
+          </div>
+        </div>
+        <h3>"Hoje a gente só torce" · a peça que rejeita o ad</h3>
+        <div class="timing">13/06 18h, 19/06 20h30, 24/06 18h · meia hora antes de cada apito real</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TikTok</div>
+              <div class="creator">Coca-Cola "Bubbling Up"</div>
+              <div class="views">FIFA 2026 · WPP OpenX</div>
+            </div>
+            <div class="ref-info">
+              <h5>Coca-Cola · "Bubbling Up" · FIFA 2026</h5>
+              <div class="source">Anunciante: Coca-Cola · Agência: WPP OpenX / Ogilvy · Format: filme manifesto + ativações in-stadium · Anthem: "Jump" (J Balvin + Travis Barker)</div>
+              <p>Filme captura a antecipação coletiva pré-jogo — pessoas em elevador, metrô, fila do mercado se entreolhando e gritando "It's coming!" enquanto bolhas de Coca sobem no copo. A marca <b>não vende</b>, ela <b>está</b>. O produto é só testemunha da emoção coletiva.</p>
+              <a class="ref-link" href="https://creative.salon/articles/work/coca-cola-uncanned-emotions-wpp-open-x-ogilvy" target="_blank" rel="noopener">Análise Creative Salon ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Coca não anuncia produto, anuncia <b>presença</b>. É a inversão do anúncio: a marca diz "estou aqui, junto, igual a você". Em categorias saturadas (FIFA tem 100+ marcas competindo), esse movimento desativa o filtro de "isso é ad" do espectador. Aplicado à Filadd: no dia do jogo, qualquer chamada comercial soa <b>desrespeitosa</b>. O que conecta é "estou aqui contigo".</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>15s. Nenhuma menção a Bolão. Nenhum CTA. Nenhum link na bio. Apenas: alunos reais da Filadd (gravados em casa, com camiseta da Seleção, no momento real do jogo) ENCARANDO a câmera com a frase única: <b>"Hoje a Filadd só torce."</b> Repetir em 4 vozes diferentes. Encerra com tela azul: <b>"VOLTAMOS AMANHÃ."</b></p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 2 segundos</span>
+            <p>"Esse aqui não é um anúncio."</p>
+            <div class="anatomy">Anatomia · Texto branco simples sobre fundo preto. Voice over de aluno (não de ator profissional, com sotaque local). Pattern interrupt: ad que abre dizendo "isto não é ad". Quebra de expectativa que ativa atenção.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:02</div><div class="a"><b>ATO I.</b> Fundo preto. Texto: <b>"Esse aqui não é um anúncio."</b> Voz off de aluno.</div></div>
+            <div class="timeline-step"><div class="t">00:02–00:08</div><div class="a"><b>ATO II.</b> 4 alunos (gravação UGC em casa). Cada um aparece 1,5s, olhando direto pra câmera, camiseta da Seleção, sem fala — só olhar. Fundo: TV da casa transmitindo a transmissão real do jogo. Identificação por geotag pequena: "Manaus", "Recife", "Belo Horizonte", "Porto Alegre".</div></div>
+            <div class="timeline-step"><div class="t">00:08–00:13</div><div class="a"><b>ATO III.</b> Quatro vozes encadeadas: <em>"Hoje..."</em> · <em>"...a Filadd..."</em> · <em>"...só torce."</em> · <em>"Junto."</em> Última aluna olha pra TV, pôe a mão no peito.</div></div>
+            <div class="timeline-step"><div class="t">00:13–00:15</div><div class="a"><b>OUTRO.</b> Tela azul Filadd: <b>"VOLTAMOS AMANHÃ."</b> Sem URL. Sem CTA. Logo discreto no canto inferior.</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Cores reais do quarto / sala dos alunos. Sem filtro, sem grading. A vibe é "isso é gravação real, não cinematografia". Único elemento de marca: a tela azul final.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Celular do próprio aluno (ele se filma). Vertical 9:16. Plano americano fechado. Câmera trêmula leve. Sem direção formal — só roteiro de "olhe pra câmera com camiseta da Seleção, sem falar nada".</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Reverência. Quase um minuto de silêncio. A peça quebra o ritmo frenético da timeline do TikTok. É o anti-ad — e por isso vai se destacar.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Coca "Bubbling Up" (a marca testemunhando, não vendendo). REI #OptOutside (ad que disse "não venha comprar"). Patagonia "Don't Buy This Jacket". O Brand Films category de Cannes 2024 valorizou explicitamente essa quebra de registro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Lento e respeitoso.</b> 4 cortes em 15 segundos (cada aluno 1,5s + ato I 2s + ato III + outro). Sem trilha sonora. Apenas som ambiente da casa de cada aluno (TV ao fundo com transmissão real). O silêncio é o ritmo. Som ambiente substitui trilha.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 15 segundos</div>
+          <p><b>Por que 15s.</b> Mais que isso vira piedade fake. 15s é suficiente pra entregar a mensagem (Filadd respeita o jogo) e voltar pro feed sem incomodar. Roda como Story sponsored + TikTok In-Feed. Importante: <b>essa peça não tem KPI de conversão</b>. KPI é <b>recall + brand love</b> medido em pesquisa pós-Copa. É investimento em marca.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final</div>
+          <div class="cta-block">
+            <span class="lb">CTA · ausência intencional</span>
+            <p class="copy">SEM URL. SEM link na bio. SEM "cravou marcou". Apenas: <b>"VOLTAMOS AMANHÃ."</b></p>
+            <p class="copy">Legenda do post: <em>"Hoje a gente só torce. Voltamos amanhã. Vai Brasil 🇧🇷"</em> · Comentários desabilitados (opcional, pra reforçar).</p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROTEIRO 07 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">07</div>
+          <div class="tags">
+            <span class="tag y">UGC convocação</span>
+            <span class="tag">30s</span>
+            <span class="tag red">Dia do jogo</span>
+            <span class="tag">Stories + Comunidadd</span>
+          </div>
+        </div>
+        <h3>"Manda foto da sua casa" · alunos viram os patrocinadores</h3>
+        <div class="timing">Roda 2h antes do apito · convoca UGC · republica nas 24h seguintes</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TV</div>
+              <div class="creator">Orange "WoMen's Football"</div>
+              <div class="views">Cannes 2024 Grand Prix</div>
+            </div>
+            <div class="ref-info">
+              <h5>Orange · "WoMen's Football" · Cannes 2024</h5>
+              <div class="source">Anunciante: Orange · Agência: Marcel · Cannes 2024 Grand Prix em Film e Entertainment Lions for Sport · 92% dos espectadores mudaram opinião sobre futebol feminino</div>
+              <p>Filme mostra craques masculinos franceses jogando bem — REVELANDO no final que eram as jogadoras femininas com deepfake. Quebrou a narrativa de "futebol é coisa de homem" sem militância. <b>O reveal é o tudo</b>: a marca não diz, ela mostra e deixa o espectador concluir.</p>
+              <a class="ref-link" href="https://adage.com/article/special-report-cannes-lions/womens-football-gender-equity-deepfake-wins-entertainment-lions-sport-grand-prix/2565996/" target="_blank" rel="noopener">Case Ad Age ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>O Orange ganhou Cannes porque <b>fez a audiência fazer o trabalho de chegar na conclusão</b>. Mesma lógica aqui: a Filadd não diz "nossos alunos são uma família". Ela mostra cenas das casas reais dos alunos durante o jogo, sem editar mensagem nenhuma — e revela só no final que <b>todos esses são alunos da plataforma</b>. A audiência conclui sozinha que a Filadd é a comunidade nacional do vestibular.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Duas horas antes do apito, a Filadd convoca via Stories + Comunidadd: <b>"manda a foto da sua sala no momento do jogo"</b>. Recebe 200+ submissões em 24h. Monta peça de 30s só com essas fotos / vídeos curtos, mostrando alunos de todo o Brasil torcendo. <b>O reveal:</b> no segundo 25, aparece o texto "todos esses são alunos da Filadd". Vai ao ar 12h depois do jogo (na manhã seguinte).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Isso aqui é o Brasil torcendo ontem à noite, ao mesmo tempo."</p>
+            <div class="anatomy">Anatomia · Grid de 6 vídeos verticais simultâneos (6 casas tocando ao mesmo tempo). Áudio sincronizado de 6 gritos de gol simultâneos. Texto sobreposto pequeno. Pattern interrupt: tela cheia de stickers de casas reais, sem polimento.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · Grid coletivo.</b> Tela dividida em 6 (2 colunas × 3 linhas). 6 casas diferentes, todas no momento do gol do Brasil. Som de gol coletivo. Texto pequeno: <em>"Brasil 2 × 0. Ontem 22h47."</em></div></div>
+            <div class="timeline-step"><div class="t">00:05–00:15</div><div class="a"><b>ATO II · Geografia do choro e da alegria.</b> Cortes individuais. Família em Manaus pulando. Casal idoso em Porto Alegre se abraçando. Grupo de amigos em Recife rolando no chão. Mãe e filho em Belo Horizonte chorando junto. Cada plano 1,5s, geotag no canto.</div></div>
+            <div class="timeline-step"><div class="t">00:15–00:23</div><div class="a"><b>ATO III · Acumulação.</b> Volta ao grid, mas agora 12 casas (4 × 3). Mais geotags. Câmera lenta sobre os rostos. Trilha de violão acústico entra.</div></div>
+            <div class="timeline-step"><div class="t">00:23–00:27</div><div class="a"><b>ATO IV · O reveal.</b> Tela fica preta. Texto branco aparece com timing: <em>"Todos esses..."</em> [pausa] <em>"...são alunos da Filadd."</em></div></div>
+            <div class="timeline-step"><div class="t">00:27–00:30</div><div class="a"><b>OUTRO.</b> Tela azul: <b>"A gente joga junto."</b> · Logo Filadd. SEM URL. SEM CTA. SEM "Cravou? Marcou."</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Cores reais de UGC (sem grading uniforme). Cada casa tem sua paleta natural. Apenas geotags brancas e texto final em azul Filadd. <b>Contraste estético = familiaridade.</b></p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>9:16 vertical 100% UGC (celular dos alunos). Grids feitos em pós (motion). Geotag tipo Apple Maps no canto. Final tipo Sundance — branco no preto, calma, frase quebrada em 2 atos.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>"Você não estava sozinho." Filme nacional sem ser ufanista. Mostra geografia humana do Brasil. Vibe de documentário curto em rede social — entre Globoplay e Netflix Brasil short.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Orange WoMen's Football (estrutura de reveal). "Bubbling Up" da Coca (presença coletiva). Documentários verticais de jornalismo do The New York Times (op-docs verticais). FlipaClip ou TikTok stitch montado em escala.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Rítmico → respira → reveal.</b> Cortes a cada 0,8s no ato I (sensação de overload coletivo). Cortes de 1,5s no ato II (cada cena ganha respiro). Ato III volta ao grid (motion design, sem cortes, só escala). Ato IV é silêncio e texto progressivo — pausa de 1s entre "Todos esses" e "...são alunos da Filadd". Som-chave: <b>gritos sincronizados + trilha de violão acústico crescendo + silêncio total no reveal</b>.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 30 segundos</div>
+          <p><b>Por que 30s.</b> Reveal precisa de setup (12-15s mostrando casas anônimas) + climbing emocional (8-10s) + reveal (5s). 15s não cabe a estrutura. 60s perde retenção. 30s permite produzir variantes (Brasil × Marrocos, Brasil × Haiti, Brasil × Escócia) com material acumulado de cada jogo.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA · soft (brand)</span>
+            <p class="copy">Texto final: <b>"A gente joga junto."</b> · Sem URL na peça. Link na bio do post.</p>
+            <p class="copy">Legenda do post: <em>"Ontem o Brasil ganhou. Ontem todo mundo aqui ganhou. Manda a foto da próxima 🇧🇷 #AGenteJogaJunto"</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARC 4 — MANHÃ SEGUINTE -->
+<section class="arc-head" id="arc4">
+  <div class="wrap">
+    <div class="arc-num">ARC 4</div>
+    <span class="badge">Arco 4 · domingo 14/06, sábado 20/06, quinta 25/06 · manhã seguinte</span>
+    <h2>Manhã seguinte — <span class="y">Filadd reabre, com calma.</span></h2>
+    <p class="lede">A retomada não é "agora bora estudar!". É um café, uma respirada, e a Filadd voltando a aparecer no feed com utilidade. Duas peças irmãs — uma se o Brasil ganha, outra se o Brasil perde. Roda no fim da manhã (10-11h da manhã seguinte), quando o brasileiro acorda da emoção do dia anterior.</p>
+  </div>
+</section>
+<section class="scene">
+  <div class="wrap">
+
+    <!-- ROTEIRO 08 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">08</div>
+          <div class="tags">
+            <span class="tag y">Ritual pós-vitória</span>
+            <span class="tag">30s</span>
+            <span class="tag green">Manhã seguinte</span>
+            <span class="tag">Reels + TikTok</span>
+          </div>
+        </div>
+        <h3>"Acordou, ganhou, segue jogando" · o ranking do bolão acordou junto</h3>
+        <div class="timing">10h da manhã do dia 14/06 (e 20/06 / 25/06) · SE o Brasil ganhar</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">Instagram · TikTok</div>
+              <div class="creator">Pedro Certezas</div>
+              <div class="views">448K + 12.4M likes</div>
+            </div>
+            <div class="ref-info">
+              <h5>@pedrocertezas · cortes de futebol</h5>
+              <div class="source">Creator: Pedro Certezas (TNT Sports Brasil) · 448.3K followers TikTok · 12.4M curtidas acumuladas · Formato: cortes curtos com voz dramática sobre futebol brasileiro, mistura humor + paixão</div>
+              <p>Pedro Certezas é o padrão de tom pra <b>"a manhã seguinte" do futebol brasileiro</b>. Voz dramática, comentário emocional, formato vertical, edição rápida. Posta sempre na manhã seguinte ao jogo do dia anterior. Replica perfeito da temperatura emocional do torcedor que acabou de dormir feliz (ou triste).</p>
+              <a class="ref-link" href="https://www.tiktok.com/@pedrocertezas" target="_blank" rel="noopener">Perfil Pedro Certezas ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>O torcedor brasileiro acorda emocionalmente <b>esticado</b> depois de uma vitória. Quer reviver, comentar, prolongar a sensação. Pedro Certezas captura esse mood com voz dramática sobre cortes do jogo. A Filadd pode entrar nesse fluxo com peça do mesmo registro — mas <b>com gancho próprio</b>: o ranking do bolão atualizou junto com o gol. Quem cravou subiu de posição enquanto dormia. Esse é o gancho.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Vlog estilo "Bom dia" do creator-aluno. Acorda 10h, atrasado pra aula, abre celular. Vê o ranking do bolão: subiu pra top 5 da semana porque cravou o placar. Faz café. Reage. Manda áudio pro grupo da Comunidadd. Decide ver o aulão da tarde (que vai cobrir o histórico da Argentina, próximo jogo provável). <b>Não força estudo</b>. Mostra <b>o estudo virando consequência natural da vitória</b>.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Acordei, o Brasil ganhou — e eu também."</p>
+            <div class="anatomy">Anatomia · Plano fechado no rosto sonolento, ainda na cama, celular na mão. Voz baixa, satisfeita, ainda meio dormida. Texto on screen aparece junto. Notificação do bolão piscando no celular. Hook pelo registro doméstico — não é épico, é intimista.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · Acordar.</b> Plano fechado no rosto. Aluno meio dormindo. Notificação do celular piscando. Voz: <em>"Acordei, o Brasil ganhou — e eu também."</em></div></div>
+            <div class="timeline-step"><div class="t">00:05–00:13</div><div class="a"><b>ATO II · Conferindo o ranking.</b> Sit ups na cama. Abre app Filadd. Tela do bolão. Top 5 atualizado às 23h47 da noite (logo após o jogo). Ele aparece em 3º lugar — pulou da posição 47. Reação leve de alegria. Plano sobe pra meio corpo.</div></div>
+            <div class="timeline-step"><div class="t">00:13–00:22</div><div class="a"><b>ATO III · Café.</b> Vai pra cozinha. Faz café. Volta com a caneca. Abre o WhatsApp da Comunidadd Filadd — 187 mensagens não lidas. Print de zap explodindo, áudio do amigo: <em>"Bicho, top 3, parabéns!"</em> Sorri. Manda áudio: <em>"Vai com tudo na próxima também, em."</em></div></div>
+            <div class="timeline-step"><div class="t">00:22–00:27</div><div class="a"><b>ATO IV · A rotina retoma.</b> Senta com a caneca de café na mesa de estudo. Abre o app Filadd, calendário. Aulão à tarde: "História do Haiti — preparação Antes do apito #2." Sorri. <em>"Próximo jogo é sexta. Tô preparado."</em></div></div>
+            <div class="timeline-step"><div class="t">00:27–00:30</div><div class="a"><b>CTA.</b> Tela azul: <b>"Cravou? Marcou. A próxima rodada já tá aberta."</b> + filadd.com/bolao</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Luz de manhã invadindo o quarto. Tons quentes (laranja claro, creme, marrom da madeira). Sem contraste forte. Textura de "início de dia leve". Único elemento gráfico: as telas dos apps com cores Filadd.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm. Planos íntimos. Câmera segue o aluno pela casa (Steadicam leve). Inserts de tela do celular bem fechados (screen recording editado). Final 1 take respirado na mesa de estudo.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Vlog Sunday Morning. Calma, suave, com sutilezas. Lembra o "Day in the Life" de vestibulando que viralizou nos últimos 2 anos. Vibe Pinterest + TikTok bookish.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Pedro Certezas (mood pós-jogo). Day in the Life de vestibulando medicina (@medlucass, formato consolidado). "Bom dia" vlogs do Brunna Gonçalves. Estética de morning routine.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Calmo, ritmado, sem pressa.</b> Cortes a cada 3-4s. Sem música até o ato IV (só som ambiente: cafeteira, notificação do celular, áudio do whatsapp). No ato IV entra trilha leve de lo-fi (estilo "Lofi Girl YouTube"). Final volta ao silêncio + voice over breve no CTA. Sons-chave: cafeteira borbulhando, áudio do whatsapp, lo-fi suave.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 30 segundos</div>
+          <p><b>Por que 30s.</b> Vlog precisa de tempo pros 4 atos respiraram (acordar, conferir, café, retomar). 15s atropela a calma que é a alma do conceito. 60s perde retenção em peça paga. 30s funciona como Reels orgânico + Reels paid + TikTok Spark. Vlog estilo Pedro Certezas tem ARTM (avg retention 30s) de 70% — referência sólida.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA principal</span>
+            <p class="copy">Texto on screen: <b>"Cravou? Marcou. A próxima rodada já tá aberta."</b> + URL · Voz: "Bora pra próxima. A gente joga junto."</p>
+            <p class="copy">Legenda do post: <em>"Manhã seguinte de Brasil 2 × 0. Top 5 da semana ainda tá em jogo — próxima rodada já tá aberta no Bolão. Link na bio 🟡"</em></p>
+            <span class="slogan">A gente joga junto.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ROTEIRO 09 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">09</div>
+          <div class="tags">
+            <span class="tag y">Plano B emocional</span>
+            <span class="tag">30s</span>
+            <span class="tag green">Manhã seguinte</span>
+            <span class="tag">Reels</span>
+          </div>
+        </div>
+        <h3>"Eles saíram de campo. A gente segue jogando." · o roteiro da derrota</h3>
+        <div class="timing">10h da manhã do dia seguinte · SE o Brasil perder ou empatar feio</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TV</div>
+              <div class="creator">Heineken UCL</div>
+              <div class="views">IPA Effectiveness Silver 2018</div>
+            </div>
+            <div class="ref-info">
+              <h5>Heineken · "Champion the Match" UCL</h5>
+              <div class="source">Anunciante: Heineken · Cast: José Mourinho como spokesman · IPA Effectiveness Awards Silver 2018 · Resultado: 20% drop em jogos vistos sozinho, +13.7% growth em mercados UCL</div>
+              <p>A Heineken transformou o ato de assistir ao jogo sozinho num <b>"problema social"</b> que a marca resolve com cerveja. Conceito: ver futebol é melhor junto. Mesmo princípio aplicado à derrota: <b>perder sozinho destrói, perder junto reorganiza</b>. A Filadd já tem a frase pronta no playbook v3: "Eles saíram de campo. A gente segue jogando."</p>
+              <a class="ref-link" href="https://ipa.co.uk/knowledge/case-studies/a-game-changer-how-heineken-reinvented-it-s-champions-league-communications" target="_blank" rel="noopener">Case IPA Effectiveness ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>A campanha tem que ter um <b>plano B emocional pronto</b> porque o Brasil pode perder. Marcas que comunicam só vitória ficam mudas no momento mais sensível (caso clássico: Itaú em 2014). A Heineken provou que comunidade reduz dor. A Filadd herda esse insight: na manhã seguinte de uma derrota, o vestibulando precisa ouvir <b>"a gente segue jogando"</b> — não anúncio de prêmio.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Mesma estrutura do Roteiro 08 (manhã seguinte UGC), mas em outro tom. Aluno acorda. Brasil perdeu/empatou. Café. Abre o app. Vê o ranking — pulou de qualquer jeito porque a maioria errou o palpite. Sorri amargo. Grupo do zap está triste mas funcional. Conteúdo final: aulão da tarde sobre o adversário do próximo jogo. <b>"A gente segue jogando"</b> ganha sentido literal — o bolão continua, o vestibular continua, a Filadd continua.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"Acordei. Doeu. Mas tem coisa que não acaba quando o jogo acaba."</p>
+            <div class="anatomy">Anatomia · Plano fechado, luz fria, aluno olhando pro teto, ainda na cama. Voz baixa, calma. Texto on screen branco. Sem música. Hook pela honestidade — ad que não foge da emoção ruim.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · O peso.</b> Aluno acordando, olha pro teto. Voz: <em>"Acordei. Doeu. Mas tem coisa que não acaba quando o jogo acaba."</em></div></div>
+            <div class="timeline-step"><div class="t">00:05–00:14</div><div class="a"><b>ATO II · Conferindo.</b> Abre o app Filadd. Bolão atualizado. Errou o placar — mas o resto do Brasil também errou, ele subiu no ranking mesmo perdendo. Sorriso amargo. Abre o zap da Comunidadd. Mensagens diferentes: amigos consolando, alguém mandando meme do Ancelotti.</div></div>
+            <div class="timeline-step"><div class="t">00:14–00:23</div><div class="a"><b>ATO III · Faz o café.</b> Bate na cozinha. Faz café devagar. Voz off: <em>"Esse ano tem duas Copas. Uma a gente não controla. A outra a gente decide."</em> Senta na mesa de estudo. Abre a aula.</div></div>
+            <div class="timeline-step"><div class="t">00:23–00:27</div><div class="a"><b>ATO IV · Reabrir.</b> Tela do app: aulão da tarde "Antes do apito #3" (preparando Escócia, próximo jogo). Marca presença. Calma.</div></div>
+            <div class="timeline-step"><div class="t">00:27–00:30</div><div class="a"><b>CTA.</b> Tela azul: <b>"Eles saíram de campo. A gente segue jogando."</b> + filadd.com/bolao</div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Luz mais fria que o R08 (manhã nublada / chuva fina). Tons azuis-acinzentados. Apenas a tela do app e a caneca quente trazem cor. Contraste sutil temperatura emocional vs gesto cotidiano.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>50mm. Planos um pouco mais fechados que R08 (densidade emocional). Movimentos mais lentos. Single takes longos. Sem efeito gráfico.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Filme de cinema indie brasileiro. Lembra "Edifício Master" / "Sleep" / Lulu Wang. Sentimento sem drama. Honesto.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Heineken UCL "Champion the Match" (comunidade reduz peso). Itaú "Mostra tua força" pós-2014 (admissão honesta da derrota). Estética de "Plano A/B" do playbook v3 — frase "Eles saíram de campo. A gente segue jogando." já está canonizada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Pesado e respirado.</b> Cortes a cada 5-6s. Quase nenhuma trilha. Som de cafeteira, notificação tímida, café derramando. Apenas no final entra piano discreto. Atos respiram silêncios entre falas — o silêncio é o luto.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 30 segundos</div>
+          <p><b>Por que 30s.</b> Mesmo motivo do R08. Diferença: roda menos vezes (1-2 dias após uma derrota) e tem KPI diferente — não conversão, mas <b>brand love + retention</b>. Métrica: comentários positivos / quantidade de "salvou", não cliques. Investimento em marca de longo prazo.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA · brand-driven</span>
+            <p class="copy">Texto on screen: <b>"Eles saíram de campo. A gente segue jogando."</b> + URL · Voz: "A próxima rodada já tá aberta."</p>
+            <p class="copy">Legenda do post: <em>"Doeu. E tá tudo bem doer. Mas o ano não acaba aqui. A próxima rodada do Bolão já tá aberta — porque a gente segue jogando 🟡"</em></p>
+            <span class="slogan">Eles saíram de campo. A gente segue jogando.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ARC 5 — FOMO PERMANENTE -->
+<section class="arc-head" id="arc5">
+  <div class="wrap">
+    <div class="arc-num">ARC 5</div>
+    <span class="badge">Arco 5 · todos os dias da campanha · FOMO permanente</span>
+    <h2>FOMO permanente — <span class="y">prova social que recruta sozinha.</span></h2>
+    <p class="lede">O último arco roda fora do calendário. Roteiro único — mas com 4 versões automáticas — que mostra o crescimento real da comunidade do Bolão. Inspirado no Cannes 2024 (Orange reveal) e no playbook do Supercell. Roda durante toda a campanha como social proof bottom-funnel.</p>
+  </div>
+</section>
+<section class="scene">
+  <div class="wrap">
+
+    <!-- ROTEIRO 10 -->
+    <div class="scene-card">
+      <div class="scene-head">
+        <div class="scene-head-row">
+          <div class="num">10</div>
+          <div class="tags">
+            <span class="tag y">Reveal / social proof</span>
+            <span class="tag">45s</span>
+            <span class="tag green">Permanente</span>
+            <span class="tag">Meta + TikTok + YouTube</span>
+          </div>
+        </div>
+        <h3>"O Top 5 da semana" · começa como ranking de craques, revela que são alunos</h3>
+        <div class="timing">Vai ao ar toda quarta-feira da campanha · 4 versões (1 por semana de Copa)</div>
+      </div>
+      <div class="scene-body">
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">01</span>Referência original</div>
+          <div class="ref-block">
+            <div class="ref-thumb">
+              <div class="platform">YouTube · TV</div>
+              <div class="creator">Orange "WoMen's Football"</div>
+              <div class="views">Cannes 2024 Grand Prix</div>
+            </div>
+            <div class="ref-info">
+              <h5>Orange + Nike "Universe of Football"</h5>
+              <div class="source">Refs combinadas: Orange "WoMen's Football" (estrutura do reveal · Marcel · Cannes 2024 Grand Prix) + Nike "Universe of Football" (formato distribuído de 12 semanas com 42 personalidades, sem grande comercial)</div>
+              <p>Orange ensinou a estrutura do <b>reveal</b>. Nike ensinou a estrutura da <b>cadência distribuída</b> — em vez de 1 filme épico, 12 semanas de drops com 42 nomes. O Filadd combina os dois: peça de 45s com reveal forte + 4 versões (1 por semana) com Top 5 atualizado, criando ritmo de série.</p>
+              <a class="ref-link" href="https://www.collater.al/en/adidas-backyard-legends-campaign-world-cup-2026/" target="_blank" rel="noopener">Nike Universe of Football ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">02</span>Por que performa</div>
+          <p>Reveal força engajamento — viewer fica até o final pra entender a "pegadinha". Social proof real (nomes de alunos verdadeiros) substitui claim genérico. Cadência semanal cria <b>"appointment viewing"</b> — torcedor sabe que quarta sai novo Top 5. Bonus: cada Top 5 personalizado cria 5 candidatos a UGC orgânico (eles mesmos compartilham).</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">03</span>Adaptação Filadd</div>
+          <p>Peça começa com narração e imagens de Top 5 de craques do Mundial (montagem profissional, atmosfera de premiação) — Yamal, Mbappé, Vini Jr, Haaland, Bellingham. <b>Aos 25s</b>, corta e revela: "esses são os Top 5 dos craques. Esses aqui são os Top 5 da Filadd essa semana." E aparece o ranking real, com fotos reais dos alunos da Comunidadd Filadd na semana. Encerra com prêmio da semana + chamada pra próximo Top 5.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">04</span>Hook</div>
+          <div class="hook-block">
+            <span class="lb">Primeiros 3 segundos</span>
+            <p>"O Top 5 do mundo nessa Copa, segundo a Filadd."</p>
+            <div class="anatomy">Anatomia · Narração estilo voz-de-Cannes (peso autoritativo). Imagens em câmera lenta de craques driblando. Tipografia gigante "TOP 5". Hook gera expectativa de ranking esportivo — quem está vendo espera Yamal, Mbappé. Reveal vai inverter.</div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">05</span>Estrutura · ato a ato</div>
+          <div class="timeline">
+            <div class="timeline-step"><div class="t">00:00–00:05</div><div class="a"><b>ATO I · Hook.</b> Câmera lenta + narração: <em>"O Top 5 do mundo nessa Copa, segundo a Filadd."</em> Imagens de craques (Yamal, Mbappé). Tipografia gigante.</div></div>
+            <div class="timeline-step"><div class="t">00:05–00:25</div><div class="a"><b>ATO II · Esperado.</b> Conta 5 → 4 → 3 → 2 → 1. Cada craque (4s): Yamal #5 (drible), Mbappé #4 (gol de fora), Vini Jr #3 (chapéu), Haaland #2 (chute), Bellingham #1 (cabeça). Narração épica. Trilha cinematográfica.</div></div>
+            <div class="timeline-step"><div class="t">00:25–00:30</div><div class="a"><b>ATO III · Quebra.</b> Trilha PARA. Tela preta. Texto: <em>"Esses são os Top 5 do mundo."</em> [pausa 1s] <em>"Esses aqui são os Top 5 da Filadd essa semana."</em></div></div>
+            <div class="timeline-step"><div class="t">00:30–00:42</div><div class="a"><b>ATO IV · Reveal.</b> Aparece o ranking real do Bolão: 5 fotos de alunos reais (selfies bem produzidas, vestindo camiseta da Seleção), com nome, idade, cidade, escola. Trilha leve volta. Narração: <em>"Lucas, 17, Manaus. Mariana, 18, Recife..."</em> Cada um aparece 2s.</div></div>
+            <div class="timeline-step"><div class="t">00:42–00:45</div><div class="a"><b>CTA.</b> Tela azul: <b>"Próxima semana, pode ser você."</b> + filadd.com/bolao + <em>"Bolão Filadd. Cravou? Marcou."</em></div></div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">06</span>Estilo visual</div>
+          <div class="direction-grid">
+            <div class="direction-block">
+              <h5>Paleta</h5>
+              <p>Atos I e II: paleta cinematográfica épica (dourado, azul UCL, escuridão dramática). Ato IV: paleta UGC quente (luz natural dos quartos dos alunos). <b>Contraste estético = significado.</b> A grandeza visual sai dos craques e migra pros alunos.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Lente e enquadramento</h5>
+              <p>Atos I-II: imagens de arquivo da Copa em câmera lenta, slow motion 240fps. Tipografia AAA em motion graphics. Ato IV: fotos reais dos alunos (selfies bem produzidas + tratamento leve). Frames com banner azul Filadd em volta.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Sensação</h5>
+              <p>Começa como abertura de Champions League. Vira reveal humano. Quebra de gênero é tudo. Quem vê pensa "isso é ad esportivo" — e termina entendendo que é ad de educação.</p>
+            </div>
+            <div class="direction-block">
+              <h5>Referência paralela</h5>
+              <p>Orange WoMen's Football (estrutura do reveal — Cannes Grand Prix 2024). Nike Universe of Football (cadência distribuída). Abertura do UCL ao vivo (estética AAA). Filmes de Top 5 do ESPN.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">07</span>Ritmo de edição</div>
+          <p><b>Crescente épico → silêncio total → calor humano.</b> Ato I-II: cortes a cada 0,8-1,2s, trilha orquestral cinematográfica subindo, slowmo 240fps. Ato III: silêncio absoluto + texto progressivo (1s entre frases). Ato IV: cortes a cada 2s, trilha leve em fade-in (acústico). CTA com 3s de respiração final. Sons-chave: <b>orquestra cinematográfica em build → silêncio dramático no reveal → acústico no ranking real</b>.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">08</span>Tempo ideal · 45 segundos</div>
+          <p><b>Por que 45s.</b> Reveal precisa de tempo pra construir expectativa (20s de craques) + quebra (5s de silêncio) + recompensa (12s de Top 5 real) + CTA. 30s mata a quebra. 60s estica o ranking real (perde retenção). 45s é o sweet spot — bate retention rate de 35% no YouTube In-Feed e Meta. Variantes 30s pra remarketing.</p>
+        </div>
+
+        <div class="scene-section">
+          <div class="lb"><span class="num">09</span>CTA · Tela final + legenda</div>
+          <div class="cta-block">
+            <span class="lb">CTA · pull humano</span>
+            <p class="copy">Texto on screen: <b>"Próxima semana, pode ser você."</b> + URL · Voz: "Cravou? Marcou. Próximo Top 5 sai quarta."</p>
+            <p class="copy">Legenda do post: <em>"⚽️🇧🇷 Esse é o Top 5 dessa semana. Lucas, Mariana, João, Bia, Pedro — vocês são craques. E você que tá vendo? Próxima semana pode ser teu rosto aqui. Bolão Filadd link na bio."</em></p>
+            <span class="slogan">Cravou? Marcou.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SUMMARY / MATRIZ -->
+<section class="summary" id="summary">
+  <div class="wrap" style="position:relative;z-index:2">
+    <span class="eyebrow amr">Resumo · 10 roteiros por arco temporal</span>
+    <h2>O mapa <span class="y">de tudo,</span> em uma tela.</h2>
+    <p class="lede">Tabela pronta pra você passar pra equipe de produção. Cada linha é um roteiro com seu tempo, momento de veiculação na Copa, e principal referência rastreável.</p>
+    <div class="sum-table">
+      <div class="sum-row head">
+        <div class="sum-cell">#</div>
+        <div class="sum-cell">Roteiro</div>
+        <div class="sum-cell">Tempo</div>
+        <div class="sum-cell">Quando rodar</div>
+        <div class="sum-cell">Referência principal</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">01</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>Manifesto "A vida tem duas Copas"</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">45s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Pré-Copa (a partir 25/05)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Brahma "Tá Liberado Acreditar"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">02</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>Calendário paralelo (mecânica)</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Pré-Copa (a partir 28/05)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Visa "Tap In"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">03</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"O Apito" · 3 ambientes domésticos</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Véspera de cada jogo (12/18/23/06)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Clash Royale × Globo (DAVID SP)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">04</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>Repertório do adversário</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill green">60s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Véspera de cada jogo (12/18/23/06)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>@dedaaladim (2M)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">05</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Fecha amanhã às 18h59" · countdown</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">15s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>1h antes do apito (12/18/23/06)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Supercell "Haaland Payback" (Cannes 25)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">06</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Hoje a gente só torce"</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill yellow">15s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>30min antes do apito (13/19/24/06)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Coca "Bubbling Up"</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">07</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Manda foto da sua casa" UGC</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Manhã seguinte a cada jogo (14/20/25/06)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Orange WoMen's Football (Cannes 24)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">08</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Acordou, ganhou, segue jogando"</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Manhã seguinte (se Brasil ganhar)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>@pedrocertezas (448K)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">09</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Eles saíram de campo. A gente segue jogando."</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill blue">30s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Manhã seguinte (se Brasil perder)</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Heineken UCL (IPA Silver)</div>
+      </div>
+      <div class="sum-row">
+        <div class="sum-cell num">10</div>
+        <div class="sum-cell"><span class="mb-lbl">Roteiro:</span>"Top 5 da semana" · reveal</div>
+        <div class="sum-cell"><span class="mb-lbl">Tempo:</span><span class="pill red">45s</span></div>
+        <div class="sum-cell"><span class="mb-lbl">Quando:</span>Toda quarta · 4 versões</div>
+        <div class="sum-cell"><span class="mb-lbl">Ref:</span>Orange (reveal) + Nike Universe of Football</div>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:36px">Próximo movimento sugerido: travar gravação de R01 (manifesto 45s) e R10 (Top 5 reveal) em junho. Os 8 demais são produzidos em sprint UGC-style ao longo do mês. Custo médio por peça: alto pros R01 e R10 (produção própria), baixo pros demais (creator-on-call + screen recording + arquivo).</p>
+  </div>
+</section>
+
+<footer>
+  Roteiros v2 · Bolão Copa Filadd 2026 · Sincronizado com o calendário real · <span class="y">Refeito a partir de feedback Theus Mattos · Maio 2026</span>
+</footer>
+
+</body>
+</html>
